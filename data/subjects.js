@@ -1781,6 +1781,468 @@ const IPAS_SUBJECT = {
   ]
 };
 
+/* ============================================================
+ *  DEFINISI MATA PELAJARAN MATEMATIKA
+ *  (dipisah agar mudah dibaca; dipakai di array SUBJECTS)
+ *  Modul: Bangun Datar dan Bangun Ruang.
+ * ============================================================ */
+const MATEMATIKA_SUBJECT = {
+  id: "matematika",
+  nama: "Matematika",
+  ikon: "➗",
+  warna: "#ff8500",
+  deskripsi: "Belajar mengenal bentuk dan bangun di sekitar kita.",
+  topik: [
+
+    /* ========================================================
+     *  MODUL 1 — BANGUN DATAR DAN BANGUN RUANG
+     * ====================================================== */
+    {
+      id: "bangun-datar-ruang",
+      judul: "Bangun Datar dan Bangun Ruang",
+      emoji: "🔷",
+
+      ringkasan: [
+        { emoji: "📄", teks: "Bangun datar adalah bangun yang rata dan tipis, seperti gambar di kertas. Contoh: segitiga, persegi, persegi panjang, dan lingkaran." },
+        { gambar: "img/bangun/segitiga.svg", teks: "Segitiga memiliki 3 sisi dan 3 sudut. Contoh benda: rambu lalu lintas, penggaris segitiga, atap rumah." },
+        { gambar: "img/bangun/persegi.svg", teks: "Persegi memiliki 4 sisi yang SAMA panjang dan 4 sudut. Contoh benda: ubin lantai, sapu tangan, papan catur." },
+        { gambar: "img/bangun/persegi-panjang.svg", teks: "Persegi panjang memiliki 4 sisi dan 4 sudut. Dua pasang sisi yang berhadapan sama panjang. Contoh: buku tulis, pintu, papan tulis." },
+        { gambar: "img/bangun/lingkaran.svg", teks: "Lingkaran berbentuk bulat dan TIDAK memiliki sudut. Contoh benda: uang koin, jam dinding, piring." },
+        { emoji: "📦", teks: "Bangun ruang adalah bangun yang memiliki ruang (isi), bisa dipegang dari segala arah. Contoh: kubus, balok, tabung, kerucut, dan bola." },
+        { gambar: "img/bangun/kubus.svg", teks: "Kubus memiliki 6 sisi berbentuk persegi yang sama besar, 12 rusuk, dan 8 titik sudut. Contoh: dadu, rubik." },
+        { gambar: "img/bangun/balok.svg", teks: "Balok memiliki 6 sisi, 12 rusuk, dan 8 titik sudut. Sisinya berbentuk persegi panjang. Contoh: lemari, kotak pensil, batu bata." },
+        { gambar: "img/bangun/tabung.svg", teks: "Tabung memiliki 3 sisi: 2 sisi lingkaran (atas dan bawah) dan 1 sisi lengkung. Tidak punya titik sudut. Contoh: kaleng minuman, gelas, drum." },
+        { gambar: "img/bangun/kerucut.svg", teks: "Kerucut memiliki 2 sisi (alas lingkaran dan sisi lengkung) dan 1 titik puncak. Contoh: topi ulang tahun, cone es krim, tumpeng." },
+        { gambar: "img/bangun/bola.svg", teks: "Bola hanya memiliki 1 sisi lengkung dan tidak memiliki sudut. Contoh: bola sepak, kelereng, jeruk." },
+        { emoji: "🔍", teks: "Sisi adalah bagian permukaan/garis tepi bangun. Sudut adalah tempat bertemunya dua sisi. Rusuk adalah garis pertemuan dua sisi pada bangun ruang." },
+        { emoji: "🏠", teks: "Benda di sekitar kita punya banyak bentuk. Contoh: lemari berbentuk balok (6 sisi, 8 titik sudut)." }
+      ],
+
+      /* ===== 4 SET SOAL PILIHAN GANDA ===== */
+      pilihanGandaSets: [
+
+        // ---------- SET 1 : Latihan soal (bangun datar) ----------
+        [
+          {
+            soal: "Bangun datar yang memiliki tiga sisi adalah ....",
+            pilihan: ["Persegi", "Segitiga", "Lingkaran"],
+            jawaban: 1,
+            penjelasan: "Segitiga memiliki 3 sisi dan 3 sudut."
+          },
+          {
+            soal: "Bangun datar yang memiliki empat sisi sama panjang adalah ....",
+            pilihan: ["Persegi", "Segitiga", "Lingkaran"],
+            jawaban: 0,
+            penjelasan: "Keempat sisi persegi sama panjang."
+          },
+          {
+            gambar: "img/bangun/jam-dinding.svg",
+            soal: "Jam dinding berbentuk lingkaran. Lingkaran memiliki ....",
+            pilihan: ["Tiga sudut", "Empat sudut", "Tidak memiliki sudut"],
+            jawaban: 2,
+            penjelasan: "Lingkaran bulat sehingga tidak memiliki sudut."
+          },
+          {
+            soal: "Bangun datar yang memiliki dua pasang sisi berhadapan sama panjang adalah ....",
+            pilihan: ["Persegi panjang", "Segitiga", "Lingkaran"],
+            jawaban: 0,
+            penjelasan: "Pada persegi panjang, sisi atas = bawah dan sisi kiri = kanan."
+          },
+          {
+            soal: "Benda yang berbentuk persegi panjang adalah ....",
+            pilihan: ["Uang koin", "Buku tulis", "Bola"],
+            jawaban: 1,
+            penjelasan: "Buku tulis berbentuk persegi panjang. Uang koin berbentuk lingkaran."
+          },
+          {
+            gambar: "img/bangun/segitiga.svg",
+            soal: "Bangun pada gambar bernama ....",
+            pilihan: ["Persegi", "Lingkaran", "Segitiga"],
+            jawaban: 2,
+            penjelasan: "Bangun dengan 3 sisi dan 3 sudut adalah segitiga."
+          },
+          {
+            gambar: "img/bangun/persegi.svg",
+            soal: "Berapa banyak sudut pada bangun di gambar?",
+            pilihan: ["3", "4", "0"],
+            jawaban: 1,
+            penjelasan: "Persegi memiliki 4 sudut (lihat titik-titik di ujungnya)."
+          },
+          {
+            gambar: "img/bangun/uang-koin.svg",
+            soal: "Uang koin berbentuk ....",
+            pilihan: ["Lingkaran", "Persegi", "Segitiga"],
+            jawaban: 0,
+            penjelasan: "Uang koin bulat, berbentuk lingkaran."
+          },
+          {
+            gambar: "img/bangun/rambu.svg",
+            soal: "Rambu lalu lintas pada gambar berbentuk ....",
+            pilihan: ["Persegi panjang", "Segitiga", "Lingkaran"],
+            jawaban: 1,
+            penjelasan: "Rambu itu punya 3 sisi, jadi berbentuk segitiga."
+          },
+          {
+            soal: "Bangun datar yang TIDAK memiliki sudut adalah ....",
+            pilihan: ["Persegi", "Persegi panjang", "Lingkaran"],
+            jawaban: 2,
+            penjelasan: "Lingkaran tidak memiliki sudut."
+          }
+        ],
+
+        // ---------- SET 2 : Latihan soal (bangun ruang) ----------
+        [
+          {
+            gambar: "img/bangun/dadu.svg",
+            soal: "Dadu merupakan benda yang berbentuk ....",
+            pilihan: ["Kubus", "Tabung", "Kerucut"],
+            jawaban: 0,
+            penjelasan: "Dadu berbentuk kubus: 6 sisi persegi yang sama besar."
+          },
+          {
+            soal: "Benda yang berbentuk bola adalah ....",
+            pilihan: ["Kaleng susu", "Topi ulang tahun", "Bola sepak"],
+            jawaban: 2,
+            penjelasan: "Bola sepak berbentuk bola. Kaleng susu = tabung, topi ulang tahun = kerucut."
+          },
+          {
+            gambar: "img/bangun/kaleng.svg",
+            soal: "Kaleng minuman memiliki bentuk ....",
+            pilihan: ["Tabung", "Kubus", "Balok"],
+            jawaban: 0,
+            penjelasan: "Kaleng memiliki alas dan tutup lingkaran serta sisi lengkung: tabung."
+          },
+          {
+            soal: "Bangun ruang yang memiliki enam sisi berbentuk persegi adalah ....",
+            pilihan: ["Kerucut", "Kubus", "Bola"],
+            jawaban: 1,
+            penjelasan: "Kubus memiliki 6 sisi persegi yang sama besar."
+          },
+          {
+            gambar: "img/bangun/lemari.svg",
+            soal: "Lemari pakaian umumnya berbentuk ....",
+            pilihan: ["Balok", "Bola", "Kerucut"],
+            jawaban: 0,
+            penjelasan: "Lemari berbentuk balok."
+          },
+          {
+            gambar: "img/bangun/topi-ulang-tahun.svg",
+            soal: "Topi ulang tahun berbentuk ....",
+            pilihan: ["Tabung", "Kerucut", "Kubus"],
+            jawaban: 1,
+            penjelasan: "Topi ulang tahun memiliki alas lingkaran dan satu titik puncak: kerucut."
+          },
+          {
+            gambar: "img/bangun/tabung.svg",
+            soal: "Bangun ruang pada gambar bernama ....",
+            pilihan: ["Kerucut", "Bola", "Tabung"],
+            jawaban: 2,
+            penjelasan: "Ada lingkaran di atas dan bawah, serta sisi lengkung: tabung."
+          },
+          {
+            gambar: "img/bangun/kerucut.svg",
+            soal: "Bangun ruang pada gambar bernama ....",
+            pilihan: ["Kerucut", "Segitiga", "Balok"],
+            jawaban: 0,
+            penjelasan: "Alasnya lingkaran dan ujungnya runcing: kerucut. Segitiga itu bangun datar."
+          },
+          {
+            soal: "Bangun ruang yang hanya memiliki satu sisi lengkung adalah ....",
+            pilihan: ["Kubus", "Bola", "Balok"],
+            jawaban: 1,
+            penjelasan: "Bola hanya memiliki 1 sisi lengkung."
+          },
+          {
+            soal: "Batu bata dan kotak pensil berbentuk ....",
+            pilihan: ["Bola", "Tabung", "Balok"],
+            jawaban: 2,
+            penjelasan: "Batu bata dan kotak pensil berbentuk balok."
+          }
+        ],
+
+        // ---------- SET 3 : Sisi & sudut ----------
+        [
+          {
+            soal: "Berapa banyak sisi pada segitiga?",
+            pilihan: ["2", "3", "4"],
+            jawaban: 1,
+            penjelasan: "Segitiga = tiga sisi."
+          },
+          {
+            gambar: "img/bangun/persegi-panjang.svg",
+            soal: "Bangun pada gambar memiliki ... sisi.",
+            pilihan: ["4", "3", "6"],
+            jawaban: 0,
+            penjelasan: "Persegi panjang memiliki 4 sisi."
+          },
+          {
+            gambar: "img/bangun/balok.svg",
+            soal: "Balok memiliki ... sisi.",
+            pilihan: ["4", "8", "6"],
+            jawaban: 2,
+            penjelasan: "Balok memiliki 6 sisi: depan, belakang, atas, bawah, kiri, dan kanan."
+          },
+          {
+            soal: "Lemari berbentuk balok. Banyak titik sudut lemari adalah ....",
+            pilihan: ["6", "8", "12"],
+            jawaban: 1,
+            penjelasan: "Balok memiliki 8 titik sudut."
+          },
+          {
+            gambar: "img/bangun/kubus.svg",
+            soal: "Kubus memiliki ... titik sudut.",
+            pilihan: ["8", "6", "4"],
+            jawaban: 0,
+            penjelasan: "Kubus memiliki 8 titik sudut, 6 sisi, dan 12 rusuk."
+          },
+          {
+            soal: "Banyak rusuk pada kubus adalah ....",
+            pilihan: ["6", "8", "12"],
+            jawaban: 2,
+            penjelasan: "Kubus memiliki 12 rusuk."
+          },
+          {
+            soal: "Bangun ruang yang memiliki satu titik puncak adalah ....",
+            pilihan: ["Kerucut", "Tabung", "Bola"],
+            jawaban: 0,
+            penjelasan: "Kerucut memiliki 1 titik puncak di atasnya."
+          },
+          {
+            soal: "Tabung memiliki ... sisi.",
+            pilihan: ["1", "3", "6"],
+            jawaban: 1,
+            penjelasan: "Tabung: sisi atas (lingkaran), sisi bawah (lingkaran), dan sisi lengkung = 3 sisi."
+          },
+          {
+            soal: "Bangun ruang yang TIDAK memiliki titik sudut adalah ....",
+            pilihan: ["Kubus", "Balok", "Bola"],
+            jawaban: 2,
+            penjelasan: "Bola bulat dan tidak memiliki titik sudut."
+          },
+          {
+            soal: "Perbedaan persegi dan persegi panjang adalah ....",
+            pilihan: [
+              "Persegi punya 3 sisi",
+              "Semua sisi persegi sama panjang, persegi panjang tidak",
+              "Persegi panjang tidak punya sudut"
+            ],
+            jawaban: 1,
+            penjelasan: "Keduanya punya 4 sisi dan 4 sudut, tetapi hanya persegi yang keempat sisinya sama panjang."
+          }
+        ],
+
+        // ---------- SET 4 : Datar atau ruang? ----------
+        [
+          {
+            soal: "Manakah yang termasuk bangun DATAR?",
+            pilihan: ["Kubus", "Segitiga", "Tabung"],
+            jawaban: 1,
+            penjelasan: "Segitiga adalah bangun datar. Kubus dan tabung adalah bangun ruang."
+          },
+          {
+            soal: "Manakah yang termasuk bangun RUANG?",
+            pilihan: ["Lingkaran", "Persegi", "Balok"],
+            jawaban: 2,
+            penjelasan: "Balok adalah bangun ruang karena memiliki isi."
+          },
+          {
+            gambar: "img/bangun/bola-sepak.svg",
+            soal: "Benda pada gambar berbentuk ....",
+            pilihan: ["Bola", "Lingkaran", "Tabung"],
+            jawaban: 0,
+            penjelasan: "Bola sepak berbentuk bola (bangun ruang). Lingkaran adalah bangun datar."
+          },
+          {
+            gambar: "img/bangun/buku-tulis.svg",
+            soal: "Sampul buku tulis berbentuk ....",
+            pilihan: ["Segitiga", "Persegi panjang", "Lingkaran"],
+            jawaban: 1,
+            penjelasan: "Sampul buku memiliki 4 sisi dengan sisi berhadapan sama panjang."
+          },
+          {
+            soal: "Sisi-sisi pada kubus berbentuk ....",
+            pilihan: ["Persegi", "Lingkaran", "Segitiga"],
+            jawaban: 0,
+            penjelasan: "Setiap sisi kubus berbentuk persegi."
+          },
+          {
+            soal: "Alas tabung dan alas kerucut berbentuk ....",
+            pilihan: ["Persegi", "Segitiga", "Lingkaran"],
+            jawaban: 2,
+            penjelasan: "Alas tabung dan kerucut berbentuk lingkaran."
+          },
+          {
+            soal: "Benda berikut yang berbentuk kerucut adalah ....",
+            pilihan: ["🍦 Cone es krim", "🎲 Dadu", "🥫 Kaleng"],
+            jawaban: 0,
+            penjelasan: "Cone es krim berbentuk kerucut."
+          },
+          {
+            soal: "Benda berikut yang berbentuk lingkaran adalah ....",
+            pilihan: ["Pintu", "Piring", "Lemari"],
+            jawaban: 1,
+            penjelasan: "Piring berbentuk lingkaran."
+          },
+          {
+            soal: "Kelereng dan jeruk berbentuk ....",
+            pilihan: ["Kubus", "Kerucut", "Bola"],
+            jawaban: 2,
+            penjelasan: "Kelereng dan jeruk bulat seperti bola."
+          },
+          {
+            soal: "Ubin lantai yang keempat sisinya sama panjang berbentuk ....",
+            pilihan: ["Persegi", "Segitiga", "Lingkaran"],
+            jawaban: 0,
+            penjelasan: "Empat sisi sama panjang = persegi."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET SOAL ESAI ===== */
+      esaiSets: [
+
+        // ---------- SET 1 : Latihan soal ----------
+        [
+          {
+            soal: "Sebutkan tiga contoh benda di sekitarmu yang berbentuk bangun ruang balok (persegi panjang)!",
+            contohJawaban: "Lemari, kotak pensil, dan batu bata. (Bisa juga: kardus, kotak susu, buku tebal.)"
+          },
+          {
+            soal: "Tuliskan dua perbedaan antara persegi dan segitiga!",
+            contohJawaban: "1) Persegi memiliki 4 sisi, segitiga memiliki 3 sisi. 2) Persegi memiliki 4 sudut, segitiga memiliki 3 sudut."
+          },
+          {
+            soal: "Apa perbedaan bangun datar dan bangun ruang?",
+            contohJawaban: "Bangun datar rata dan tipis seperti gambar di kertas (contoh: persegi). Bangun ruang memiliki isi dan bisa dipegang (contoh: kubus)."
+          },
+          {
+            soal: "Sebutkan dua benda yang berbentuk tabung!",
+            contohJawaban: "Kaleng minuman dan gelas. (Bisa juga: drum, pipa.)"
+          },
+          {
+            soal: "Sebutkan dua benda yang berbentuk lingkaran!",
+            contohJawaban: "Uang koin dan jam dinding. (Bisa juga: piring, tutup botol.)"
+          },
+          {
+            soal: "Mengapa lingkaran tidak memiliki sudut?",
+            contohJawaban: "Karena garis tepinya melengkung terus tanpa ujung, jadi tidak ada dua sisi yang bertemu."
+          }
+        ],
+
+        // ---------- SET 2 : Ayo mencari benda (tabel) ----------
+        [
+          {
+            gambar: "img/bangun/lemari.svg",
+            soal: "Contoh: lemari. Tulislah bentuk benda, banyak sisi, dan banyak titik sudutnya.",
+            contohJawaban: "Bentuk: balok. Banyak sisi: 6. Banyak titik sudut: 8."
+          },
+          {
+            gambar: "img/bangun/dadu.svg",
+            soal: "Dadu. Tulislah bentuk benda, banyak sisi, dan banyak titik sudutnya.",
+            contohJawaban: "Bentuk: kubus. Banyak sisi: 6. Banyak titik sudut: 8."
+          },
+          {
+            gambar: "img/bangun/kaleng.svg",
+            soal: "Kaleng susu. Tulislah bentuk benda, banyak sisi, dan banyak titik sudutnya.",
+            contohJawaban: "Bentuk: tabung. Banyak sisi: 3. Banyak titik sudut: 0 (tidak ada)."
+          },
+          {
+            gambar: "img/bangun/topi-ulang-tahun.svg",
+            soal: "Topi ulang tahun. Tulislah bentuk benda, banyak sisi, dan titik puncaknya.",
+            contohJawaban: "Bentuk: kerucut. Banyak sisi: 2. Memiliki 1 titik puncak."
+          },
+          {
+            gambar: "img/bangun/bola-sepak.svg",
+            soal: "Bola sepak. Tulislah bentuk benda, banyak sisi, dan banyak titik sudutnya.",
+            contohJawaban: "Bentuk: bola. Banyak sisi: 1 (sisi lengkung). Banyak titik sudut: 0."
+          },
+          {
+            soal: "🔎 Ayo mencari! Carilah 3 benda di rumahmu, lalu tulis nama benda dan bentuknya.",
+            contohJawaban: "Contoh: televisi = balok, gelas = tabung, jeruk = bola. (Jawaban bisa berbeda-beda.)"
+          }
+        ],
+
+        // ---------- SET 3 : Hitung sisi & sudut ----------
+        [
+          {
+            gambar: "img/bangun/segitiga.svg",
+            soal: "Berapa banyak sisi dan sudut segitiga?",
+            contohJawaban: "3 sisi dan 3 sudut."
+          },
+          {
+            gambar: "img/bangun/persegi-panjang.svg",
+            soal: "Sebutkan ciri-ciri persegi panjang!",
+            contohJawaban: "Memiliki 4 sisi dan 4 sudut. Dua pasang sisi yang berhadapan sama panjang."
+          },
+          {
+            gambar: "img/bangun/kubus.svg",
+            soal: "Sebutkan banyak sisi, rusuk, dan titik sudut kubus!",
+            contohJawaban: "6 sisi, 12 rusuk, dan 8 titik sudut."
+          },
+          {
+            soal: "Apa persamaan kubus dan balok?",
+            contohJawaban: "Sama-sama memiliki 6 sisi, 12 rusuk, dan 8 titik sudut."
+          },
+          {
+            soal: "Apa perbedaan kubus dan balok?",
+            contohJawaban: "Semua sisi kubus berbentuk persegi yang sama besar. Sisi balok ada yang berbentuk persegi panjang."
+          },
+          {
+            soal: "Ada 2 buah segitiga. Berapa jumlah semua sisinya?",
+            contohJawaban: "3 + 3 = 6 sisi."
+          },
+          {
+            soal: "Ada 3 buah persegi. Berapa jumlah semua sudutnya?",
+            contohJawaban: "4 + 4 + 4 = 12 sudut."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET MENCOCOKKAN ===== */
+      cocokkanSets: [
+
+        // ---------- SET 1 : Nama bangun ----------
+        {
+          instruksi: "Pasangkan gambar bangun dengan namanya!",
+          pasangan: [
+            { kiri: { gambar: "img/bangun/segitiga.svg" }, kanan: "Segitiga" },
+            { kiri: { gambar: "img/bangun/persegi.svg" }, kanan: "Persegi" },
+            { kiri: { gambar: "img/bangun/persegi-panjang.svg" }, kanan: "Persegi panjang" },
+            { kiri: { gambar: "img/bangun/lingkaran.svg" }, kanan: "Lingkaran" },
+            { kiri: { gambar: "img/bangun/kubus.svg" }, kanan: "Kubus" },
+            { kiri: { gambar: "img/bangun/tabung.svg" }, kanan: "Tabung" }
+          ]
+        },
+
+        // ---------- SET 2 : Benda & bentuknya ----------
+        {
+          instruksi: "Pasangkan benda dengan bentuk bangun ruangnya!",
+          pasangan: [
+            { kiri: { gambar: "img/bangun/dadu.svg", teks: "Dadu" }, kanan: "Kubus" },
+            { kiri: { gambar: "img/bangun/lemari.svg", teks: "Lemari" }, kanan: "Balok" },
+            { kiri: { gambar: "img/bangun/kaleng.svg", teks: "Kaleng" }, kanan: "Tabung" },
+            { kiri: { gambar: "img/bangun/topi-ulang-tahun.svg", teks: "Topi ulang tahun" }, kanan: "Kerucut" },
+            { kiri: { gambar: "img/bangun/bola-sepak.svg", teks: "Bola sepak" }, kanan: "Bola" }
+          ]
+        },
+
+        // ---------- SET 3 : Ciri-ciri ----------
+        {
+          instruksi: "Pasangkan bangun dengan ciri-cirinya!",
+          pasangan: [
+            { kiri: { gambar: "img/bangun/segitiga.svg", teks: "Segitiga" }, kanan: "3 sisi dan 3 sudut" },
+            { kiri: { gambar: "img/bangun/persegi.svg", teks: "Persegi" }, kanan: "4 sisi sama panjang" },
+            { kiri: { gambar: "img/bangun/lingkaran.svg", teks: "Lingkaran" }, kanan: "Tidak memiliki sudut" },
+            { kiri: { gambar: "img/bangun/balok.svg", teks: "Balok" }, kanan: "6 sisi dan 8 titik sudut" },
+            { kiri: { gambar: "img/bangun/kerucut.svg", teks: "Kerucut" }, kanan: "Memiliki 1 titik puncak" }
+          ]
+        }
+      ]
+    }
+
+  ]
+};
+
 const SUBJECTS = [
   {
     id: "pancasila",
@@ -3256,6 +3718,14 @@ const SUBJECTS = [
    *  Modul: Cuaca (Bab 3 — Kenampakan Matahari dan Cuaca)
    * ============================================================ */
   IPAS_SUBJECT
+
+  ,
+
+  /* ============================================================
+   *  MATA PELAJARAN: MATEMATIKA
+   *  Modul: Bangun Datar dan Bangun Ruang
+   * ============================================================ */
+  MATEMATIKA_SUBJECT
 
   // ====== TAMBAHKAN MATA PELAJARAN BARU DI SINI ======
   // ,{

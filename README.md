@@ -2,7 +2,7 @@
 
 Website latihan belajar untuk anak kelas 2 SD. Berisi ringkasan, kuis pilihan
 ganda, soal esai, dan permainan mencocokkan untuk beberapa mata pelajaran
-(Pancasila, PJOK, Agama, Bahasa Indonesia, dan IPAS). Setiap mata pelajaran
+(Pancasila, PJOK, Agama, Bahasa Indonesia, IPAS, dan Matematika). Setiap mata pelajaran
 dibagi menjadi beberapa modul.
 
 Dibuat dari file statis (HTML, CSS, JavaScript) tanpa server khusus.
