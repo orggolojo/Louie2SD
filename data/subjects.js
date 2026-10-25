@@ -8,10 +8,12 @@
  *  2. Ganti isinya (id, nama, ikon, warna, dan topik-topiknya).
  *  3. Simpan file ini. Website akan otomatis menampilkannya.
  *
- *  Setiap "topik" boleh punya:
+ *  Setiap "topik" (tampil sebagai MODUL di website) boleh punya:
  *   - ringkasan        : daftar poin ringkasan (kalimat pendek)
  *   - pilihanGandaSets : BEBERAPA SET soal pilihan ganda
  *   - esaiSets         : BEBERAPA SET soal uraian singkat
+ *   - cocokkanSets     : BEBERAPA SET permainan mencocokkan
+ *  Soal & ringkasan boleh diberi "gambar": "img/.../file.svg"
  *
  *  >>> TENTANG "SET" SOAL <<<
  *  Agar anak bisa berlatih dengan banyak variasi soal, soal
@@ -1296,6 +1298,483 @@ const BAHASA_INDONESIA_SUBJECT = {
           ]
         }
 
+      ]
+    }
+
+  ]
+};
+
+/* ============================================================
+ *  DEFINISI MATA PELAJARAN IPAS
+ *  (dipisah agar mudah dibaca; dipakai di array SUBJECTS)
+ *  Modul: Cuaca — Bab 3 "Kenampakan Matahari dan Cuaca".
+ *
+ *  Soal boleh punya "gambar": "img/cuaca/nama-file.svg"
+ *  (ditampilkan di atas soal). Ringkasan juga boleh memakai
+ *  "gambar" sebagai pengganti emoji.
+ * ============================================================ */
+const IPAS_SUBJECT = {
+  id: "ipas",
+  nama: "IPAS",
+  ikon: "🔬",
+  warna: "#3a86ff",
+  deskripsi: "Mengenal matahari, cuaca, dan alam di sekitar kita.",
+  topik: [
+
+    /* ========================================================
+     *  MODUL 1 — CUACA
+     * ====================================================== */
+    {
+      id: "cuaca",
+      judul: "Cuaca",
+      emoji: "🌦️",
+
+      ringkasan: [
+        { emoji: "☀️", teks: "Matahari adalah sumber energi terbesar di Bumi. Sinarnya menerangi dan menghangatkan Bumi." },
+        { emoji: "🌍", teks: "Saat sinar matahari sampai di Bumi, hanya dua pertiganya yang diserap Bumi. Sisanya dipantulkan kembali ke luar angkasa." },
+        { emoji: "🌬️", teks: "Ada bagian Bumi yang panas dan ada yang dingin. Perbedaan inilah yang menyebabkan badai, angin, dan hujan." },
+        { emoji: "🌦️", teks: "Cuaca adalah keadaan udara, angin, panas, dan hujan pada suatu tempat dalam waktu singkat." },
+        { gambar: "img/cuaca/cerah.svg", teks: "Cuaca cerah: matahari bersinar terang dan langit biru. Cocok untuk menjemur pakaian dan bermain bola." },
+        { gambar: "img/cuaca/cerah-berawan.svg", teks: "Cuaca cerah berawan: matahari bersinar, tetapi ada beberapa awan di langit." },
+        { gambar: "img/cuaca/berawan.svg", teks: "Cuaca berawan: langit tertutup banyak awan. Jika awan gelap berkumpul dan angin kencang, biasanya akan turun hujan." },
+        { gambar: "img/cuaca/hujan.svg", teks: "Cuaca hujan: titik-titik air turun ke permukaan bumi." },
+        { gambar: "img/cuaca/hujan-petir.svg", teks: "Cuaca hujan petir: terjadi karena awan tebal menumpuk dan perbedaan panas di permukaan bumi." },
+        { emoji: "🔭", teks: "Perkiraan cuaca ditentukan berdasarkan bentuk awan dan kecepatan angin. Kadang tepat, kadang kurang tepat." },
+        { emoji: "🏢", teks: "Di Indonesia, informasi perkiraan cuaca diberikan oleh BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)." },
+        { emoji: "✈️", teks: "Perkiraan cuaca penting untuk pesawat dan kapal. Jika cuaca buruk, penerbangan dan pelayaran ditunda sampai cuaca membaik." },
+        { emoji: "🌾", teks: "Cuaca memengaruhi kegiatan manusia. Saat panas: membuat garam, menjemur gabah, dan menjemur ikan. Saat hujan: lebih banyak di dalam ruangan." },
+        { gambar: "img/cuaca/kaos-katun.svg", teks: "Saat cuaca panas, pakailah baju dari bahan katun karena mudah menyerap keringat." },
+        { gambar: "img/cuaca/jas-hujan.svg", teks: "Saat hujan, pakailah jas hujan ketika di luar rumah agar tubuh tidak basah. Saat udara dingin, pakailah jaket." },
+        { gambar: "img/cuaca/banjir.svg", teks: "Hujan yang turun terus-menerus dapat menyebabkan banjir." },
+        { gambar: "img/cuaca/posisi-matahari.svg", teks: "Pagi: matahari terbit di timur, udara sejuk. Siang: matahari di atas kepala, udara panas. Sore: matahari di barat, langit perlahan gelap." },
+        { emoji: "🌙", teks: "Malam hari kita bisa melihat bulan dan bintang. Matahari terbenam di arah barat." },
+        { gambar: "img/cuaca/bayang-pagi.svg", teks: "Benda yang disinari cahaya membentuk bayang-bayang. Bayang-bayang dipengaruhi posisi matahari." },
+        { emoji: "📏", teks: "Pagi hari bayangan panjang ke arah barat. Siang hari bayangan paling pendek. Sore hari bayangan panjang ke arah timur." },
+        { emoji: "🕶️", teks: "Matahari pagi mengandung vitamin D yang baik untuk tulang. Tetapi, jangan menatap matahari secara langsung karena dapat merusak mata." }
+      ],
+
+      /* ===== 4 SET SOAL PILIHAN GANDA ===== */
+      pilihanGandaSets: [
+
+        // ---------- SET 1 : Latihan Ulangan Bab 3 ----------
+        [
+          {
+            soal: "Lani dan ayah berolahraga di taman. Udara terasa sejuk dan matahari terbit di arah timur. Mereka berolahraga pada waktu ... hari.",
+            pilihan: ["Pagi", "Siang", "Sore"],
+            jawaban: 0,
+            penjelasan: "Pagi hari matahari terbit di timur dan udara terasa sejuk."
+          },
+          {
+            soal: "Matahari bersinar terang tepat di atas kepala. Udara terasa panas. Keadaan ini terjadi pada waktu ... hari.",
+            pilihan: ["Pagi", "Siang", "Sore"],
+            jawaban: 1,
+            penjelasan: "Siang hari matahari berada di atas kepala sehingga udara terasa panas."
+          },
+          {
+            soal: "Kondisi pada waktu sore hari adalah ....",
+            pilihan: ["Matahari bersinar paling terik", "Matahari muncul dari arah timur", "Langit perlahan-lahan menjadi gelap"],
+            jawaban: 2,
+            penjelasan: "Sore hari matahari bergerak ke barat dan langit perlahan-lahan menjadi gelap. Matahari muncul dari timur itu pagi hari."
+          },
+          {
+            soal: "Kegiatan yang biasa dilakukan pada sore hari adalah ....",
+            pilihan: ["🛏️ Bangun tidur (05.00)", "🥣 Sarapan sebelum sekolah (06.00)", "🚿 Mandi sore (16.00)"],
+            jawaban: 2,
+            penjelasan: "Pukul 16.00 adalah sore hari, waktunya mandi sore."
+          },
+          {
+            soal: "Benda yang disinari oleh cahaya akan membentuk ....",
+            pilihan: ["Bayang-bayang", "Gerakan", "Sinar"],
+            jawaban: 0,
+            penjelasan: "Benda yang terkena cahaya membentuk bayang-bayang di sisi yang tidak terkena cahaya."
+          },
+          {
+            soal: "Andi mengamati bayang-bayang tiang bendera di sekolahnya. Bayang-bayang paling pendek terjadi pada waktu ... hari.",
+            pilihan: ["Pagi", "Siang", "Sore"],
+            jawaban: 1,
+            penjelasan: "Siang hari matahari tepat di atas kepala, jadi bayangannya paling pendek."
+          },
+          {
+            gambar: "img/cuaca/langit-mendung.svg",
+            soal: "Langit tampak gelap, banyak awan gelap berkumpul, dan angin terasa lebih kencang. Kondisi cuaca seperti ini adalah ....",
+            pilihan: ["Hujan", "Cerah", "Berawan (mendung)"],
+            jawaban: 2,
+            penjelasan: "Itu ciri cuaca berawan atau mendung. Biasanya sebentar lagi turun hujan."
+          },
+          {
+            gambar: "img/cuaca/jemur-pakaian.svg",
+            soal: "Cuaca yang paling baik untuk menjemur pakaian adalah ....",
+            pilihan: ["Berawan", "Cerah", "Hujan"],
+            jawaban: 1,
+            penjelasan: "Saat cerah, panas matahari membuat pakaian cepat kering."
+          },
+          {
+            gambar: "img/cuaca/jas-hujan.svg",
+            soal: "Perhatikan gambar. Pakaian tersebut biasa digunakan saat cuaca ....",
+            pilihan: ["Cerah", "Hujan", "Berawan"],
+            jawaban: 1,
+            penjelasan: "Jas hujan dipakai saat hujan agar tubuh tidak basah."
+          },
+          {
+            gambar: "img/cuaca/banjir.svg",
+            soal: "Bencana alam yang dapat timbul jika hujan turun terus-menerus adalah ....",
+            pilihan: ["Banjir", "Gempa", "Tsunami"],
+            jawaban: 0,
+            penjelasan: "Hujan terus-menerus membuat air meluap sehingga terjadi banjir."
+          }
+        ],
+
+        // ---------- SET 2 : Lambang & tanda cuaca ----------
+        [
+          {
+            gambar: "img/cuaca/langit-cerah.svg",
+            soal: "Saat cuaca cerah, langit terlihat ....",
+            pilihan: ["Gelap", "Biru dan terang", "Mendung"],
+            jawaban: 1,
+            penjelasan: "Saat cerah, langit biru dan terang karena matahari bersinar."
+          },
+          {
+            soal: "Saat hujan, kita perlu memakai ....",
+            pilihan: ["Topi", "Kacamata", "Jas hujan"],
+            jawaban: 2,
+            penjelasan: "Jas hujan menjaga tubuh tetap kering saat hujan."
+          },
+          {
+            soal: "Cuaca berawan biasanya terjadi sebelum ....",
+            pilihan: ["Malam", "Hujan", "Pagi"],
+            jawaban: 1,
+            penjelasan: "Awan yang semakin banyak dan gelap biasanya membawa hujan."
+          },
+          {
+            gambar: "img/cuaca/angin.svg",
+            soal: "Saat berangin, benda yang sering terlihat bergerak adalah ....",
+            pilihan: ["Daun dan bendera", "Batu dan tanah", "Air dan pasir"],
+            jawaban: 0,
+            penjelasan: "Daun dan bendera ringan, jadi mudah bergerak tertiup angin."
+          },
+          {
+            soal: "Pada siang hari yang cerah, posisi matahari berada ....",
+            pilihan: ["Di bawah benda", "Tepat di atas kepala", "Di sebelah barat"],
+            jawaban: 1,
+            penjelasan: "Siang hari matahari berada tepat di atas kepala."
+          },
+          {
+            gambar: "img/cuaca/hujan-petir.svg",
+            soal: "Lambang cuaca pada gambar artinya ....",
+            pilihan: ["Cerah berawan", "Hujan petir", "Berawan"],
+            jawaban: 1,
+            penjelasan: "Awan gelap dengan kilat dan tetes air berarti hujan petir."
+          },
+          {
+            gambar: "img/cuaca/cerah-berawan.svg",
+            soal: "Lambang cuaca pada gambar artinya ....",
+            pilihan: ["Cerah berawan", "Hujan", "Berawan"],
+            jawaban: 0,
+            penjelasan: "Matahari yang sebagian tertutup awan berarti cerah berawan."
+          },
+          {
+            gambar: "img/cuaca/berawan.svg",
+            soal: "Lambang cuaca pada gambar artinya ....",
+            pilihan: ["Cerah", "Hujan petir", "Berawan"],
+            jawaban: 2,
+            penjelasan: "Hanya ada awan tanpa matahari dan tanpa hujan, berarti berawan."
+          },
+          {
+            soal: "Matahari tampak terbenam di arah ....",
+            pilihan: ["Timur", "Barat", "Utara"],
+            jawaban: 1,
+            penjelasan: "Matahari terbit di timur dan terbenam di barat."
+          },
+          {
+            soal: "Lembaga yang memberikan informasi perkiraan cuaca di Indonesia adalah ....",
+            pilihan: ["BMKG", "PLN", "PDAM"],
+            jawaban: 0,
+            penjelasan: "BMKG = Badan Meteorologi, Klimatologi, dan Geofisika."
+          }
+        ],
+
+        // ---------- SET 3 : Cuaca, kegiatan & pakaian ----------
+        [
+          {
+            soal: "Keadaan udara, angin, panas, dan hujan pada suatu tempat dalam waktu singkat disebut ....",
+            pilihan: ["Cuaca", "Pelangi", "Bayangan"],
+            jawaban: 0,
+            penjelasan: "Itulah arti cuaca."
+          },
+          {
+            soal: "Sumber energi terbesar di Bumi adalah ....",
+            pilihan: ["Bulan", "Matahari", "Bintang"],
+            jawaban: 1,
+            penjelasan: "Matahari memberi cahaya dan panas untuk seluruh Bumi."
+          },
+          {
+            gambar: "img/cuaca/kaos-katun.svg",
+            soal: "Saat cuaca panas, sebaiknya kita memakai pakaian dari bahan ....",
+            pilihan: ["Katun", "Wol yang tebal", "Plastik"],
+            jawaban: 0,
+            penjelasan: "Pakaian katun terasa sejuk dan menyerap keringat."
+          },
+          {
+            soal: "Pakaian katun cocok dipakai saat cuaca panas karena ....",
+            pilihan: ["Warnanya cerah", "Harganya mahal", "Mudah menyerap keringat"],
+            jawaban: 2,
+            penjelasan: "Katun mudah menyerap keringat sehingga badan tetap nyaman."
+          },
+          {
+            soal: "Pada saat hujan, manusia lebih banyak melakukan kegiatan di ....",
+            pilihan: ["Dalam ruangan", "Lapangan", "Pantai"],
+            jawaban: 0,
+            penjelasan: "Saat hujan kita berkegiatan di dalam ruangan agar tidak basah."
+          },
+          {
+            soal: "Kegiatan yang memanfaatkan cuaca panas adalah ....",
+            pilihan: ["Bermain hujan-hujanan", "Menjemur gabah", "Memakai jas hujan"],
+            jawaban: 1,
+            penjelasan: "Petani memanfaatkan panas matahari untuk menjemur gabah."
+          },
+          {
+            soal: "Perkiraan cuaca ditentukan berdasarkan ....",
+            pilihan: ["Warna bunga", "Jumlah rumah", "Bentuk awan dan kecepatan angin"],
+            jawaban: 2,
+            penjelasan: "Bentuk awan dan kecepatan angin membantu memperkirakan cuaca."
+          },
+          {
+            soal: "Jika cuaca buruk, penerbangan pesawat dan pelayaran kapal harus ....",
+            pilihan: ["Ditunda sampai cuaca membaik", "Tetap berangkat lebih cepat", "Berjalan tanpa pilot"],
+            jawaban: 0,
+            penjelasan: "Perjalanan ditunda agar penumpang tetap aman."
+          },
+          {
+            gambar: "img/cuaca/jaket.svg",
+            soal: "Pakaian yang tepat digunakan saat udara dingin adalah ....",
+            pilihan: ["Kaos tipis", "Jaket", "Baju renang"],
+            jawaban: 1,
+            penjelasan: "Jaket membuat tubuh tetap hangat."
+          },
+          {
+            soal: "Cuaca hujan petir terjadi karena ....",
+            pilihan: ["Matahari terlalu kecil", "Bulan muncul siang hari", "Awan tebal yang menumpuk"],
+            jawaban: 2,
+            penjelasan: "Awan tebal yang menumpuk dan perbedaan panas di permukaan bumi menyebabkan hujan petir."
+          }
+        ],
+
+        // ---------- SET 4 : Matahari & bayang-bayang ----------
+        [
+          {
+            gambar: "img/cuaca/bayang-pagi.svg",
+            soal: "Perhatikan matahari dan bayangan tiang bendera. Kapan keadaan ini terjadi?",
+            pilihan: ["Pagi hari", "Siang hari", "Sore hari"],
+            jawaban: 0,
+            penjelasan: "Matahari di timur dan bayangan panjang ke barat: itu pagi hari."
+          },
+          {
+            gambar: "img/cuaca/bayang-sore.svg",
+            soal: "Perhatikan matahari dan bayangan tiang bendera. Kapan keadaan ini terjadi?",
+            pilihan: ["Pagi hari", "Siang hari", "Sore hari"],
+            jawaban: 2,
+            penjelasan: "Matahari di barat dan bayangan panjang ke timur: itu sore hari."
+          },
+          {
+            gambar: "img/cuaca/bayang-siang.svg",
+            soal: "Perhatikan matahari dan bayangan tiang bendera. Kapan keadaan ini terjadi?",
+            pilihan: ["Pagi hari", "Siang hari", "Sore hari"],
+            jawaban: 1,
+            penjelasan: "Matahari di atas kepala dan bayangan sangat pendek: itu siang hari."
+          },
+          {
+            soal: "Bayang-bayang yang terbentuk pada sore hari mengarah ke ....",
+            pilihan: ["Timur", "Barat", "Atas"],
+            jawaban: 0,
+            penjelasan: "Sore hari matahari di barat, jadi bayangan jatuh ke arah timur."
+          },
+          {
+            soal: "Bayang-bayang yang dihasilkan sebuah benda dipengaruhi oleh ....",
+            pilihan: ["Warna benda", "Posisi matahari", "Suara angin"],
+            jawaban: 1,
+            penjelasan: "Arah dan panjang bayangan berubah mengikuti posisi matahari."
+          },
+          {
+            soal: "Cahaya matahari pagi mengandung vitamin ....",
+            pilihan: ["A", "D", "C"],
+            jawaban: 1,
+            penjelasan: "Matahari pagi membantu tubuh membuat vitamin D untuk tulang yang kuat."
+          },
+          {
+            soal: "Mengapa kita tidak boleh menatap matahari secara langsung?",
+            pilihan: ["Dapat merusak mata", "Membuat kita lapar", "Matahari bisa hilang"],
+            jawaban: 0,
+            penjelasan: "Sinar matahari sangat kuat dan bisa merusak mata."
+          },
+          {
+            gambar: "img/cuaca/langit-cerah.svg",
+            soal: "Andi dapat bermain bola di lapangan ketika cuaca ....",
+            pilihan: ["Hujan petir", "Hujan", "Cerah"],
+            jawaban: 2,
+            penjelasan: "Saat cerah, bermain di luar aman dan menyenangkan."
+          },
+          {
+            soal: "Benda langit yang dapat kita lihat pada malam hari adalah ....",
+            pilihan: ["Matahari", "Bulan dan bintang", "Pelangi"],
+            jawaban: 1,
+            penjelasan: "Malam hari tampak bulan dan bintang."
+          },
+          {
+            soal: "Ketika sinar matahari sampai di Bumi, berapa bagian yang diserap Bumi?",
+            pilihan: ["Dua pertiga", "Semuanya", "Tidak ada"],
+            jawaban: 0,
+            penjelasan: "Dua pertiga diserap Bumi, sisanya dipantulkan ke luar angkasa."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET SOAL ESAI ===== */
+      esaiSets: [
+
+        // ---------- SET 1 : Kerjakan soal-soal berikut ----------
+        [
+          {
+            soal: "Tulislah benda langit yang dapat dilihat pada pagi, siang, sore, dan malam hari.",
+            contohJawaban: "Pagi, siang, dan sore: matahari (dan awan). Malam: bulan dan bintang."
+          },
+          {
+            soal: "Mengapa posisi bayang-bayang pada waktu pagi dan sore hari berbeda?",
+            contohJawaban: "Karena posisi matahari berpindah. Pagi matahari di timur sehingga bayangan ke barat. Sore matahari di barat sehingga bayangan ke timur."
+          },
+          {
+            soal: "Tulislah hal-hal yang dapat menentukan perkiraan cuaca.",
+            contohJawaban: "Bentuk awan dan kecepatan angin."
+          },
+          {
+            gambar: "img/cuaca/lambang-abcd.svg",
+            soal: "Perhatikan gambar. Tulislah arti lambang cuaca a, b, c, dan d.",
+            contohJawaban: "a = cerah berawan, b = cerah, c = hujan, d = berawan."
+          },
+          {
+            gambar: "img/cuaca/dua-langit.svg",
+            soal: "Tulislah ciri-ciri cuaca pada gambar a dan b.",
+            contohJawaban: "a (cerah): langit biru dan terang, awannya sedikit dan putih, matahari bersinar. b (mendung/berawan): langit gelap, banyak awan gelap, angin bertiup kencang."
+          },
+          {
+            gambar: "img/cuaca/dua-langit.svg",
+            soal: "Apa pakaian yang tepat digunakan atau disiapkan saat cuaca a dan b?",
+            contohJawaban: "a: baju katun yang menyerap keringat dan topi. b: siapkan jas hujan atau payung karena akan turun hujan."
+          },
+          {
+            soal: "Sebutkan aktivitas yang dilakukan pada pagi hari.",
+            contohJawaban: "Bangun tidur, mandi, sarapan, berolahraga, dan berangkat ke sekolah."
+          }
+        ],
+
+        // ---------- SET 2 : Matahari di sekitar kita ----------
+        [
+          {
+            soal: "Matahari membuat gelap menjadi ....",
+            contohJawaban: "Terang."
+          },
+          {
+            gambar: "img/cuaca/jemur-pakaian.svg",
+            soal: "Ibu menjemur pakaian pada siang hari. Ibu memanfaatkan ....",
+            contohJawaban: "Panas matahari, supaya pakaian cepat kering."
+          },
+          {
+            soal: "Cahaya matahari pagi mengandung vitamin ....",
+            contohJawaban: "Vitamin D, yang baik untuk tulang."
+          },
+          {
+            soal: "Sinar matahari dimanfaatkan petani untuk ....",
+            contohJawaban: "Menjemur gabah (padi). Nelayan juga memakainya untuk mengeringkan ikan."
+          },
+          {
+            soal: "Pada siang hari, matahari berada di ....",
+            contohJawaban: "Tepat di atas kepala."
+          },
+          {
+            soal: "Sebutkan 3 cara agar tidak terkena panas matahari!",
+            contohJawaban: "Memakai topi, memakai payung, berteduh di tempat teduh, atau memakai baju lengan panjang."
+          },
+          {
+            soal: "Mengapa kita tidak boleh menatap matahari secara langsung?",
+            contohJawaban: "Karena sinar matahari sangat terang dan kuat sehingga dapat merusak mata."
+          }
+        ],
+
+        // ---------- SET 3 : Teka-teki & bayangan ----------
+        [
+          {
+            soal: "Tuliskan dua manfaat sinar matahari bagi manusia!",
+            contohJawaban: "Menerangi bumi, menghangatkan tubuh, mengeringkan pakaian, dan membantu tubuh membuat vitamin D."
+          },
+          {
+            gambar: "img/cuaca/posisi-matahari.svg",
+            soal: "Ceritakan (atau gambarkan) bayangan tiang bendera saat pagi, siang, dan sore hari!",
+            contohJawaban: "Pagi: bayangan panjang ke arah barat. Siang: bayangan sangat pendek, di bawah tiang. Sore: bayangan panjang ke arah timur."
+          },
+          {
+            soal: "🧩 Teka-teki (8 huruf): Sumber energi terbesar di Bumi. M _ _ _ _ _ _ I",
+            contohJawaban: "MATAHARI"
+          },
+          {
+            soal: "🧩 Teka-teki (5 huruf): Turunnya titik-titik air ke permukaan bumi. H _ _ _ N",
+            contohJawaban: "HUJAN"
+          },
+          {
+            soal: "🧩 Teka-teki (5 huruf): Pakaian yang digunakan saat udara dingin. J _ _ _ T",
+            contohJawaban: "JAKET"
+          },
+          {
+            soal: "🧩 Teka-teki (5 huruf): Bahan pakaian yang cocok digunakan saat cuaca cerah. K _ _ _ N",
+            contohJawaban: "KATUN"
+          },
+          {
+            soal: "🧩 Teka-teki (5 huruf): Selain bentuk awan, hal yang memengaruhi perkiraan cuaca. A _ _ _ N",
+            contohJawaban: "ANGIN"
+          },
+          {
+            soal: "Mengapa pesawat dan kapal harus menunda perjalanan saat cuaca buruk?",
+            contohJawaban: "Agar penumpang tetap aman. Perjalanan dilanjutkan setelah cuaca membaik."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET MENCOCOKKAN ===== */
+      cocokkanSets: [
+
+        // ---------- SET 1 : Lambang cuaca ----------
+        {
+          instruksi: "Pasangkan lambang cuaca dengan namanya!",
+          pasangan: [
+            { kiri: { gambar: "img/cuaca/cerah.svg" }, kanan: "Cerah" },
+            { kiri: { gambar: "img/cuaca/cerah-berawan.svg" }, kanan: "Cerah berawan" },
+            { kiri: { gambar: "img/cuaca/berawan.svg" }, kanan: "Berawan" },
+            { kiri: { gambar: "img/cuaca/hujan.svg" }, kanan: "Hujan" },
+            { kiri: { gambar: "img/cuaca/hujan-petir.svg" }, kanan: "Hujan petir" }
+          ]
+        },
+
+        // ---------- SET 2 : Cuaca & yang kita lakukan ----------
+        {
+          instruksi: "Pasangkan keadaan cuaca dengan pakaian atau kegiatan yang tepat!",
+          pasangan: [
+            { kiri: { gambar: "img/cuaca/jemur-pakaian.svg", teks: "Cerah" }, kanan: "Menjemur pakaian dan gabah" },
+            { kiri: { gambar: "img/cuaca/kaos-katun.svg", teks: "Panas" }, kanan: "Memakai baju katun" },
+            { kiri: { gambar: "img/cuaca/jas-hujan.svg", teks: "Hujan" }, kanan: "Memakai jas hujan" },
+            { kiri: { gambar: "img/cuaca/jaket.svg", teks: "Dingin" }, kanan: "Memakai jaket" },
+            { kiri: { gambar: "img/cuaca/hujan-petir.svg", teks: "Hujan petir" }, kanan: "Tetap di dalam ruangan" }
+          ]
+        },
+
+        // ---------- SET 3 : Waktu & matahari ----------
+        {
+          instruksi: "Pasangkan gambar dengan keterangan yang benar!",
+          pasangan: [
+            { kiri: { gambar: "img/cuaca/bayang-pagi.svg", teks: "Pagi" }, kanan: "Matahari terbit di timur, udara sejuk" },
+            { kiri: { gambar: "img/cuaca/bayang-siang.svg", teks: "Siang" }, kanan: "Matahari di atas kepala, bayangan paling pendek" },
+            { kiri: { gambar: "img/cuaca/bayang-sore.svg", teks: "Sore" }, kanan: "Matahari di barat, bayangan ke timur" },
+            { kiri: { emoji: "🌙", teks: "Malam" }, kanan: "Bulan dan bintang tampak" },
+            { kiri: { emoji: "🏢", teks: "BMKG" }, kanan: "Memberi informasi perkiraan cuaca" }
+          ]
+        }
       ]
     }
 
@@ -2769,6 +3248,14 @@ const SUBJECTS = [
    *  (6 set), dan soal esai ditambah agar latihan lebih banyak.
    * ============================================================ */
   BAHASA_INDONESIA_SUBJECT
+
+  ,
+
+  /* ============================================================
+   *  MATA PELAJARAN: IPAS
+   *  Modul: Cuaca (Bab 3 — Kenampakan Matahari dan Cuaca)
+   * ============================================================ */
+  IPAS_SUBJECT
 
   // ====== TAMBAHKAN MATA PELAJARAN BARU DI SINI ======
   // ,{

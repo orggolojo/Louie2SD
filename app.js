@@ -23,6 +23,15 @@ function el(tag, opts = {}, children = []) {
 
 function clear() { app.innerHTML = ""; }
 
+// Gambar opsional untuk soal / ringkasan (properti "gambar" di data).
+function gambar(src, kelas, alt = "") {
+  const img = el("img", { class: kelas });
+  img.src = src;
+  img.alt = alt;
+  img.loading = "lazy";
+  return img;
+}
+
 function findSubject(id) { return SUBJECTS.find((s) => s.id === id); }
 function findTopic(subject, id) { return subject.topik.find((t) => t.id === id); }
 
@@ -100,7 +109,7 @@ function renderHome() {
       el("span", { class: "big-icon", text: s.ikon }),
       el("h2", { text: s.nama }),
       el("p", { text: s.deskripsi || "" }),
-      el("span", { class: "pill", text: jumlahTopik + " topik seru" })
+      el("span", { class: "pill", text: jumlahTopik + " modul seru" })
     ]);
     card.style.borderColor = s.warna;
     grid.appendChild(card);
@@ -117,7 +126,7 @@ function renderHome() {
 }
 
 /* ============================================================
-   HALAMAN 2 — Daftar topik dalam satu mata pelajaran
+   HALAMAN 2 — Daftar modul (topik) dalam satu mata pelajaran
    ============================================================ */
 function renderSubject(subjectId) {
   const subject = findSubject(subjectId);
@@ -128,7 +137,7 @@ function renderSubject(subjectId) {
 
   app.appendChild(backLink("Kembali", renderHome));
   app.appendChild(el("h1", { class: "page-title", text: subject.ikon + " " + subject.nama }));
-  app.appendChild(el("p", { class: "page-subtitle", text: "Pilih topik yang mau kamu pelajari." }));
+  app.appendChild(el("p", { class: "page-subtitle", text: "Pilih modul yang mau kamu pelajari." }));
 
   const grid = el("div", { class: "topic-grid" });
   subject.topik.forEach((t) => {
@@ -224,7 +233,9 @@ function renderRingkasan(root, topic) {
   const list = el("div", { class: "summary-list" });
   topic.ringkasan.forEach((item, i) => {
     const row = el("div", { class: "summary-item" }, [
-      el("span", { class: "s-emoji", text: item.emoji || "⭐" }),
+      item.gambar
+        ? gambar(item.gambar, "s-img", item.teks)
+        : el("span", { class: "s-emoji", text: item.emoji || "⭐" }),
       el("span", { text: item.teks })
     ]);
     row.style.animationDelay = (i * 0.06) + "s";
@@ -274,6 +285,7 @@ function renderKuis(root, subject, topic) {
 
     area.innerHTML = "";
     const card = el("div", { class: "quiz-card" });
+    if (q.gambar) card.appendChild(gambar(q.gambar, "q-img", "Gambar soal"));
     card.appendChild(el("div", { class: "quiz-question", text: q.soal }));
 
     const opts = el("div", { class: "options" });
@@ -343,7 +355,7 @@ function renderKuis(root, subject, topic) {
       el("div", { class: "result-msg", text: pesan }),
       el("div", { class: "btn-row" }, [
         el("button", { class: "btn big", text: "Coba Set Lain 🔄", on: { click: () => { muatSet(); tampilkanSoal(); } } }),
-        el("button", { class: "btn secondary", text: "Kembali ke Topik", on: { click: () => renderSubject(subject.id) } })
+        el("button", { class: "btn secondary", text: "Kembali ke Modul", on: { click: () => renderSubject(subject.id) } })
       ])
     ]);
     area.appendChild(card);
@@ -391,6 +403,7 @@ function renderEsai(root, topic) {
         el("span", { class: "essay-num", text: String(i + 1) }),
         document.createTextNode(item.soal)
       ]));
+      if (item.gambar) card.appendChild(gambar(item.gambar, "q-img", "Gambar soal"));
       const textarea = el("textarea", { });
       card.appendChild(textarea);
       const answer = el("div", { class: "answer-box", html: "<strong>Contoh jawaban:</strong> " + item.contohJawaban });

@@ -244,6 +244,12 @@ h1, h2, h3, .brand-text, .btn, .tab {
   font-size: 1.1rem;
   animation: pop 0.4s ease both;
 }
+.summary-item .s-img {
+  width: 56px;
+  height: 56px;
+  flex: none;
+  object-fit: contain;
+}
 .summary-item .s-emoji {
   font-size: 2rem;
   background: var(--biru-muda);
@@ -297,6 +303,15 @@ h1, h2, h3, .brand-text, .btn, .tab {
   max-width: 600px;
   margin: 0 auto;
   animation: pop 0.35s ease both;
+}
+.q-img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  max-height: 230px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  border-radius: 16px;
 }
 .quiz-question {
   font-size: 1.35rem;
