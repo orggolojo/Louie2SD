@@ -2243,6 +2243,458 @@ const MATEMATIKA_SUBJECT = {
   ]
 };
 
+/* ============================================================
+ *  DEFINISI MATA PELAJARAN INFORMATIKA
+ *  (dipisah agar mudah dibaca; dipakai di array SUBJECTS)
+ *  Modul: Pengenalan Perangkat TIK — Bab 2 Sesi 1
+ *  (Buku Informatika Erlangga Kelas 2).
+ * ============================================================ */
+const INFORMATIKA_SUBJECT = {
+  id: "informatika",
+  nama: "Informatika",
+  ikon: "💻",
+  warna: "#0096c7",
+  deskripsi: "Mengenal komputer, ponsel, dan alat TIK lain serta cara memakainya dengan bijak.",
+  topik: [
+
+    /* ========================================================
+     *  MODUL 1 — PENGENALAN PERANGKAT TIK
+     * ====================================================== */
+    {
+      id: "perangkat-tik",
+      judul: "Pengenalan Perangkat TIK",
+      emoji: "📱",
+
+      ringkasan: [
+        { emoji: "💡", teks: "TIK adalah singkatan dari Teknologi Informasi dan Komunikasi." },
+        { emoji: "🤝", teks: "TIK digunakan untuk berbagi informasi dan berkomunikasi secara cepat, baik, dan bijak." },
+        { gambar: "img/tik/telepon-kabel.svg", teks: "Telepon kabel: alat komunikasi untuk berbicara dengan orang yang tinggal sangat jauh." },
+        { gambar: "img/tik/telepon-genggam.svg", teks: "Telepon genggam: alat komunikasi tanpa kabel yang bisa dibawa ke mana-mana. Bisa untuk menelepon, SMS, dan MMS." },
+        { gambar: "img/tik/ponsel-pintar.svg", teks: "Ponsel pintar (smartphone): alat komunikasi serbabisa yang memakai internet. Bisa untuk menelepon, mengirim pesan WhatsApp, menonton video, mendengar musik, dan e-mail." },
+        { gambar: "img/tik/komputer-meja.svg", teks: "Komputer meja (PC) dan laptop: alat elektronik pengolah data seperti angka, gambar, tulisan, suara, dan video." },
+        { gambar: "img/tik/laptop.svg", teks: "Dengan komputer kita bisa mengetik, menggambar, berhitung, belajar, dan menonton film. Laptop mudah dibawa ke mana-mana." },
+        { gambar: "img/tik/internet.svg", teks: "Internet memperluas fungsi komputer: mencari informasi, bermain game online, dan mengirim e-mail." },
+        { gambar: "img/tik/televisi.svg", teks: "Televisi dan Smart TV menampilkan gambar dan suara, seperti ilmu pengetahuan, berita, dan film. Tontonlah acara yang sesuai usia." },
+        { gambar: "img/tik/jam-pintar.svg", teks: "Jam pintar (smartwatch) adalah komputer berbentuk jam. Bisa untuk menelepon, SMS, dan mengukur denyut nadi, suhu tubuh, serta kecepatan berjalan atau berlari." },
+        { gambar: "img/tik/radio.svg", teks: "Radio juga perangkat TIK. Radio memperdengarkan suara, seperti berita dan lagu." },
+        { gambar: "img/tik/monitor.svg", teks: "Bagian komputer: monitor (layar untuk melihat), keyboard (untuk mengetik), mouse (untuk menggerakkan penunjuk), dan CPU (otak komputer)." },
+        { emoji: "🧽", teks: "Merawat perangkat TIK: bersihkan dengan kain lembut yang kering, jauhkan dari air, dan simpan di tempat yang aman." },
+        { emoji: "🙌", teks: "Gunakan perangkat TIK dengan tangan bersih dan kering. Jangan makan atau minum di dekat komputer." },
+        { emoji: "🔌", teks: "Matikan komputer dengan cara yang benar (Shut Down), jangan langsung mencabut kabelnya." },
+        { emoji: "👀", teks: "Gunakan dengan bijak: duduk tegak, jaga jarak mata dari layar, istirahatkan mata, batasi waktu bermain, dan minta izin orang tua." }
+      ],
+
+      /* ===== 4 SET SOAL PILIHAN GANDA ===== */
+      pilihanGandaSets: [
+
+        // ---------- SET 1 : Mengenal perangkat TIK ----------
+        [
+          {
+            soal: "TIK adalah singkatan dari ....",
+            pilihan: ["Teknologi Informasi dan Komunikasi", "Tempat Istirahat Kita", "Tulisan, Ilmu, dan Kertas"],
+            jawaban: 0,
+            penjelasan: "TIK = Teknologi Informasi dan Komunikasi."
+          },
+          {
+            soal: "TIK digunakan untuk ....",
+            pilihan: ["Memasak nasi", "Berbagi informasi dan berkomunikasi", "Menyiram tanaman"],
+            jawaban: 1,
+            penjelasan: "TIK membantu kita berbagi informasi dan berkomunikasi dengan cepat."
+          },
+          {
+            gambar: "img/tik/telepon-kabel.svg",
+            soal: "Alat pada gambar bernama ....",
+            pilihan: ["Radio", "Telepon kabel", "Televisi"],
+            jawaban: 1,
+            penjelasan: "Itu telepon kabel, untuk berbicara dengan orang yang jauh."
+          },
+          {
+            gambar: "img/tik/ponsel-pintar.svg",
+            soal: "Alat pada gambar bernama ....",
+            pilihan: ["Ponsel pintar (smartphone)", "Kalkulator", "Jam dinding"],
+            jawaban: 0,
+            penjelasan: "Ponsel pintar memiliki layar sentuh dan banyak aplikasi."
+          },
+          {
+            gambar: "img/tik/jam-pintar.svg",
+            soal: "Komputer kecil berbentuk jam disebut ....",
+            pilihan: ["Jam pasir", "Jam dinding", "Jam pintar (smartwatch)"],
+            jawaban: 2,
+            penjelasan: "Jam pintar bisa menelepon dan mengukur denyut nadi."
+          },
+          {
+            gambar: "img/tik/televisi.svg",
+            soal: "Televisi menampilkan ....",
+            pilihan: ["Gambar dan suara", "Hanya suara", "Hanya tulisan"],
+            jawaban: 0,
+            penjelasan: "Televisi menampilkan gambar dan suara."
+          },
+          {
+            gambar: "img/tik/laptop.svg",
+            soal: "Komputer yang mudah dibawa ke mana-mana adalah ....",
+            pilihan: ["Komputer meja (PC)", "Laptop", "Televisi"],
+            jawaban: 1,
+            penjelasan: "Laptop ringan dan bisa dilipat, jadi mudah dibawa."
+          },
+          {
+            gambar: "img/tik/radio.svg",
+            soal: "Perangkat TIK yang hanya memperdengarkan suara adalah ....",
+            pilihan: ["Radio", "Televisi", "Komputer"],
+            jawaban: 0,
+            penjelasan: "Radio hanya mengeluarkan suara, tidak ada gambarnya."
+          },
+          {
+            soal: "Berikut ini yang BUKAN perangkat TIK adalah ....",
+            pilihan: ["Laptop", "Telepon genggam", "Sapu"],
+            jawaban: 2,
+            penjelasan: "Sapu adalah alat kebersihan, bukan perangkat TIK."
+          },
+          {
+            soal: "Telepon genggam dapat digunakan untuk ....",
+            pilihan: ["Menelepon dan mengirim SMS", "Memasak", "Mencuci baju"],
+            jawaban: 0,
+            penjelasan: "Telepon genggam bisa untuk menelepon, SMS, dan MMS."
+          }
+        ],
+
+        // ---------- SET 2 : Kegunaan perangkat TIK ----------
+        [
+          {
+            soal: "Alat komunikasi tanpa kabel yang dapat dibawa ke mana-mana adalah ....",
+            pilihan: ["Telepon kabel", "Telepon genggam", "Komputer meja"],
+            jawaban: 1,
+            penjelasan: "Telepon genggam tidak memakai kabel dan bisa dibawa ke mana-mana."
+          },
+          {
+            soal: "Mengirim pesan lewat WhatsApp dapat dilakukan dengan ....",
+            pilihan: ["Radio", "Ponsel pintar", "Telepon kabel"],
+            jawaban: 1,
+            penjelasan: "WhatsApp adalah aplikasi di ponsel pintar yang memakai internet."
+          },
+          {
+            soal: "Komputer adalah alat elektronik untuk ....",
+            pilihan: ["Mengolah data", "Mendinginkan makanan", "Menerangi ruangan"],
+            jawaban: 0,
+            penjelasan: "Komputer mengolah angka, gambar, tulisan, suara, dan video."
+          },
+          {
+            soal: "Dengan komputer kita bisa melakukan hal berikut, KECUALI ....",
+            pilihan: ["Mengetik", "Menggambar", "Menanam padi"],
+            jawaban: 2,
+            penjelasan: "Menanam padi dilakukan di sawah, bukan dengan komputer."
+          },
+          {
+            gambar: "img/tik/internet.svg",
+            soal: "Mencari informasi dan mengirim e-mail memerlukan ....",
+            pilihan: ["Internet", "Senter", "Kipas angin"],
+            jawaban: 0,
+            penjelasan: "Internet memperluas fungsi komputer dan ponsel."
+          },
+          {
+            soal: "Jam pintar dapat mengukur ....",
+            pilihan: ["Tinggi pohon", "Denyut nadi", "Berat lemari"],
+            jawaban: 1,
+            penjelasan: "Jam pintar bisa mengukur denyut nadi, suhu tubuh, dan kecepatan lari."
+          },
+          {
+            soal: "Acara televisi yang baik ditonton anak adalah acara yang ....",
+            pilihan: ["Sesuai usia", "Untuk orang dewasa", "Sampai larut malam"],
+            jawaban: 0,
+            penjelasan: "Tontonlah acara yang sesuai usia, seperti acara ilmu pengetahuan."
+          },
+          {
+            soal: "Nenek tinggal di kota yang jauh. Agar bisa berbicara dengan nenek, kita menggunakan ....",
+            pilihan: ["Televisi", "Telepon", "Radio"],
+            jawaban: 1,
+            penjelasan: "Telepon membantu kita berbicara dengan orang yang jauh."
+          },
+          {
+            soal: "Ayah ingin mengetik surat dan mencetaknya. Ayah menggunakan ....",
+            pilihan: ["Komputer", "Jam pintar", "Radio"],
+            jawaban: 0,
+            penjelasan: "Komputer bisa digunakan untuk mengetik."
+          },
+          {
+            soal: "Kita dapat mendengarkan berita dan lagu tanpa gambar melalui ....",
+            pilihan: ["Laptop", "Radio", "Smart TV"],
+            jawaban: 1,
+            penjelasan: "Radio hanya memperdengarkan suara."
+          }
+        ],
+
+        // ---------- SET 3 : Bagian komputer ----------
+        [
+          {
+            gambar: "img/tik/monitor.svg",
+            soal: "Bagian komputer pada gambar disebut ....",
+            pilihan: ["Monitor", "Mouse", "Keyboard"],
+            jawaban: 0,
+            penjelasan: "Monitor adalah layar untuk melihat tampilan komputer."
+          },
+          {
+            gambar: "img/tik/keyboard.svg",
+            soal: "Bagian komputer pada gambar digunakan untuk ....",
+            pilihan: ["Melihat gambar", "Mengetik huruf dan angka", "Mendengar suara"],
+            jawaban: 1,
+            penjelasan: "Keyboard (papan ketik) digunakan untuk mengetik."
+          },
+          {
+            gambar: "img/tik/mouse.svg",
+            soal: "Bagian komputer pada gambar bernama ....",
+            pilihan: ["Keyboard", "CPU", "Mouse"],
+            jawaban: 2,
+            penjelasan: "Mouse digunakan untuk menggerakkan penunjuk dan mengeklik."
+          },
+          {
+            gambar: "img/tik/cpu.svg",
+            soal: "Bagian komputer yang disebut \"otak komputer\" adalah ....",
+            pilihan: ["CPU", "Monitor", "Mouse"],
+            jawaban: 0,
+            penjelasan: "CPU mengolah semua perintah, seperti otak."
+          },
+          {
+            soal: "Untuk menggerakkan penunjuk (kursor) di layar, kita menggunakan ....",
+            pilihan: ["Monitor", "Mouse", "Speaker"],
+            jawaban: 1,
+            penjelasan: "Mouse menggerakkan kursor di layar."
+          },
+          {
+            soal: "Komputer meja (PC) terdiri dari monitor, keyboard, mouse, dan ....",
+            pilihan: ["Kulkas", "CPU", "Kompor"],
+            jawaban: 1,
+            penjelasan: "CPU adalah bagian penting komputer meja."
+          },
+          {
+            gambar: "img/tik/komputer-meja.svg",
+            soal: "Perangkat pada gambar disebut ....",
+            pilihan: ["Komputer meja (PC)", "Telepon kabel", "Jam pintar"],
+            jawaban: 0,
+            penjelasan: "Ada monitor, CPU, keyboard, dan mouse: itu komputer meja."
+          },
+          {
+            soal: "Komputer dapat mengolah data berupa ....",
+            pilihan: ["Angka, gambar, tulisan, suara, dan video", "Hanya angka", "Hanya suara"],
+            jawaban: 0,
+            penjelasan: "Komputer bisa mengolah banyak jenis data."
+          },
+          {
+            soal: "Untuk menggambar di komputer, kita bisa menggunakan ....",
+            pilihan: ["Mouse", "Kabel listrik", "Speaker"],
+            jawaban: 0,
+            penjelasan: "Mouse membantu kita menggambar garis dan bentuk di layar."
+          },
+          {
+            soal: "Laptop sudah memiliki layar dan keyboard yang ....",
+            pilihan: ["Terpisah jauh", "Menyatu dan bisa dilipat", "Tidak ada"],
+            jawaban: 1,
+            penjelasan: "Layar dan keyboard laptop menyatu sehingga mudah dibawa."
+          }
+        ],
+
+        // ---------- SET 4 : Merawat & memakai dengan bijak ----------
+        [
+          {
+            soal: "Layar komputer yang berdebu sebaiknya dibersihkan dengan ....",
+            pilihan: ["Kain lembut yang kering", "Air sabun yang banyak", "Sikat kawat"],
+            jawaban: 0,
+            penjelasan: "Kain lembut yang kering tidak merusak layar."
+          },
+          {
+            soal: "Sikap yang BENAR saat memakai komputer adalah ....",
+            pilihan: ["Makan dan minum di dekat keyboard", "Memakai dengan tangan bersih dan kering", "Memukul keyboard dengan keras"],
+            jawaban: 1,
+            penjelasan: "Tangan bersih dan kering menjaga komputer tetap awet."
+          },
+          {
+            soal: "Cara mematikan komputer yang benar adalah ....",
+            pilihan: ["Mencabut kabel listrik", "Memilih menu Shut Down", "Menutup layar dengan kain"],
+            jawaban: 1,
+            penjelasan: "Pilih Shut Down agar komputer mati dengan aman."
+          },
+          {
+            soal: "Perangkat TIK harus dijauhkan dari ....",
+            pilihan: ["Air", "Meja", "Buku"],
+            jawaban: 0,
+            penjelasan: "Air bisa membuat perangkat elektronik rusak."
+          },
+          {
+            soal: "Saat menonton atau memakai ponsel, mata kita sebaiknya ....",
+            pilihan: ["Sangat dekat dengan layar", "Diberi jarak dan diistirahatkan", "Tidak berkedip"],
+            jawaban: 1,
+            penjelasan: "Jaga jarak dan istirahatkan mata agar mata tetap sehat."
+          },
+          {
+            soal: "Sebelum memakai ponsel atau laptop milik orang tua, kita harus ....",
+            pilihan: ["Langsung mengambilnya", "Meminta izin", "Menyembunyikannya"],
+            jawaban: 1,
+            penjelasan: "Minta izin dulu adalah sikap yang sopan dan bijak."
+          },
+          {
+            soal: "Bermain game di ponsel sebaiknya ....",
+            pilihan: ["Seharian penuh", "Dibatasi waktunya", "Sampai larut malam"],
+            jawaban: 1,
+            penjelasan: "Batasi waktu agar tetap punya waktu belajar, bermain di luar, dan beristirahat."
+          },
+          {
+            soal: "Posisi duduk yang baik saat memakai komputer adalah ....",
+            pilihan: ["Tegak dan nyaman", "Tidur telungkup", "Membungkuk dekat layar"],
+            jawaban: 0,
+            penjelasan: "Duduk tegak membuat punggung dan mata tidak cepat lelah."
+          },
+          {
+            soal: "Setelah selesai dipakai, laptop sebaiknya disimpan ....",
+            pilihan: ["Di lantai dekat pintu", "Di tempat yang aman dan kering", "Di kamar mandi"],
+            jawaban: 1,
+            penjelasan: "Tempat yang aman dan kering membuat laptop awet."
+          },
+          {
+            soal: "Menggunakan TIK dengan bijak artinya ....",
+            pilihan: [
+              "Memakai untuk belajar dan berkomunikasi dengan sopan",
+              "Mengirim pesan yang mengejek teman",
+              "Menonton acara orang dewasa"
+            ],
+            jawaban: 0,
+            penjelasan: "Gunakan TIK untuk hal yang baik dan bermanfaat."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET SOAL ESAI ===== */
+      esaiSets: [
+
+        // ---------- SET 1 : Mengenal perangkat TIK ----------
+        [
+          {
+            soal: "Apa kepanjangan dari TIK?",
+            contohJawaban: "Teknologi Informasi dan Komunikasi."
+          },
+          {
+            soal: "Sebutkan 4 contoh perangkat TIK yang ada di rumahmu!",
+            contohJawaban: "Televisi, ponsel pintar, laptop, dan radio. (Bisa juga: komputer, telepon, jam pintar.)"
+          },
+          {
+            gambar: "img/tik/ponsel-pintar.svg",
+            soal: "Sebutkan 3 kegunaan ponsel pintar!",
+            contohJawaban: "Menelepon, mengirim pesan WhatsApp, menonton video, mendengar musik, dan mengirim e-mail."
+          },
+          {
+            soal: "Apa bedanya telepon kabel dan telepon genggam?",
+            contohJawaban: "Telepon kabel memakai kabel sehingga tidak bisa dibawa ke mana-mana. Telepon genggam tanpa kabel dan bisa dibawa ke mana-mana."
+          },
+          {
+            gambar: "img/tik/jam-pintar.svg",
+            soal: "Sebutkan kegunaan jam pintar (smartwatch)!",
+            contohJawaban: "Menelepon, SMS, mengukur denyut nadi, suhu tubuh, dan kecepatan berjalan atau berlari."
+          },
+          {
+            soal: "Mengapa kita harus menonton acara televisi yang sesuai usia?",
+            contohJawaban: "Agar yang kita tonton baik dan bermanfaat untuk anak, seperti acara ilmu pengetahuan."
+          }
+        ],
+
+        // ---------- SET 2 : Komputer ----------
+        [
+          {
+            soal: "Apa yang dimaksud dengan komputer?",
+            contohJawaban: "Komputer adalah alat elektronik untuk mengolah data seperti angka, gambar, tulisan, suara, dan video."
+          },
+          {
+            soal: "Sebutkan 3 kegiatan yang bisa kamu lakukan dengan komputer!",
+            contohJawaban: "Mengetik, menggambar, berhitung, belajar, dan menonton film."
+          },
+          {
+            gambar: "img/tik/komputer-meja.svg",
+            soal: "Sebutkan bagian-bagian komputer meja pada gambar!",
+            contohJawaban: "Monitor, CPU, keyboard, dan mouse."
+          },
+          {
+            soal: "Apa kegunaan keyboard dan mouse?",
+            contohJawaban: "Keyboard untuk mengetik huruf dan angka. Mouse untuk menggerakkan penunjuk dan mengeklik."
+          },
+          {
+            gambar: "img/tik/internet.svg",
+            soal: "Apa saja yang bisa dilakukan komputer jika terhubung ke internet?",
+            contohJawaban: "Mencari informasi, bermain game online, dan mengirim e-mail."
+          },
+          {
+            soal: "Apa kelebihan laptop dibandingkan komputer meja?",
+            contohJawaban: "Laptop lebih ringan dan bisa dilipat, jadi mudah dibawa ke mana-mana."
+          }
+        ],
+
+        // ---------- SET 3 : Merawat & bijak ----------
+        [
+          {
+            soal: "Sebutkan 3 cara merawat komputer atau laptop!",
+            contohJawaban: "Membersihkan dengan kain lembut yang kering, menjauhkan dari air, tidak makan/minum di dekatnya, dan mematikannya dengan Shut Down."
+          },
+          {
+            soal: "Mengapa kita tidak boleh makan dan minum di dekat komputer?",
+            contohJawaban: "Karena remah makanan atau tumpahan minuman bisa membuat komputer kotor dan rusak."
+          },
+          {
+            soal: "Bagaimana cara mematikan komputer yang benar?",
+            contohJawaban: "Klik tombol Start, lalu pilih Shut Down. Tunggu sampai layar mati. Jangan langsung mencabut kabel."
+          },
+          {
+            soal: "Bagaimana cara menjaga mata saat memakai ponsel atau komputer?",
+            contohJawaban: "Menjaga jarak mata dari layar, duduk tegak, mengistirahatkan mata, dan tidak memakai terlalu lama."
+          },
+          {
+            soal: "Apa yang harus kamu lakukan sebelum memakai ponsel orang tuamu?",
+            contohJawaban: "Meminta izin terlebih dahulu."
+          },
+          {
+            soal: "Berikan contoh menggunakan TIK dengan bijak!",
+            contohJawaban: "Memakai laptop untuk belajar, mengirim pesan yang sopan kepada teman, dan menonton acara sesuai usia."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET MENCOCOKKAN ===== */
+      cocokkanSets: [
+
+        // ---------- SET 1 : Nama perangkat ----------
+        {
+          instruksi: "Pasangkan gambar perangkat TIK dengan namanya!",
+          pasangan: [
+            { kiri: { gambar: "img/tik/telepon-kabel.svg" }, kanan: "Telepon kabel" },
+            { kiri: { gambar: "img/tik/ponsel-pintar.svg" }, kanan: "Ponsel pintar" },
+            { kiri: { gambar: "img/tik/laptop.svg" }, kanan: "Laptop" },
+            { kiri: { gambar: "img/tik/televisi.svg" }, kanan: "Televisi" },
+            { kiri: { gambar: "img/tik/jam-pintar.svg" }, kanan: "Jam pintar" }
+          ]
+        },
+
+        // ---------- SET 2 : Kegunaan ----------
+        {
+          instruksi: "Pasangkan perangkat TIK dengan kegunaannya!",
+          pasangan: [
+            { kiri: { gambar: "img/tik/telepon-genggam.svg", teks: "Telepon genggam" }, kanan: "Menelepon dan SMS di mana saja" },
+            { kiri: { gambar: "img/tik/komputer-meja.svg", teks: "Komputer" }, kanan: "Mengetik dan menggambar" },
+            { kiri: { gambar: "img/tik/radio.svg", teks: "Radio" }, kanan: "Mendengarkan berita dan lagu" },
+            { kiri: { gambar: "img/tik/jam-pintar.svg", teks: "Jam pintar" }, kanan: "Mengukur denyut nadi" },
+            { kiri: { gambar: "img/tik/internet.svg", teks: "Internet" }, kanan: "Mencari informasi dan mengirim e-mail" }
+          ]
+        },
+
+        // ---------- SET 3 : Bagian komputer ----------
+        {
+          instruksi: "Pasangkan bagian komputer dengan fungsinya!",
+          pasangan: [
+            { kiri: { gambar: "img/tik/monitor.svg", teks: "Monitor" }, kanan: "Layar untuk melihat" },
+            { kiri: { gambar: "img/tik/keyboard.svg", teks: "Keyboard" }, kanan: "Mengetik huruf dan angka" },
+            { kiri: { gambar: "img/tik/mouse.svg", teks: "Mouse" }, kanan: "Menggerakkan penunjuk" },
+            { kiri: { gambar: "img/tik/cpu.svg", teks: "CPU" }, kanan: "Otak komputer" }
+          ]
+        }
+      ]
+    }
+
+  ]
+};
+
 const SUBJECTS = [
   {
     id: "pancasila",
@@ -3726,6 +4178,14 @@ const SUBJECTS = [
    *  Modul: Bangun Datar dan Bangun Ruang
    * ============================================================ */
   MATEMATIKA_SUBJECT
+
+  ,
+
+  /* ============================================================
+   *  MATA PELAJARAN: INFORMATIKA
+   *  Modul: Pengenalan Perangkat TIK
+   * ============================================================ */
+  INFORMATIKA_SUBJECT
 
   // ====== TAMBAHKAN MATA PELAJARAN BARU DI SINI ======
   // ,{
