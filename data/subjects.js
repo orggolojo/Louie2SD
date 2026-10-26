@@ -2695,6 +2695,460 @@ const INFORMATIKA_SUBJECT = {
   ]
 };
 
+/* ============================================================
+ *  DEFINISI MATA PELAJARAN PLH (Pendidikan Lingkungan Hidup)
+ *  (dipisah agar mudah dibaca; dipakai di array SUBJECTS)
+ *  Modul: Memelihara Lingkungan (catatan bagian D).
+ * ============================================================ */
+const PLH_SUBJECT = {
+  id: "plh",
+  nama: "PLH",
+  ikon: "🌳",
+  warna: "#38b000",
+  deskripsi: "Pendidikan Lingkungan Hidup: belajar menjaga alam di sekitar kita.",
+  topik: [
+
+    /* ========================================================
+     *  MODUL 1 — MEMELIHARA LINGKUNGAN
+     * ====================================================== */
+    {
+      id: "memelihara-lingkungan",
+      judul: "Memelihara Lingkungan",
+      emoji: "🌱",
+
+      ringkasan: [
+        // --- Wajib: sesuai catatan dari sekolah ---
+        { emoji: "🤝", teks: "Setiap makhluk hidup perlu bantuan makhluk hidup lain dan lingkungannya." },
+        { emoji: "🌱", teks: "Di lingkungannya, makhluk hidup dapat tumbuh dan berkembang." },
+        { gambar: "img/plh/sawah.svg", teks: "Misalnya, lingkungan di sawah: (a) petani menanam padi di sawah, (b) padi perlu tanah yang gembur." },
+        { gambar: "img/plh/kerbau-membajak.svg", teks: "(c) Petani perlu kerbau untuk menggemburkan tanah. (d) Padi juga perlu air untuk tumbuh. Hasil panen dijual petani." },
+        { gambar: "img/plh/menyiram-bunga.svg", teks: "Contoh memelihara lingkungan: Ibu menyiram bunga, memilah sampah, dan membuang sampah pada tempatnya." },
+        { emoji: "💚", teks: "Untuk itu, peliharalah lingkunganmu. Semua wajib memelihara lingkungan." },
+        { emoji: "🛡️", teks: "Memelihara lingkungan artinya menjaga lingkungan biotik dan lingkungan abiotik agar tidak rusak. Dengan begitu, hidup akan nyaman." },
+        // --- Tambahan ---
+        { emoji: "🐄", teks: "Lingkungan biotik = semua makhluk hidup: manusia, hewan, dan tumbuhan (contoh: petani, kerbau, padi)." },
+        { emoji: "🪨", teks: "Lingkungan abiotik = benda tak hidup: tanah, air, udara, batu, dan cahaya matahari." },
+        { gambar: "img/plh/sampah-organik.svg", teks: "Sampah organik berasal dari makhluk hidup dan mudah membusuk: daun kering, sisa makanan, kulit buah." },
+        { gambar: "img/plh/sampah-anorganik.svg", teks: "Sampah anorganik sulit membusuk: plastik, botol, kaleng, kaca. Pisahkan sampah organik dan anorganik di tempat sampah yang berbeda." },
+        { gambar: "img/plh/buang-sampah.svg", teks: "Buanglah sampah pada tempatnya. Jangan membuang sampah ke sungai atau selokan." },
+        { gambar: "img/plh/sungai-kotor.svg", teks: "Jika lingkungan tidak dipelihara: sungai kotor dan bau, ikan mati, timbul penyakit, dan bisa terjadi banjir." },
+        { emoji: "♻️", teks: "Ingat 3R: Reduce (kurangi sampah), Reuse (gunakan kembali), Recycle (daur ulang)." },
+        { gambar: "img/plh/menanam-pohon.svg", teks: "Menanam pohon membuat udara segar dan sejuk. Jangan merusak tanaman." },
+        { gambar: "img/plh/hemat-air.svg", teks: "Hemat air: tutup keran setelah dipakai. Hemat listrik: matikan lampu jika tidak dipakai." },
+        { emoji: "🧹", teks: "Kita bisa ikut kerja bakti membersihkan kelas, rumah, dan lingkungan sekitar bersama-sama." }
+      ],
+
+      /* ===== 4 SET SOAL PILIHAN GANDA ===== */
+      pilihanGandaSets: [
+
+        // ---------- SET 1 : Catatan (wajib) ----------
+        [
+          {
+            soal: "Setiap makhluk hidup perlu bantuan makhluk hidup lain dan ....",
+            pilihan: ["Lingkungannya", "Mainannya", "Televisi"],
+            jawaban: 0,
+            penjelasan: "Makhluk hidup perlu makhluk hidup lain dan lingkungannya."
+          },
+          {
+            soal: "Di lingkungannya, makhluk hidup dapat ....",
+            pilihan: ["Tumbuh dan berkembang", "Berubah menjadi batu", "Menghilang"],
+            jawaban: 0,
+            penjelasan: "Lingkungan yang baik membuat makhluk hidup tumbuh dan berkembang."
+          },
+          {
+            gambar: "img/plh/sawah.svg",
+            soal: "Petani menanam padi di ....",
+            pilihan: ["Laut", "Sawah", "Gunung es"],
+            jawaban: 1,
+            penjelasan: "Padi ditanam petani di sawah."
+          },
+          {
+            soal: "Agar tumbuh dengan baik, padi perlu tanah yang ....",
+            pilihan: ["Keras", "Gembur", "Berbatu"],
+            jawaban: 1,
+            penjelasan: "Padi perlu tanah yang gembur."
+          },
+          {
+            gambar: "img/plh/kerbau-membajak.svg",
+            soal: "Petani perlu kerbau untuk ....",
+            pilihan: ["Menggemburkan tanah", "Memanen ikan", "Menjaga rumah"],
+            jawaban: 0,
+            penjelasan: "Kerbau membantu petani membajak dan menggemburkan tanah."
+          },
+          {
+            soal: "Selain tanah yang gembur, padi juga perlu ... untuk tumbuh.",
+            pilihan: ["Pasir", "Air", "Plastik"],
+            jawaban: 1,
+            penjelasan: "Padi juga perlu air untuk tumbuh."
+          },
+          {
+            soal: "Hasil panen padi kemudian ... oleh petani.",
+            pilihan: ["Dibuang", "Dijual", "Dibakar"],
+            jawaban: 1,
+            penjelasan: "Hasil panen dijual petani."
+          },
+          {
+            gambar: "img/plh/menyiram-bunga.svg",
+            soal: "Ibu menyiram bunga. Kegiatan ini adalah contoh ....",
+            pilihan: ["Merusak lingkungan", "Memelihara lingkungan", "Membuang sampah"],
+            jawaban: 1,
+            penjelasan: "Menyiram bunga adalah contoh memelihara lingkungan."
+          },
+          {
+            soal: "Memelihara lingkungan artinya menjaga lingkungan biotik dan abiotik agar ....",
+            pilihan: ["Tidak rusak", "Cepat kotor", "Menjadi sepi"],
+            jawaban: 0,
+            penjelasan: "Memelihara lingkungan = menjaga agar tidak rusak."
+          },
+          {
+            soal: "Jika lingkungan dipelihara dengan baik, hidup akan ....",
+            pilihan: ["Nyaman", "Susah", "Berbahaya"],
+            jawaban: 0,
+            penjelasan: "Dengan memelihara lingkungan, hidup akan nyaman."
+          }
+        ],
+
+        // ---------- SET 2 : Contoh memelihara lingkungan ----------
+        [
+          {
+            soal: "Siapa yang wajib memelihara lingkungan?",
+            pilihan: ["Hanya petani", "Hanya guru", "Semua orang"],
+            jawaban: 2,
+            penjelasan: "Semua wajib memelihara lingkungan, termasuk kita."
+          },
+          {
+            gambar: "img/plh/buang-sampah.svg",
+            soal: "Sampah sebaiknya dibuang ....",
+            pilihan: ["Ke sungai", "Pada tempatnya", "Di halaman sekolah"],
+            jawaban: 1,
+            penjelasan: "Buanglah sampah pada tempatnya."
+          },
+          {
+            soal: "Berikut ini contoh memelihara lingkungan, KECUALI ....",
+            pilihan: ["Memilah sampah", "Menyiram bunga", "Mencoret-coret tembok"],
+            jawaban: 2,
+            penjelasan: "Mencoret tembok membuat lingkungan kotor dan rusak."
+          },
+          {
+            soal: "Memisahkan sampah plastik dan sampah daun disebut ....",
+            pilihan: ["Memilah sampah", "Menyiram sampah", "Menyimpan sampah"],
+            jawaban: 0,
+            penjelasan: "Memilah sampah = memisahkan sampah sesuai jenisnya."
+          },
+          {
+            gambar: "img/plh/menanam-pohon.svg",
+            soal: "Menanam pohon membuat udara menjadi ....",
+            pilihan: ["Segar dan sejuk", "Panas dan berdebu", "Bau"],
+            jawaban: 0,
+            penjelasan: "Pohon membuat udara segar dan sejuk."
+          },
+          {
+            gambar: "img/plh/hemat-air.svg",
+            soal: "Setelah mencuci tangan, keran air sebaiknya ....",
+            pilihan: ["Dibiarkan menyala", "Ditutup kembali", "Dicabut"],
+            jawaban: 1,
+            penjelasan: "Tutup keran agar air tidak terbuang."
+          },
+          {
+            soal: "Membersihkan lingkungan bersama-sama disebut ....",
+            pilihan: ["Kerja bakti", "Lomba lari", "Upacara"],
+            jawaban: 0,
+            penjelasan: "Kerja bakti = membersihkan lingkungan bersama-sama."
+          },
+          {
+            soal: "Sikap yang benar saat melihat bunga di taman adalah ....",
+            pilihan: ["Memetiknya", "Menginjaknya", "Merawat dan tidak merusaknya"],
+            jawaban: 2,
+            penjelasan: "Bunga di taman dirawat agar tetap indah."
+          },
+          {
+            soal: "Lampu kamar yang tidak dipakai sebaiknya ....",
+            pilihan: ["Dimatikan", "Dinyalakan terus", "Dipecahkan"],
+            jawaban: 0,
+            penjelasan: "Mematikan lampu berarti menghemat listrik."
+          },
+          {
+            soal: "Agar kelas tetap bersih, kita sebaiknya ....",
+            pilihan: ["Membuang sampah di laci", "Piket membersihkan kelas", "Membiarkan kelas kotor"],
+            jawaban: 1,
+            penjelasan: "Piket kelas menjaga kelas tetap bersih dan nyaman."
+          }
+        ],
+
+        // ---------- SET 3 : Biotik, abiotik & sampah ----------
+        [
+          {
+            soal: "Lingkungan biotik adalah lingkungan yang terdiri dari ....",
+            pilihan: ["Makhluk hidup", "Benda tak hidup", "Mainan"],
+            jawaban: 0,
+            penjelasan: "Biotik = makhluk hidup: manusia, hewan, tumbuhan."
+          },
+          {
+            soal: "Berikut ini yang termasuk lingkungan abiotik adalah ....",
+            pilihan: ["Kerbau", "Padi", "Air"],
+            jawaban: 2,
+            penjelasan: "Air adalah benda tak hidup (abiotik). Kerbau dan padi adalah makhluk hidup."
+          },
+          {
+            soal: "Petani, kerbau, dan padi termasuk lingkungan ....",
+            pilihan: ["Abiotik", "Biotik", "Buatan"],
+            jawaban: 1,
+            penjelasan: "Ketiganya makhluk hidup, jadi termasuk biotik."
+          },
+          {
+            soal: "Tanah, batu, dan udara termasuk lingkungan ....",
+            pilihan: ["Biotik", "Abiotik", "Hewan"],
+            jawaban: 1,
+            penjelasan: "Tanah, batu, dan udara tidak hidup: abiotik."
+          },
+          {
+            gambar: "img/plh/sampah-organik.svg",
+            soal: "Daun kering dan kulit buah termasuk sampah ....",
+            pilihan: ["Organik", "Anorganik", "Logam"],
+            jawaban: 0,
+            penjelasan: "Sampah organik berasal dari makhluk hidup dan mudah membusuk."
+          },
+          {
+            gambar: "img/plh/sampah-anorganik.svg",
+            soal: "Botol plastik dan kaleng bekas termasuk sampah ....",
+            pilihan: ["Organik", "Anorganik", "Daun"],
+            jawaban: 1,
+            penjelasan: "Plastik dan kaleng sulit membusuk: sampah anorganik."
+          },
+          {
+            soal: "Sampah yang mudah membusuk adalah ....",
+            pilihan: ["Sisa makanan", "Kantong plastik", "Pecahan kaca"],
+            jawaban: 0,
+            penjelasan: "Sisa makanan adalah sampah organik yang mudah membusuk."
+          },
+          {
+            soal: "Menggunakan kembali botol bekas menjadi pot bunga disebut ....",
+            pilihan: ["Reuse", "Reduce", "Membuang"],
+            jawaban: 0,
+            penjelasan: "Reuse = menggunakan kembali barang bekas."
+          },
+          {
+            soal: "Membawa botol minum sendiri agar tidak membeli air kemasan termasuk ....",
+            pilihan: ["Reduce (mengurangi sampah)", "Recycle", "Mengotori lingkungan"],
+            jawaban: 0,
+            penjelasan: "Reduce = mengurangi sampah."
+          },
+          {
+            soal: "Mengolah sampah plastik menjadi barang baru disebut ....",
+            pilihan: ["Reduce", "Recycle (daur ulang)", "Reuse"],
+            jawaban: 1,
+            penjelasan: "Recycle = mendaur ulang menjadi barang baru."
+          }
+        ],
+
+        // ---------- SET 4 : Akibat & sikap ----------
+        [
+          {
+            gambar: "img/plh/sungai-kotor.svg",
+            soal: "Sungai pada gambar kotor karena ....",
+            pilihan: ["Banyak ikan", "Orang membuang sampah ke sungai", "Hujan turun"],
+            jawaban: 1,
+            penjelasan: "Membuang sampah ke sungai membuat sungai kotor."
+          },
+          {
+            soal: "Akibat membuang sampah ke sungai adalah ....",
+            pilihan: ["Banjir", "Pelangi", "Udara sejuk"],
+            jawaban: 0,
+            penjelasan: "Sampah menyumbat sungai sehingga air meluap dan terjadi banjir."
+          },
+          {
+            gambar: "img/plh/sungai-bersih.svg",
+            soal: "Sungai yang bersih membuat ikan dapat ....",
+            pilihan: ["Hidup dengan baik", "Mati", "Pergi ke darat"],
+            jawaban: 0,
+            penjelasan: "Ikan bisa hidup dan berkembang di air yang bersih."
+          },
+          {
+            soal: "Lingkungan yang kotor dapat menyebabkan ....",
+            pilihan: ["Penyakit", "Kesehatan", "Kebersihan"],
+            jawaban: 0,
+            penjelasan: "Lingkungan kotor menjadi tempat kuman dan nyamuk."
+          },
+          {
+            soal: "Andi melihat sampah di halaman sekolah. Sikap Andi sebaiknya ....",
+            pilihan: ["Membiarkannya", "Memungut dan membuangnya ke tempat sampah", "Menendangnya"],
+            jawaban: 1,
+            penjelasan: "Pungut sampah dan buang pada tempatnya."
+          },
+          {
+            soal: "Mengapa padi tidak dapat tumbuh jika sawah kering?",
+            pilihan: ["Padi perlu air untuk tumbuh", "Padi takut matahari", "Padi suka plastik"],
+            jawaban: 0,
+            penjelasan: "Padi perlu air untuk tumbuh."
+          },
+          {
+            soal: "Menebang pohon sembarangan dapat menyebabkan ....",
+            pilihan: ["Tanah longsor dan banjir", "Udara lebih segar", "Sungai lebih bersih"],
+            jawaban: 0,
+            penjelasan: "Akar pohon menahan tanah dan menyerap air."
+          },
+          {
+            soal: "Kerbau membantu petani, dan petani memberi makan kerbau. Ini menunjukkan makhluk hidup saling ....",
+            pilihan: ["Membutuhkan", "Bertengkar", "Menjauh"],
+            jawaban: 0,
+            penjelasan: "Makhluk hidup saling membutuhkan."
+          },
+          {
+            soal: "Membakar sampah sembarangan membuat udara menjadi ....",
+            pilihan: ["Bersih", "Kotor dan berasap", "Wangi"],
+            jawaban: 1,
+            penjelasan: "Asap pembakaran sampah mengotori udara."
+          },
+          {
+            soal: "Lingkungan yang bersih dan terpelihara membuat hidup kita ....",
+            pilihan: ["Sehat dan nyaman", "Mudah sakit", "Tidak bahagia"],
+            jawaban: 0,
+            penjelasan: "Lingkungan bersih = hidup sehat dan nyaman."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET SOAL ESAI ===== */
+      esaiSets: [
+
+        // ---------- SET 1 : Catatan (wajib) ----------
+        [
+          {
+            soal: "Apa yang dibutuhkan setiap makhluk hidup?",
+            contohJawaban: "Setiap makhluk hidup perlu bantuan makhluk hidup lain dan lingkungannya."
+          },
+          {
+            gambar: "img/plh/sawah.svg",
+            soal: "Ceritakan contoh lingkungan di sawah (a, b, c, d)!",
+            contohJawaban: "a. Petani menanam padi di sawah. b. Padi perlu tanah yang gembur. c. Petani perlu kerbau untuk menggemburkan tanah. d. Padi juga perlu air untuk tumbuh. Hasil panen dijual petani."
+          },
+          {
+            soal: "Untuk apa petani memerlukan kerbau?",
+            contohJawaban: "Untuk menggemburkan tanah sawah."
+          },
+          {
+            soal: "Tuliskan contoh memelihara lingkungan!",
+            contohJawaban: "Ibu menyiram bunga, memilah sampah, dan membuang sampah pada tempatnya."
+          },
+          {
+            soal: "Apa arti memelihara lingkungan?",
+            contohJawaban: "Memelihara lingkungan artinya menjaga lingkungan biotik dan lingkungan abiotik agar tidak rusak."
+          },
+          {
+            soal: "Apa yang terjadi jika kita memelihara lingkungan?",
+            contohJawaban: "Hidup akan nyaman."
+          },
+          {
+            soal: "Siapa yang wajib memelihara lingkungan?",
+            contohJawaban: "Semua orang wajib memelihara lingkungan, termasuk aku."
+          }
+        ],
+
+        // ---------- SET 2 : Biotik, abiotik & sampah ----------
+        [
+          {
+            soal: "Sebutkan 3 contoh lingkungan biotik di sawah!",
+            contohJawaban: "Petani, kerbau, dan padi. (Bisa juga: burung, katak, ikan.)"
+          },
+          {
+            soal: "Sebutkan 3 contoh lingkungan abiotik!",
+            contohJawaban: "Tanah, air, dan udara. (Bisa juga: batu, cahaya matahari.)"
+          },
+          {
+            gambar: "img/plh/sampah-organik.svg",
+            soal: "Apa itu sampah organik? Berikan 2 contohnya!",
+            contohJawaban: "Sampah yang berasal dari makhluk hidup dan mudah membusuk. Contoh: daun kering dan sisa makanan."
+          },
+          {
+            gambar: "img/plh/sampah-anorganik.svg",
+            soal: "Apa itu sampah anorganik? Berikan 2 contohnya!",
+            contohJawaban: "Sampah yang sulit membusuk. Contoh: botol plastik dan kaleng bekas."
+          },
+          {
+            soal: "Mengapa kita perlu memilah sampah?",
+            contohJawaban: "Agar sampah organik bisa dijadikan pupuk dan sampah anorganik bisa didaur ulang, sehingga lingkungan tetap bersih."
+          },
+          {
+            soal: "Apa arti 3R? Berikan satu contoh!",
+            contohJawaban: "Reduce (kurangi), Reuse (gunakan kembali), Recycle (daur ulang). Contoh: botol bekas dijadikan pot bunga (reuse)."
+          }
+        ],
+
+        // ---------- SET 3 : Sikapku ----------
+        [
+          {
+            soal: "Sebutkan 3 cara memelihara lingkungan di rumah!",
+            contohJawaban: "Menyiram tanaman, membuang sampah pada tempatnya, menutup keran air, dan mematikan lampu yang tidak dipakai."
+          },
+          {
+            soal: "Sebutkan 2 cara memelihara lingkungan di sekolah!",
+            contohJawaban: "Melaksanakan piket kelas dan tidak mencoret-coret meja atau tembok."
+          },
+          {
+            gambar: "img/plh/sungai-kotor.svg",
+            soal: "Apa akibatnya jika orang membuang sampah ke sungai?",
+            contohJawaban: "Sungai menjadi kotor dan bau, ikan mati, dan bisa terjadi banjir."
+          },
+          {
+            gambar: "img/plh/menanam-pohon.svg",
+            soal: "Apa manfaat menanam pohon?",
+            contohJawaban: "Udara menjadi segar dan sejuk, tempat berteduh, dan akar pohon menahan tanah agar tidak longsor."
+          },
+          {
+            soal: "Apa yang kamu lakukan jika melihat temanmu membuang sampah sembarangan?",
+            contohJawaban: "Menegur dengan sopan dan mengajaknya membuang sampah ke tempat sampah."
+          },
+          {
+            soal: "Mengapa kita harus menghemat air?",
+            contohJawaban: "Karena air sangat dibutuhkan makhluk hidup, seperti manusia, hewan, dan tanaman padi."
+          }
+        ]
+      ],
+
+      /* ===== 3 SET MENCOCOKKAN ===== */
+      cocokkanSets: [
+
+        // ---------- SET 1 : Lingkungan di sawah (wajib) ----------
+        {
+          instruksi: "Pasangkan dengan kebutuhannya di sawah!",
+          pasangan: [
+            { kiri: { emoji: "👨‍🌾", teks: "Petani" }, kanan: "Menanam padi di sawah" },
+            { kiri: { emoji: "🌾", teks: "Padi" }, kanan: "Perlu tanah gembur dan air" },
+            { kiri: { emoji: "🐃", teks: "Kerbau" }, kanan: "Menggemburkan tanah" },
+            { kiri: { emoji: "💧", teks: "Air" }, kanan: "Membuat padi tumbuh" },
+            { kiri: { emoji: "💰", teks: "Hasil panen" }, kanan: "Dijual petani" }
+          ]
+        },
+
+        // ---------- SET 2 : Organik atau anorganik ----------
+        {
+          instruksi: "Pasangkan sampah dengan jenisnya!",
+          pasangan: [
+            { kiri: { emoji: "🍂", teks: "Daun kering" }, kanan: "Organik" },
+            { kiri: { emoji: "🍌", teks: "Kulit pisang" }, kanan: "Organik" },
+            { kiri: { emoji: "🧴", teks: "Botol plastik" }, kanan: "Anorganik" },
+            { kiri: { emoji: "🥫", teks: "Kaleng bekas" }, kanan: "Anorganik" },
+            { kiri: { emoji: "🍚", teks: "Sisa makanan" }, kanan: "Organik" }
+          ]
+        },
+
+        // ---------- SET 3 : Perbuatan & akibat ----------
+        {
+          instruksi: "Pasangkan perbuatan dengan akibatnya!",
+          pasangan: [
+            { kiri: { gambar: "img/plh/menyiram-bunga.svg", teks: "Menyiram bunga" }, kanan: "Bunga tumbuh segar" },
+            { kiri: { gambar: "img/plh/buang-sampah.svg", teks: "Buang sampah pada tempatnya" }, kanan: "Lingkungan bersih" },
+            { kiri: { gambar: "img/plh/sungai-kotor.svg", teks: "Buang sampah ke sungai" }, kanan: "Banjir" },
+            { kiri: { gambar: "img/plh/menanam-pohon.svg", teks: "Menanam pohon" }, kanan: "Udara segar" },
+            { kiri: { gambar: "img/plh/hemat-air.svg", teks: "Menutup keran" }, kanan: "Air tidak terbuang" }
+          ]
+        }
+      ]
+    }
+
+  ]
+};
+
 const SUBJECTS = [
   {
     id: "pancasila",
@@ -4186,6 +4640,14 @@ const SUBJECTS = [
    *  Modul: Pengenalan Perangkat TIK
    * ============================================================ */
   INFORMATIKA_SUBJECT
+
+  ,
+
+  /* ============================================================
+   *  MATA PELAJARAN: PLH (Pendidikan Lingkungan Hidup)
+   *  Modul: Memelihara Lingkungan
+   * ============================================================ */
+  PLH_SUBJECT
 
   // ====== TAMBAHKAN MATA PELAJARAN BARU DI SINI ======
   // ,{
