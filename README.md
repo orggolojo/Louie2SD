@@ -12,6 +12,9 @@ Dibuat dari file statis (HTML, CSS, JavaScript) tanpa server khusus.
 Semua materi ada di `data/subjects.js`. Buka file itu, ikuti petunjuk di
 bagian atasnya, lalu simpan. Website akan otomatis menampilkan perubahannya.
 
+Setelah mengubah materi, ganti juga angka `?v=` di `index.html` (misalnya
+menjadi tanggal hari ini) agar browser langsung memuat versi terbaru.
+
 ## Menjalankan secara lokal
 
 Buka `index.html` langsung di browser, atau jalankan server statis sederhana
