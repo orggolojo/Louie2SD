@@ -43,7 +43,7 @@ const BAHASA_INDONESIA_SUBJECT = {
   nama: "Bahasa Indonesia",
   ikon: "📚",
   warna: "#06d6a0",
-  deskripsi: "Belajar paragraf, fabel, dan antonim lewat cerita hewan yang seru.",
+  deskripsi: "Belajar paragraf, fabel, antonim, dan huruf kapital.",
   topik: [
 
     /* ========================================================
@@ -1299,6 +1299,264 @@ const BAHASA_INDONESIA_SUBJECT = {
         }
 
       ]
+    },
+
+    /* ========================================================
+     *  TOPIK — HURUF KAPITAL
+     *  Dari catatan kelas dan lembar latihan.
+     * ====================================================== */
+    {
+      id: "huruf-kapital",
+      judul: "Penggunaan Huruf Kapital",
+      emoji: "🅰️",
+
+      ringkasan: [
+        { emoji: "✍️", teks: "Huruf kapital dipakai pada awal kalimat. Contoh: Ibu memasak di dapur." },
+        { emoji: "👨", teks: "Awal kalimat juga seperti: Ayah pergi ke kantor. Kakak sedang membaca buku." },
+        { emoji: "🧒", teks: "Huruf kapital dipakai pada awal nama orang. Contoh: Felix bermain bola." },
+        { emoji: "👫", teks: "Sonya dan Mika membaca buku. Andi pergi ke sekolah bersama Kevin." },
+        { emoji: "📅", teks: "Huruf kapital dipakai pada nama hari. Contoh: Senin, Selasa, dan Minggu." },
+        { emoji: "👴", teks: "Hari Senin kakek pulang. Keluarga saya pergi berlibur pada hari Minggu." },
+        { emoji: "🗓️", teks: "Huruf kapital dipakai pada nama bulan. Contoh: Januari, Oktober, dan November." },
+        { emoji: "🎂", teks: "Adikku lahir bulan Januari. Sekarang sudah bulan Oktober." },
+        { emoji: "📍", teks: "Huruf kapital dipakai pada nama tempat. Contoh: Jalan Kenari, Pamulang, dan Jakarta." },
+        { emoji: "🏫", teks: "SDK Mater Dei berada di wilayah Tangerang Selatan. Nama sekolah dan wilayah itu diawali huruf kapital." },
+        { emoji: "🏖️", teks: "Cerita Berlibur ke Pantai Anyer: Hari Minggu, Sonya dan keluarganya berangkat pagi hari." },
+        { emoji: "🐚", teks: "Di Pantai Anyer, Sonya bermain pasir dan mengumpulkan kerang. Adik bermain air bersama ayah." },
+        { emoji: "🧺", teks: "Ibu duduk di bawah pohon sambil menyiapkan bekal. Mereka merasa senang." },
+        { emoji: "🗑️", teks: "Setelah bermain, mereka membersihkan sampah, lalu pulang ke rumah." }
+      ],
+
+      pilihanGandaSets: [
+        [
+          {
+            soal: "Kalimat yang menggunakan huruf kapital dengan benar adalah ....",
+            pilihan: [
+              "Ani pergi ke sekolah pada hari Senin.",
+              "Ani pergi ke Sekolah pada hari senin.",
+              "Ani pergi ke sekolah pada hari senin."
+            ],
+            jawaban: 0,
+            penjelasan: "Ani, awal kalimat, dan Senin (nama hari) memakai huruf kapital. Kata sekolah bukan nama, jadi tidak kapital."
+          },
+          {
+            soal: "Hari setelah Senin adalah ....",
+            pilihan: ["selasa", "Selasa", "SELasa"],
+            jawaban: 1,
+            penjelasan: "Nama hari ditulis dengan huruf pertama kapital: Selasa."
+          },
+          {
+            soal: "Kalimat yang penulisannya benar adalah ....",
+            pilihan: [
+              "Rina pergi ke pasar pada hari Minggu.",
+              "rina pergi ke pasar pada hari minggu.",
+              "Rina pergi ke pasar pada hari minggu."
+            ],
+            jawaban: 0,
+            penjelasan: "Rina (nama orang) dan Minggu (nama hari) diawali huruf kapital. Kalimat juga diawali huruf kapital."
+          },
+          {
+            soal: "Kalimat yang penulisannya benar adalah ....",
+            pilihan: [
+              "Dodi berkunjung ke rumah nenek pada hari jumat.",
+              "dodi berkunjung ke rumah nenek pada hari jumat.",
+              "Dodi berkunjung ke rumah nenek pada hari Jumat."
+            ],
+            jawaban: 2,
+            penjelasan: "Dodi dan Jumat diawali huruf kapital."
+          },
+          {
+            soal: "Penulisan nama orang dan nama hari yang benar adalah ....",
+            pilihan: [
+              "lani pergi berenang pada hari sabtu.",
+              "Lani pergi berenang pada hari Sabtu.",
+              "Lani pergi berenang pada hari sabtu."
+            ],
+            jawaban: 1,
+            penjelasan: "Lani dan Sabtu keduanya diawali huruf kapital."
+          }
+        ],
+        [
+          {
+            soal: "Penulisan nama tempat yang benar adalah ....",
+            pilihan: ["Kota surabaya", "kota surabaya", "Kota Surabaya"],
+            jawaban: 2,
+            penjelasan: "Kota dan Surabaya adalah nama tempat, jadi keduanya diawali huruf kapital."
+          },
+          {
+            soal: "Penulisan nama tempat yang benar adalah ....",
+            pilihan: ["Danau toba", "Danau Toba", "danau Toba"],
+            jawaban: 1,
+            penjelasan: "Danau Toba adalah nama tempat. Danau dan Toba diawali huruf kapital."
+          },
+          {
+            soal: "Penulisan kalimat yang benar adalah ....",
+            pilihan: [
+              "teman baruku berasal dari Madura.",
+              "Teman baruku berasal dari madura.",
+              "Teman baruku berasal dari Madura."
+            ],
+            jawaban: 2,
+            penjelasan: "Awal kalimat kapital, dan Madura adalah nama tempat."
+          },
+          {
+            soal: "Penulisan kalimat yang benar adalah ....",
+            pilihan: [
+              "Kami studi lapangan di bulan oktober.",
+              "Bulan Desember kami pergi ke Solo.",
+              "Pamulang berada di wilayah banten."
+            ],
+            jawaban: 1,
+            penjelasan: "Desember (nama bulan) dan Solo (nama tempat) diawali huruf kapital. Oktober dan Banten pada pilihan lain masih huruf kecil."
+          },
+          {
+            soal: "Penulisan nama tempat yang benar adalah ....",
+            pilihan: [
+              "Temanku tinggal di Jalan Sudirman.",
+              "temanku tinggal di Jalan Sudirman.",
+              "Temanku tinggal di Jalan sudirman."
+            ],
+            jawaban: 0,
+            penjelasan: "Awal kalimat, Jalan, dan Sudirman diawali huruf kapital."
+          }
+        ]
+      ],
+
+      esaiSets: [
+        [
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: ayah pergi ke medan.",
+            contohJawaban: "Ayah pergi ke Medan."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: kami berlibur ke bali.",
+            contohJawaban: "Kami berlibur ke Bali."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: ibu berbelanja di pasar ciputat.",
+            contohJawaban: "Ibu berbelanja di Pasar Ciputat."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: michael dan tomas sekolah di mater dei.",
+            contohJawaban: "Michael dan Tomas sekolah di Mater Dei."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: kakakku bernama joni sitompul.",
+            contohJawaban: "Kakakku bernama Joni Sitompul."
+          }
+        ],
+        [
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: probolinggo terletak di jawa timur.",
+            contohJawaban: "Probolinggo terletak di Jawa Timur."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: pak anton bekerja di medan.",
+            contohJawaban: "Pak Anton bekerja di Medan."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: hari selasa kami belajar bersama.",
+            contohJawaban: "Hari Selasa kami belajar bersama."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: keluargaku tinggal di bandung.",
+            contohJawaban: "Keluargaku tinggal di Bandung."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: hari minggu kami pergi ke cirebon.",
+            contohJawaban: "Hari Minggu kami pergi ke Cirebon."
+          }
+        ],
+        [
+          {
+            soal: "Tulislah kembali dengan huruf kapital yang benar. Rapikan juga kata yang menempel: santo pergi ke sekolahbersama deni.",
+            contohJawaban: "Santo pergi ke sekolah bersama Deni."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: bibi tinggal di jalan witana.",
+            contohJawaban: "Bibi tinggal di Jalan Witana."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: hari minggu, kami pergi berlibur.",
+            contohJawaban: "Hari Minggu, kami pergi berlibur."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: santi tinggal di bandung.",
+            contohJawaban: "Santi tinggal di Bandung."
+          },
+          {
+            soal: "Tulislah dengan huruf kapital yang benar: nama adikku adalah roni.",
+            contohJawaban: "Nama adikku adalah Roni."
+          }
+        ],
+        [
+          {
+            soal: "Salinlah dengan huruf kapital yang benar: bibi tinggal di dumai.",
+            contohJawaban: "Bibi tinggal di Dumai."
+          },
+          {
+            soal: "Salinlah dengan huruf kapital yang benar: ayah pergi tugas ke aceh.",
+            contohJawaban: "Ayah pergi tugas ke Aceh."
+          },
+          {
+            soal: "Salinlah dengan huruf kapital yang benar: kakek tinggal di jalan kenanga.",
+            contohJawaban: "Kakek tinggal di Jalan Kenanga."
+          },
+          {
+            soal: "Salinlah dengan huruf kapital yang benar: ibu membeli oleh-oleh dari yogyakarta.",
+            contohJawaban: "Ibu membeli oleh-oleh dari Yogyakarta."
+          },
+          {
+            soal: "Salinlah dengan huruf kapital yang benar: kakek tinggal di surabaya.",
+            contohJawaban: "Kakek tinggal di Surabaya."
+          }
+        ],
+        [
+          {
+            soal: "Dalam cerita Berlibur ke Pantai Anyer, ke mana Sonya pergi?",
+            contohJawaban: "Sonya pergi berlibur ke Pantai Anyer bersama keluarganya."
+          },
+          {
+            soal: "Pada hari apa mereka berangkat, dan kapan berangkatnya?",
+            contohJawaban: "Hari Minggu, pagi hari."
+          },
+          {
+            soal: "Apa yang Sonya lakukan di Pantai Anyer?",
+            contohJawaban: "Sonya bermain pasir dan mengumpulkan kerang."
+          },
+          {
+            soal: "Apa yang dilakukan adik dan ayah?",
+            contohJawaban: "Adik bermain air bersama ayah."
+          },
+          {
+            soal: "Apa yang Ibu lakukan, dan apa yang keluarga lakukan sebelum pulang?",
+            contohJawaban: "Ibu duduk di bawah pohon sambil menyiapkan bekal. Sebelum pulang, mereka membersihkan sampah."
+          }
+        ]
+      ],
+
+      cocokkanSets: [
+        {
+          instruksi: "Pasangkan aturan huruf kapital dengan contohnya!",
+          pasangan: [
+            { kiri: { emoji: "✍️", teks: "Awal kalimat" }, kanan: "Ibu memasak di dapur." },
+            { kiri: { emoji: "🧒", teks: "Nama orang" }, kanan: "Felix bermain bola." },
+            { kiri: { emoji: "📅", teks: "Nama hari" }, kanan: "Hari Senin" },
+            { kiri: { emoji: "🗓️", teks: "Nama bulan" }, kanan: "Bulan Januari" },
+            { kiri: { emoji: "📍", teks: "Nama tempat" }, kanan: "Kota Jakarta" }
+          ]
+        },
+        {
+          instruksi: "Pasangkan tulisan yang masih salah dengan tulisan yang benar!",
+          pasangan: [
+            { kiri: { emoji: "1️⃣", teks: "selasa" }, kanan: "Selasa" },
+            { kiri: { emoji: "2️⃣", teks: "jakarta" }, kanan: "Jakarta" },
+            { kiri: { emoji: "3️⃣", teks: "oktober" }, kanan: "Oktober" },
+            { kiri: { emoji: "4️⃣", teks: "sonya" }, kanan: "Sonya" },
+            { kiri: { emoji: "5️⃣", teks: "banten" }, kanan: "Banten" }
+          ]
+        }
+      ]
     }
 
   ]
@@ -1350,7 +1608,13 @@ const IPAS_SUBJECT = {
         { emoji: "🌙", teks: "Malam hari kita bisa melihat bulan dan bintang. Matahari terbenam di arah barat." },
         { gambar: "img/cuaca/bayang-pagi.svg", teks: "Benda yang disinari cahaya membentuk bayang-bayang. Bayang-bayang dipengaruhi posisi matahari." },
         { emoji: "📏", teks: "Pagi hari bayangan panjang ke arah barat. Siang hari bayangan paling pendek. Sore hari bayangan panjang ke arah timur." },
-        { emoji: "🕶️", teks: "Matahari pagi mengandung vitamin D yang baik untuk tulang. Tetapi, jangan menatap matahari secara langsung karena dapat merusak mata." }
+        { emoji: "🕶️", teks: "Matahari pagi mengandung vitamin D yang baik untuk tulang. Tetapi, jangan menatap matahari secara langsung karena dapat merusak mata." },
+        { emoji: "🔄", teks: "Cuaca bisa berubah setiap waktu." },
+        { emoji: "4️⃣", teks: "Catatan kelas menyebut 4 macam cuaca: cerah, berawan dan mendung, hujan, dan berangin." },
+        { emoji: "☀️", teks: "Cuaca cerah: langit berwarna biru dan matahari bersinar terang. Pada malam hari terlihat bulan dan bintang." },
+        { emoji: "☁️", teks: "Cuaca berawan dan mendung: banyak awan menutup matahari. Awan yang menebal menjadi hitam menandakan hujan akan turun." },
+        { emoji: "🌧️", teks: "Cuaca hujan: langit gelap, udara dingin, dan titik-titik air turun. Hujan deras sering disertai petir dan suara menggelegar." },
+        { emoji: "💨", teks: "Cuaca berangin: angin kencang dan suhu lebih dingin. Angin badai bertiup sangat kencang dan dapat merobohkan bangunan." }
       ],
 
       /* ===== 4 SET SOAL PILIHAN GANDA ===== */
@@ -1625,6 +1889,46 @@ const IPAS_SUBJECT = {
             jawaban: 0,
             penjelasan: "Dua pertiga diserap Bumi, sisanya dipantulkan ke luar angkasa."
           }
+        ],
+
+        // ---------- SET 5 : Catatan kelas, Cuaca di Sekitar ----------
+        [
+          {
+            soal: "Cuaca bisa berubah ....",
+            pilihan: ["setiap waktu", "hanya setahun sekali", "tidak pernah"],
+            jawaban: 0,
+            penjelasan: "Catatan kelas: cuaca bisa berubah setiap waktu."
+          },
+          {
+            soal: "Catatan kelas menyebut cuaca ada ....",
+            pilihan: ["4 macam", "1 macam", "10 macam"],
+            jawaban: 0,
+            penjelasan: "Empat macam itu: cerah, berawan dan mendung, hujan, dan berangin."
+          },
+          {
+            soal: "Langit biru dan matahari bersinar terang. Itu cuaca ....",
+            pilihan: ["cerah", "hujan", "berangin"],
+            jawaban: 0,
+            penjelasan: "Cuaca cerah: langit biru dan matahari bersinar terang."
+          },
+          {
+            soal: "Awan yang menebal menjadi hitam menandakan ....",
+            pilihan: ["hujan akan turun", "angin berhenti", "malam menjadi siang"],
+            jawaban: 0,
+            penjelasan: "Awan hitam yang menebal adalah tanda hujan akan turun."
+          },
+          {
+            soal: "Angin yang sangat kencang sampai dapat merobohkan bangunan disebut angin ....",
+            pilihan: ["badai", "sepoi-sepoi", "hangat"],
+            jawaban: 0,
+            penjelasan: "Angin badai bertiup sangat kencang dan dapat merobohkan bangunan."
+          },
+          {
+            soal: "Saat cuaca berangin, suhu terasa ....",
+            pilihan: ["lebih dingin", "sangat panas", "selalu kering"],
+            jawaban: 0,
+            penjelasan: "Cuaca berangin membuat suhu lebih dingin."
+          }
         ]
       ],
 
@@ -1734,6 +2038,54 @@ const IPAS_SUBJECT = {
             soal: "Mengapa pesawat dan kapal harus menunda perjalanan saat cuaca buruk?",
             contohJawaban: "Agar penumpang tetap aman. Perjalanan dilanjutkan setelah cuaca membaik."
           }
+        ],
+
+        // ---------- SET 4 : Latihan cuaca di sekitar ----------
+        [
+          {
+            soal: "Sebutkan dua benda yang dapat digunakan untuk melindungi diri dari hujan!",
+            contohJawaban: "Jas hujan dan payung."
+          },
+          {
+            soal: "Sebutkan dua kegiatan yang dapat dilakukan saat cuaca cerah!",
+            contohJawaban: "Menjemur pakaian dan bermain di luar, misalnya bermain bola."
+          },
+          {
+            soal: "Mengapa pakaian yang dijemur lebih cepat kering saat cuaca panas?",
+            contohJawaban: "Karena panas matahari mengeringkan air pada pakaian."
+          },
+          {
+            soal: "Apa yang sebaiknya kamu lakukan jika hujan turun saat sedang bermain di luar rumah?",
+            contohJawaban: "Masuk ke rumah, atau memakai jas hujan jika masih harus di luar."
+          },
+          {
+            soal: "Sebutkan dua ciri cuaca cerah!",
+            contohJawaban: "Langit berwarna biru dan matahari bersinar terang."
+          }
+        ],
+
+        // ---------- SET 5 : Latihan matahari dan tanda hujan ----------
+        [
+          {
+            soal: "Apa yang terjadi pada langit ketika matahari mulai terbenam?",
+            contohJawaban: "Langit perlahan-lahan menjadi gelap."
+          },
+          {
+            soal: "Mengapa kita perlu mengetahui keadaan cuaca sebelum kegiatan di luar rumah?",
+            contohJawaban: "Supaya kita bisa memilih kegiatan yang cocok dan menyiapkan pakaian yang tepat."
+          },
+          {
+            soal: "Apa yang terjadi pada bayangan tubuhmu saat berdiri di bawah sinar matahari pada pagi hari dan siang hari?",
+            contohJawaban: "Pagi hari bayangan panjang. Siang hari bayangan paling pendek."
+          },
+          {
+            soal: "Mengapa kita sebaiknya berteduh saat matahari bersinar sangat terik?",
+            contohJawaban: "Agar tubuh tidak kepanasan. Sinar yang terlalu terik juga tidak baik untuk mata jika ditatap langsung."
+          },
+          {
+            soal: "Sebutkan dua tanda bahwa hujan akan turun!",
+            contohJawaban: "Awan menebal menjadi hitam, dan langit menjadi gelap."
+          }
         ]
       ],
 
@@ -1774,6 +2126,17 @@ const IPAS_SUBJECT = {
             { kiri: { emoji: "🌙", teks: "Malam" }, kanan: "Bulan dan bintang tampak" },
             { kiri: { emoji: "🏢", teks: "BMKG" }, kanan: "Memberi informasi perkiraan cuaca" }
           ]
+        },
+
+        // ---------- SET 4 : Empat macam cuaca dari catatan kelas ----------
+        {
+          instruksi: "Pasangkan macam cuaca dengan cirinya!",
+          pasangan: [
+            { kiri: { emoji: "☀️", teks: "Cerah" }, kanan: "Langit biru, matahari terang" },
+            { kiri: { emoji: "☁️", teks: "Mendung" }, kanan: "Awan hitam, hujan akan turun" },
+            { kiri: { emoji: "🌧️", teks: "Hujan" }, kanan: "Titik air turun, udara dingin" },
+            { kiri: { emoji: "💨", teks: "Berangin" }, kanan: "Angin kencang, suhu lebih dingin" }
+          ]
         }
       ]
     }
@@ -1791,7 +2154,7 @@ const MATEMATIKA_SUBJECT = {
   nama: "Matematika",
   ikon: "➗",
   warna: "#ff8500",
-  deskripsi: "Belajar mengenal bentuk dan bangun di sekitar kita.",
+  deskripsi: "Belajar bentuk bangun dan posisi benda di sekitar kita.",
   topik: [
 
     /* ========================================================
@@ -2235,6 +2598,195 @@ const MATEMATIKA_SUBJECT = {
             { kiri: { gambar: "img/bangun/lingkaran.svg", teks: "Lingkaran" }, kanan: "Tidak memiliki sudut" },
             { kiri: { gambar: "img/bangun/balok.svg", teks: "Balok" }, kanan: "6 sisi dan 8 titik sudut" },
             { kiri: { gambar: "img/bangun/kerucut.svg", teks: "Kerucut" }, kanan: "Memiliki 1 titik puncak" }
+          ]
+        }
+      ]
+    },
+
+    /* ========================================================
+     *  TOPIK — POSISI DAN ARAH
+     *  Gambar jalan: Rumah Albab, Bimbel Brilian, Rumah Ais.
+     *  Tidak ada berkas gambar, jadi letak benda ditulis di teks.
+     * ====================================================== */
+    {
+      id: "posisi-dan-arah",
+      judul: "Posisi dan Arah",
+      emoji: "🧭",
+
+      ringkasan: [
+        { emoji: "👈", teks: "Sebelah kiri dan sebelah kanan adalah dua sisi yang berlawanan." },
+        { emoji: "🚪", teks: "Depan adalah sisi yang menghadap kita. Belakang adalah sisi sebaliknya." },
+        { emoji: "⬆️", teks: "Atas berarti lebih tinggi. Bawah berarti lebih rendah." },
+        { emoji: "↔️", teks: "Di antara berarti di tengah dua benda." },
+        { emoji: "🏠", teks: "Di gambar jalan ada tiga rumah. Rumah Albab berwarna merah dan berada di kiri." },
+        { emoji: "📗", teks: "Bimbel Brilian berwarna hijau dan berada di tengah." },
+        { emoji: "📘", teks: "Rumah Ais berwarna biru dan berada di kanan." },
+        { emoji: "🌳", teks: "Dua pohon berdiri di belakang Rumah Albab." },
+        { emoji: "🌸", teks: "Banyak pot bunga berada di depan Bimbel Brilian." },
+        { emoji: "🗑️", teks: "Tong sampah berada di bawah pohon, di antara Bimbel Brilian dan Rumah Ais." },
+        { emoji: "🐦", teks: "Tiga burung terbang di atas Rumah Ais." },
+        { emoji: "🚌", teks: "Di jalan, bus sekolah berada di sebelah kiri mobil merah." },
+        { emoji: "🚗", teks: "Mobil merah berada di antara bus dan truk." },
+        { emoji: "🚚", teks: "Truk berada di belakang mobil merah." },
+        { emoji: "🐓", teks: "Dua ekor ayam berada di depan Rumah Ais." }
+      ],
+
+      pilihanGandaSets: [
+        [
+          {
+            soal: "Rumah merah Albab ada di kiri rumah hijau. Rumah Albab terletak di sebelah .... Bimbel Brilian.",
+            pilihan: ["kiri", "kanan", "atas"],
+            jawaban: 0,
+            penjelasan: "Rumah Albab ada di sebelah kiri Bimbel Brilian."
+          },
+          {
+            soal: "Rumah biru Ais ada di kanan rumah hijau. Rumah Ais terletak di sebelah .... Bimbel Brilian.",
+            pilihan: ["kanan", "kiri", "bawah"],
+            jawaban: 0,
+            penjelasan: "Rumah Ais ada di sebelah kanan Bimbel Brilian."
+          },
+          {
+            soal: "Pot bunga tersusun di muka rumah hijau. Pot bunga berada di .... Bimbel Brilian.",
+            pilihan: ["depan", "belakang", "atas"],
+            jawaban: 0,
+            penjelasan: "Pot bunga berada di depan Bimbel Brilian."
+          },
+          {
+            soal: "Dua pohon berdiri di sisi belakang rumah merah. Pohon itu berada di .... Rumah Albab.",
+            pilihan: ["belakang", "depan", "dalam"],
+            jawaban: 0,
+            penjelasan: "Dua pohon berada di belakang Rumah Albab."
+          },
+          {
+            soal: "Tiga burung terbang di langit, di sisi rumah biru. Burung itu berada di .... Rumah Ais.",
+            pilihan: ["atas", "bawah", "dalam"],
+            jawaban: 0,
+            penjelasan: "Tiga burung terbang di atas Rumah Ais."
+          }
+        ],
+        [
+          {
+            soal: "Bus ada di kiri mobil merah. Bus berada di sebelah .... mobil merah.",
+            pilihan: ["kiri", "kanan", "atas"],
+            jawaban: 0,
+            penjelasan: "Bus berada di sebelah kiri mobil merah."
+          },
+          {
+            soal: "Tong sampah ada di bawah pohon, di tengah rumah hijau dan rumah biru. Tong sampah terletak di .... pohon.",
+            pilihan: ["bawah", "atas", "dalam"],
+            jawaban: 0,
+            penjelasan: "Tong sampah terletak di bawah pohon."
+          },
+          {
+            soal: "Dua ekor ayam berdiri di muka rumah biru. Ayam berada di .... Rumah Ais.",
+            pilihan: ["depan", "belakang", "atas"],
+            jawaban: 0,
+            penjelasan: "Dua ekor ayam berada di depan Rumah Ais."
+          },
+          {
+            soal: "Truk ada di belakang mobil merah. Di belakang mobil merah terdapat ....",
+            pilihan: ["truk", "bus", "burung"],
+            jawaban: 0,
+            penjelasan: "Truk berada di belakang mobil merah. Bus ada di sebelah kirinya."
+          },
+          {
+            soal: "Di sebelah kiri Bimbel Brilian terdapat satu ....",
+            pilihan: ["Rumah Albab", "Rumah Ais", "truk"],
+            jawaban: 0,
+            penjelasan: "Rumah Albab berada di sebelah kiri Bimbel Brilian."
+          }
+        ],
+        [
+          {
+            soal: "Mobil merah berada di antara ....",
+            pilihan: ["bus dan truk", "dua rumah biru", "burung dan ayam"],
+            jawaban: 0,
+            penjelasan: "Urutannya: bus, mobil merah, lalu truk. Mobil merah di antara bus dan truk."
+          },
+          {
+            soal: "Tong sampah berada di antara ....",
+            pilihan: ["Bimbel Brilian dan Rumah Ais", "bus dan pagar", "dua burung"],
+            jawaban: 0,
+            penjelasan: "Tong sampah berada di antara Bimbel Brilian dan Rumah Ais."
+          },
+          {
+            soal: "Bimbel Brilian berada di .... Rumah Albab dan Rumah Ais.",
+            pilihan: ["antara", "atas", "bawah"],
+            jawaban: 0,
+            penjelasan: "Bimbel Brilian ada di tengah, di antara dua rumah itu."
+          },
+          {
+            soal: "Kata yang berlawanan dengan kiri adalah ....",
+            pilihan: ["kanan", "atas", "depan"],
+            jawaban: 0,
+            penjelasan: "Kiri berlawanan dengan kanan."
+          },
+          {
+            soal: "Kata yang berlawanan dengan depan adalah ....",
+            pilihan: ["belakang", "atas", "antara"],
+            jawaban: 0,
+            penjelasan: "Depan berlawanan dengan belakang."
+          }
+        ]
+      ],
+
+      esaiSets: [
+        [
+          {
+            soal: "Rumah Albab di kiri, Bimbel Brilian di tengah, Rumah Ais di kanan. Di sebelah mana Rumah Ais?",
+            contohJawaban: "Di sebelah kanan Bimbel Brilian."
+          },
+          {
+            soal: "Apa yang ada di depan Bimbel Brilian?",
+            contohJawaban: "Banyak pot bunga."
+          },
+          {
+            soal: "Apa yang terbang di atas Rumah Ais?",
+            contohJawaban: "Tiga burung."
+          },
+          {
+            soal: "Mobil merah berada di antara benda apa?",
+            contohJawaban: "Di antara bus dan truk."
+          }
+        ],
+        [
+          {
+            soal: "Di mana tong sampah?",
+            contohJawaban: "Di bawah pohon, di antara Bimbel Brilian dan Rumah Ais."
+          },
+          {
+            soal: "Di mana dua ekor ayam?",
+            contohJawaban: "Di depan Rumah Ais."
+          },
+          {
+            soal: "Apa yang ada di belakang Rumah Albab?",
+            contohJawaban: "Dua pohon."
+          },
+          {
+            soal: "Apa yang ada di sebelah kiri Bimbel Brilian?",
+            contohJawaban: "Rumah Albab."
+          }
+        ]
+      ],
+
+      cocokkanSets: [
+        {
+          instruksi: "Pasangkan benda dengan posisinya!",
+          pasangan: [
+            { kiri: { emoji: "🏠", teks: "Rumah Albab" }, kanan: "Sebelah kiri Bimbel Brilian" },
+            { kiri: { emoji: "📘", teks: "Rumah Ais" }, kanan: "Sebelah kanan Bimbel Brilian" },
+            { kiri: { emoji: "🌸", teks: "Pot bunga" }, kanan: "Di depan Bimbel Brilian" },
+            { kiri: { emoji: "🐦", teks: "Tiga burung" }, kanan: "Di atas Rumah Ais" },
+            { kiri: { emoji: "🌳", teks: "Dua pohon" }, kanan: "Di belakang Rumah Albab" }
+          ]
+        },
+        {
+          instruksi: "Pasangkan benda di jalan dengan letaknya!",
+          pasangan: [
+            { kiri: { emoji: "🚌", teks: "Bus" }, kanan: "Sebelah kiri mobil merah" },
+            { kiri: { emoji: "🚚", teks: "Truk" }, kanan: "Di belakang mobil merah" },
+            { kiri: { emoji: "🐓", teks: "Dua ayam" }, kanan: "Di depan Rumah Ais" },
+            { kiri: { emoji: "🗑️", teks: "Tong sampah" }, kanan: "Di bawah pohon" }
           ]
         }
       ]
@@ -3153,13 +3705,14 @@ const PLH_SUBJECT = {
 
 /* ============================================================
  *  MATA PELAJARAN: BAHASA MANDARIN
+ *  Kosakata pemula Kelas 2: hanzi, pinyin, dan arti bahasa Indonesia.
  * ============================================================ */
 const BAHASA_MANDARIN_SUBJECT = {
   id: "bahasa-mandarin",
   nama: "Bahasa Mandarin",
   ikon: "🀄",
   warna: "#ff6b6b",
-  deskripsi: "Belajar kosakata makanan dan minuman dalam bahasa Mandarin.",
+  deskripsi: "Belajar salam, angka, warna, keluarga, dan kata sehari-hari.",
   topik: [
     {
       id: "makanan-dan-minuman",
@@ -3171,7 +3724,8 @@ const BAHASA_MANDARIN_SUBJECT = {
         { emoji: "🍗", teks: "炸鸡 (zhá jī) = ayam goreng" },
         { emoji: "🍟", teks: "薯条 (shǔ tiáo) = kentang goreng" },
         { emoji: "🍜", teks: "面条 (miàn tiáo) = mie" },
-        { emoji: "🍚", teks: "炒饭 (chǎo fàn) = nasi goreng" },
+        { emoji: "🍚", teks: "米饭 (mǐ fàn) = nasi" },
+        { emoji: "🍛", teks: "炒饭 (chǎo fàn) = nasi goreng" },
         { emoji: "🥚", teks: "鸡蛋 (jī dàn) = telur" },
         { emoji: "🍞", teks: "面包 (miàn bāo) = roti" }
       ],
@@ -3191,23 +3745,412 @@ const BAHASA_MANDARIN_SUBJECT = {
           { soal: "Pinyin dari 面条 adalah ....", pilihan: ["miàn tiáo", "miàn bāo", "jī dàn"], jawaban: 0, penjelasan: "面条 dibaca miàn tiáo." },
           { soal: "面包 berarti ....", pilihan: ["roti", "mie", "telur"], jawaban: 0, penjelasan: "面包 (miàn bāo) = roti." },
           { soal: "炸鸡 adalah ....", pilihan: ["ayam goreng", "kentang goreng", "nasi goreng"], jawaban: 0, penjelasan: "炸鸡 (zhá jī) = ayam goreng." }
+        ],
+        [
+          { soal: "Nasi putih dalam mangkuk disebut ....", pilihan: ["米饭 (mǐ fàn)", "炒饭 (chǎo fàn)", "面条 (miàn tiáo)"], jawaban: 0, penjelasan: "米饭 (mǐ fàn) = nasi. 炒饭 adalah nasi yang sudah digoreng." },
+          { soal: "米饭 berarti ....", pilihan: ["nasi", "nasi goreng", "roti"], jawaban: 0, penjelasan: "米饭 (mǐ fàn) berarti nasi." },
+          { soal: "Pinyin dari 米饭 adalah ....", pilihan: ["mǐ fàn", "chǎo fàn", "miàn tiáo"], jawaban: 0, penjelasan: "米饭 dibaca mǐ fàn." },
+          { soal: "Mana yang bukan makanan yang sama? 米饭 adalah nasi, sedangkan 炒饭 adalah ....", pilihan: ["nasi goreng", "telur", "roti"], jawaban: 0, penjelasan: "炒 (chǎo) berarti menumis atau menggoreng, jadi 炒饭 adalah nasi goreng." }
         ]
       ],
-      esaiSets: [[{ soal: "Tuliskan hanzi dan pinyin untuk hamburger.", contohJawaban: "汉堡包 (hàn bǎo bāo)" }, { soal: "Tuliskan hanzi dan pinyin untuk mie.", contohJawaban: "面条 (miàn tiáo)" }, { soal: "Tuliskan hanzi dan pinyin untuk roti.", contohJawaban: "面包 (miàn bāo)" }]],
-      cocokkanSets: [{ instruksi: "Pasangkan makanan dengan hanzi-nya!", pasangan: [{ kiri: { emoji: "🍔", teks: "Hamburger" }, kanan: "汉堡包" }, { kiri: { emoji: "🌭", teks: "Hot dog" }, kanan: "热狗" }, { kiri: { emoji: "🍗", teks: "Ayam goreng" }, kanan: "炸鸡" }, { kiri: { emoji: "🍟", teks: "Kentang goreng" }, kanan: "薯条" }, { kiri: { emoji: "🍜", teks: "Mie" }, kanan: "面条" }, { kiri: { emoji: "🍞", teks: "Roti" }, kanan: "面包" }] }]
+      esaiSets: [[
+        { soal: "Tuliskan hanzi dan pinyin untuk hamburger.", contohJawaban: "汉堡包 (hàn bǎo bāo)" },
+        { soal: "Tuliskan hanzi dan pinyin untuk mie.", contohJawaban: "面条 (miàn tiáo)" },
+        { soal: "Tuliskan hanzi dan pinyin untuk nasi.", contohJawaban: "米饭 (mǐ fàn)" },
+        { soal: "Tuliskan hanzi dan pinyin untuk roti.", contohJawaban: "面包 (miàn bāo)" }
+      ]],
+      cocokkanSets: [
+        {
+          instruksi: "Pasangkan makanan dengan hanzi-nya!",
+          pasangan: [
+            { kiri: { emoji: "🍔", teks: "Hamburger" }, kanan: "汉堡包" },
+            { kiri: { emoji: "🌭", teks: "Hot dog" }, kanan: "热狗" },
+            { kiri: { emoji: "🍗", teks: "Ayam goreng" }, kanan: "炸鸡" },
+            { kiri: { emoji: "🍟", teks: "Kentang goreng" }, kanan: "薯条" },
+            { kiri: { emoji: "🍜", teks: "Mie" }, kanan: "面条" },
+            { kiri: { emoji: "🍞", teks: "Roti" }, kanan: "面包" }
+          ]
+        },
+        {
+          instruksi: "Pasangkan makanan di mangkuk dengan hanzi-nya!",
+          pasangan: [
+            { kiri: { emoji: "🍚", teks: "Nasi" }, kanan: "米饭" },
+            { kiri: { emoji: "🍛", teks: "Nasi goreng" }, kanan: "炒饭" },
+            { kiri: { emoji: "🥚", teks: "Telur" }, kanan: "鸡蛋" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "salam-dan-perkenalan",
+      judul: "Salam dan Perkenalan",
+      emoji: "👋",
+      ringkasan: [
+        { emoji: "👋", teks: "Saat bertemu teman, ucapkan 你好 (nǐ hǎo). Artinya halo." },
+        { emoji: "🌅", teks: "Pagi hari kita bilang 早上好 (zǎo shang hǎo). Artinya selamat pagi." },
+        { emoji: "🧑‍🏫", teks: "Kepada guru kita bisa bilang 老师好 (lǎo shī hǎo). 老师 (lǎo shī) berarti guru." },
+        { emoji: "🙏", teks: "谢谢 (xiè xie) berarti terima kasih. Jawabannya 不客气 (bú kè qi), artinya sama-sama." },
+        { emoji: "🙋", teks: "Untuk pamit, ucapkan 再见 (zài jiàn). Artinya sampai jumpa." },
+        { emoji: "🪪", teks: "我叫 (wǒ jiào) dipakai untuk menyebut nama. Contoh: 我叫 Lou." },
+        { emoji: "❓", teks: "Kamu bertanya nama teman dengan 你叫什么名字？ (nǐ jiào shén me míng zi?)" },
+        { emoji: "🎒", teks: "我是学生 (wǒ shì xué sheng) berarti saya murid." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Halo dalam bahasa Mandarin adalah ....", pilihan: ["你好 (nǐ hǎo)", "再见 (zài jiàn)", "谢谢 (xiè xie)"], jawaban: 0, penjelasan: "你好 (nǐ hǎo) = halo." },
+          { soal: "早上好 berarti ....", pilihan: ["selamat pagi", "sampai jumpa", "terima kasih"], jawaban: 0, penjelasan: "早上好 (zǎo shang hǎo) diucapkan pada pagi hari." },
+          { soal: "Terima kasih ditulis ....", pilihan: ["再见", "谢谢 (xiè xie)", "你好"], jawaban: 1, penjelasan: "谢谢 (xiè xie) = terima kasih." },
+          { soal: "再见 berarti ....", pilihan: ["sampai jumpa", "selamat pagi", "nama saya"], jawaban: 0, penjelasan: "再见 (zài jiàn) = sampai jumpa." }
+        ],
+        [
+          { soal: "我叫 Lou berarti ....", pilihan: ["Nama saya Lou", "Sampai jumpa, Lou", "Terima kasih, Lou"], jawaban: 0, penjelasan: "我叫 (wǒ jiào) dipakai untuk memperkenalkan nama." },
+          { soal: "Pertanyaan siapa namamu adalah ....", pilihan: ["你叫什么名字？", "早上好", "不客气"], jawaban: 0, penjelasan: "你叫什么名字？ (nǐ jiào shén me míng zi?) = Siapa namamu?" },
+          { soal: "老师 berarti ....", pilihan: ["guru", "murid", "teman"], jawaban: 0, penjelasan: "老师 (lǎo shī) = guru. Murid adalah 学生 (xué sheng)." },
+          { soal: "Kalau teman bilang 谢谢, jawaban yang sopan adalah ....", pilihan: ["不客气", "再见", "名字"], jawaban: 0, penjelasan: "不客气 (bú kè qi) berarti sama-sama." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi dan pinyin untuk halo.", contohJawaban: "你好 (nǐ hǎo)" },
+        { soal: "Tuliskan hanzi dan pinyin untuk terima kasih.", contohJawaban: "谢谢 (xiè xie)" },
+        { soal: "Bagaimana cara bilang nama saya Lou?", contohJawaban: "我叫 Lou (wǒ jiào Lou)." },
+        { soal: "Apa arti 我是学生?", contohJawaban: "Saya murid. 我是 (wǒ shì) = saya adalah, 学生 (xué sheng) = murid." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan salam dengan artinya!",
+        pasangan: [
+          { kiri: { emoji: "👋", teks: "你好" }, kanan: "Halo" },
+          { kiri: { emoji: "🌅", teks: "早上好" }, kanan: "Selamat pagi" },
+          { kiri: { emoji: "🙏", teks: "谢谢" }, kanan: "Terima kasih" },
+          { kiri: { emoji: "🙋", teks: "再见" }, kanan: "Sampai jumpa" },
+          { kiri: { emoji: "🪪", teks: "我叫" }, kanan: "Nama saya" }
+        ]
+      }]
+    },
+    {
+      id: "angka-1-10",
+      judul: "Angka 1 sampai 10",
+      emoji: "🔢",
+      ringkasan: [
+        { emoji: "1️⃣", teks: "一 (yī) = 1" },
+        { emoji: "2️⃣", teks: "二 (èr) = 2" },
+        { emoji: "3️⃣", teks: "三 (sān) = 3" },
+        { emoji: "4️⃣", teks: "四 (sì) = 4. Jangan tertukar dengan 十." },
+        { emoji: "5️⃣", teks: "五 (wǔ) = 5" },
+        { emoji: "6️⃣", teks: "六 (liù) = 6" },
+        { emoji: "7️⃣", teks: "七 (qī) = 7" },
+        { emoji: "8️⃣", teks: "八 (bā) = 8" },
+        { emoji: "9️⃣", teks: "九 (jiǔ) = 9" },
+        { emoji: "🔟", teks: "十 (shí) = 10" }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Angka 1 dalam bahasa Mandarin adalah ....", pilihan: ["一 (yī)", "二 (èr)", "三 (sān)"], jawaban: 0, penjelasan: "一 (yī) = 1." },
+          { soal: "三 berarti ....", pilihan: ["3", "4", "10"], jawaban: 0, penjelasan: "三 (sān) = 3." },
+          { soal: "Angka 5 ditulis ....", pilihan: ["五 (wǔ)", "六 (liù)", "九 (jiǔ)"], jawaban: 0, penjelasan: "五 (wǔ) = 5." },
+          { soal: "八 berarti ....", pilihan: ["8", "7", "9"], jawaban: 0, penjelasan: "八 (bā) = 8." }
+        ],
+        [
+          { soal: "Mana yang berarti 4?", pilihan: ["四 (sì)", "十 (shí)", "七 (qī)"], jawaban: 0, penjelasan: "四 (sì) = 4. 十 (shí) = 10." },
+          { soal: "十 berarti ....", pilihan: ["10", "4", "1"], jawaban: 0, penjelasan: "十 (shí) = 10." },
+          { soal: "Pinyin dari 九 adalah ....", pilihan: ["jiǔ", "qī", "liù"], jawaban: 0, penjelasan: "九 dibaca jiǔ dan berarti 9." },
+          { soal: "Setelah 六, angka berikutnya adalah ....", pilihan: ["七 (qī)", "五 (wǔ)", "四 (sì)"], jawaban: 0, penjelasan: "六 = 6, lalu 七 = 7." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi angka 1, 2, dan 3 beserta pinyin-nya.", contohJawaban: "一 (yī), 二 (èr), 三 (sān)." },
+        { soal: "Apa beda 四 dan 十?", contohJawaban: "四 (sì) berarti 4. 十 (shí) berarti 10." },
+        { soal: "Tuliskan hanzi dan pinyin untuk angka 8 dan 9.", contohJawaban: "八 (bā) = 8. 九 (jiǔ) = 9." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan angka dengan hanzi-nya!",
+        pasangan: [
+          { kiri: { emoji: "1️⃣", teks: "1" }, kanan: "一" },
+          { kiri: { emoji: "2️⃣", teks: "2" }, kanan: "二" },
+          { kiri: { emoji: "3️⃣", teks: "3" }, kanan: "三" },
+          { kiri: { emoji: "5️⃣", teks: "5" }, kanan: "五" },
+          { kiri: { emoji: "🔟", teks: "10" }, kanan: "十" }
+        ]
+      }]
+    },
+    {
+      id: "warna",
+      judul: "Warna",
+      emoji: "🎨",
+      ringkasan: [
+        { emoji: "🔴", teks: "红色 (hóng sè) = merah" },
+        { emoji: "🟡", teks: "黄色 (huáng sè) = kuning" },
+        { emoji: "🔵", teks: "蓝色 (lán sè) = biru" },
+        { emoji: "🟢", teks: "绿色 (lǜ sè) = hijau" },
+        { emoji: "⚪", teks: "白色 (bái sè) = putih" },
+        { emoji: "⚫", teks: "黑色 (hēi sè) = hitam" },
+        { emoji: "🖍️", teks: "Kata 色 (sè) berarti warna. Jadi 红色 adalah warna merah." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Merah dalam bahasa Mandarin adalah ....", pilihan: ["红色 (hóng sè)", "蓝色 (lán sè)", "白色 (bái sè)"], jawaban: 0, penjelasan: "红色 (hóng sè) = merah." },
+          { soal: "黄色 berarti ....", pilihan: ["kuning", "hijau", "hitam"], jawaban: 0, penjelasan: "黄色 (huáng sè) = kuning." },
+          { soal: "Biru ditulis ....", pilihan: ["蓝色 (lán sè)", "绿色 (lǜ sè)", "红色 (hóng sè)"], jawaban: 0, penjelasan: "蓝色 (lán sè) = biru." },
+          { soal: "黑色 berarti ....", pilihan: ["hitam", "putih", "kuning"], jawaban: 0, penjelasan: "黑色 (hēi sè) = hitam. Putih adalah 白色." }
+        ],
+        [
+          { soal: "绿色 berarti ....", pilihan: ["hijau", "merah", "biru"], jawaban: 0, penjelasan: "绿色 (lǜ sè) = hijau." },
+          { soal: "Putih dalam bahasa Mandarin adalah ....", pilihan: ["白色 (bái sè)", "黑色 (hēi sè)", "黄色 (huáng sè)"], jawaban: 0, penjelasan: "白色 (bái sè) = putih." },
+          { soal: "色 (sè) berarti ....", pilihan: ["warna", "angka", "nama"], jawaban: 0, penjelasan: "色 artinya warna. 红色 = warna merah." },
+          { soal: "Pinyin dari 蓝色 adalah ....", pilihan: ["lán sè", "hóng sè", "lǜ sè"], jawaban: 0, penjelasan: "蓝 dibaca lán, 色 dibaca sè." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi dan pinyin untuk merah dan kuning.", contohJawaban: "红色 (hóng sè) = merah. 黄色 (huáng sè) = kuning." },
+        { soal: "Apa arti 绿色 dan 黑色?", contohJawaban: "绿色 = hijau. 黑色 = hitam." },
+        { soal: "Apa arti kata 色?", contohJawaban: "色 (sè) berarti warna." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan warna dengan hanzi-nya!",
+        pasangan: [
+          { kiri: { emoji: "🔴", teks: "Merah" }, kanan: "红色" },
+          { kiri: { emoji: "🟡", teks: "Kuning" }, kanan: "黄色" },
+          { kiri: { emoji: "🔵", teks: "Biru" }, kanan: "蓝色" },
+          { kiri: { emoji: "🟢", teks: "Hijau" }, kanan: "绿色" },
+          { kiri: { emoji: "⚪", teks: "Putih" }, kanan: "白色" },
+          { kiri: { emoji: "⚫", teks: "Hitam" }, kanan: "黑色" }
+        ]
+      }]
+    },
+    {
+      id: "anggota-keluarga",
+      judul: "Anggota Keluarga",
+      emoji: "👪",
+      ringkasan: [
+        { emoji: "👨", teks: "爸爸 (bà ba) = ayah" },
+        { emoji: "👩", teks: "妈妈 (mā ma) = ibu" },
+        { emoji: "👦", teks: "哥哥 (gē ge) = kakak laki-laki" },
+        { emoji: "👧", teks: "姐姐 (jiě jie) = kakak perempuan" },
+        { emoji: "🧒", teks: "弟弟 (dì di) = adik laki-laki" },
+        { emoji: "👶", teks: "妹妹 (mèi mei) = adik perempuan" },
+        { emoji: "👴", teks: "爷爷 (yé ye) = kakek" },
+        { emoji: "👵", teks: "奶奶 (nǎi nai) = nenek" }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Ayah dalam bahasa Mandarin adalah ....", pilihan: ["爸爸 (bà ba)", "妈妈 (mā ma)", "爷爷 (yé ye)"], jawaban: 0, penjelasan: "爸爸 (bà ba) = ayah. Ibu adalah 妈妈." },
+          { soal: "妈妈 berarti ....", pilihan: ["ibu", "nenek", "kakak perempuan"], jawaban: 0, penjelasan: "妈妈 (mā ma) = ibu." },
+          { soal: "Kakak laki-laki disebut ....", pilihan: ["哥哥 (gē ge)", "弟弟 (dì di)", "妹妹 (mèi mei)"], jawaban: 0, penjelasan: "哥哥 (gē ge) = kakak laki-laki. 弟弟 = adik laki-laki." },
+          { soal: "姐姐 berarti ....", pilihan: ["kakak perempuan", "adik perempuan", "ibu"], jawaban: 0, penjelasan: "姐姐 (jiě jie) = kakak perempuan." }
+        ],
+        [
+          { soal: "弟弟 berarti ....", pilihan: ["adik laki-laki", "kakek", "ayah"], jawaban: 0, penjelasan: "弟弟 (dì di) = adik laki-laki." },
+          { soal: "Adik perempuan disebut ....", pilihan: ["妹妹 (mèi mei)", "姐姐 (jiě jie)", "奶奶 (nǎi nai)"], jawaban: 0, penjelasan: "妹妹 (mèi mei) = adik perempuan." },
+          { soal: "爷爷 berarti ....", pilihan: ["kakek", "nenek", "ayah"], jawaban: 0, penjelasan: "爷爷 (yé ye) = kakek. Nenek adalah 奶奶." },
+          { soal: "奶奶 berarti ....", pilihan: ["nenek", "ibu", "kakak"], jawaban: 0, penjelasan: "奶奶 (nǎi nai) = nenek." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi dan pinyin untuk ayah dan ibu.", contohJawaban: "爸爸 (bà ba) = ayah. 妈妈 (mā ma) = ibu." },
+        { soal: "Apa beda 哥哥 dan 弟弟?", contohJawaban: "哥哥 (gē ge) = kakak laki-laki. 弟弟 (dì di) = adik laki-laki." },
+        { soal: "Tuliskan hanzi untuk kakek dan nenek.", contohJawaban: "爷爷 = kakek. 奶奶 = nenek." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan anggota keluarga dengan hanzi-nya!",
+        pasangan: [
+          { kiri: { emoji: "👨", teks: "Ayah" }, kanan: "爸爸" },
+          { kiri: { emoji: "👩", teks: "Ibu" }, kanan: "妈妈" },
+          { kiri: { emoji: "👦", teks: "Kakak laki-laki" }, kanan: "哥哥" },
+          { kiri: { emoji: "👧", teks: "Kakak perempuan" }, kanan: "姐姐" },
+          { kiri: { emoji: "👴", teks: "Kakek" }, kanan: "爷爷" },
+          { kiri: { emoji: "👵", teks: "Nenek" }, kanan: "奶奶" }
+        ]
+      }]
+    },
+    {
+      id: "anggota-tubuh",
+      judul: "Anggota Tubuh",
+      emoji: "🙋",
+      ringkasan: [
+        { emoji: "🙂", teks: "头 (tóu) = kepala" },
+        { emoji: "👀", teks: "眼睛 (yǎn jing) = mata" },
+        { emoji: "👃", teks: "鼻子 (bí zi) = hidung" },
+        { emoji: "👄", teks: "嘴巴 (zuǐ ba) = mulut" },
+        { emoji: "👂", teks: "耳朵 (ěr duo) = telinga" },
+        { emoji: "✋", teks: "手 (shǒu) = tangan" },
+        { emoji: "🦶", teks: "脚 (jiǎo) = kaki" }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Kepala dalam bahasa Mandarin adalah ....", pilihan: ["头 (tóu)", "手 (shǒu)", "脚 (jiǎo)"], jawaban: 0, penjelasan: "头 (tóu) = kepala." },
+          { soal: "眼睛 berarti ....", pilihan: ["mata", "telinga", "mulut"], jawaban: 0, penjelasan: "眼睛 (yǎn jing) = mata." },
+          { soal: "Hidung disebut ....", pilihan: ["鼻子 (bí zi)", "嘴巴 (zuǐ ba)", "耳朵 (ěr duo)"], jawaban: 0, penjelasan: "鼻子 (bí zi) = hidung." },
+          { soal: "嘴巴 berarti ....", pilihan: ["mulut", "mata", "kaki"], jawaban: 0, penjelasan: "嘴巴 (zuǐ ba) = mulut." }
+        ],
+        [
+          { soal: "耳朵 berarti ....", pilihan: ["telinga", "hidung", "tangan"], jawaban: 0, penjelasan: "耳朵 (ěr duo) = telinga." },
+          { soal: "Tangan ditulis ....", pilihan: ["手 (shǒu)", "脚 (jiǎo)", "头 (tóu)"], jawaban: 0, penjelasan: "手 (shǒu) = tangan. Kaki adalah 脚 (jiǎo)." },
+          { soal: "脚 berarti ....", pilihan: ["kaki", "tangan", "kepala"], jawaban: 0, penjelasan: "脚 (jiǎo) = kaki." },
+          { soal: "Kita mendengar dengan ....", pilihan: ["耳朵", "鼻子", "嘴巴"], jawaban: 0, penjelasan: "耳朵 adalah telinga, alat untuk mendengar." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi dan pinyin untuk mata dan telinga.", contohJawaban: "眼睛 (yǎn jing) = mata. 耳朵 (ěr duo) = telinga." },
+        { soal: "Apa arti 手 dan 脚?", contohJawaban: "手 (shǒu) = tangan. 脚 (jiǎo) = kaki." },
+        { soal: "Sebutkan tiga anggota tubuh yang ada di kepala, dalam bahasa Indonesia atau hanzi.", contohJawaban: "Mata (眼睛), hidung (鼻子), dan mulut (嘴巴). Telinga (耳朵) juga boleh." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan anggota tubuh dengan hanzi-nya!",
+        pasangan: [
+          { kiri: { emoji: "👀", teks: "Mata" }, kanan: "眼睛" },
+          { kiri: { emoji: "👃", teks: "Hidung" }, kanan: "鼻子" },
+          { kiri: { emoji: "👄", teks: "Mulut" }, kanan: "嘴巴" },
+          { kiri: { emoji: "👂", teks: "Telinga" }, kanan: "耳朵" },
+          { kiri: { emoji: "✋", teks: "Tangan" }, kanan: "手" },
+          { kiri: { emoji: "🦶", teks: "Kaki" }, kanan: "脚" }
+        ]
+      }]
+    },
+    {
+      id: "hewan",
+      judul: "Hewan",
+      emoji: "🐾",
+      ringkasan: [
+        { emoji: "🐱", teks: "猫 (māo) = kucing" },
+        { emoji: "🐶", teks: "狗 (gǒu) = anjing" },
+        { emoji: "🐦", teks: "鸟 (niǎo) = burung" },
+        { emoji: "🐟", teks: "鱼 (yú) = ikan" },
+        { emoji: "🐴", teks: "马 (mǎ) = kuda" },
+        { emoji: "🐰", teks: "兔子 (tù zi) = kelinci" },
+        { emoji: "🐮", teks: "牛 (niú) = sapi" },
+        { emoji: "🐑", teks: "羊 (yáng) = domba" }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Kucing dalam bahasa Mandarin adalah ....", pilihan: ["猫 (māo)", "狗 (gǒu)", "鸟 (niǎo)"], jawaban: 0, penjelasan: "猫 (māo) = kucing. Anjing adalah 狗." },
+          { soal: "狗 berarti ....", pilihan: ["anjing", "ikan", "kuda"], jawaban: 0, penjelasan: "狗 (gǒu) = anjing." },
+          { soal: "Burung disebut ....", pilihan: ["鸟 (niǎo)", "鱼 (yú)", "马 (mǎ)"], jawaban: 0, penjelasan: "鸟 (niǎo) = burung." },
+          { soal: "鱼 berarti ....", pilihan: ["ikan", "kucing", "sapi"], jawaban: 0, penjelasan: "鱼 (yú) = ikan." }
+        ],
+        [
+          { soal: "马 berarti ....", pilihan: ["kuda", "domba", "kelinci"], jawaban: 0, penjelasan: "马 (mǎ) = kuda." },
+          { soal: "Kelinci ditulis ....", pilihan: ["兔子 (tù zi)", "牛 (niú)", "羊 (yáng)"], jawaban: 0, penjelasan: "兔子 (tù zi) = kelinci." },
+          { soal: "牛 berarti ....", pilihan: ["sapi", "kuda", "burung"], jawaban: 0, penjelasan: "牛 (niú) = sapi." },
+          { soal: "羊 berarti ....", pilihan: ["domba", "ikan", "anjing"], jawaban: 0, penjelasan: "羊 (yáng) = domba." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi dan pinyin untuk kucing dan anjing.", contohJawaban: "猫 (māo) = kucing. 狗 (gǒu) = anjing." },
+        { soal: "Apa arti 鸟 dan 鱼?", contohJawaban: "鸟 (niǎo) = burung. 鱼 (yú) = ikan." },
+        { soal: "Tuliskan hanzi untuk kelinci dan sapi.", contohJawaban: "兔子 = kelinci. 牛 = sapi." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan hewan dengan hanzi-nya!",
+        pasangan: [
+          { kiri: { emoji: "🐱", teks: "Kucing" }, kanan: "猫" },
+          { kiri: { emoji: "🐶", teks: "Anjing" }, kanan: "狗" },
+          { kiri: { emoji: "🐦", teks: "Burung" }, kanan: "鸟" },
+          { kiri: { emoji: "🐟", teks: "Ikan" }, kanan: "鱼" },
+          { kiri: { emoji: "🐴", teks: "Kuda" }, kanan: "马" },
+          { kiri: { emoji: "🐰", teks: "Kelinci" }, kanan: "兔子" }
+        ]
+      }]
+    },
+    {
+      id: "hari-dalam-seminggu",
+      judul: "Hari dalam Seminggu",
+      emoji: "📅",
+      ringkasan: [
+        { emoji: "1️⃣", teks: "Hari dalam bahasa Mandarin dimulai dengan 星期 (xīng qī)." },
+        { emoji: "📌", teks: "星期一 (xīng qī yī) = Senin. Angka 一 berarti hari ke-1." },
+        { emoji: "2️⃣", teks: "星期二 (xīng qī èr) = Selasa." },
+        { emoji: "3️⃣", teks: "星期三 (xīng qī sān) = Rabu." },
+        { emoji: "4️⃣", teks: "星期四 (xīng qī sì) = Kamis." },
+        { emoji: "5️⃣", teks: "星期五 (xīng qī wǔ) = Jumat." },
+        { emoji: "6️⃣", teks: "星期六 (xīng qī liù) = Sabtu." },
+        { emoji: "☀️", teks: "Minggu bisa disebut 星期日 (xīng qī rì) atau 星期天 (xīng qī tiān)." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Senin dalam bahasa Mandarin adalah ....", pilihan: ["星期一", "星期二", "星期日"], jawaban: 0, penjelasan: "星期一 (xīng qī yī) = Senin." },
+          { soal: "星期二 berarti ....", pilihan: ["Selasa", "Rabu", "Jumat"], jawaban: 0, penjelasan: "二 = 2, jadi 星期二 = Selasa." },
+          { soal: "Rabu ditulis ....", pilihan: ["星期三", "星期四", "星期六"], jawaban: 0, penjelasan: "星期三 (xīng qī sān) = Rabu." },
+          { soal: "星期五 berarti ....", pilihan: ["Jumat", "Kamis", "Sabtu"], jawaban: 0, penjelasan: "五 = 5, jadi 星期五 = Jumat." }
+        ],
+        [
+          { soal: "星期六 berarti ....", pilihan: ["Sabtu", "Minggu", "Senin"], jawaban: 0, penjelasan: "六 = 6, jadi 星期六 = Sabtu." },
+          { soal: "星期日 berarti ....", pilihan: ["Minggu", "Senin", "Kamis"], jawaban: 0, penjelasan: "星期日 (xīng qī rì) = Minggu." },
+          { soal: "Cara lain menulis Minggu adalah ....", pilihan: ["星期天", "星期一", "星期三"], jawaban: 0, penjelasan: "星期天 (xīng qī tiān) juga berarti Minggu." },
+          { soal: "Kata 星期 berarti ....", pilihan: ["minggu (pekan)", "warna", "hewan"], jawaban: 0, penjelasan: "星期 (xīng qī) dipakai di depan nama hari." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi untuk Senin dan Selasa.", contohJawaban: "星期一 = Senin. 星期二 = Selasa." },
+        { soal: "Mengapa Senin memakai angka 一?", contohJawaban: "Karena Senin adalah hari ke-1. 一 (yī) berarti 1." },
+        { soal: "Tuliskan dua cara menulis hari Minggu.", contohJawaban: "星期日 (xīng qī rì) atau 星期天 (xīng qī tiān)." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan hari dengan hanzi-nya!",
+        pasangan: [
+          { kiri: { emoji: "1️⃣", teks: "Senin" }, kanan: "星期一" },
+          { kiri: { emoji: "2️⃣", teks: "Selasa" }, kanan: "星期二" },
+          { kiri: { emoji: "3️⃣", teks: "Rabu" }, kanan: "星期三" },
+          { kiri: { emoji: "5️⃣", teks: "Jumat" }, kanan: "星期五" },
+          { kiri: { emoji: "☀️", teks: "Minggu" }, kanan: "星期日" }
+        ]
+      }]
+    },
+    {
+      id: "benda-di-sekolah",
+      judul: "Benda di Sekolah",
+      emoji: "🏫",
+      ringkasan: [
+        { emoji: "📒", teks: "书 (shū) = buku" },
+        { emoji: "🖊️", teks: "笔 (bǐ) = pena" },
+        { emoji: "✏️", teks: "铅笔 (qiān bǐ) = pensil" },
+        { emoji: "🎒", teks: "书包 (shū bāo) = tas sekolah" },
+        { emoji: "📏", teks: "尺子 (chǐ zi) = penggaris" },
+        { emoji: "⬜", teks: "橡皮 (xiàng pí) = penghapus" },
+        { emoji: "🪑", teks: "桌子 (zhuō zi) = meja. 椅子 (yǐ zi) = kursi." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Buku dalam bahasa Mandarin adalah ....", pilihan: ["书 (shū)", "笔 (bǐ)", "尺子 (chǐ zi)"], jawaban: 0, penjelasan: "书 (shū) = buku." },
+          { soal: "笔 berarti ....", pilihan: ["pena", "meja", "kursi"], jawaban: 0, penjelasan: "笔 (bǐ) = pena." },
+          { soal: "Pensil disebut ....", pilihan: ["铅笔 (qiān bǐ)", "橡皮 (xiàng pí)", "书包 (shū bāo)"], jawaban: 0, penjelasan: "铅笔 (qiān bǐ) = pensil. 铅 berarti timah, 笔 berarti alat tulis." },
+          { soal: "书包 berarti ....", pilihan: ["tas sekolah", "penggaris", "penghapus"], jawaban: 0, penjelasan: "书 = buku, 包 = tas, jadi 书包 = tas sekolah." }
+        ],
+        [
+          { soal: "尺子 berarti ....", pilihan: ["penggaris", "buku", "kursi"], jawaban: 0, penjelasan: "尺子 (chǐ zi) = penggaris." },
+          { soal: "Penghapus ditulis ....", pilihan: ["橡皮 (xiàng pí)", "桌子 (zhuō zi)", "椅子 (yǐ zi)"], jawaban: 0, penjelasan: "橡皮 (xiàng pí) = penghapus." },
+          { soal: "桌子 berarti ....", pilihan: ["meja", "kursi", "tas"], jawaban: 0, penjelasan: "桌子 (zhuō zi) = meja. Kursi adalah 椅子." },
+          { soal: "椅子 berarti ....", pilihan: ["kursi", "pensil", "buku"], jawaban: 0, penjelasan: "椅子 (yǐ zi) = kursi." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan hanzi dan pinyin untuk buku dan tas sekolah.", contohJawaban: "书 (shū) = buku. 书包 (shū bāo) = tas sekolah." },
+        { soal: "Apa beda 笔 dan 铅笔?", contohJawaban: "笔 (bǐ) = pena. 铅笔 (qiān bǐ) = pensil." },
+        { soal: "Tuliskan hanzi untuk meja dan kursi.", contohJawaban: "桌子 = meja. 椅子 = kursi." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan benda sekolah dengan hanzi-nya!",
+        pasangan: [
+          { kiri: { emoji: "📒", teks: "Buku" }, kanan: "书" },
+          { kiri: { emoji: "✏️", teks: "Pensil" }, kanan: "铅笔" },
+          { kiri: { emoji: "🎒", teks: "Tas sekolah" }, kanan: "书包" },
+          { kiri: { emoji: "📏", teks: "Penggaris" }, kanan: "尺子" },
+          { kiri: { emoji: "⬜", teks: "Penghapus" }, kanan: "橡皮" },
+          { kiri: { emoji: "🪑", teks: "Kursi" }, kanan: "椅子" }
+        ]
+      }]
     }
   ]
 };
 
 /* ============================================================
  *  MATA PELAJARAN: SBDP (Seni Budaya dan Prakarya)
+ *  Kelas 2 SD — bunyi, rupa, musik, tari, dan karya tempel.
  * ============================================================ */
 const SBDP_SUBJECT = {
   id: "sbdp",
   nama: "SBDP",
   ikon: "🎵",
   warna: "#9b5de5",
-  deskripsi: "Belajar tentang bunyi, sumber bunyi, dan bunyi alam/buatan.",
+  deskripsi: "Belajar bunyi, rupa, lagu, tari, dan karya tempel.",
   topik: [
     {
       id: "bunyi",
@@ -3215,9 +4158,14 @@ const SBDP_SUBJECT = {
       emoji: "🔊",
       ringkasan: [
         { emoji: "🔊", teks: "Bunyi berasal dari benda yang bergetar." },
-        { emoji: "🗣️", teks: "Sumber bunyi adalah benda atau sesuatu yang menghasilkan bunyi." },
-        { emoji: "🌧️", teks: "Bunyi alam: suara hujan, suara burung." },
-        { emoji: "🎸", teks: "Bunyi buatan: suara angklung, suara peluit." }
+        { emoji: "🗣️", teks: "Contoh bunyi dari getaran: suara manusia berbicara dan suara lonceng." },
+        { emoji: "📍", teks: "Sumber bunyi adalah benda atau sesuatu yang menghasilkan bunyi." },
+        { emoji: "👨", teks: "Sumber bunyi dari manusia: berbicara dan bernyanyi." },
+        { emoji: "🐦", teks: "Sumber bunyi dari hewan: burung berkicau." },
+        { emoji: "🎸", teks: "Sumber bunyi dari alat musik: gitar dan angklung." },
+        { emoji: "🔔", teks: "Sumber bunyi dari benda di sekitar: bel dan lonceng." },
+        { emoji: "🌧️", teks: "Bunyi alam berasal dari alam atau makhluk hidup. Contoh: suara hujan dan suara burung." },
+        { emoji: "🎺", teks: "Bunyi buatan dihasilkan benda atau alat yang dibuat atau dimainkan manusia. Contoh: angklung dan peluit." }
       ],
       pilihanGandaSets: [
         [
@@ -3225,20 +4173,355 @@ const SBDP_SUBJECT = {
           { soal: "Contoh sumber bunyi dari manusia adalah ....", pilihan: ["Bercakap dan bernyanyi", "Berlari", "Tidur"], jawaban: 0, penjelasan: "Manusia menghasilkan bunyi dengan berbicara dan bernyanyi." },
           { soal: "Contoh sumber bunyi dari hewan adalah ....", pilihan: ["Burung berkicau", "Mobil", "Bel"], jawaban: 0, penjelasan: "Burung berkicau adalah sumber bunyi dari hewan." },
           { soal: "Bunyi alam berasal dari ....", pilihan: ["Alam atau makhluk hidup", "Alat musik", "Manusia saja"], jawaban: 0, penjelasan: "Bunyi alam berasal dari alam atau makhluk hidup, contoh: hujan, burung." },
-          { soal: "Bunyi buatan dihasilkan oleh ....", pilihan: ["Benda atau alat buatan manusia", "Hujan", "Angin"], jawaban: 0, penjelasan: "Bunyi buatan seperti angklung dan peluit dibuat manusia." },
+          { soal: "Bunyi buatan dihasilkan oleh ....", pilihan: ["Benda atau alat buatan manusia", "Hujan", "Angin"], jawaban: 0, penjelasan: "Bunyi buatan seperti angklung dan peluit dibuat atau dimainkan manusia." },
           { soal: "Contoh bunyi buatan adalah ....", pilihan: ["Suara angklung", "Suara hujan", "Suara burung"], jawaban: 0, penjelasan: "Angklung adalah alat musik buatan manusia." }
         ],
         [
           { soal: "Ibu: 'Dengar suara lonceng itu.' Lou: 'Itu bunyi buatan, Bu.' Apakah Lou benar?", pilihan: ["Ya", "Tidak", "Tidak tahu"], jawaban: 0, penjelasan: "Lonceng adalah benda buatan yang menghasilkan bunyi." },
           { soal: "Sumber bunyi dari alat musik contohnya ....", pilihan: ["Gitar dan angklung", "Hujan dan angin", "Burung dan manusia"], jawaban: 0, penjelasan: "Gitar dan angklung adalah alat musik." },
           { soal: "Bel dan lonceng termasuk ....", pilihan: ["Benda di sekitar yang berbunyi", "Bunyi alam", "Tidak berbunyi"], jawaban: 0, penjelasan: "Bel dan lonceng adalah benda di sekitar yang menghasilkan bunyi." }
+        ],
+        [
+          { soal: "Suara manusia berbicara terjadi karena sumber bunyi itu ....", pilihan: ["bergetar", "diam saja", "berubah warna"], jawaban: 0, penjelasan: "Catatan kelas: suara manusia berbicara adalah contoh bunyi dari benda yang bergetar." },
+          { soal: "Gitar termasuk sumber bunyi dari ....", pilihan: ["alat musik", "hujan", "angin"], jawaban: 0, penjelasan: "Gitar dan angklung adalah contoh alat musik." },
+          { soal: "Burung berkicau termasuk sumber bunyi dari ....", pilihan: ["hewan", "benda diam", "gambar"], jawaban: 0, penjelasan: "Hewan dapat menjadi sumber bunyi, contohnya burung berkicau." },
+          { soal: "Peluit termasuk bunyi ....", pilihan: ["buatan", "alam", "yang tidak ada"], jawaban: 0, penjelasan: "Peluit dibuat dan ditiup manusia, jadi bunyi buatan." }
         ]
       ],
-      esaiSets: [[{ soal: "Sebutkan dua contoh bunyi alam.", contohJawaban: "Suara hujan dan suara burung." }, { soal: "Sebutkan dua contoh bunyi buatan.", contohJawaban: "Suara angklung dan suara peluit." }]],
-      cocokkanSets: [{ instruksi: "Pasangkan jenis bunyi dengan contohnya!", pasangan: [{ kiri: { emoji: "🌧️", teks: "Bunyi alam" }, kanan: "Suara hujan" }, { kiri: { emoji: "🎸", teks: "Bunyi buatan" }, kanan: "Suara angklung" }, { kiri: { emoji: "🗣️", teks: "Sumber bunyi manusia" }, kanan: "Berbicara" }] }]
+      esaiSets: [
+        [
+          { soal: "Sebutkan dua contoh bunyi alam.", contohJawaban: "Suara hujan dan suara burung." },
+          { soal: "Sebutkan dua contoh bunyi buatan.", contohJawaban: "Suara angklung dan suara peluit." }
+        ],
+        [
+          { soal: "Sebutkan empat macam sumber bunyi dari catatan kelas.", contohJawaban: "Manusia, hewan, alat musik, dan benda di sekitar." },
+          { soal: "Beri satu contoh bunyi manusia dan satu contoh bunyi benda di sekitar.", contohJawaban: "Manusia: berbicara atau bernyanyi. Benda di sekitar: bel atau lonceng." },
+          { soal: "Mengapa suara lonceng disebut bunyi?", contohJawaban: "Karena lonceng bergetar lalu menghasilkan bunyi." }
+        ]
+      ],
+      cocokkanSets: [
+        {
+          instruksi: "Pasangkan jenis bunyi dengan contohnya!",
+          pasangan: [
+            { kiri: { emoji: "🌧️", teks: "Bunyi alam" }, kanan: "Suara hujan" },
+            { kiri: { emoji: "🎸", teks: "Bunyi buatan" }, kanan: "Suara angklung" },
+            { kiri: { emoji: "🗣️", teks: "Sumber bunyi manusia" }, kanan: "Berbicara" }
+          ]
+        },
+        {
+          instruksi: "Pasangkan sumber bunyi dengan contohnya!",
+          pasangan: [
+            { kiri: { emoji: "👨", teks: "Manusia" }, kanan: "Berbicara dan bernyanyi" },
+            { kiri: { emoji: "🐦", teks: "Hewan" }, kanan: "Burung berkicau" },
+            { kiri: { emoji: "🎸", teks: "Alat musik" }, kanan: "Gitar dan angklung" },
+            { kiri: { emoji: "🔔", teks: "Benda di sekitar" }, kanan: "Bel dan lonceng" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "unsur-rupa",
+      judul: "Unsur Rupa",
+      emoji: "✏️",
+      ringkasan: [
+        { emoji: "📏", teks: "Garis lurus contohnya tepi penggaris. Garis lengkung contohnya garis pelangi." },
+        { emoji: "〰️", teks: "Garis putus-putus terputus-putus. Garis zig-zag patah seperti gigi gergaji." },
+        { emoji: "🔺", teks: "Bentuk geometris punya aturan. Contoh: lingkaran, segitiga, persegi, dan persegi panjang." },
+        { emoji: "🍃", teks: "Bentuk bebas meniru alam, misalnya daun, awan, atau batu. Tepinya tidak selalu sama." },
+        { emoji: "🔴", teks: "Warna primer adalah merah, kuning, dan biru. Warna ini tidak dibuat dari campuran warna lain." },
+        { emoji: "🟠", teks: "Merah dicampur kuning menjadi jingga (oranye)." },
+        { emoji: "🟢", teks: "Kuning dicampur biru menjadi hijau." },
+        { emoji: "🟣", teks: "Merah dicampur biru menjadi ungu. Jingga, hijau, dan ungu disebut warna sekunder." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Garis pada pelangi termasuk garis ....", pilihan: ["lengkung", "putus-putus", "zig-zag"], jawaban: 0, penjelasan: "Pelangi melengkung, jadi garisnya garis lengkung." },
+          { soal: "Tepi penggaris menunjukkan garis ....", pilihan: ["lurus", "lengkung", "titik saja"], jawaban: 0, penjelasan: "Penggaris punya tepi lurus." },
+          { soal: "Segitiga dan persegi termasuk bentuk ....", pilihan: ["geometris", "bebas seperti awan", "hanya warna"], jawaban: 0, penjelasan: "Bentuk geometris punya sisi dan aturan, seperti segitiga dan persegi." },
+          { soal: "Bentuk daun dan awan termasuk bentuk ....", pilihan: ["bebas", "selalu persegi", "tanpa warna"], jawaban: 0, penjelasan: "Bentuk bebas meniru alam dan tepinya tidak selalu sama." }
+        ],
+        [
+          { soal: "Warna primer adalah ....", pilihan: ["merah, kuning, dan biru", "jingga, hijau, dan ungu", "hitam dan putih saja"], jawaban: 0, penjelasan: "Merah, kuning, dan biru tidak dibuat dari campuran warna lain." },
+          { soal: "Merah dicampur kuning menjadi ....", pilihan: ["jingga", "hijau", "ungu"], jawaban: 0, penjelasan: "Merah + kuning = jingga (oranye)." },
+          { soal: "Kuning dicampur biru menjadi ....", pilihan: ["hijau", "ungu", "merah"], jawaban: 0, penjelasan: "Kuning + biru = hijau." },
+          { soal: "Merah dicampur biru menjadi ....", pilihan: ["ungu", "hijau", "jingga"], jawaban: 0, penjelasan: "Merah + biru = ungu." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Sebutkan dua macam garis dan beri contohnya.", contohJawaban: "Garis lurus, contoh tepi penggaris. Garis lengkung, contoh garis pelangi." },
+        { soal: "Sebutkan tiga warna primer.", contohJawaban: "Merah, kuning, dan biru." },
+        { soal: "Warna apa yang didapat dari kuning dicampur biru?", contohJawaban: "Hijau." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan campuran warna dengan hasilnya!",
+        pasangan: [
+          { kiri: { emoji: "🔴", teks: "Merah + kuning" }, kanan: "Jingga" },
+          { kiri: { emoji: "🟡", teks: "Kuning + biru" }, kanan: "Hijau" },
+          { kiri: { emoji: "🔵", teks: "Merah + biru" }, kanan: "Ungu" },
+          { kiri: { emoji: "📏", teks: "Tepi penggaris" }, kanan: "Garis lurus" },
+          { kiri: { emoji: "🌈", teks: "Garis pelangi" }, kanan: "Garis lengkung" }
+        ]
+      }]
+    },
+    {
+      id: "menggambar-ekspresi",
+      judul: "Menggambar Ekspresi dan Dekorasi",
+      emoji: "😊",
+      ringkasan: [
+        { emoji: "😊", teks: "Menggambar ekspresi berarti menggambar perasaan, misalnya senang, sedih, atau marah." },
+        { emoji: "🌞", teks: "Perasaan senang bisa ditampilkan dengan warna cerah dan garis yang melengkung." },
+        { emoji: "🌧️", teks: "Perasaan sedih bisa ditampilkan dengan warna yang lebih gelap." },
+        { emoji: "⚡", teks: "Perasaan marah bisa ditampilkan dengan garis yang tajam atau patah." },
+        { emoji: "🎀", teks: "Gambar dekorasi menghias bidang dengan motif yang diulang, misalnya bunga, titik, atau gelombang." },
+        { emoji: "💌", teks: "Motif dekorasi bisa dipakai di pinggir kertas atau pada kartu ucapan." },
+        { emoji: "🖍️", teks: "Pilih warna yang rapi. Warna cerah dan warna gelap bisa menunjukkan perasaan yang berbeda." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Menggambar perasaan senang, sedih, atau marah disebut menggambar ....", pilihan: ["ekspresi", "peta", "angka"], jawaban: 0, penjelasan: "Gambar ekspresi menampilkan perasaan." },
+          { soal: "Perasaan senang cocok ditampilkan dengan warna ....", pilihan: ["cerah", "yang sangat gelap semua", "tanpa warna"], jawaban: 0, penjelasan: "Warna cerah dan garis melengkung dapat menunjukkan rasa senang." },
+          { soal: "Garis tajam atau patah dapat menunjukkan rasa ....", pilihan: ["marah", "mengantuk", "kosong"], jawaban: 0, penjelasan: "Garis patah terasa tegas, cocok untuk rasa marah." },
+          { soal: "Warna yang lebih gelap dapat membantu menunjukkan rasa ....", pilihan: ["sedih", "sangat lapar", "berhitung"], jawaban: 0, penjelasan: "Warna gelap dapat menampilkan perasaan sedih." }
+        ],
+        [
+          { soal: "Menghias gambar dengan motif yang diulang disebut ....", pilihan: ["dekorasi", "menyanyi", "berlari"], jawaban: 0, penjelasan: "Dekorasi memakai motif berulang seperti bunga, titik, atau gelombang." },
+          { soal: "Contoh motif dekorasi adalah ....", pilihan: ["bunga yang diulang", "satu kata saja", "angka acak"], jawaban: 0, penjelasan: "Bunga, titik, dan garis gelombang bisa diulang menjadi hiasan." },
+          { soal: "Dekorasi bisa diletakkan di ....", pilihan: ["pinggir kertas atau kartu ucapan", "dalam sepatu", "di piring makan"], jawaban: 0, penjelasan: "Pinggir gambar dan kartu ucapan cocok untuk motif hiasan." },
+          { soal: "Lou senang karena dapat bintang. Garis yang cocok pada gambarnya adalah garis ....", pilihan: ["melengkung", "patah-patah semua", "tanpa arah"], jawaban: 0, penjelasan: "Garis melengkung dan warna cerah cocok untuk rasa senang." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Apa yang dimaksud menggambar ekspresi?", contohJawaban: "Menggambar perasaan, misalnya senang, sedih, atau marah." },
+        { soal: "Bagaimana cara menunjukkan rasa senang pada gambar?", contohJawaban: "Pakai warna cerah dan garis yang melengkung." },
+        { soal: "Apa itu gambar dekorasi? Beri satu contoh motif.", contohJawaban: "Hiasan dengan motif yang diulang. Contoh motif: bunga, titik, atau gelombang." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan perasaan dengan cara menggambarnya!",
+        pasangan: [
+          { kiri: { emoji: "😊", teks: "Senang" }, kanan: "Warna cerah, garis melengkung" },
+          { kiri: { emoji: "😢", teks: "Sedih" }, kanan: "Warna lebih gelap" },
+          { kiri: { emoji: "😠", teks: "Marah" }, kanan: "Garis tajam atau patah" },
+          { kiri: { emoji: "🌸", teks: "Dekorasi" }, kanan: "Motif yang diulang" }
+        ]
+      }]
+    },
+    {
+      id: "lagu-anak",
+      judul: "Lagu Anak dan Tinggi Rendah Nada",
+      emoji: "🎤",
+      ringkasan: [
+        { emoji: "⬆️", teks: "Nada tinggi terdengar naik dan lebih melengking." },
+        { emoji: "⬇️", teks: "Nada rendah terdengar turun dan lebih berat." },
+        { emoji: "🎵", teks: "Lagu disusun dari nada yang ada tinggi dan ada rendahnya." },
+        { emoji: "🌈", teks: "Pelangi-Pelangi adalah lagu anak tentang warna pelangi." },
+        { emoji: "🎈", teks: "Balonku adalah lagu anak tentang balon." },
+        { emoji: "🦎", teks: "Cicak di Dinding adalah lagu anak tentang cicak." },
+        { emoji: "🎩", teks: "Topi Saya Bundar adalah lagu anak tentang topi yang bundar." },
+        { emoji: "😊", teks: "Saat menyanyi, suara dijaga tetap jelas. Tidak perlu berteriak." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Nada yang terdengar naik dan melengking disebut nada ....", pilihan: ["tinggi", "rendah", "diam"], jawaban: 0, penjelasan: "Nada tinggi terdengar naik dan lebih melengking." },
+          { soal: "Nada rendah terdengar ....", pilihan: ["lebih berat", "selalu berteriak", "tanpa suara"], jawaban: 0, penjelasan: "Nada rendah terdengar turun dan lebih berat." },
+          { soal: "Lagu anak tentang cicak berjudul ....", pilihan: ["Cicak di Dinding", "Balonku", "Topi Saya Bundar"], jawaban: 0, penjelasan: "Cicak di Dinding adalah lagu anak tentang cicak." },
+          { soal: "Lagu Balonku bercerita tentang ....", pilihan: ["balon", "topi bundar", "cicak"], jawaban: 0, penjelasan: "Balonku adalah lagu anak tentang balon." }
+        ],
+        [
+          { soal: "Lagu Pelangi-Pelangi bercerita tentang ....", pilihan: ["warna pelangi", "sepatu", "meja"], jawaban: 0, penjelasan: "Pelangi-Pelangi adalah lagu anak tentang warna pelangi." },
+          { soal: "Topi Saya Bundar adalah lagu tentang ....", pilihan: ["topi yang bundar", "ikan", "hujan deras"], jawaban: 0, penjelasan: "Judulnya sudah memberi tahu: topi yang bundar." },
+          { soal: "Saat menyanyi, suara sebaiknya ....", pilihan: ["jelas, tidak berteriak", "sangat pelan sampai tidak terdengar", "hanya berteriak"], jawaban: 0, penjelasan: "Suara yang jelas membuat lagu enak didengar." },
+          { soal: "Sebuah lagu punya nada yang ....", pilihan: ["ada tinggi dan ada rendah", "hanya satu tepukan", "tidak bersuara"], jawaban: 0, penjelasan: "Lagu disusun dari nada tinggi dan nada rendah." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Apa beda nada tinggi dan nada rendah?", contohJawaban: "Nada tinggi terdengar naik dan melengking. Nada rendah terdengar turun dan lebih berat." },
+        { soal: "Sebutkan dua judul lagu anak yang kamu pelajari.", contohJawaban: "Contoh: Pelangi-Pelangi, Balonku, Cicak di Dinding, atau Topi Saya Bundar." },
+        { soal: "Bagaimana cara menyanyi yang baik?", contohJawaban: "Suara dijaga tetap jelas dan tidak berteriak." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan lagu anak dengan isinya!",
+        pasangan: [
+          { kiri: { emoji: "🌈", teks: "Pelangi-Pelangi" }, kanan: "Warna pelangi" },
+          { kiri: { emoji: "🎈", teks: "Balonku" }, kanan: "Balon" },
+          { kiri: { emoji: "🦎", teks: "Cicak di Dinding" }, kanan: "Cicak" },
+          { kiri: { emoji: "🎩", teks: "Topi Saya Bundar" }, kanan: "Topi bundar" }
+        ]
+      }]
+    },
+    {
+      id: "tempo-dan-irama",
+      judul: "Tempo dan Irama",
+      emoji: "👏",
+      ringkasan: [
+        { emoji: "🐇", teks: "Tempo adalah cepat atau lambatnya sebuah lagu." },
+        { emoji: "🐢", teks: "Tempo cepat terasa tergesa. Tempo lambat terasa lebih tenang." },
+        { emoji: "👏", teks: "Tepuk tangan bisa dilakukan cepat atau lambat. Itu latihan tempo." },
+        { emoji: "🥁", teks: "Irama adalah pola bunyi yang teratur, misalnya tepuk-diam-tepuk." },
+        { emoji: "➖", teks: "Bunyi panjang ditahan lebih lama. Bunyi pendek selesai dengan cepat." },
+        { emoji: "🌙", teks: "Lagu pengantar tidur biasanya bertempo lambat." },
+        { emoji: "🏃", teks: "Lagu untuk bermain biasanya bertempo lebih cepat." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Cepat atau lambatnya lagu disebut ....", pilihan: ["tempo", "warna", "garis"], jawaban: 0, penjelasan: "Tempo adalah kecepatan lagu." },
+          { soal: "Lagu yang tenang biasanya bertempo ....", pilihan: ["lambat", "sangat cepat terus", "tanpa bunyi"], jawaban: 0, penjelasan: "Tempo lambat terasa lebih tenang." },
+          { soal: "Pola bunyi yang teratur disebut ....", pilihan: ["irama", "warna primer", "kolase"], jawaban: 0, penjelasan: "Irama adalah pola bunyi yang berulang secara teratur." },
+          { soal: "Bunyi yang ditahan lebih lama disebut bunyi ....", pilihan: ["panjang", "pendek", "diam"], jawaban: 0, penjelasan: "Bunyi panjang ditahan. Bunyi pendek selesai cepat." }
+        ],
+        [
+          { soal: "Tepuk tangan yang tergesa menunjukkan tempo ....", pilihan: ["cepat", "lambat", "mati"], jawaban: 0, penjelasan: "Tepukan tergesa berarti temponya cepat." },
+          { soal: "Lagu pengantar tidur biasanya ....", pilihan: ["lambat", "secepat lari", "tanpa nada"], jawaban: 0, penjelasan: "Lagu pengantar tidur bertempo lambat agar tenang." },
+          { soal: "Bunyi pendek adalah bunyi yang ....", pilihan: ["selesai dengan cepat", "ditahan sangat lama", "tidak pernah berhenti"], jawaban: 0, penjelasan: "Bunyi pendek singkat, tidak ditahan lama." },
+          { soal: "Tepuk-diam-tepuk adalah contoh ....", pilihan: ["pola irama", "warna sekunder", "garis lurus"], jawaban: 0, penjelasan: "Pola yang teratur itu disebut irama." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Apa yang dimaksud tempo?", contohJawaban: "Tempo adalah cepat atau lambatnya sebuah lagu." },
+        { soal: "Apa beda bunyi panjang dan bunyi pendek?", contohJawaban: "Bunyi panjang ditahan lebih lama. Bunyi pendek selesai dengan cepat." },
+        { soal: "Mengapa lagu pengantar tidur biasanya lambat?", contohJawaban: "Karena tempo lambat terasa tenang, cocok untuk menjelang tidur." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan kata musik dengan artinya!",
+        pasangan: [
+          { kiri: { emoji: "🐇", teks: "Tempo cepat" }, kanan: "Lagu terasa tergesa" },
+          { kiri: { emoji: "🐢", teks: "Tempo lambat" }, kanan: "Lagu terasa tenang" },
+          { kiri: { emoji: "➖", teks: "Bunyi panjang" }, kanan: "Ditahan lebih lama" },
+          { kiri: { emoji: "👏", teks: "Irama" }, kanan: "Pola bunyi yang teratur" }
+        ]
+      }]
+    },
+    {
+      id: "alat-musik",
+      judul: "Alat Musik Ritmis dan Melodis",
+      emoji: "🥁",
+      ringkasan: [
+        { emoji: "🥁", teks: "Alat musik ritmis dipakai untuk menjaga irama. Contoh: tamborin, triangle, kastanyet, dan kendang." },
+        { emoji: "🔔", teks: "Triangle dipukul dan berbunyi cing. Tamborin digoyang atau ditepuk." },
+        { emoji: "🎵", teks: "Alat musik melodis dapat memainkan nada lagu. Contoh: pianika, rekorder, dan suling." },
+        { emoji: "🎹", teks: "Pianika ditiup sambil jari menekan tombol nada." },
+        { emoji: "🪈", teks: "Rekorder dan suling ditiup. Jari menutup lubang untuk mengubah nada." },
+        { emoji: "🎶", teks: "Angklung digoyangkan. Setiap tabung punya nada, jadi angklung dapat memainkan lagu." },
+        { emoji: "🤝", teks: "Mainkan alat musik secara bergantian dan jagalah irama bersama teman." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Tamborin termasuk alat musik ....", pilihan: ["ritmis", "yang hanya untuk mewarnai", "tanpa bunyi"], jawaban: 0, penjelasan: "Tamborin dipakai untuk menjaga irama, jadi alat ritmis." },
+          { soal: "Pianika termasuk alat musik ....", pilihan: ["melodis", "yang tidak bernada", "hanya hiasan"], jawaban: 0, penjelasan: "Pianika dapat memainkan nada lagu, jadi alat melodis." },
+          { soal: "Triangle dimainkan dengan cara ....", pilihan: ["dipukul", "ditiup seperti balon", "dilipat"], jawaban: 0, penjelasan: "Triangle dipukul lalu berbunyi cing." },
+          { soal: "Suling mengubah nada dengan ....", pilihan: ["jari yang menutup lubang", "ditendang", "diwarnai"], jawaban: 0, penjelasan: "Lubang yang ditutup jari mengubah nada suling." }
+        ],
+        [
+          { soal: "Kendang dan kastanyet berguna untuk menjaga ....", pilihan: ["irama", "warna cat", "garis gambar"], jawaban: 0, penjelasan: "Keduanya alat ritmis, dipakai untuk pola irama." },
+          { soal: "Rekorder termasuk alat musik ....", pilihan: ["melodis", "ritmis tanpa nada", "diam"], jawaban: 0, penjelasan: "Rekorder ditiup dan dapat memainkan nada lagu." },
+          { soal: "Angklung dapat memainkan lagu karena ....", pilihan: ["setiap tabung punya nada", "tidak berbunyi", "hanya berwarna"], jawaban: 0, penjelasan: "Setiap tabung angklung punya nada. Angklung digoyangkan." },
+          { soal: "Alat yang ditiup sambil menekan tombol adalah ....", pilihan: ["pianika", "triangle", "kendang"], jawaban: 0, penjelasan: "Pianika ditiup dan tombolnya ditekan untuk memilih nada." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Sebutkan dua alat musik ritmis.", contohJawaban: "Tamborin, triangle, kastanyet, atau kendang." },
+        { soal: "Sebutkan dua alat musik melodis.", contohJawaban: "Pianika, rekorder, atau suling. Angklung juga dapat memainkan nada." },
+        { soal: "Apa beda alat ritmis dan alat melodis?", contohJawaban: "Alat ritmis menjaga irama. Alat melodis dapat memainkan nada lagu." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan alat musik dengan kelompoknya!",
+        pasangan: [
+          { kiri: { emoji: "🥁", teks: "Tamborin" }, kanan: "Alat ritmis" },
+          { kiri: { emoji: "🔔", teks: "Triangle" }, kanan: "Dipukul, menjaga irama" },
+          { kiri: { emoji: "🎹", teks: "Pianika" }, kanan: "Alat melodis" },
+          { kiri: { emoji: "🪈", teks: "Suling" }, kanan: "Ditiup, lubang diubah jari" },
+          { kiri: { emoji: "🎶", teks: "Angklung" }, kanan: "Digoyang, tiap tabung punya nada" }
+        ]
+      }]
+    },
+    {
+      id: "gerak-tari",
+      judul: "Gerak Tari",
+      emoji: "💃",
+      ringkasan: [
+        { emoji: "🙂", teks: "Gerak tari memakai anggota tubuh: kepala, tangan, dan kaki." },
+        { emoji: "⬇️", teks: "Level rendah: gerak dekat lantai, misalnya berjongkok." },
+        { emoji: "➡️", teks: "Level sedang: gerak setinggi badan saat berdiri." },
+        { emoji: "⬆️", teks: "Level tinggi: tangan atau badan diangkat ke atas." },
+        { emoji: "🦋", teks: "Meniru kupu-kupu: kedua lengan digerakkan seperti sayap." },
+        { emoji: "🐰", teks: "Meniru kelinci: meloncat ringan. Meniru gajah: langkah berat, lengan seperti belalai." },
+        { emoji: "🌊", teks: "Meniru alam: badan meliuk seperti angin, naik-turun seperti ombak, jari mengetuk seperti hujan." },
+        { emoji: "🤝", teks: "Jaga jarak dengan teman supaya gerak tidak saling bertabrakan." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Gerak tari memakai ....", pilihan: ["kepala, tangan, dan kaki", "hanya sepatu", "hanya buku"], jawaban: 0, penjelasan: "Anggota tubuh yang digerakkan antara lain kepala, tangan, dan kaki." },
+          { soal: "Berjongkok dekat lantai termasuk level ....", pilihan: ["rendah", "tinggi", "di luar ruangan"], jawaban: 0, penjelasan: "Level rendah berarti gerak dekat lantai." },
+          { soal: "Tangan diangkat ke atas termasuk level ....", pilihan: ["tinggi", "rendah", "diam"], jawaban: 0, penjelasan: "Level tinggi berarti gerak ke arah atas." },
+          { soal: "Meniru kupu-kupu dilakukan dengan ....", pilihan: ["lengan seperti sayap", "langkah sangat berat", "duduk diam"], jawaban: 0, penjelasan: "Kedua lengan digerakkan seperti sayap kupu-kupu." }
+        ],
+        [
+          { soal: "Gerak kelinci pada tari adalah ....", pilihan: ["meloncat ringan", "merangkak sangat lambat saja", "berdiri kaku"], jawaban: 0, penjelasan: "Kelinci ditiru dengan lompatan yang ringan." },
+          { soal: "Lengan diluruskan ke depan seperti belalai meniru ....", pilihan: ["gajah", "ikan kecil", "angin sepoi"], jawaban: 0, penjelasan: "Gajah ditiru dengan langkah berat dan lengan seperti belalai." },
+          { soal: "Badan yang meliuk dapat meniru ....", pilihan: ["angin", "kursi", "buku"], jawaban: 0, penjelasan: "Gerak meliuk meniru angin. Ombak ditiru dengan gerak naik-turun." },
+          { soal: "Saat menari bersama teman, kita perlu ....", pilihan: ["menjaga jarak", "saling mendorong", "menutup mata terus"], jawaban: 0, penjelasan: "Jarak dijaga supaya gerak tidak bertabrakan." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Sebutkan tiga anggota tubuh yang dipakai untuk menari.", contohJawaban: "Kepala, tangan, dan kaki." },
+        { soal: "Apa beda level rendah dan level tinggi?", contohJawaban: "Level rendah dekat lantai, misalnya berjongkok. Level tinggi mengangkat tangan atau badan ke atas." },
+        { soal: "Bagaimana cara meniru kupu-kupu dan gajah?", contohJawaban: "Kupu-kupu: lengan seperti sayap. Gajah: langkah berat dan lengan seperti belalai." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan gerak dengan yang ditiru!",
+        pasangan: [
+          { kiri: { emoji: "🦋", teks: "Lengan seperti sayap" }, kanan: "Kupu-kupu" },
+          { kiri: { emoji: "🐰", teks: "Meloncat ringan" }, kanan: "Kelinci" },
+          { kiri: { emoji: "🐘", teks: "Lengan seperti belalai" }, kanan: "Gajah" },
+          { kiri: { emoji: "🌬️", teks: "Badan meliuk" }, kanan: "Angin" },
+          { kiri: { emoji: "🌊", teks: "Gerak naik-turun" }, kanan: "Ombak" }
+        ]
+      }]
+    },
+    {
+      id: "kolase-montase",
+      judul: "Kolase dan Montase",
+      emoji: "🧩",
+      ringkasan: [
+        { emoji: "🧩", teks: "Kolase dibuat dengan menempel bahan, misalnya sobekan kertas, daun kering, kain, atau biji-bijian." },
+        { emoji: "🖼️", teks: "Bahan kolase disusun sampai menjadi satu gambar, misalnya pemandangan atau hewan." },
+        { emoji: "📰", teks: "Montase dibuat dengan menempel gambar yang sudah jadi, misalnya guntingan majalah atau foto." },
+        { emoji: "✂️", teks: "Pada montase, beberapa gambar digabung menjadi satu karya baru." },
+        { emoji: "🔍", teks: "Bedanya: kolase menempel bahan. Montase menempel gambar yang sudah utuh." },
+        { emoji: "🧷", teks: "Gunakan gunting dengan hati-hati. Minta bantuan orang dewasa jika belum lancar." },
+        { emoji: "🍃", teks: "Untuk bahan alam, pakai daun yang sudah kering dan jatuh. Jangan merusak tanaman." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Menempel sobekan kertas, daun kering, atau biji menjadi gambar disebut ....", pilihan: ["kolase", "montase", "menyanyi"], jawaban: 0, penjelasan: "Kolase menempel bahan menjadi satu gambar." },
+          { soal: "Menempel guntingan majalah atau foto menjadi karya baru disebut ....", pilihan: ["montase", "garis lurus", "tempo"], jawaban: 0, penjelasan: "Montase menggabungkan gambar yang sudah jadi." },
+          { soal: "Daun kering yang ditempel pada gambar langit termasuk ....", pilihan: ["bahan kolase", "alat melodis", "nada tinggi"], jawaban: 0, penjelasan: "Daun kering adalah bahan yang ditempel, jadi bagian dari kolase." },
+          { soal: "Foto yang digunting lalu ditempel bersama gambar lain termasuk ....", pilihan: ["montase", "warna primer", "kendang"], jawaban: 0, penjelasan: "Foto adalah gambar jadi. Menempelkannya menjadi montase." }
+        ],
+        [
+          { soal: "Beda kolase dan montase adalah ....", pilihan: ["kolase menempel bahan, montase menempel gambar jadi", "keduanya hanya menyanyi", "keduanya tanpa lem"], jawaban: 0, penjelasan: "Kolase memakai bahan. Montase memakai gambar yang sudah utuh." },
+          { soal: "Saat memakai gunting, kita harus ....", pilihan: ["hati-hati dan minta bantuan jika perlu", "berlari sambil menggunting", "menutup mata"], jawaban: 0, penjelasan: "Gunting dipakai pelan. Minta orang dewasa membantu jika belum lancar." },
+          { soal: "Bahan daun untuk kolase sebaiknya ....", pilihan: ["daun kering yang sudah jatuh", "ditarik dari tanaman hidup", "daun yang masih di pohon"], jawaban: 0, penjelasan: "Pakai daun yang sudah jatuh supaya tanaman tidak rusak." },
+          { soal: "Biji-bijian yang disusun menjadi bentuk ikan adalah contoh ....", pilihan: ["kolase", "lagu anak", "level tari"], jawaban: 0, penjelasan: "Biji adalah bahan yang ditempel, jadi karya itu kolase." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Apa yang dimaksud kolase? Sebutkan dua bahannya.", contohJawaban: "Kolase menempel bahan menjadi gambar. Contoh bahan: sobekan kertas, daun kering, kain, atau biji." },
+        { soal: "Apa yang dimaksud montase?", contohJawaban: "Montase menempel gambar yang sudah jadi, seperti guntingan majalah atau foto, menjadi satu karya baru." },
+        { soal: "Bagaimana cara memakai gunting dengan aman?", contohJawaban: "Pakai gunting dengan hati-hati. Minta bantuan orang dewasa jika belum lancar." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan karya dengan bahannya!",
+        pasangan: [
+          { kiri: { emoji: "🍃", teks: "Daun kering ditempel" }, kanan: "Kolase" },
+          { kiri: { emoji: "📰", teks: "Guntingan majalah" }, kanan: "Montase" },
+          { kiri: { emoji: "🌽", teks: "Biji-bijian disusun" }, kanan: "Bahan kolase" },
+          { kiri: { emoji: "🖼️", teks: "Beberapa foto digabung" }, kanan: "Karya montase" }
+        ]
+      }]
     }
   ]
 };
+
 const SUBJECTS = [
   {
     id: "pancasila",
@@ -4310,7 +5593,7 @@ const SUBJECTS = [
     nama: "Agama",
     ikon: "✝️",
     warna: "#8338ec",
-    deskripsi: "Belajar hidup rukun dengan tetangga sesuai firman Tuhan.",
+    deskripsi: "Belajar hidup rukun, merawat ciptaan Tuhan, dan kisah para nabi.",
     topik: [
       {
         id: "hidup-rukun-dengan-tetangga",
@@ -4689,6 +5972,391 @@ const SUBJECTS = [
             ]
           }
 
+        ]
+      },
+      {
+        id: "merawat-lingkungan",
+        judul: "Merawat Lingkungan Ciptaan Tuhan",
+        emoji: "🌿",
+
+        ringkasan: [
+          { emoji: "🤝", teks: "Setiap orang bertanggung jawab merawat lingkungan agar semua ciptaan Tuhan dapat hidup dengan baik." },
+          { emoji: "🌍", teks: "Bumi adalah rumah bersama. Kita menjaganya agar kehidupan damai dan sejahtera." },
+          { emoji: "🙏", teks: "Tuhan menciptakan manusia untuk ikut merawat bumi dan seluruh ciptaan-Nya. Manusia adalah rekan Tuhan." },
+          { emoji: "🗑️", teks: "Cara merawat lingkungan: membuang sampah pada tempatnya." },
+          { emoji: "🏠", teks: "Kita membersihkan lingkungan rumah dan sekolah." },
+          { emoji: "🌊", teks: "Kita membersihkan selokan yang tersumbat sampah." },
+          { emoji: "🛍️", teks: "Kita mengurangi penggunaan plastik." },
+          { emoji: "🌳", teks: "Taman Eden menggambarkan lingkungan yang sempurna, subur, indah, dan kaya akan sumber daya alam." },
+          { emoji: "💛", teks: "Menjaga lingkungan dimulai dari diri sendiri, lewat tindakan sederhana setiap hari." },
+          { emoji: "🌸", teks: "Kita bersyukur atas ciptaan Tuhan dengan menjaga kebersihan dan merawat tumbuhan." }
+        ],
+
+        pilihanGandaSets: [
+          [
+            {
+              soal: "Siapa yang bertanggung jawab merawat lingkungan?",
+              pilihan: ["Setiap orang", "Hanya guru", "Hanya taman"],
+              jawaban: 0,
+              penjelasan: "Setiap orang bertanggung jawab agar ciptaan Tuhan dapat hidup dengan baik."
+            },
+            {
+              soal: "Bumi disebut rumah bersama karena ....",
+              pilihan: ["harus kita jaga bersama", "boleh dibiarkan kotor", "hanya milik satu orang"],
+              jawaban: 0,
+              penjelasan: "Bumi adalah rumah bersama yang dijaga agar kehidupan damai dan sejahtera."
+            },
+            {
+              soal: "Tuhan menciptakan manusia untuk ....",
+              pilihan: ["ikut merawat bumi dan ciptaan-Nya", "merusak sungai", "membiarkan sampah"],
+              jawaban: 0,
+              penjelasan: "Manusia adalah rekan Tuhan dalam merawat bumi dan seluruh ciptaan-Nya."
+            },
+            {
+              soal: "Taman Eden menggambarkan lingkungan yang ....",
+              pilihan: ["sempurna, subur, dan indah", "kering dan kosong", "penuh sampah"],
+              jawaban: 0,
+              penjelasan: "Taman Eden digambarkan sempurna, subur, indah, dan kaya sumber daya alam."
+            },
+            {
+              soal: "Merawat lingkungan dimulai dari ....",
+              pilihan: ["diri sendiri", "orang yang jauh saja", "tidak perlu dimulai"],
+              jawaban: 0,
+              penjelasan: "Tugas itu dimulai dari diri sendiri lewat tindakan sederhana setiap hari."
+            }
+          ],
+          [
+            {
+              soal: "Membuang sampah pada tempatnya adalah cara ....",
+              pilihan: ["merawat lingkungan", "merusak selokan", "menambah plastik"],
+              jawaban: 0,
+              penjelasan: "Membuang sampah pada tempatnya adalah salah satu cara merawat lingkungan."
+            },
+            {
+              soal: "Selokan yang tersumbat sampah sebaiknya ....",
+              pilihan: ["dibersihkan", "ditambah sampah", "dibiarkan"],
+              jawaban: 0,
+              penjelasan: "Membersihkan selokan yang tersumbat termasuk cara merawat lingkungan."
+            },
+            {
+              soal: "Penggunaan plastik sebaiknya ....",
+              pilihan: ["dikurangi", "diperbanyak", "dibuang ke sungai"],
+              jawaban: 0,
+              penjelasan: "Mengurangi plastik adalah cara merawat lingkungan."
+            },
+            {
+              soal: "Kita bersyukur atas ciptaan Tuhan dengan ....",
+              pilihan: ["menjaga kebersihan dan merawat tumbuhan", "membiarkan rumah kotor", "memetik semua bunga"],
+              jawaban: 0,
+              penjelasan: "Bersyukur ditunjukkan dengan menjaga kebersihan dan merawat tumbuhan."
+            },
+            {
+              soal: "Membersihkan rumah dan sekolah membuat ciptaan Tuhan ....",
+              pilihan: ["dapat hidup dengan lebih baik", "menjadi rusak", "kehilangan rumah"],
+              jawaban: 0,
+              penjelasan: "Lingkungan yang dirawat membantu semua ciptaan hidup dengan baik."
+            }
+          ]
+        ],
+
+        esaiSets: [
+          [
+            {
+              soal: "Mengapa bumi disebut rumah bersama?",
+              contohJawaban: "Karena bumi harus kita jaga bersama agar kehidupan damai dan sejahtera."
+            },
+            {
+              soal: "Sebutkan empat cara merawat lingkungan dari catatan kelas.",
+              contohJawaban: "Membuang sampah pada tempatnya, membersihkan rumah dan sekolah, membersihkan selokan yang tersumbat, dan mengurangi plastik."
+            },
+            {
+              soal: "Apa yang digambarkan Taman Eden?",
+              contohJawaban: "Lingkungan yang sempurna, subur, indah, dan kaya akan sumber daya alam."
+            },
+            {
+              soal: "Bagaimana cara kita bersyukur atas ciptaan Tuhan?",
+              contohJawaban: "Dengan menjaga kebersihan dan merawat tumbuhan, mulai dari tindakan sederhana setiap hari."
+            }
+          ]
+        ],
+
+        cocokkanSets: [
+          {
+            instruksi: "Pasangkan cara merawat dengan tempatnya!",
+            pasangan: [
+              { kiri: { emoji: "🗑️", teks: "Sampah" }, kanan: "Dibuang pada tempatnya" },
+              { kiri: { emoji: "🏫", teks: "Rumah dan sekolah" }, kanan: "Dibersihkan" },
+              { kiri: { emoji: "🌊", teks: "Selokan tersumbat" }, kanan: "Dibersihkan dari sampah" },
+              { kiri: { emoji: "🛍️", teks: "Plastik" }, kanan: "Penggunaannya dikurangi" },
+              { kiri: { emoji: "🌸", teks: "Tumbuhan" }, kanan: "Dirawat" }
+            ]
+          }
+        ]
+      },
+      {
+        id: "kisah-abraham",
+        judul: "Kisah Abraham",
+        emoji: "⭐",
+
+        ringkasan: [
+          { emoji: "📜", teks: "Abraham pada awalnya bernama Abram. Ia berasal dari Ur Kasdim." },
+          { emoji: "✨", teks: "Allah mengubah nama Abram menjadi Abraham. Nama itu berarti bapa dari banyak bangsa." },
+          { emoji: "🤝", teks: "Nama baru itu menjadi tanda perjanjian yang lebih dalam antara Allah dan Abraham." },
+          { emoji: "👨", teks: "Abraham adalah putra Terah. Allah memanggilnya saat berusia 75 tahun." },
+          { emoji: "🚶", teks: "Abraham taat. Ia pergi ke Kanaan bersama istrinya, Sarai, dan Lot." },
+          { emoji: "💛", teks: "Sarai kemudian dikenal sebagai Sarah." },
+          { emoji: "🌾", teks: "Allah berjanji: Abraham menjadi bapa bangsa, memiliki tanah subur, dan selalu diberkati." },
+          { emoji: "🙏", teks: "Sikap Abraham yang menjadi contoh adalah percaya dan taat pada Tuhan." },
+          { emoji: "🏡", teks: "Percaya dan taat pada Tuhan dapat kita wujudkan dengan percaya dan taat pada orang tua." }
+        ],
+
+        pilihanGandaSets: [
+          [
+            {
+              soal: "Nama Abraham pada awalnya adalah ....",
+              pilihan: ["Abram", "Terah", "Lot"],
+              jawaban: 0,
+              penjelasan: "Abraham awalnya bernama Abram, dari Ur Kasdim."
+            },
+            {
+              soal: "Abram berasal dari ....",
+              pilihan: ["Ur Kasdim", "Kanaan", "Ararat"],
+              jawaban: 0,
+              penjelasan: "Abram berasal dari Ur Kasdim."
+            },
+            {
+              soal: "Nama Abraham berarti ....",
+              pilihan: ["bapa dari banyak bangsa", "pembuat bahtera", "penjaga taman"],
+              jawaban: 0,
+              penjelasan: "Abraham berarti bapa dari banyak bangsa, tanda perjanjian dengan Allah."
+            },
+            {
+              soal: "Allah memanggil Abraham saat ia berusia ....",
+              pilihan: ["75 tahun", "7 tahun", "40 hari"],
+              jawaban: 0,
+              penjelasan: "Abraham dipanggil saat berusia 75 tahun."
+            },
+            {
+              soal: "Abraham adalah putra dari ....",
+              pilihan: ["Terah", "Lot", "Nuh"],
+              jawaban: 0,
+              penjelasan: "Abraham adalah putra Terah."
+            }
+          ],
+          [
+            {
+              soal: "Abraham pergi ke Kanaan bersama ....",
+              pilihan: ["Sarai dan Lot", "hanya sendiri", "semua hewan"],
+              jawaban: 0,
+              penjelasan: "Ia pergi bersama istrinya Sarai, yang kemudian disebut Sarah, dan Lot."
+            },
+            {
+              soal: "Sarai kemudian dikenal sebagai ....",
+              pilihan: ["Sarah", "Lot", "Abram"],
+              jawaban: 0,
+              penjelasan: "Sarai kemudian dikenal sebagai Sarah."
+            },
+            {
+              soal: "Salah satu janji Allah adalah Abraham akan memiliki ....",
+              pilihan: ["tanah subur", "bahtera kayu", "kota yang tenggelam"],
+              jawaban: 0,
+              penjelasan: "Allah berjanji Abraham menjadi bapa bangsa, memiliki tanah subur, dan selalu diberkati."
+            },
+            {
+              soal: "Sikap Abraham yang menjadi contoh adalah ....",
+              pilihan: ["percaya dan taat", "takut lalu pulang", "marah pada Lot"],
+              jawaban: 0,
+              penjelasan: "Abraham percaya dan taat pada panggilan Tuhan."
+            },
+            {
+              soal: "Taat pada Allah dapat kita wujudkan dengan taat pada ....",
+              pilihan: ["orang tua", "kemarahan", "rasa malas"],
+              jawaban: 0,
+              penjelasan: "Catatan kelas: percaya dan taat pada Tuhan diwujudkan dengan percaya dan taat pada orang tua."
+            }
+          ]
+        ],
+
+        esaiSets: [
+          [
+            {
+              soal: "Dari mana Abram berasal, dan menjadi apa namanya?",
+              contohJawaban: "Abram berasal dari Ur Kasdim. Allah mengubah namanya menjadi Abraham, yang berarti bapa dari banyak bangsa."
+            },
+            {
+              soal: "Siapa yang pergi bersama Abraham ke Kanaan?",
+              contohJawaban: "Istrinya Sarai, yang kemudian disebut Sarah, dan Lot."
+            },
+            {
+              soal: "Sebutkan tiga janji Allah kepada Abraham.",
+              contohJawaban: "Abraham menjadi bapa bangsa, akan memiliki tanah subur, dan akan selalu diberkati."
+            },
+            {
+              soal: "Sikap apa yang dapat kita contoh dari Abraham di rumah?",
+              contohJawaban: "Percaya dan taat pada Tuhan. Itu dapat diwujudkan dengan percaya dan taat pada orang tua."
+            }
+          ]
+        ],
+
+        cocokkanSets: [
+          {
+            instruksi: "Pasangkan nama dengan keterangannya!",
+            pasangan: [
+              { kiri: { emoji: "📜", teks: "Abram" }, kanan: "Nama Abraham sebelumnya" },
+              { kiri: { emoji: "📍", teks: "Ur Kasdim" }, kanan: "Asal Abraham" },
+              { kiri: { emoji: "👨", teks: "Terah" }, kanan: "Ayah Abraham" },
+              { kiri: { emoji: "💛", teks: "Sarah" }, kanan: "Nama baru Sarai" },
+              { kiri: { emoji: "🚶", teks: "Lot" }, kanan: "Ikut pergi ke Kanaan" }
+            ]
+          },
+          {
+            instruksi: "Pasangkan janji Allah dengan artinya!",
+            pasangan: [
+              { kiri: { emoji: "👨‍👩‍👧‍👦", teks: "Bapa bangsa" }, kanan: "Abraham menjadi bapa dari banyak bangsa" },
+              { kiri: { emoji: "🌾", teks: "Tanah subur" }, kanan: "Abraham akan memiliki tanah subur" },
+              { kiri: { emoji: "🙏", teks: "Diberkati" }, kanan: "Abraham akan selalu diberkati" },
+              { kiri: { emoji: "🏡", teks: "Di rumah" }, kanan: "Percaya dan taat pada orang tua" }
+            ]
+          }
+        ]
+      },
+      {
+        id: "kisah-nabi-nuh",
+        judul: "Kisah Nabi Nuh",
+        emoji: "⛵",
+
+        ringkasan: [
+          { emoji: "👨‍👦", teks: "Nabi Nuh memiliki tiga anak: Sem, Ham, dan Yafet." },
+          { emoji: "⚠️", teks: "Pada zaman Nuh, banyak manusia melakukan kejahatan dan kekerasan." },
+          { emoji: "🌊", teks: "Allah mendatangkan air bah karena kejahatan manusia." },
+          { emoji: "🪵", teks: "Allah memerintahkan Nuh membuat bahtera dari kayu gofir." },
+          { emoji: "⏳", teks: "Nuh membuat bahtera selama kurang lebih 50 tahun. Ia taat." },
+          { emoji: "🐘", teks: "Nuh membawa keluarganya dan sepasang hewan ke dalam bahtera." },
+          { emoji: "🌧️", teks: "Hujan turun selama 40 hari 40 malam." },
+          { emoji: "🌍", teks: "Air menguasai bumi selama 150 hari." },
+          { emoji: "⛰️", teks: "Bahtera Nuh akhirnya berhenti di Pegunungan Ararat." },
+          { emoji: "🙏", teks: "Nuh bersyukur dengan mendirikan mezbah dan mempersembahkan kurban." },
+          { emoji: "🌈", teks: "Allah berjanji tidak akan mendatangkan air bah lagi untuk membinasakan seluruh bumi." },
+          { emoji: "💛", teks: "Allah juga memberkati keluarga Nuh." }
+        ],
+
+        pilihanGandaSets: [
+          [
+            {
+              soal: "Tiga anak Nabi Nuh adalah ....",
+              pilihan: ["Sem, Ham, dan Yafet", "Abram, Lot, dan Terah", "Sarai, Sarah, dan Lot"],
+              jawaban: 0,
+              penjelasan: "Anak-anak Nuh adalah Sem, Ham, dan Yafet."
+            },
+            {
+              soal: "Allah mendatangkan air bah karena ....",
+              pilihan: ["kejahatan dan kekerasan manusia", "Nuh lupa makan", "hewan terlalu banyak"],
+              jawaban: 0,
+              penjelasan: "Pada zaman Nuh banyak manusia melakukan kejahatan dan kekerasan."
+            },
+            {
+              soal: "Bahtera dibuat dari kayu ....",
+              pilihan: ["gofir", "bambu", "daun"],
+              jawaban: 0,
+              penjelasan: "Allah memerintahkan Nuh membuat bahtera dari kayu gofir."
+            },
+            {
+              soal: "Nuh membuat bahtera selama kurang lebih ....",
+              pilihan: ["50 tahun", "50 hari", "5 jam"],
+              jawaban: 0,
+              penjelasan: "Nuh taat dan membuat bahtera selama kurang lebih 50 tahun."
+            },
+            {
+              soal: "Nuh membawa ke dalam bahtera ....",
+              pilihan: ["keluarganya dan sepasang hewan", "hanya emas", "seluruh kota"],
+              jawaban: 0,
+              penjelasan: "Nuh membawa keluarganya dan sepasang hewan."
+            }
+          ],
+          [
+            {
+              soal: "Hujan turun selama ....",
+              pilihan: ["40 hari 40 malam", "7 hari", "1 malam"],
+              jawaban: 0,
+              penjelasan: "Hujan turun selama 40 hari 40 malam."
+            },
+            {
+              soal: "Air menguasai bumi selama ....",
+              pilihan: ["150 hari", "15 hari", "150 tahun"],
+              jawaban: 0,
+              penjelasan: "Air menguasai bumi selama 150 hari."
+            },
+            {
+              soal: "Bahtera berhenti di ....",
+              pilihan: ["Pegunungan Ararat", "Ur Kasdim", "Kanaan"],
+              jawaban: 0,
+              penjelasan: "Bahtera Nuh berhenti di Pegunungan Ararat."
+            },
+            {
+              soal: "Nuh bersyukur dengan ....",
+              pilihan: ["mendirikan mezbah dan mempersembahkan kurban", "berlari menjauh", "menyembunyikan bahtera"],
+              jawaban: 0,
+              penjelasan: "Nuh mendirikan mezbah dan mempersembahkan kurban sebagai ucapan syukur."
+            },
+            {
+              soal: "Allah berjanji tidak akan ....",
+              pilihan: ["mendatangkan air bah lagi untuk membinasakan seluruh bumi", "memberkati keluarga Nuh", "menjaga hewan"],
+              jawaban: 0,
+              penjelasan: "Allah berjanji tidak akan air bah lagi untuk membinasakan seluruh bumi, dan Ia memberkati keluarga Nuh."
+            }
+          ]
+        ],
+
+        esaiSets: [
+          [
+            {
+              soal: "Sebutkan tiga anak Nabi Nuh.",
+              contohJawaban: "Sem, Ham, dan Yafet."
+            },
+            {
+              soal: "Mengapa Allah mendatangkan air bah?",
+              contohJawaban: "Karena manusia banyak melakukan kejahatan dan kekerasan."
+            },
+            {
+              soal: "Dari kayu apa bahtera dibuat, dan berapa lama Nuh membuatnya?",
+              contohJawaban: "Dari kayu gofir, selama kurang lebih 50 tahun."
+            },
+            {
+              soal: "Siapa dan apa yang Nuh bawa masuk ke bahtera?",
+              contohJawaban: "Keluarganya dan sepasang hewan."
+            }
+          ],
+          [
+            {
+              soal: "Berapa lama hujan turun, dan berapa lama air menguasai bumi?",
+              contohJawaban: "Hujan turun 40 hari 40 malam. Air menguasai bumi selama 150 hari."
+            },
+            {
+              soal: "Di mana bahtera berhenti?",
+              contohJawaban: "Di Pegunungan Ararat."
+            },
+            {
+              soal: "Bagaimana Nuh mengucap syukur?",
+              contohJawaban: "Nuh mendirikan mezbah dan mempersembahkan kurban."
+            },
+            {
+              soal: "Apa janji Allah setelah air bah?",
+              contohJawaban: "Allah tidak akan mendatangkan air bah lagi untuk membinasakan seluruh bumi, dan Ia memberkati keluarga Nuh."
+            }
+          ]
+        ],
+
+        cocokkanSets: [
+          {
+            instruksi: "Pasangkan bagian kisah dengan faktanya!",
+            pasangan: [
+              { kiri: { emoji: "👨‍👦", teks: "Anak Nuh" }, kanan: "Sem, Ham, dan Yafet" },
+              { kiri: { emoji: "🪵", teks: "Bahan bahtera" }, kanan: "Kayu gofir" },
+              { kiri: { emoji: "⏳", teks: "Lama membuat bahtera" }, kanan: "Kurang lebih 50 tahun" },
+              { kiri: { emoji: "🌧️", teks: "Lama hujan" }, kanan: "40 hari 40 malam" },
+              { kiri: { emoji: "⛰️", teks: "Tempat bahtera berhenti" }, kanan: "Pegunungan Ararat" }
+            ]
+          }
         ]
       }
     ]
