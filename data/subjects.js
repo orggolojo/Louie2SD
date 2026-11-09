@@ -3149,6 +3149,96 @@ const PLH_SUBJECT = {
   ]
 };
 
+
+
+/* ============================================================
+ *  MATA PELAJARAN: BAHASA MANDARIN
+ * ============================================================ */
+const BAHASA_MANDARIN_SUBJECT = {
+  id: "bahasa-mandarin",
+  nama: "Bahasa Mandarin",
+  ikon: "🀄",
+  warna: "#ff6b6b",
+  deskripsi: "Belajar kosakata makanan dan minuman dalam bahasa Mandarin.",
+  topik: [
+    {
+      id: "makanan-dan-minuman",
+      judul: "Makanan dan Minuman (Unit 4)",
+      emoji: "🍔",
+      ringkasan: [
+        { emoji: "🍔", teks: "汉堡包 (hàn bǎo bāo) = hamburger" },
+        { emoji: "🌭", teks: "热狗 (rè gǒu) = hot dog" },
+        { emoji: "🍗", teks: "炸鸡 (zhá jī) = ayam goreng" },
+        { emoji: "🍟", teks: "薯条 (shǔ tiáo) = kentang goreng" },
+        { emoji: "🍜", teks: "面条 (miàn tiáo) = mie" },
+        { emoji: "🍚", teks: "炒饭 (chǎo fàn) = nasi goreng" },
+        { emoji: "🥚", teks: "鸡蛋 (jī dàn) = telur" },
+        { emoji: "🍞", teks: "面包 (miàn bāo) = roti" }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Hamburger dalam bahasa Mandarin adalah ....", pilihan: ["汉堡包 (hàn bǎo bāo)", "热狗 (rè gǒu)", "炸鸡 (zhá jī)"], jawaban: 0, penjelasan: "汉堡包 (hàn bǎo bāo) berarti hamburger." },
+          { soal: "Hot dog ditulis ....", pilihan: ["薯条 (shǔ tiáo)", "热狗 (rè gǒu)", "面条 (miàn tiáo)"], jawaban: 1, penjelasan: "热狗 (rè gǒu) = hot dog." },
+          { soal: "Ayam goreng dalam bahasa Mandarin adalah ....", pilihan: ["炸鸡 (zhá jī)", "鸡蛋 (jī dàn)", "面包 (miàn bāo)"], jawaban: 0, penjelasan: "炸鸡 (zhá jī) berarti ayam goreng." },
+          { soal: "Kentang goreng disebut ....", pilihan: ["薯条 (shǔ tiáo)", "面条 (miàn tiáo)", "炒饭 (chǎo fàn)"], jawaban: 0, penjelasan: "薯条 (shǔ tiáo) = kentang goreng." },
+          { soal: "Mie dalam bahasa Mandarin adalah ....", pilihan: ["面包 (miàn bāo)", "面条 (miàn tiáo)", "鸡蛋 (jī dàn)"], jawaban: 1, penjelasan: "面条 (miàn tiáo) berarti mie." },
+          { soal: "Telur disebut ....", pilihan: ["鸡蛋 (jī dàn)", "炸鸡 (zhá jī)", "热狗 (rè gǒu)"], jawaban: 0, penjelasan: "鸡蛋 (jī dàn) = telur." },
+          { soal: "Roti dalam bahasa Mandarin adalah ....", pilihan: ["面包 (miàn bāo)", "炒饭 (chǎo fàn)", "汉堡包 (hàn bǎo bāo)"], jawaban: 0, penjelasan: "面包 (miàn bāo) berarti roti." },
+          { soal: "Nasi goreng disebut ....", pilihan: ["炒饭 (chǎo fàn)", "面条 (miàn tiáo)", "薯条 (shǔ tiáo)"], jawaban: 0, penjelasan: "炒饭 (chǎo fàn) = nasi goreng." }
+        ],
+        [
+          { soal: "Manakah yang berarti hot dog?", pilihan: ["汉堡包", "热狗", "炸鸡"], jawaban: 1, penjelasan: "热狗 (rè gǒu) = hot dog." },
+          { soal: "Pinyin dari 面条 adalah ....", pilihan: ["miàn tiáo", "miàn bāo", "jī dàn"], jawaban: 0, penjelasan: "面条 dibaca miàn tiáo." },
+          { soal: "面包 berarti ....", pilihan: ["roti", "mie", "telur"], jawaban: 0, penjelasan: "面包 (miàn bāo) = roti." },
+          { soal: "炸鸡 adalah ....", pilihan: ["ayam goreng", "kentang goreng", "nasi goreng"], jawaban: 0, penjelasan: "炸鸡 (zhá jī) = ayam goreng." }
+        ]
+      ],
+      esaiSets: [[{ soal: "Tuliskan hanzi dan pinyin untuk hamburger.", contohJawaban: "汉堡包 (hàn bǎo bāo)" }, { soal: "Tuliskan hanzi dan pinyin untuk mie.", contohJawaban: "面条 (miàn tiáo)" }, { soal: "Tuliskan hanzi dan pinyin untuk roti.", contohJawaban: "面包 (miàn bāo)" }]],
+      cocokkanSets: [{ instruksi: "Pasangkan makanan dengan hanzi-nya!", pasangan: [{ kiri: { emoji: "🍔", teks: "Hamburger" }, kanan: "汉堡包" }, { kiri: { emoji: "🌭", teks: "Hot dog" }, kanan: "热狗" }, { kiri: { emoji: "🍗", teks: "Ayam goreng" }, kanan: "炸鸡" }, { kiri: { emoji: "🍟", teks: "Kentang goreng" }, kanan: "薯条" }, { kiri: { emoji: "🍜", teks: "Mie" }, kanan: "面条" }, { kiri: { emoji: "🍞", teks: "Roti" }, kanan: "面包" }] }]
+    }
+  ]
+};
+
+/* ============================================================
+ *  MATA PELAJARAN: SBDP (Seni Budaya dan Prakarya)
+ * ============================================================ */
+const SBDP_SUBJECT = {
+  id: "sbdp",
+  nama: "SBDP",
+  ikon: "🎵",
+  warna: "#9b5de5",
+  deskripsi: "Belajar tentang bunyi, sumber bunyi, dan bunyi alam/buatan.",
+  topik: [
+    {
+      id: "bunyi",
+      judul: "Bunyi",
+      emoji: "🔊",
+      ringkasan: [
+        { emoji: "🔊", teks: "Bunyi berasal dari benda yang bergetar." },
+        { emoji: "🗣️", teks: "Sumber bunyi adalah benda atau sesuatu yang menghasilkan bunyi." },
+        { emoji: "🌧️", teks: "Bunyi alam: suara hujan, suara burung." },
+        { emoji: "🎸", teks: "Bunyi buatan: suara angklung, suara peluit." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Bunyi berasal dari benda yang ....", pilihan: ["Bergetar", "Diam", "Berwarna"], jawaban: 0, penjelasan: "Bunyi berasal dari benda yang bergetar." },
+          { soal: "Contoh sumber bunyi dari manusia adalah ....", pilihan: ["Bercakap dan bernyanyi", "Berlari", "Tidur"], jawaban: 0, penjelasan: "Manusia menghasilkan bunyi dengan berbicara dan bernyanyi." },
+          { soal: "Contoh sumber bunyi dari hewan adalah ....", pilihan: ["Burung berkicau", "Mobil", "Bel"], jawaban: 0, penjelasan: "Burung berkicau adalah sumber bunyi dari hewan." },
+          { soal: "Bunyi alam berasal dari ....", pilihan: ["Alam atau makhluk hidup", "Alat musik", "Manusia saja"], jawaban: 0, penjelasan: "Bunyi alam berasal dari alam atau makhluk hidup, contoh: hujan, burung." },
+          { soal: "Bunyi buatan dihasilkan oleh ....", pilihan: ["Benda atau alat buatan manusia", "Hujan", "Angin"], jawaban: 0, penjelasan: "Bunyi buatan seperti angklung dan peluit dibuat manusia." },
+          { soal: "Contoh bunyi buatan adalah ....", pilihan: ["Suara angklung", "Suara hujan", "Suara burung"], jawaban: 0, penjelasan: "Angklung adalah alat musik buatan manusia." }
+        ],
+        [
+          { soal: "Ibu: 'Dengar suara lonceng itu.' Lou: 'Itu bunyi buatan, Bu.' Apakah Lou benar?", pilihan: ["Ya", "Tidak", "Tidak tahu"], jawaban: 0, penjelasan: "Lonceng adalah benda buatan yang menghasilkan bunyi." },
+          { soal: "Sumber bunyi dari alat musik contohnya ....", pilihan: ["Gitar dan angklung", "Hujan dan angin", "Burung dan manusia"], jawaban: 0, penjelasan: "Gitar dan angklung adalah alat musik." },
+          { soal: "Bel dan lonceng termasuk ....", pilihan: ["Benda di sekitar yang berbunyi", "Bunyi alam", "Tidak berbunyi"], jawaban: 0, penjelasan: "Bel dan lonceng adalah benda di sekitar yang menghasilkan bunyi." }
+        ]
+      ],
+      esaiSets: [[{ soal: "Sebutkan dua contoh bunyi alam.", contohJawaban: "Suara hujan dan suara burung." }, { soal: "Sebutkan dua contoh bunyi buatan.", contohJawaban: "Suara angklung dan suara peluit." }]],
+      cocokkanSets: [{ instruksi: "Pasangkan jenis bunyi dengan contohnya!", pasangan: [{ kiri: { emoji: "🌧️", teks: "Bunyi alam" }, kanan: "Suara hujan" }, { kiri: { emoji: "🎸", teks: "Bunyi buatan" }, kanan: "Suara angklung" }, { kiri: { emoji: "🗣️", teks: "Sumber bunyi manusia" }, kanan: "Berbicara" }] }]
+    }
+  ]
+};
 const SUBJECTS = [
   {
     id: "pancasila",
@@ -4649,7 +4739,13 @@ const SUBJECTS = [
    * ============================================================ */
   PLH_SUBJECT
 
+    ,
+  BAHASA_MANDARIN_SUBJECT
+  ,
+  SBDP_SUBJECT
+
   // ====== TAMBAHKAN MATA PELAJARAN BARU DI SINI ======
+
   // ,{
   //   id: "matematika",
   //   nama: "Matematika",
