@@ -43,7 +43,7 @@ const BAHASA_INDONESIA_SUBJECT = {
   nama: "Bahasa Indonesia",
   ikon: "📚",
   warna: "#06d6a0",
-  deskripsi: "Belajar paragraf, fabel, antonim, dan huruf kapital.",
+  deskripsi: "Belajar paragraf, fabel, antonim, huruf kapital, puisi, petunjuk, dan deskripsi.",
   topik: [
 
     /* ========================================================
@@ -1557,8 +1557,172 @@ const BAHASA_INDONESIA_SUBJECT = {
           ]
         }
       ]
-    }
+    },
 
+    {
+      id: "puisi-anak",
+      judul: "Puisi Anak",
+      emoji: "📝",
+      ringkasan: [
+        { emoji: "📝", teks: "Puisi anak memakai baris-baris pendek." },
+        { emoji: "📄", teks: "Beberapa baris dapat disusun menjadi satu bait." },
+        { emoji: "💛", teks: "Puisi dapat mengungkapkan perasaan, misalnya senang atau kagum." },
+        { emoji: "🔤", teks: "Bunyi di akhir baris kadang sama, tetapi tidak semua puisi wajib begitu." },
+        { emoji: "🌧️", teks: "Contoh buatan kita: Hujan rintik di atap rumah. Lou tersenyum minum susu hangat." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Puisi anak biasanya ditulis dalam ....", pilihan: ["baris pendek", "satu paragraf panjang saja", "daftar belanja"], jawaban: 0, penjelasan: "Puisi memakai baris-baris pendek." },
+          { soal: "Beberapa baris puisi dapat disebut ....", pilihan: ["bait", "bab angka", "turus"], jawaban: 0, penjelasan: "Kumpulan baris itu disebut bait." },
+          { soal: "Puisi dapat dipakai untuk ....", pilihan: ["mengungkapkan perasaan", "mengukur berat", "menghitung turus"], jawaban: 0, penjelasan: "Perasaan senang, sedih, atau kagum bisa ditulis dalam puisi." },
+          { soal: "Bunyi akhir baris yang sama ....", pilihan: ["boleh dipakai, tetapi tidak wajib", "wajib pada setiap puisi", "membuat puisi menjadi soal hitung"], jawaban: 0, penjelasan: "Rima boleh ada, tetapi bukan syarat satu-satunya." }
+        ],
+        [
+          { soal: "Hujan rintik di atap rumah. Baris itu adalah bagian ....", pilihan: ["puisi", "tabel data", "soal pengurangan"], jawaban: 0, penjelasan: "Itu satu baris puisi." },
+          { soal: "Saat membaca puisi, suara kita ....", pilihan: ["jelas dan tidak berteriak", "harus berbisik terus", "harus sangat cepat tanpa jeda"], jawaban: 0, penjelasan: "Puisi dibacakan agar teman dapat mendengar perasaannya." },
+          { soal: "Puisi berbeda dari paragraf karena puisi ....", pilihan: ["disusun dalam baris pendek", "tidak punya kata", "selalu berupa angka"], jawaban: 0, penjelasan: "Paragraf berupa kalimat berurutan. Puisi berupa baris." },
+          { soal: "Perasaan yang dapat ditulis dalam puisi misalnya ....", pilihan: ["senang atau kagum", "hanya rumus", "hanya nama bulan"], jawaban: 0, penjelasan: "Puisi anak sering menceritakan perasaan." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Sebutkan dua ciri puisi anak.", contohJawaban: "Barisnya pendek, dan ia dapat mengungkapkan perasaan. Beberapa baris dapat menjadi satu bait." },
+          { soal: "Apa beda puisi dan paragraf?", contohJawaban: "Puisi disusun dalam baris pendek. Paragraf disusun dari kalimat yang berurutan." },
+          { soal: "Tuliskan satu baris puisi tentang hujan.", contohJawaban: "Contoh: Hujan rintik di atap rumah." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan bagian puisi dengan artinya!",
+        pasangan: [
+          { kiri: { emoji: "📝", teks: "Baris" }, kanan: "Satu larik pendek" },
+          { kiri: { emoji: "📄", teks: "Bait" }, kanan: "Beberapa baris yang berkelompok" },
+          { kiri: { emoji: "💛", teks: "Perasaan" }, kanan: "Senang, sedih, atau kagum" },
+          { kiri: { emoji: "🔤", teks: "Bunyi akhir" }, kanan: "Boleh sama, tidak wajib" }
+        ]
+      }]
+    },
+
+    {
+      id: "teks-petunjuk",
+      judul: "Teks Petunjuk",
+      emoji: "🧼",
+      ringkasan: [
+        { emoji: "🧼", teks: "Teks petunjuk memberi langkah untuk melakukan sesuatu." },
+        { emoji: "1️⃣", teks: "Langkahnya harus berurutan. Kalau dibalik, hasilnya bisa salah." },
+        { emoji: "👐", teks: "Mencuci tangan: basahi tangan, gosok dengan sabun, bilas, lalu keringkan." },
+        { emoji: "🌱", teks: "Menyiram tanaman: ambil air, siram pelan pada tanah, lalu simpan gayung." },
+        { emoji: "👀", teks: "Kata seperti pertama, lalu, dan terakhir membantu kita mengikuti urutan." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Teks yang berisi langkah-langkah disebut teks ....", pilihan: ["petunjuk", "puisi", "turus"], jawaban: 0, penjelasan: "Teks petunjuk memberitahu cara melakukan sesuatu." },
+          { soal: "Langkah petunjuk harus ....", pilihan: ["berurutan", "diacak", "hanya satu kata"], jawaban: 0, penjelasan: "Urutan yang benar membuat kegiatan berhasil." },
+          { soal: "Setelah tangan digosok sabun, langkah berikutnya adalah ....", pilihan: ["dibilas", "dibiarkan sabunnya", "dipakai makan"], jawaban: 0, penjelasan: "Sabun dibilas, lalu tangan dikeringkan." },
+          { soal: "Kata yang menunjukkan urutan adalah ....", pilihan: ["lalu", "karena", "tetapi"], jawaban: 0, penjelasan: "Lalu, pertama, dan terakhir menandai langkah." }
+        ],
+        [
+          { soal: "Menyiram tanaman dimulai dengan ....", pilihan: ["mengambil air", "menyimpan gayung dulu", "memetik bunga"], jawaban: 0, penjelasan: "Air diambil lebih dulu, baru disiramkan." },
+          { soal: "Air disiram pelan ke ....", pilihan: ["tanah", "langit-langit", "buku"], jawaban: 0, penjelasan: "Tanaman menyerap air dari tanah." },
+          { soal: "Jika langkah dibalik, hasilnya bisa ....", pilihan: ["salah", "selalu lebih baik", "menjadi puisi"], jawaban: 0, penjelasan: "Urutan penting pada teks petunjuk." },
+          { soal: "Teks petunjuk dipakai untuk kegiatan ....", pilihan: ["sehari-hari", "hanya upacara", "hanya berhitung"], jawaban: 0, penjelasan: "Contohnya mencuci tangan dan menyiram tanaman." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Sebutkan urutan mencuci tangan.", contohJawaban: "Basahi tangan, gosok dengan sabun, bilas, lalu keringkan." },
+          { soal: "Mengapa urutan langkah tidak boleh dibalik?", contohJawaban: "Karena hasilnya bisa salah atau kegiatan tidak selesai dengan baik." },
+          { soal: "Sebutkan dua kata yang menunjukkan urutan.", contohJawaban: "Pertama, lalu, atau terakhir." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan kegiatan dengan langkah pertamanya!",
+        pasangan: [
+          { kiri: { emoji: "🧼", teks: "Mencuci tangan" }, kanan: "Basahi tangan" },
+          { kiri: { emoji: "🌱", teks: "Menyiram tanaman" }, kanan: "Ambil air" },
+          { kiri: { emoji: "1️⃣", teks: "Teks petunjuk" }, kanan: "Langkah yang berurutan" },
+          { kiri: { emoji: "👀", teks: "Kata lalu" }, kanan: "Menunjukkan urutan" }
+        ]
+      }]
+    },
+
+    {
+      id: "teks-deskripsi",
+      judul: "Teks Deskripsi",
+      emoji: "👀",
+      ringkasan: [
+        { emoji: "👀", teks: "Teks deskripsi menggambarkan sesuatu dengan kalimat sederhana." },
+        { emoji: "🎨", teks: "Kita dapat menulis warna, bentuk, ukuran, atau rasanya." },
+        { emoji: "⚽", teks: "Contoh: Bola Lou berwarna merah, bulat, dan ringan." },
+        { emoji: "👃", teks: "Pancaindra membantu: mata melihat, tangan meraba, hidung mencium, lidah merasa, telinga mendengar." },
+        { emoji: "✍️", teks: "Deskripsi menjawab pertanyaan seperti apa bendanya." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Teks yang menggambarkan suatu benda disebut teks ....", pilihan: ["deskripsi", "turus", "hanya judul"], jawaban: 0, penjelasan: "Deskripsi melukiskan ciri benda atau tempat." },
+          { soal: "Bola Lou berwarna merah, bulat, dan ringan. Kalimat itu menggambarkan ....", pilihan: ["warna, bentuk, dan berat", "hanya nama orang", "langkah mencuci tangan"], jawaban: 0, penjelasan: "Merah adalah warna, bulat adalah bentuk, ringan adalah berat." },
+          { soal: "Mata membantu kita mengetahui ....", pilihan: ["warna dan bentuk", "rasa manis", "berat dalam kilogram"], jawaban: 0, penjelasan: "Warna dan bentuk dilihat dengan mata." },
+          { soal: "Deskripsi menjawab pertanyaan ....", pilihan: ["seperti apa bendanya", "berapa 8 + 7", "siapa presiden pertama"], jawaban: 0, penjelasan: "Kita menulis ciri-ciri benda itu." }
+        ],
+        [
+          { soal: "Lidah membantu kita mengetahui ....", pilihan: ["rasa", "warna", "bunyi akhir puisi"], jawaban: 0, penjelasan: "Manis, asin, atau asam diketahui dengan lidah." },
+          { soal: "Kalimat deskripsi yang tepat adalah ....", pilihan: ["Tas itu biru dan ada gambar bintang.", "Lalu bilas tangan.", "8 + 7 = 15."], jawaban: 0, penjelasan: "Kalimat pertama menggambarkan warna dan gambar pada tas." },
+          { soal: "Tangan dapat meraba benda itu ....", pilihan: ["halus atau kasar", "berwarna apa dari jauh", "berbunyi apa"], jawaban: 0, penjelasan: "Rabaan memberitahu halus, kasar, panas, atau dingin." },
+          { soal: "Deskripsi memakai ....", pilihan: ["beberapa kalimat sederhana", "hanya satu angka", "hanya turus"], jawaban: 0, penjelasan: "Cukup beberapa kalimat tentang cirinya." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa yang dimaksud teks deskripsi?", contohJawaban: "Teks yang menggambarkan sesuatu, misalnya warna, bentuk, atau ukurannya." },
+          { soal: "Tuliskan satu kalimat deskripsi tentang bola merah.", contohJawaban: "Bola itu berwarna merah, bulat, dan ringan." },
+          { soal: "Indra apa yang dipakai untuk mengetahui rasa?", contohJawaban: "Lidah." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan indra dengan yang diamatinya!",
+        pasangan: [
+          { kiri: { emoji: "👀", teks: "Mata" }, kanan: "Warna dan bentuk" },
+          { kiri: { emoji: "✋", teks: "Tangan" }, kanan: "Halus atau kasar" },
+          { kiri: { emoji: "👅", teks: "Lidah" }, kanan: "Rasa" },
+          { kiri: { emoji: "👂", teks: "Telinga" }, kanan: "Bunyi" }
+        ]
+      }]
+    },
+
+    {
+      id: "mengenal-perasaan",
+      judul: "Mengenal Perasaan",
+      emoji: "😊",
+      ringkasan: [
+        { emoji: "😊", teks: "Perasaan adalah apa yang kita rasakan, misalnya senang, sedih, marah, atau takut." },
+        { emoji: "🎉", teks: "Senang saat mendapat kabar baik. Wajahnya tersenyum." },
+        { emoji: "😢", teks: "Sedih saat kehilangan sesuatu atau teman pergi." },
+        { emoji: "😠", teks: "Marah saat diganggu. Kita tetap boleh berkata dengan tenang." },
+        { emoji: "😨", teks: "Takut saat berada di tempat yang belum dikenal. Minta bantuan orang yang dipercaya." },
+        { emoji: "🌟", teks: "Bangga saat berhasil mencoba lagi. Perasaan boleh diceritakan dengan sopan." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Perasaan saat tersenyum karena kabar baik adalah ....", pilihan: ["senang", "takut", "lapar"], jawaban: 0, penjelasan: "Senang sering tampak dari senyuman." },
+          { soal: "Saat mainan kesayangan hilang, Lou merasa ....", pilihan: ["sedih", "bangga", "mengantuk"], jawaban: 0, penjelasan: "Kehilangan dapat membuat kita sedih." },
+          { soal: "Marah tetap boleh diungkapkan dengan ....", pilihan: ["kata yang tenang", "memukul", "mengejek"], jawaban: 0, penjelasan: "Kita boleh bilang bahwa kita marah tanpa menyakiti." },
+          { soal: "Takut di tempat baru sebaiknya ....", pilihan: ["minta bantuan orang yang dipercaya", "berlari sendirian jauh", "berpura-pura tidak punya perasaan"], jawaban: 0, penjelasan: "Orang tua atau guru dapat menemani." }
+        ],
+        [
+          { soal: "Bangga adalah perasaan saat ....", pilihan: ["berhasil mencoba lagi", "kehilangan barang", "diganggu teman"], jawaban: 0, penjelasan: "Berhasil setelah berusaha dapat membuat kita bangga." },
+          { soal: "Perasaan boleh diceritakan kepada ....", pilihan: ["orang tua atau guru", "orang yang tidak dikenal di jalan", "tidak boleh kepada siapa pun"], jawaban: 0, penjelasan: "Cerita kepada orang yang dipercaya membuat hati lebih ringan." },
+          { soal: "Kata yang menunjukkan perasaan adalah ....", pilihan: ["sedih", "meja", "puluhan"], jawaban: 0, penjelasan: "Sedih adalah perasaan. Meja adalah benda." },
+          { soal: "Wajah tersenyum biasanya menunjukkan rasa ....", pilihan: ["senang", "takut", "marah"], jawaban: 0, penjelasan: "Senyum adalah tanda senang." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Sebutkan empat perasaan.", contohJawaban: "Senang, sedih, marah, dan takut. Bangga juga boleh." },
+          { soal: "Apa yang sebaiknya dilakukan saat marah?", contohJawaban: "Mengatakan perasaan itu dengan tenang, tanpa memukul atau mengejek." },
+          { soal: "Kapan seseorang merasa bangga?", contohJawaban: "Saat berhasil mencoba lagi atau menyelesaikan usahanya." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan perasaan dengan tandanya!",
+        pasangan: [
+          { kiri: { emoji: "😊", teks: "Senang" }, kanan: "Tersenyum" },
+          { kiri: { emoji: "😢", teks: "Sedih" }, kanan: "Kehilangan sesuatu" },
+          { kiri: { emoji: "😠", teks: "Marah" }, kanan: "Terganggu, tetapi berkata tenang" },
+          { kiri: { emoji: "🌟", teks: "Bangga" }, kanan: "Berhasil mencoba lagi" }
+        ]
+      }]
+    }
   ]
 };
 
@@ -1576,7 +1740,7 @@ const IPAS_SUBJECT = {
   nama: "IPAS",
   ikon: "🔬",
   warna: "#3a86ff",
-  deskripsi: "Mengenal matahari, cuaca, dan alam di sekitar kita.",
+  deskripsi: "Mengenal cuaca, makhluk hidup, tempat hidup, dan manfaatnya.",
   topik: [
 
     /* ========================================================
@@ -2139,8 +2303,132 @@ const IPAS_SUBJECT = {
           ]
         }
       ]
-    }
+    },
 
+    {
+      id: "ciri-makhluk-hidup",
+      judul: "Ciri-ciri Makhluk Hidup",
+      emoji: "🐾",
+      ringkasan: [
+        { emoji: "🐾", teks: "Makhluk hidup bergerak, bernapas, membutuhkan makan, tumbuh, dan berkembang biak." },
+        { emoji: "🌬️", teks: "Manusia bernapas dengan udara. Ikan bernapas di dalam air." },
+        { emoji: "🌱", teks: "Tumbuhan tumbuh dari kecil menjadi lebih besar. Anak juga bertambah tinggi." },
+        { emoji: "🐣", teks: "Berkembang biak berarti punya keturunan, misalnya ayam punya anak ayam." },
+        { emoji: "🪨", teks: "Batu tidak bernapas, tidak makan, dan tidak tumbuh. Batu bukan makhluk hidup." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Yang termasuk ciri makhluk hidup adalah ....", pilihan: ["tumbuh", "tidak pernah berubah", "tidak butuh makan"], jawaban: 0, penjelasan: "Makhluk hidup tumbuh." },
+          { soal: "Ikan bernapas di ....", pilihan: ["air", "dalam batu", "tanpa apa pun"], jawaban: 0, penjelasan: "Ikan bernapas di dalam air." },
+          { soal: "Batu bukan makhluk hidup karena batu ....", pilihan: ["tidak bernapas dan tidak tumbuh", "bisa berlari", "bertelur"], jawaban: 0, penjelasan: "Batu tidak melakukan ciri makhluk hidup." },
+          { soal: "Ayam punya anak ayam. Itu disebut ....", pilihan: ["berkembang biak", "mengukur", "membandingkan berat"], jawaban: 0, penjelasan: "Punya keturunan berarti berkembang biak." }
+        ],
+        [
+          { soal: "Manusia membutuhkan ....", pilihan: ["makanan", "tidak butuh apa pun", "hanya batu"], jawaban: 0, penjelasan: "Makhluk hidup butuh makan." },
+          { soal: "Anak yang bertambah tinggi sedang ....", pilihan: ["tumbuh", "menjadi batu", "berhenti hidup"], jawaban: 0, penjelasan: "Bertambah besar atau tinggi adalah tumbuh." },
+          { soal: "Kucing pindah tempat. Itu ciri ....", pilihan: ["bergerak", "diam selamanya", "tidak hidup"], jawaban: 0, penjelasan: "Makhluk hidup dapat bergerak." },
+          { soal: "Meja tidak makan dan tidak tumbuh. Meja adalah ....", pilihan: ["benda tak hidup", "hewan", "tumbuhan"], jawaban: 0, penjelasan: "Meja tidak punya ciri makhluk hidup." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Sebutkan tiga ciri makhluk hidup.", contohJawaban: "Bergerak, bernapas, butuh makan, tumbuh, atau berkembang biak." },
+          { soal: "Mengapa batu bukan makhluk hidup?", contohJawaban: "Batu tidak bernapas, tidak makan, dan tidak tumbuh." },
+          { soal: "Apa arti berkembang biak?", contohJawaban: "Punya keturunan, misalnya ayam punya anak ayam." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan makhluk dengan cirinya!",
+        pasangan: [
+          { kiri: { emoji: "🌬️", teks: "Ikan" }, kanan: "Bernapas di air" },
+          { kiri: { emoji: "🌱", teks: "Tumbuhan" }, kanan: "Tumbuh lebih besar" },
+          { kiri: { emoji: "🐣", teks: "Ayam" }, kanan: "Punya anak ayam" },
+          { kiri: { emoji: "🪨", teks: "Batu" }, kanan: "Bukan makhluk hidup" }
+        ]
+      }]
+    },
+
+    {
+      id: "tempat-hidup",
+      judul: "Tempat Hidup Makhluk Hidup",
+      emoji: "🌍",
+      ringkasan: [
+        { emoji: "🌍", teks: "Setiap makhluk hidup punya tempat hidup yang cocok." },
+        { emoji: "🐟", teks: "Ikan hidup di air." },
+        { emoji: "🐱", teks: "Kucing hidup di darat." },
+        { emoji: "🐦", teks: "Burung banyak tinggal di pohon dan terbang di udara." },
+        { emoji: "🪱", teks: "Cacing hidup di tanah." },
+        { emoji: "🐸", teks: "Katak dapat hidup di air dan di darat." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Ikan hidup di ....", pilihan: ["air", "dalam buku", "pasir kering saja"], jawaban: 0, penjelasan: "Air adalah tempat hidup ikan." },
+          { soal: "Cacing biasanya hidup di ....", pilihan: ["tanah", "awan", "laut dalam"], jawaban: 0, penjelasan: "Tanah yang lembap adalah tempat cacing." },
+          { soal: "Kucing hidup di ....", pilihan: ["darat", "dasar laut", "dalam batu"], jawaban: 0, penjelasan: "Kucing berjalan dan tinggal di darat." },
+          { soal: "Katak dapat hidup di ....", pilihan: ["air dan darat", "hanya di awan", "hanya di dalam buku"], jawaban: 0, penjelasan: "Katak dapat berada di dua tempat itu." }
+        ],
+        [
+          { soal: "Burung banyak tinggal di ....", pilihan: ["pohon", "dasar sungai", "dalam tanah"], jawaban: 0, penjelasan: "Pohon menjadi tempat hinggap dan sarang banyak burung." },
+          { soal: "Tempat hidup yang cocok membantu makhluk itu ....", pilihan: ["tetap hidup", "berubah menjadi batu", "tidak perlu makan"], jawaban: 0, penjelasan: "Tempat yang cocok menyediakan kebutuhan hidupnya." },
+          { soal: "Ikan yang dijauhkan dari air akan ....", pilihan: ["kesulitan hidup", "semakin kuat", "berubah menjadi burung"], jawaban: 0, penjelasan: "Ikan membutuhkan air." },
+          { soal: "Tanah adalah tempat hidup ....", pilihan: ["cacing", "ikan laut", "awan"], jawaban: 0, penjelasan: "Cacing hidup di tanah." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Sebutkan tempat hidup ikan, kucing, dan cacing.", contohJawaban: "Ikan di air, kucing di darat, cacing di tanah." },
+          { soal: "Mengapa katak disebut dapat hidup di dua tempat?", contohJawaban: "Karena katak dapat hidup di air dan di darat." },
+          { soal: "Apa yang terjadi jika ikan dijauhkan dari air?", contohJawaban: "Ikan kesulitan hidup karena air adalah tempatnya." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan makhluk dengan tempatnya!",
+        pasangan: [
+          { kiri: { emoji: "🐟", teks: "Ikan" }, kanan: "Air" },
+          { kiri: { emoji: "🐱", teks: "Kucing" }, kanan: "Darat" },
+          { kiri: { emoji: "🐦", teks: "Burung" }, kanan: "Pohon" },
+          { kiri: { emoji: "🐸", teks: "Katak" }, kanan: "Air dan darat" }
+        ]
+      }]
+    },
+
+    {
+      id: "manfaat-makhluk-hidup",
+      judul: "Manfaat Makhluk Hidup",
+      emoji: "🌾",
+      ringkasan: [
+        { emoji: "🌾", teks: "Makhluk hidup berguna bagi manusia jika dipelihara dengan baik." },
+        { emoji: "🐔", teks: "Ayam memberi telur." },
+        { emoji: "🐄", teks: "Sapi dapat memberi susu." },
+        { emoji: "🐝", teks: "Lebah membuat madu." },
+        { emoji: "🍚", teks: "Padi menjadi beras, lalu nasi." },
+        { emoji: "🌳", teks: "Pohon memberi buah, tempat teduh, dan udara yang lebih segar." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Telur didapat dari ....", pilihan: ["ayam", "batu", "meja"], jawaban: 0, penjelasan: "Ayam menghasilkan telur." },
+          { soal: "Susu dapat didapat dari ....", pilihan: ["sapi", "ikan", "batu"], jawaban: 0, penjelasan: "Sapi dapat diperah susunya." },
+          { soal: "Madu dibuat oleh ....", pilihan: ["lebah", "kucing", "cacing"], jawaban: 0, penjelasan: "Lebah membuat madu." },
+          { soal: "Padi diolah menjadi ....", pilihan: ["beras", "susu", "madu"], jawaban: 0, penjelasan: "Beras berasal dari padi, lalu dapat ditanak menjadi nasi." }
+        ],
+        [
+          { soal: "Pohon membuat udara terasa ....", pilihan: ["lebih segar", "lebih berdebu selalu", "hilang"], jawaban: 0, penjelasan: "Pohon membantu udara di sekitar terasa segar." },
+          { soal: "Buah dapat kita makan. Buah berasal dari ....", pilihan: ["tumbuhan", "batu", "bayangan"], jawaban: 0, penjelasan: "Tumbuhan menghasilkan buah." },
+          { soal: "Kita merawat hewan dan tumbuhan karena mereka ....", pilihan: ["berguna dan juga makhluk hidup", "tidak perlu tempat", "adalah benda mati"], jawaban: 0, penjelasan: "Mereka bermanfaat dan tetap perlu dipelihara." },
+          { soal: "Tempat teduh di siang hari dapat diberikan oleh ....", pilihan: ["pohon", "telur", "madu"], jawaban: 0, penjelasan: "Ranting dan daun pohon menaungi kita." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Sebutkan dua manfaat hewan bagi manusia.", contohJawaban: "Ayam memberi telur, sapi memberi susu, atau lebah membuat madu." },
+          { soal: "Apa manfaat pohon?", contohJawaban: "Memberi buah, tempat teduh, dan udara yang lebih segar." },
+          { soal: "Dari mana nasi berasal?", contohJawaban: "Dari padi yang menjadi beras, lalu ditanak." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan makhluk dengan manfaatnya!",
+        pasangan: [
+          { kiri: { emoji: "🐔", teks: "Ayam" }, kanan: "Telur" },
+          { kiri: { emoji: "🐄", teks: "Sapi" }, kanan: "Susu" },
+          { kiri: { emoji: "🐝", teks: "Lebah" }, kanan: "Madu" },
+          { kiri: { emoji: "🌳", teks: "Pohon" }, kanan: "Buah dan udara segar" }
+        ]
+      }]
+    }
   ]
 };
 
@@ -2154,7 +2442,7 @@ const MATEMATIKA_SUBJECT = {
   nama: "Matematika",
   ikon: "➗",
   warna: "#ff8500",
-  deskripsi: "Belajar bentuk bangun dan posisi benda di sekitar kita.",
+  deskripsi: "Belajar bilangan, hitungan, pecahan, ukuran, pola, data, bangun, dan posisi.",
   topik: [
 
     /* ========================================================
@@ -2790,8 +3078,254 @@ const MATEMATIKA_SUBJECT = {
           ]
         }
       ]
-    }
+    },
 
+    {
+      id: "bilangan-sampai-100",
+      judul: "Bilangan Cacah sampai 100",
+      emoji: "🔢",
+      ringkasan: [
+        { emoji: "🔟", teks: "Kita belajar bilangan cacah dari 0 sampai 100." },
+        { emoji: "🔟", teks: "Puluhan adalah kelompok sepuluh. 30 berarti 3 puluhan." },
+        { emoji: "1️⃣", teks: "Satuan adalah bilangan yang tersisa setelah puluhan. 34 = 3 puluhan + 4 satuan." },
+        { emoji: "↔️", teks: "Bandingkan puluhan dulu. 58 lebih besar dari 49 karena 5 puluhan lebih banyak dari 4." },
+        { emoji: "🔢", teks: "Mengurutkan berarti menyusun dari yang kecil ke yang besar, atau sebaliknya." },
+        { emoji: "💯", teks: "100 dibaca seratus. Itulah bilangan terakhir pada hitungan sampai 100." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "3 puluhan + 4 satuan = ....", pilihan: ["34", "43", "7"], jawaban: 0, penjelasan: "3 puluhan = 30, ditambah 4 satuan = 34." },
+          { soal: "Bilangan yang lebih besar adalah ....", pilihan: ["46", "64", "keduanya sama"], jawaban: 1, penjelasan: "64 punya 6 puluhan. 46 hanya punya 4 puluhan." },
+          { soal: "Bilangan setelah 29 adalah ....", pilihan: ["28", "30", "39"], jawaban: 1, penjelasan: "Setelah 29, puluhannya bertambah: 30." },
+          { soal: "5 puluhan + 0 satuan = ....", pilihan: ["5", "50", "15"], jawaban: 1, penjelasan: "5 puluhan = 50. Satuan nol tidak menambah." }
+        ],
+        [
+          { soal: "20 terdiri dari .... puluhan.", pilihan: ["2", "20", "0"], jawaban: 0, penjelasan: "20 = 2 puluhan." },
+          { soal: "Urutan yang benar adalah ....", pilihan: ["18, 19, 20", "20, 18, 19", "19, 18, 20"], jawaban: 0, penjelasan: "18, lalu 19, lalu 20." },
+          { soal: "Mana yang lebih kecil?", pilihan: ["72", "27", "keduanya sama"], jawaban: 1, penjelasan: "27 hanya punya 2 puluhan. 72 punya 7 puluhan." },
+          { soal: "100 dibaca ....", pilihan: ["sepuluh", "seratus", "seribu"], jawaban: 1, penjelasan: "100 dibaca seratus." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Berapa puluhan dan satuan pada 47?", contohJawaban: "4 puluhan dan 7 satuan." },
+          { soal: "Mengapa 58 lebih besar dari 49?", contohJawaban: "Karena 58 punya 5 puluhan, sedangkan 49 punya 4 puluhan." },
+          { soal: "Tuliskan tiga bilangan berurutan yang berakhir di 40.", contohJawaban: "38, 39, 40." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan bilangan dengan artinya!",
+        pasangan: [
+          { kiri: { emoji: "3️⃣", teks: "34" }, kanan: "3 puluhan + 4 satuan" },
+          { kiri: { emoji: "5️⃣", teks: "50" }, kanan: "5 puluhan" },
+          { kiri: { emoji: "💯", teks: "100" }, kanan: "Seratus" },
+          { kiri: { emoji: "2️⃣", teks: "27" }, kanan: "Lebih kecil dari 72" }
+        ]
+      }]
+    },
+
+    {
+      id: "penjumlahan-pengurangan",
+      judul: "Penjumlahan dan Pengurangan",
+      emoji: "➕",
+      ringkasan: [
+        { emoji: "➕", teks: "Penjumlahan menggabungkan dua jumlah. Tanda + berarti tambah." },
+        { emoji: "➖", teks: "Pengurangan mengambil sebagian. Tanda − berarti kurang." },
+        { emoji: "🟰", teks: "Tanda = berarti sama dengan. 8 + 5 = 13." },
+        { emoji: "✋", teks: "Di kelas 2, kita berlatih hitungan sampai 20 dengan benda yang bisa dihitung." },
+        { emoji: "🔢", teks: "8 + 7 = 15. 14 − 5 = 9. 20 − 7 = 13." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "8 + 7 = ....", pilihan: ["14", "15", "16"], jawaban: 1, penjelasan: "8 ditambah 7 sama dengan 15." },
+          { soal: "14 − 5 = ....", pilihan: ["9", "8", "19"], jawaban: 0, penjelasan: "Dari 14, ambil 5, tersisa 9." },
+          { soal: "10 + 10 = ....", pilihan: ["20", "10", "110"], jawaban: 0, penjelasan: "Sepuluh ditambah sepuluh sama dengan 20." },
+          { soal: "Tanda = berarti ....", pilihan: ["tambah", "sama dengan", "kurang"], jawaban: 1, penjelasan: "Hasil di kiri sama dengan hasil di kanan." }
+        ],
+        [
+          { soal: "9 + 6 = ....", pilihan: ["14", "15", "16"], jawaban: 1, penjelasan: "9 + 6 = 15." },
+          { soal: "20 − 7 = ....", pilihan: ["13", "27", "12"], jawaban: 0, penjelasan: "20 dikurangi 7 sama dengan 13." },
+          { soal: "12 − 4 = ....", pilihan: ["8", "16", "9"], jawaban: 0, penjelasan: "12 − 4 = 8." },
+          { soal: "6 + 8 = ....", pilihan: ["12", "14", "15"], jawaban: 1, penjelasan: "6 + 8 = 14." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Hitung 15 − 7.", contohJawaban: "8." },
+          { soal: "Lou punya 9 kelereng, lalu dapat 6 lagi. Berapa sekarang?", contohJawaban: "15 kelereng." },
+          { soal: "Apa arti tanda + dan tanda −?", contohJawaban: "+ berarti tambah. − berarti kurang." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan soal dengan hasilnya!",
+        pasangan: [
+          { kiri: { emoji: "➕", teks: "8 + 7" }, kanan: "15" },
+          { kiri: { emoji: "➖", teks: "14 − 5" }, kanan: "9" },
+          { kiri: { emoji: "🔟", teks: "10 + 10" }, kanan: "20" },
+          { kiri: { emoji: "➖", teks: "20 − 7" }, kanan: "13" }
+        ]
+      }]
+    },
+
+    {
+      id: "pecahan-setengah",
+      judul: "Pecahan Setengah dan Seperempat",
+      emoji: "🍕",
+      ringkasan: [
+        { emoji: "½", teks: "Setengah berarti 1 bagian dari 2 bagian yang sama besar." },
+        { emoji: "¼", teks: "Seperempat berarti 1 bagian dari 4 bagian yang sama besar." },
+        { emoji: "⚖️", teks: "Bagian-bagiannya harus sama besar. Kalau tidak sama, itu belum setengah atau seperempat." },
+        { emoji: "🔵", teks: "Setengah dari 8 benda adalah 4. Seperempat dari 8 benda adalah 2." },
+        { emoji: "🍕", teks: "Dua potong seperempat yang sama besar menyusun satu setengah." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Setengah adalah 1 bagian dari .... bagian sama besar.", pilihan: ["2", "4", "3"], jawaban: 0, penjelasan: "Setengah membagi sesuatu menjadi 2 bagian sama." },
+          { soal: "Seperempat adalah 1 bagian dari .... bagian sama besar.", pilihan: ["2", "4", "8"], jawaban: 1, penjelasan: "Seperempat membagi sesuatu menjadi 4 bagian sama." },
+          { soal: "Setengah dari 8 kelereng adalah ....", pilihan: ["2", "4", "8"], jawaban: 1, penjelasan: "8 dibagi 2 sama dengan 4." },
+          { soal: "Seperempat dari 8 kelereng adalah ....", pilihan: ["2", "4", "6"], jawaban: 0, penjelasan: "8 dibagi 4 sama dengan 2." }
+        ],
+        [
+          { soal: "Setengah dari 10 apel adalah ....", pilihan: ["4", "5", "10"], jawaban: 1, penjelasan: "10 dibagi 2 sama dengan 5." },
+          { soal: "Dua seperempat yang sama besar sama dengan ....", pilihan: ["satu setengah", "satu utuh", "tiga"], jawaban: 0, penjelasan: "1/4 + 1/4 = 1/2." },
+          { soal: "Kue dibagi 4 sama besar. Satu potong disebut ....", pilihan: ["setengah", "seperempat", "sepertiga"], jawaban: 1, penjelasan: "Satu dari empat bagian sama adalah seperempat." },
+          { soal: "Bagian yang tidak sama besar ....", pilihan: ["belum disebut setengah", "tetap disebut setengah", "disebut seratus"], jawaban: 0, penjelasan: "Setengah harus dua bagian yang sama besar." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa arti setengah?", contohJawaban: "Satu bagian dari dua bagian yang sama besar." },
+          { soal: "Ada 8 kue. Berapa kue jika diambil seperempatnya?", contohJawaban: "2 kue." },
+          { soal: "Mengapa potongan yang ukurannya beda tidak disebut setengah?", contohJawaban: "Karena kedua bagian harus sama besar." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan pecahan dengan artinya!",
+        pasangan: [
+          { kiri: { emoji: "½", teks: "Setengah" }, kanan: "1 dari 2 bagian sama" },
+          { kiri: { emoji: "¼", teks: "Seperempat" }, kanan: "1 dari 4 bagian sama" },
+          { kiri: { emoji: "🔵", teks: "Setengah dari 8" }, kanan: "4" },
+          { kiri: { emoji: "🍕", teks: "Dua seperempat" }, kanan: "Satu setengah" }
+        ]
+      }]
+    },
+
+    {
+      id: "membandingkan-ukuran",
+      judul: "Membandingkan Panjang, Berat, dan Waktu",
+      emoji: "📏",
+      ringkasan: [
+        { emoji: "📏", teks: "Dua benda bisa dibandingkan langsung: mana yang lebih panjang dan mana yang lebih pendek." },
+        { emoji: "✋", teks: "Jengkal dan langkah adalah satuan tidak baku. Hasilnya bisa berbeda pada orang yang berbeda." },
+        { emoji: "⚖️", teks: "Benda yang lebih berat menekan lebih kuat. Pensil lebih ringan daripada buku." },
+        { emoji: "⏱️", teks: "Durasi adalah lama suatu kegiatan. Kegiatan yang selesai lebih dulu lebih singkat." },
+        { emoji: "👀", teks: "Di fase ini kita membandingkan dulu, belum harus memakai penggaris sentimeter." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Pensil lebih .... daripada sapu.", pilihan: ["pendek", "panjang", "berat sekali"], jawaban: 0, penjelasan: "Saat disandingkan, pensil lebih pendek daripada sapu." },
+          { soal: "Jengkal disebut satuan tidak baku karena ....", pilihan: ["hasilnya bisa beda tiap orang", "semua orang hasilnya selalu sama", "ia adalah jam"], jawaban: 0, penjelasan: "Panjang jengkal tiap orang tidak sama." },
+          { soal: "Buku biasanya lebih .... daripada pensil.", pilihan: ["berat", "ringan", "singkat"], jawaban: 0, penjelasan: "Buku menekan lebih kuat daripada pensil." },
+          { soal: "Tepuk tangan sekali lebih .... daripada menonton cerita.", pilihan: ["singkat", "lama", "berat"], jawaban: 0, penjelasan: "Tepuk sekali selesai lebih cepat." }
+        ],
+        [
+          { soal: "Membandingkan panjang bisa dilakukan dengan ....", pilihan: ["menyandingkan kedua benda", "hanya menebak warna", "menghitung huruf"], jawaban: 0, penjelasan: "Susun kedua benda dari ujung yang sama, lalu lihat mana yang lebih panjang." },
+          { soal: "Langkah Lou dan langkah ayah bisa berbeda karena langkah adalah satuan ....", pilihan: ["tidak baku", "yang selalu sama", "waktu"], jawaban: 0, penjelasan: "Satuan tidak baku hasilnya tidak selalu sama." },
+          { soal: "Kegiatan yang selesai belakangan berlangsung lebih ....", pilihan: ["lama", "singkat", "ringan"], jawaban: 0, penjelasan: "Yang selesai belakangan durasinya lebih lama." },
+          { soal: "Mana yang lebih ringan?", pilihan: ["buku tulis", "pensil", "keduanya sama berat"], jawaban: 1, penjelasan: "Pensil lebih ringan daripada buku." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa arti satuan tidak baku? Beri satu contoh.", contohJawaban: "Satuan yang hasilnya bisa berbeda. Contoh: jengkal atau langkah." },
+          { soal: "Bagaimana cara tahu benda mana yang lebih panjang?", contohJawaban: "Sandingkan dari ujung yang sama, lalu lihat ujung yang lebih jauh." },
+          { soal: "Mana yang lebih singkat: mengikat tali sepatu atau tidur semalam? Mengapa?", contohJawaban: "Mengikat tali sepatu lebih singkat karena selesai lebih cepat." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan kata ukuran dengan pasangannya!",
+        pasangan: [
+          { kiri: { emoji: "📏", teks: "Lebih panjang" }, kanan: "Lebih pendek" },
+          { kiri: { emoji: "⚖️", teks: "Lebih berat" }, kanan: "Lebih ringan" },
+          { kiri: { emoji: "⏱️", teks: "Lebih lama" }, kanan: "Lebih singkat" },
+          { kiri: { emoji: "✋", teks: "Jengkal" }, kanan: "Satuan tidak baku" }
+        ]
+      }]
+    },
+
+    {
+      id: "pola",
+      judul: "Pola",
+      emoji: "🔁",
+      ringkasan: [
+        { emoji: "🔁", teks: "Pola adalah susunan yang berulang." },
+        { emoji: "🔴", teks: "Pola bisa berupa warna, bentuk, atau bunyi." },
+        { emoji: "🔵", teks: "Pada pola merah-biru-merah-biru, berikutnya adalah merah." },
+        { emoji: "🔺", teks: "Kita bisa meniru pola, lalu melanjutkannya." },
+        { emoji: "👂", teks: "Tepuk-diam-tepuk-diam juga sebuah pola bunyi." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Merah, biru, merah, biru, .... Berikutnya adalah ....", pilihan: ["merah", "kuning", "hijau"], jawaban: 0, penjelasan: "Warna berganti dua-dua, jadi setelah biru kembali merah." },
+          { soal: "Lingkaran, segitiga, lingkaran, segitiga, .... Berikutnya adalah ....", pilihan: ["lingkaran", "persegi", "bintang"], jawaban: 0, penjelasan: "Bentuknya berulang: lingkaran lalu segitiga." },
+          { soal: "Pola adalah susunan yang ....", pilihan: ["berulang", "selalu acak", "tidak punya urutan"], jawaban: 0, penjelasan: "Bagian pola kembali dengan aturan yang sama." },
+          { soal: "Tepuk, diam, tepuk, diam, .... Berikutnya adalah ....", pilihan: ["tepuk", "lompat", "duduk"], jawaban: 0, penjelasan: "Bunyi dan diam bergantian." }
+        ],
+        [
+          { soal: "⭐, ⭐, 🌙, ⭐, ⭐, 🌙, .... Berikutnya adalah ....", pilihan: ["⭐", "🌙", "☀️"], jawaban: 0, penjelasan: "Dua bintang, lalu bulan, lalu pola itu berulang." },
+          { soal: "Kita bisa meniru pola, lalu ....", pilihan: ["melanjutkannya", "menghapus aturannya", "mengacak semuanya"], jawaban: 0, penjelasan: "Setelah meniru, kita lanjut sesuai aturan yang sama." },
+          { soal: "Pola tidak hanya warna. Pola juga bisa berupa ....", pilihan: ["bentuk atau bunyi", "hanya angka besar", "hanya bau"], jawaban: 0, penjelasan: "Bentuk dan bunyi juga bisa disusun berulang." },
+          { soal: "Biru, biru, kuning, biru, biru, kuning, .... Berikutnya adalah ....", pilihan: ["biru", "kuning", "merah"], jawaban: 0, penjelasan: "Dua biru dulu, baru kuning." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa yang dimaksud pola?", contohJawaban: "Susunan yang berulang." },
+          { soal: "Lanjutkan: segitiga, persegi, segitiga, persegi, ....", contohJawaban: "Segitiga." },
+          { soal: "Sebutkan satu pola bunyi.", contohJawaban: "Contoh: tepuk, diam, tepuk, diam." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan pola dengan lanjutan yang benar!",
+        pasangan: [
+          { kiri: { emoji: "🔴", teks: "Merah, biru, merah, biru" }, kanan: "Merah" },
+          { kiri: { emoji: "🔺", teks: "Segitiga, persegi, segitiga, persegi" }, kanan: "Segitiga" },
+          { kiri: { emoji: "⭐", teks: "Dua bintang lalu bulan" }, kanan: "Bintang" },
+          { kiri: { emoji: "👏", teks: "Tepuk, diam, tepuk, diam" }, kanan: "Tepuk" }
+        ]
+      }]
+    },
+
+    {
+      id: "data-sederhana",
+      judul: "Data Sederhana",
+      emoji: "📊",
+      ringkasan: [
+        { emoji: "📊", teks: "Data adalah kumpulan keterangan, misalnya banyak buah yang dipilih teman." },
+        { emoji: "✏️", teks: "Turus dipakai untuk mencatat jumlah. Empat garis tegak dan garis kelima miring berarti 5." },
+        { emoji: "🍎", teks: "Piktogram memakai gambar. Satu gambar mewakili satu benda." },
+        { emoji: "4️⃣", teks: "Di fase ini kita memakai paling banyak 4 kategori, misalnya apel, jeruk, mangga, dan pisang." },
+        { emoji: "👀", teks: "Kategori dengan gambar atau turus paling banyak adalah yang paling sering dipilih." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Empat garis tegak dan satu garis miring pada turus berarti ....", pilihan: ["4", "5", "6"], jawaban: 1, penjelasan: "Garis kelima yang miring membuat jumlahnya 5." },
+          { soal: "Pada piktogram, satu gambar apel berarti ....", pilihan: ["1 apel", "10 apel", "0 apel"], jawaban: 0, penjelasan: "Satu gambar mewakili satu benda." },
+          { soal: "Jika gambar apel ada 3 dan gambar jeruk ada 5, yang lebih banyak adalah ....", pilihan: ["jeruk", "apel", "sama banyak"], jawaban: 0, penjelasan: "5 lebih banyak daripada 3." },
+          { soal: "Data sederhana di kelas ini paling banyak .... kategori.", pilihan: ["4", "40", "100"], jawaban: 0, penjelasan: "Piktogram fase ini memakai paling banyak 4 kategori." }
+        ],
+        [
+          { soal: "Turus berguna untuk ....", pilihan: ["mencatat jumlah", "mengukur berat", "mewarnai bendera"], jawaban: 0, penjelasan: "Setiap hitungan ditandai dengan garis." },
+          { soal: "Tiga gambar pisang pada piktogram berarti ada .... pisang.", pilihan: ["3", "30", "1"], jawaban: 0, penjelasan: "Satu gambar = satu pisang, jadi tiga gambar = 3." },
+          { soal: "Kategori yang gambarnya paling sedikit adalah yang ....", pilihan: ["paling jarang", "paling sering", "paling berat"], jawaban: 0, penjelasan: "Gambar sedikit berarti jumlahnya lebih kecil." },
+          { soal: "Apel, jeruk, mangga, dan pisang adalah contoh ....", pilihan: ["4 kategori", "4 bilangan", "4 satuan waktu"], jawaban: 0, penjelasan: "Masing-masing jenis buah adalah satu kategori." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa arti satu gambar pada piktogram?", contohJawaban: "Satu gambar mewakili satu benda." },
+          { soal: "Bagaimana cara menulis 5 dengan turus?", contohJawaban: "Empat garis tegak dan garis kelima miring." },
+          { soal: "Apel 4, jeruk 2. Mana yang lebih banyak, dan selisihnya berapa?", contohJawaban: "Apel lebih banyak, selisihnya 2." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan catatan dengan jumlahnya!",
+        pasangan: [
+          { kiri: { emoji: "✏️", teks: "Turus 5" }, kanan: "Empat garis tegak dan satu miring" },
+          { kiri: { emoji: "🍎", teks: "3 gambar apel" }, kanan: "3 apel" },
+          { kiri: { emoji: "🍊", teks: "Gambar paling banyak" }, kanan: "Kategori yang paling sering" },
+          { kiri: { emoji: "4️⃣", teks: "Paling banyak 4 jenis" }, kanan: "Empat kategori" }
+        ]
+      }]
+    }
   ]
 };
 
@@ -2806,7 +3340,7 @@ const INFORMATIKA_SUBJECT = {
   nama: "Informatika",
   ikon: "💻",
   warna: "#0096c7",
-  deskripsi: "Mengenal komputer, ponsel, dan alat TIK lain serta cara memakainya dengan bijak.",
+  deskripsi: "Mengenal perangkat TIK, mengelompokkan benda, instruksi runtut, dan sinyal.",
   topik: [
 
     /* ========================================================
@@ -3242,8 +3776,130 @@ const INFORMATIKA_SUBJECT = {
           ]
         }
       ]
-    }
+    },
 
+    {
+      id: "mengelompokkan-benda",
+      judul: "Mengelompokkan dan Mengurutkan",
+      emoji: "📦",
+      ringkasan: [
+        { emoji: "📦", teks: "Berpikir komputasional dimulai dari benda yang bisa kita lihat dan pegang." },
+        { emoji: "🔍", teks: "Mengidentifikasi berarti mengenali ciri benda: warna, ukuran, atau bentuk." },
+        { emoji: "⚖️", teks: "Membandingkan berarti melihat mana yang lebih besar, lebih kecil, atau sama." },
+        { emoji: "🗂️", teks: "Mengelompokkan berarti mengumpulkan benda yang cirinya sama." },
+        { emoji: "🔢", teks: "Mengurutkan berarti menyusun dari yang kecil ke yang besar, atau sebaliknya." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Mengenali warna dan ukuran sebuah benda disebut ....", pilihan: ["mengidentifikasi", "menghapus", "menyalakan layar"], jawaban: 0, penjelasan: "Kita menyebut ciri benda itu." },
+          { soal: "Kancing merah dikumpulkan terpisah dari kancing biru. Itu disebut ....", pilihan: ["mengelompokkan", "mengacak", "mematikan wifi"], jawaban: 0, penjelasan: "Benda yang cirinya sama masuk satu kelompok." },
+          { soal: "Menyusun balok dari yang kecil ke yang besar disebut ....", pilihan: ["mengurutkan", "mewarnai saja", "menyembunyikan"], jawaban: 0, penjelasan: "Urutan mengikuti ukuran." },
+          { soal: "Membandingkan dua pensil berarti melihat ....", pilihan: ["mana yang lebih panjang", "bau pensil saja", "harganya di toko"], jawaban: 0, penjelasan: "Kita membandingkan cirinya." }
+        ],
+        [
+          { soal: "Benda yang dapat dipegang disebut benda ....", pilihan: ["konkret", "yang tidak ada", "hanya bayangan"], jawaban: 0, penjelasan: "Benda konkret bisa dilihat dan dipegang." },
+          { soal: "Kelompok buku dan kelompok pensil dipisah karena ....", pilihan: ["jenisnya berbeda", "keduanya selalu sama", "tidak punya ciri"], jawaban: 0, penjelasan: "Ciri yang berbeda masuk kelompok berbeda." },
+          { soal: "Urutan yang benar dari kecil ke besar adalah ....", pilihan: ["kelereng, bola tenis, bola basket", "bola basket, kelereng, bola tenis", "semua dicampur"], jawaban: 0, penjelasan: "Kelereng paling kecil, bola basket paling besar." },
+          { soal: "Setelah mengelompokkan, kita dapat melihat kelompok mana yang ....", pilihan: ["lebih banyak", "tidak punya anggota", "harus dihapus"], jawaban: 0, penjelasan: "Jumlah tiap kelompok bisa dibandingkan." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa arti mengelompokkan?", contohJawaban: "Mengumpulkan benda yang cirinya sama." },
+          { soal: "Bagaimana cara mengurutkan tiga bola?", contohJawaban: "Susun dari yang paling kecil ke yang paling besar, atau sebaliknya." },
+          { soal: "Sebutkan dua ciri yang dapat dipakai untuk membandingkan benda.", contohJawaban: "Warna, ukuran, atau bentuk." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan kegiatan dengan namanya!",
+        pasangan: [
+          { kiri: { emoji: "🔍", teks: "Menyebut warna benda" }, kanan: "Mengidentifikasi" },
+          { kiri: { emoji: "🗂️", teks: "Mengumpulkan kancing merah" }, kanan: "Mengelompokkan" },
+          { kiri: { emoji: "🔢", teks: "Kecil ke besar" }, kanan: "Mengurutkan" },
+          { kiri: { emoji: "⚖️", teks: "Mana yang lebih panjang" }, kanan: "Membandingkan" }
+        ]
+      }]
+    },
+
+    {
+      id: "instruksi-berurutan",
+      judul: "Instruksi yang Runtut",
+      emoji: "📋",
+      ringkasan: [
+        { emoji: "📋", teks: "Instruksi adalah perintah yang dapat diikuti langkah demi langkah." },
+        { emoji: "🧦", teks: "Memakai sepatu: pakai kaus kaki lebih dulu, baru masukkan kaki ke sepatu." },
+        { emoji: "🔁", teks: "Pengulangan berarti langkah yang sama dilakukan beberapa kali. Contoh: tepuk tangan 3 kali." },
+        { emoji: "🌧️", teks: "Kalimat kondisi: jika hujan, bawa jas. Jika tidak hujan, jas tidak perlu." },
+        { emoji: "✅", teks: "Urutan yang benar membuat hasilnya sesuai. Urutan yang terbalik membuat hasilnya kacau." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Sebelum sepatu dipakai, kita memakai ....", pilihan: ["kaus kaki", "topi di kaki", "jas hujan di kaki"], jawaban: 0, penjelasan: "Kaus kaki dipakai lebih dulu." },
+          { soal: "Tepuk tangan 3 kali adalah contoh ....", pilihan: ["pengulangan", "warna", "sinyal wifi"], jawaban: 0, penjelasan: "Langkah yang sama diulang tiga kali." },
+          { soal: "Jika hujan, kita bawa jas. Kata jika menunjukkan ....", pilihan: ["syarat", "penghapus", "bilangan"], jawaban: 0, penjelasan: "Jas dibawa hanya saat syaratnya terjadi, yaitu hujan." },
+          { soal: "Urutan yang dibalik dapat membuat hasilnya ....", pilihan: ["kacau", "selalu sama", "lebih rapi tanpa alasan"], jawaban: 0, penjelasan: "Langkah awal yang tertukar mengubah hasil." }
+        ],
+        [
+          { soal: "Instruksi yang baik urutannya ....", pilihan: ["jelas dari awal sampai selesai", "acak", "tanpa akhir"], jawaban: 0, penjelasan: "Kita tahu langkah mulai dan langkah selesai." },
+          { soal: "Jika tidak hujan, jas ....", pilihan: ["tidak perlu dibawa", "wajib dipakai dua lapis", "dipakai di kepala"], jawaban: 0, penjelasan: "Syaratnya tidak terjadi, jadi langkah itu tidak dilakukan." },
+          { soal: "Mengulang langkah yang sama disebut ....", pilihan: ["pengulangan", "membalik urutan", "menghapus instruksi"], jawaban: 0, penjelasan: "Contohnya tepuk sebanyak tiga kali." },
+          { soal: "Orang lain dapat mengikuti instruksi jika langkahnya ....", pilihan: ["jelas", "rahasia", "berbeda artinya tiap orang"], jawaban: 0, penjelasan: "Satu langkah punya satu arti." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Tuliskan urutan memakai sepatu.", contohJawaban: "Pakai kaus kaki, masukkan kaki ke sepatu, lalu rapikan talinya." },
+          { soal: "Apa arti jika hujan, bawa jas?", contohJawaban: "Jas dibawa hanya ketika hujan. Jika tidak hujan, jas tidak perlu." },
+          { soal: "Berikan contoh pengulangan.", contohJawaban: "Tepuk tangan 3 kali, atau lompat 3 kali." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan instruksi dengan jenisnya!",
+        pasangan: [
+          { kiri: { emoji: "🧦", teks: "Kaus kaki lalu sepatu" }, kanan: "Urutan yang benar" },
+          { kiri: { emoji: "🔁", teks: "Tepuk 3 kali" }, kanan: "Pengulangan" },
+          { kiri: { emoji: "🌧️", teks: "Jika hujan, bawa jas" }, kanan: "Syarat" },
+          { kiri: { emoji: "✅", teks: "Langkah jelas" }, kanan: "Mudah diikuti" }
+        ]
+      }]
+    },
+
+    {
+      id: "sinyal-sekitar",
+      judul: "Sinyal Telepon dan Wifi",
+      emoji: "📶",
+      ringkasan: [
+        { emoji: "📶", teks: "Ponsel memakai sinyal telepon seluler untuk menelepon dan mengirim pesan." },
+        { emoji: "📡", teks: "Wifi adalah sinyal internet di tempat terdekat, misalnya rumah atau sekolah." },
+        { emoji: "📊", teks: "Lebih banyak batang sinyal biasanya berarti hubungan lebih kuat." },
+        { emoji: "🚫", teks: "Jika tidak ada batang, panggilan atau pesan sulit terkirim." },
+        { emoji: "👀", teks: "Kita hanya melihat apakah sinyal ada dan kuat atau lemah, tanpa membuka pengaturannya." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Sinyal untuk menelepon lewat ponsel disebut sinyal ....", pilihan: ["telepon seluler", "penggaris", "turus"], jawaban: 0, penjelasan: "Ponsel membutuhkan sinyal seluler." },
+          { soal: "Wifi biasanya dipakai untuk internet di ....", pilihan: ["rumah atau sekolah", "dasar laut", "dalam batu"], jawaban: 0, penjelasan: "Wifi ada di tempat terdekat yang memasangnya." },
+          { soal: "Batang sinyal yang lebih banyak biasanya berarti hubungan ....", pilihan: ["lebih kuat", "mati", "lebih pendek secara ukuran"], jawaban: 0, penjelasan: "Banyak batang menunjukkan kualitas yang lebih baik." },
+          { soal: "Jika tidak ada batang sinyal, pesan ....", pilihan: ["sulit terkirim", "pasti lebih cepat", "berubah menjadi buku"], jawaban: 0, penjelasan: "Tanpa sinyal, ponsel kesulitan terhubung." }
+        ],
+        [
+          { soal: "Wifi dan sinyal telepon ....", pilihan: ["keduanya tanda hubungan, tetapi pemakaiannya berbeda", "adalah benda yang sama", "adalah satuan berat"], jawaban: 0, penjelasan: "Wifi untuk internet di tempat dekat. Sinyal seluler untuk telepon." },
+          { soal: "Sinyal yang lemah tampak dari batang yang ....", pilihan: ["sedikit", "sangat banyak", "berwarna emas"], jawaban: 0, penjelasan: "Sedikit batang berarti kualitasnya lemah." },
+          { soal: "Kita mengenali sinyal dengan ....", pilihan: ["melihat tanda batang di layar", "menimbang ponsel", "mengukur dengan jengkal"], jawaban: 0, penjelasan: "Tanda di layar menunjukkan ada atau tidaknya sinyal." },
+          { soal: "Saat sinyal tidak ada, yang tepat dilakukan adalah ....", pilihan: ["pindah ke tempat yang bertanda sinyal", "menekan layar berkali-kali dengan marah", "membuka perangkatnya"], jawaban: 0, penjelasan: "Kita mencari tempat yang hubungannya lebih baik, tanpa membongkar alat." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa beda sinyal telepon dan wifi?", contohJawaban: "Sinyal telepon dipakai ponsel untuk menelepon. Wifi dipakai untuk internet di tempat terdekat." },
+          { soal: "Apa arti batang sinyal yang banyak?", contohJawaban: "Hubungan biasanya lebih kuat." },
+          { soal: "Apa yang terjadi jika tidak ada batang sinyal?", contohJawaban: "Panggilan atau pesan sulit terkirim." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan tanda dengan artinya!",
+        pasangan: [
+          { kiri: { emoji: "📶", teks: "Banyak batang" }, kanan: "Hubungan lebih kuat" },
+          { kiri: { emoji: "🚫", teks: "Tidak ada batang" }, kanan: "Sulit terhubung" },
+          { kiri: { emoji: "📡", teks: "Wifi" }, kanan: "Internet di tempat dekat" },
+          { kiri: { emoji: "📱", teks: "Sinyal seluler" }, kanan: "Untuk telepon" }
+        ]
+      }]
+    }
   ]
 };
 
@@ -3257,7 +3913,7 @@ const PLH_SUBJECT = {
   nama: "PLH",
   ikon: "🌳",
   warna: "#38b000",
-  deskripsi: "Pendidikan Lingkungan Hidup: belajar menjaga alam di sekitar kita.",
+  deskripsi: "Pendidikan Lingkungan Hidup: menjaga alam dan membuat kompos.",
   topik: [
 
     /* ========================================================
@@ -3696,8 +4352,48 @@ const PLH_SUBJECT = {
           ]
         }
       ]
-    }
+    },
 
+    {
+      id: "kompos",
+      judul: "Kompos dari Sampah Organik",
+      emoji: "🍂",
+      ringkasan: [
+        { emoji: "🍂", teks: "Sampah organik berasal dari makhluk hidup, misalnya daun kering dan sisa makanan." },
+        { emoji: "♻️", teks: "Sampah organik yang ditumpuk di tempat lembap lama-kelamaan membusuk." },
+        { emoji: "🌱", teks: "Hasil busukan yang menyuburkan tanah disebut kompos." },
+        { emoji: "🚫", teks: "Plastik, kaleng, dan kaca tidak menjadi kompos. Pisahkan mereka." },
+        { emoji: "🧤", teks: "Saat mengumpulkan sampah, cuci tangan sesudahnya." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Daun kering termasuk sampah ....", pilihan: ["organik", "yang tidak bisa membusuk", "logam"], jawaban: 0, penjelasan: "Daun berasal dari tumbuhan dan dapat membusuk." },
+          { soal: "Kompos berguna untuk ....", pilihan: ["menyuburkan tanah", "menambal sepatu", "mengisi baterai"], jawaban: 0, penjelasan: "Kompos dicampurkan agar tanah lebih subur." },
+          { soal: "Plastik ....", pilihan: ["tidak dijadikan kompos", "cepat menjadi pupuk", "adalah sisa makanan"], jawaban: 0, penjelasan: "Plastik dipisahkan dari sampah organik." },
+          { soal: "Sisa makanan dapat ....", pilihan: ["membusuk menjadi kompos", "berubah menjadi kaca", "dipakai sebagai pensil"], jawaban: 0, penjelasan: "Sisa makanan termasuk sampah organik." }
+        ],
+        [
+          { soal: "Agar sampah organik membusuk, tempatnya perlu ....", pilihan: ["lembab", "kering dan terkunci rapat selamanya", "penuh plastik"], jawaban: 0, penjelasan: "Tempat yang lembap membantu pembusukan." },
+          { soal: "Setelah memegang sampah, kita ....", pilihan: ["cuci tangan", "langsung makan", "mengusap mata"], jawaban: 0, penjelasan: "Tangan dicuci agar tetap bersih." },
+          { soal: "Kaleng dan kaca ....", pilihan: ["dipisahkan dari kompos", "dicampur agar cepat menjadi pupuk", "adalah daun"], jawaban: 0, penjelasan: "Keduanya bukan sampah organik." },
+          { soal: "Kompos berbeda dari sampah yang dibuang sembarangan karena kompos ....", pilihan: ["kembali menyuburkan tanah", "dibuang ke sungai", "dibakar di kelas"], jawaban: 0, penjelasan: "Kompos dipakai untuk tanah, bukan dibuang ke sungai." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Apa itu kompos?", contohJawaban: "Pupuk yang terjadi saat sampah organik membusuk dan menyuburkan tanah." },
+          { soal: "Sebutkan dua sampah yang dapat dikomposkan dan satu yang tidak.", contohJawaban: "Daun kering dan sisa makanan dapat dikomposkan. Plastik tidak." },
+          { soal: "Apa yang dilakukan setelah mengumpulkan sampah?", contohJawaban: "Mencuci tangan." }
+        ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan sampah dengan tempatnya!",
+        pasangan: [
+          { kiri: { emoji: "🍂", teks: "Daun kering" }, kanan: "Bahan kompos" },
+          { kiri: { emoji: "🍎", teks: "Sisa makanan" }, kanan: "Sampah organik" },
+          { kiri: { emoji: "🛍️", teks: "Plastik" }, kanan: "Bukan bahan kompos" },
+          { kiri: { emoji: "🌱", teks: "Kompos" }, kanan: "Menyuburkan tanah" }
+        ]
+      }]
+    }
   ]
 };
 
@@ -4528,7 +5224,7 @@ const SUBJECTS = [
     nama: "Pancasila",
     ikon: "🇮🇩",
     warna: "#e63946",
-    deskripsi: "Belajar tentang aturan di rumah dan hidup rukun.",
+    deskripsi: "Belajar identitas, aturan, lambang negara, dan kerja sama.",
     topik: [
       {
         id: "aturan-di-rumah",
@@ -5123,6 +5819,132 @@ const SUBJECTS = [
           }
 
         ]
+      },
+
+      {
+        id: "identitas-diriku",
+        judul: "Identitas Diriku",
+        emoji: "🪪",
+        ringkasan: [
+          { emoji: "🪪", teks: "Identitas adalah ciri yang membuat kita dikenali." },
+          { emoji: "🧒", teks: "Identitas dapat berupa nama, hobi, bahasa, serta agama dan kepercayaan." },
+          { emoji: "⚽", teks: "Hobi Lou boleh berbeda dari hobi teman. Keduanya tetap berharga." },
+          { emoji: "🗣️", teks: "Di rumah dan sekolah ada teman yang memakai bahasa yang berbeda." },
+          { emoji: "🤝", teks: "Kita menghargai identitas teman, tidak menertawakannya." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Nama, hobi, bahasa, dan agama adalah bagian ....", pilihan: ["identitas", "satuan tidak baku", "turus"], jawaban: 0, penjelasan: "Semuanya membantu orang mengenali kita." },
+            { soal: "Teman punya hobi yang berbeda. Sikap yang tepat adalah ....", pilihan: ["menghargai", "menertawakan", "melarang hobinya"], jawaban: 0, penjelasan: "Hobi yang berbeda tetap berharga." },
+            { soal: "Bahasa yang dipakai di rumah bisa ....", pilihan: ["berbeda-beda", "wajib sama untuk semua orang", "tidak boleh dipelajari"], jawaban: 0, penjelasan: "Kita menghargai bahasa teman." },
+            { soal: "Identitas diri dikenali di lingkungan ....", pilihan: ["rumah dan sekolah", "hanya di dalam buku matematika", "hanya saat hujan"], jawaban: 0, penjelasan: "Keluarga, teman, dan guru mengenal kita di sana." }
+          ],
+          [
+            { soal: "Mengejek hobi teman adalah sikap yang ....", pilihan: ["tidak menghargai", "sesuai identitas", "wajib"], jawaban: 0, penjelasan: "Menghargai berarti tidak menertawakan." },
+            { soal: "Agama atau kepercayaan seseorang ....", pilihan: ["dihargai", "boleh diejek", "harus disembunyikan dengan takut"], jawaban: 0, penjelasan: "Perbedaan agama dan kepercayaan dihargai." },
+            { soal: "Hobi adalah ....", pilihan: ["kegiatan yang disukai", "nama bilangan", "lambang negara"], jawaban: 0, penjelasan: "Contoh hobi: menggambar, bermain bola, atau membaca." },
+            { soal: "Lou suka bola, Mira suka menggambar. Mereka ....", pilihan: ["boleh berteman", "tidak boleh sekelas", "harus berganti hobi"], jawaban: 0, penjelasan: "Hobi berbeda tidak menghalangi pertemanan." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Sebutkan empat hal yang termasuk identitas.", contohJawaban: "Nama, hobi, bahasa, serta agama atau kepercayaan." },
+            { soal: "Bagaimana sikapmu jika hobi teman berbeda?", contohJawaban: "Menghargai dan tidak menertawakannya." },
+            { soal: "Di mana identitas kita dikenali?", contohJawaban: "Di rumah dan di sekolah." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan bagian identitas dengan contohnya!",
+          pasangan: [
+            { kiri: { emoji: "🧒", teks: "Nama" }, kanan: "Ciri panggilan kita" },
+            { kiri: { emoji: "⚽", teks: "Hobi" }, kanan: "Kegiatan yang disukai" },
+            { kiri: { emoji: "🗣️", teks: "Bahasa" }, kanan: "Cara kita berbicara di rumah" },
+            { kiri: { emoji: "🤝", teks: "Sikap yang tepat" }, kanan: "Menghargai perbedaan" }
+          ]
+        }]
+      },
+
+      {
+        id: "lambang-negara",
+        judul: "Bendera, Lagu, dan Lambang Garuda",
+        emoji: "🇮🇩",
+        ringkasan: [
+          { emoji: "🇮🇩", teks: "Bendera negara Indonesia adalah Merah Putih. Merah di atas, putih di bawah." },
+          { emoji: "🎵", teks: "Lagu kebangsaan kita berjudul Indonesia Raya. Saat dinyanyikan, kita berdiri tegak." },
+          { emoji: "🦅", teks: "Lambang negara adalah Garuda Pancasila. Di dadanya ada perisai." },
+          { emoji: "⭐", teks: "Sila ke-1 Ketuhanan Yang Maha Esa, lambangnya bintang." },
+          { emoji: "⛓️", teks: "Sila ke-2 Kemanusiaan yang Adil dan Beradab, lambangnya rantai." },
+          { emoji: "🌳", teks: "Sila ke-3 Persatuan Indonesia, lambangnya pohon beringin." },
+          { emoji: "🐂", teks: "Sila ke-4 tentang musyawarah, lambangnya kepala banteng." },
+          { emoji: "🌾", teks: "Sila ke-5 Keadilan Sosial bagi Seluruh Rakyat Indonesia, lambangnya padi dan kapas." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Warna bendera yang berada di atas adalah ....", pilihan: ["merah", "putih", "biru"], jawaban: 0, penjelasan: "Merah di atas, putih di bawah." },
+            { soal: "Lagu kebangsaan Indonesia berjudul ....", pilihan: ["Indonesia Raya", "Garuda Pancasila", "Hari Merdeka saja"], jawaban: 0, penjelasan: "Judul lagu kebangsaan adalah Indonesia Raya." },
+            { soal: "Lambang negara Indonesia adalah ....", pilihan: ["Garuda Pancasila", "burung pipit", "bintang saja"], jawaban: 0, penjelasan: "Garuda Pancasila adalah lambang negara." },
+            { soal: "Lambang sila pertama adalah ....", pilihan: ["bintang", "rantai", "padi dan kapas"], jawaban: 0, penjelasan: "Bintang untuk Ketuhanan Yang Maha Esa." }
+          ],
+          [
+            { soal: "Saat Indonesia Raya dinyanyikan, kita ....", pilihan: ["berdiri tegak", "duduk santai", "berlari"], jawaban: 0, penjelasan: "Berdiri tegak adalah sikap menghormati lagu kebangsaan." },
+            { soal: "Pohon beringin adalah lambang sila ke- ....", pilihan: ["3", "1", "5"], jawaban: 0, penjelasan: "Sila ke-3 Persatuan Indonesia." },
+            { soal: "Padi dan kapas adalah lambang sila ke- ....", pilihan: ["5", "2", "4"], jawaban: 0, penjelasan: "Sila ke-5 tentang keadilan sosial." },
+            { soal: "Kepala banteng adalah lambang sila yang berkaitan dengan ....", pilihan: ["musyawarah", "bendera", "lagu"], jawaban: 0, penjelasan: "Sila ke-4 tentang kerakyatan dan permusyawaratan." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Sebutkan warna bendera Indonesia dan letaknya.", contohJawaban: "Merah di atas, putih di bawah." },
+            { soal: "Apa judul lagu kebangsaan, dan apa sikap saat menyanyikannya?", contohJawaban: "Indonesia Raya. Kita berdiri tegak." },
+            { soal: "Sebutkan lambang sila pertama dan sila kelima.", contohJawaban: "Bintang, serta padi dan kapas." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan sila dengan lambangnya!",
+          pasangan: [
+            { kiri: { emoji: "⭐", teks: "Sila ke-1" }, kanan: "Bintang" },
+            { kiri: { emoji: "⛓️", teks: "Sila ke-2" }, kanan: "Rantai" },
+            { kiri: { emoji: "🌳", teks: "Sila ke-3" }, kanan: "Pohon beringin" },
+            { kiri: { emoji: "🌾", teks: "Sila ke-5" }, kanan: "Padi dan kapas" }
+          ]
+        }]
+      },
+
+      {
+        id: "kerja-sama-keberagaman",
+        judul: "Kerja Sama dalam Keberagaman",
+        emoji: "🤝",
+        ringkasan: [
+          { emoji: "🤝", teks: "Di rumah dan sekolah, orang punya kebiasaan yang berbeda-beda." },
+          { emoji: "🧹", teks: "Kerja sama berarti melakukan pekerjaan bersama, misalnya piket kelas." },
+          { emoji: "🏫", teks: "Lingkungan sekolah adalah bagian dari wilayah Indonesia." },
+          { emoji: "🌱", teks: "Menjaga kebersihan kelas adalah sikap menjaga lingkungan sekolah." },
+          { emoji: "💬", teks: "Teman yang berbeda bahasa tetap dapat bekerja dalam satu kelompok." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Piket kelas adalah contoh ....", pilihan: ["kerja sama", "bekerja sendirian terus", "mengejek teman"], jawaban: 0, penjelasan: "Piket dilakukan bersama-sama." },
+            { soal: "Teman yang berbeda bahasa ....", pilihan: ["tetap dapat satu kelompok", "tidak boleh masuk kelas", "harus diam saja"], jawaban: 0, penjelasan: "Perbedaan bahasa tidak menghalangi kerja sama." },
+            { soal: "Menyapu kelas menunjukkan sikap ....", pilihan: ["menjaga lingkungan sekolah", "merusak kelas", "mengabaikan piket"], jawaban: 0, penjelasan: "Kebersihan kelas adalah bagian dari menjaga lingkungan." },
+            { soal: "Sekolah tempat kita belajar adalah bagian dari ....", pilihan: ["wilayah Indonesia", "negara lain", "luar angkasa"], jawaban: 0, penjelasan: "Lingkungan sekolah berada di wilayah Indonesia." }
+          ],
+          [
+            { soal: "Kerja sama membuat pekerjaan terasa ....", pilihan: ["lebih ringan", "mustahil", "hanya untuk satu orang"], jawaban: 0, penjelasan: "Beban dibagi bersama." },
+            { soal: "Menghargai teman yang berbeda kebiasaan berarti ....", pilihan: ["tetap mau bekerja bersama", "menjauh terus", "memaksa semua sama"], jawaban: 0, penjelasan: "Keberagaman tidak menghapus kerja sama." },
+            { soal: "Membuang sampah kelas pada tempatnya adalah ....", pilihan: ["menjaga lingkungan", "kerja sendirian yang buruk", "melanggar piket"], jawaban: 0, penjelasan: "Itu sikap menjaga lingkungan sekolah." },
+            { soal: "Satu kelompok boleh berisi teman yang ....", pilihan: ["hobinya berbeda", "harus selalu sama", "tidak boleh berbicara"], jawaban: 0, penjelasan: "Perbedaan hobi masih dapat bekerja sama." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Apa contoh kerja sama di sekolah?", contohJawaban: "Piket kelas atau membersihkan ruang bersama." },
+            { soal: "Mengapa teman yang berbeda bahasa tetap bisa satu kelompok?", contohJawaban: "Karena kerja sama tidak mengharuskan semua orang sama." },
+            { soal: "Mengapa menyapu kelas juga menjaga lingkungan?", contohJawaban: "Karena kelas yang bersih adalah lingkungan sekolah yang terawat." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan kegiatan dengan nilainya!",
+          pasangan: [
+            { kiri: { emoji: "🧹", teks: "Piket kelas" }, kanan: "Kerja sama" },
+            { kiri: { emoji: "💬", teks: "Teman beda bahasa" }, kanan: "Tetap satu kelompok" },
+            { kiri: { emoji: "🗑️", teks: "Sampah pada tempatnya" }, kanan: "Menjaga lingkungan sekolah" },
+            { kiri: { emoji: "🏫", teks: "Sekolah" }, kanan: "Bagian wilayah Indonesia" }
+          ]
+        }]
       }
     ]
   },
@@ -5137,7 +5959,7 @@ const SUBJECTS = [
     nama: "PJOK",
     ikon: "⚽",
     warna: "#2a9d8f",
-    deskripsi: "Belajar gerak menggunakan benda: menangkap, melempar, dan memukul.",
+    deskripsi: "Belajar gerak lokomotor, gerak di tempat, hidup sehat, serta menangkap dan melempar.",
     topik: [
       {
         id: "gerak-menggunakan-benda",
@@ -5575,6 +6397,131 @@ const SUBJECTS = [
           }
 
         ]
+      },
+
+      {
+        id: "gerak-lokomotor",
+        judul: "Gerak Lokomotor",
+        emoji: "🏃",
+        ringkasan: [
+          { emoji: "🏃", teks: "Gerak lokomotor memindahkan tubuh dari satu tempat ke tempat lain." },
+          { emoji: "🚶", teks: "Berjalan adalah langkah yang tenang." },
+          { emoji: "🏃", teks: "Berlari lebih cepat daripada berjalan." },
+          { emoji: "🦘", teks: "Melompat memakai tolakan dua kaki." },
+          { emoji: "🦵", teks: "Meloncat memakai tolakan satu kaki." },
+          { emoji: "👀", teks: "Lihat ke depan dan jaga jarak supaya tidak bertabrakan." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Gerak yang memindahkan tubuh disebut gerak ....", pilihan: ["lokomotor", "diam", "duduk"], jawaban: 0, penjelasan: "Lokomotor berarti tubuh berpindah tempat." },
+            { soal: "Berlari berbeda dari berjalan karena berlari ....", pilihan: ["lebih cepat", "tidak memakai kaki", "selalu di tempat"], jawaban: 0, penjelasan: "Lari lebih cepat daripada jalan." },
+            { soal: "Tolakan dua kaki disebut ....", pilihan: ["melompat", "meloncat", "duduk"], jawaban: 0, penjelasan: "Melompat bertolak dengan dua kaki." },
+            { soal: "Tolakan satu kaki disebut ....", pilihan: ["meloncat", "melompat", "berbaring"], jawaban: 0, penjelasan: "Meloncat bertolak dengan satu kaki." }
+          ],
+          [
+            { soal: "Saat berlari, pandangan sebaiknya ke ....", pilihan: ["depan", "mata tertutup", "belakang terus"], jawaban: 0, penjelasan: "Melihat ke depan membantu kita tidak bertabrakan." },
+            { soal: "Berjalan adalah gerak ....", pilihan: ["lokomotor", "yang tidak memakai tubuh", "hanya gerak tangan"], jawaban: 0, penjelasan: "Berjalan memindahkan tubuh." },
+            { soal: "Jaga jarak saat bergerak bersama agar ....", pilihan: ["tidak bertabrakan", "semua berhenti", "tidak ada yang bergerak"], jawaban: 0, penjelasan: "Jarak membuat gerak lebih aman." },
+            { soal: "Gerak di tempat tanpa pindah ....", pilihan: ["bukan lokomotor", "selalu disebut lari", "disebut melompat dua kaki"], jawaban: 0, penjelasan: "Lokomotor harus berpindah tempat." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Apa yang dimaksud gerak lokomotor?", contohJawaban: "Gerak yang memindahkan tubuh ke tempat lain." },
+            { soal: "Apa beda melompat dan meloncat?", contohJawaban: "Melompat bertolak dengan dua kaki. Meloncat bertolak dengan satu kaki." },
+            { soal: "Sebutkan dua gerak lokomotor selain berlari.", contohJawaban: "Berjalan, melompat, atau meloncat." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan gerak dengan caranya!",
+          pasangan: [
+            { kiri: { emoji: "🚶", teks: "Berjalan" }, kanan: "Langkah yang tenang" },
+            { kiri: { emoji: "🏃", teks: "Berlari" }, kanan: "Lebih cepat dari berjalan" },
+            { kiri: { emoji: "🦘", teks: "Melompat" }, kanan: "Tolakan dua kaki" },
+            { kiri: { emoji: "🦵", teks: "Meloncat" }, kanan: "Tolakan satu kaki" }
+          ]
+        }]
+      },
+
+      {
+        id: "gerak-di-tempat",
+        judul: "Gerak di Tempat dan Berirama",
+        emoji: "🤸",
+        ringkasan: [
+          { emoji: "🤸", teks: "Gerak nonlokomotor dilakukan di tempat. Tubuh tidak berpindah." },
+          { emoji: "🙇", teks: "Menekuk, memutar, mengayun, dan meregang adalah gerak di tempat." },
+          { emoji: "🥁", teks: "Gerak berirama mengikuti tepukan, hitungan, atau lagu." },
+          { emoji: "👏", teks: "Contoh: angkat tangan ke atas pada tepukan pertama, turunkan pada tepukan kedua." },
+          { emoji: "👀", teks: "Tiru gerakan dengan pelan lebih dulu, baru ikuti iramanya." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Gerak yang tidak berpindah tempat disebut ....", pilihan: ["nonlokomotor", "lari cepat", "lompat jauh"], jawaban: 0, penjelasan: "Tubuh tetap di tempat." },
+            { soal: "Memutar badan di tempat termasuk gerak ....", pilihan: ["nonlokomotor", "lokomotor", "renang"], jawaban: 0, penjelasan: "Badan berputar, tetapi kaki tidak pindah tempat." },
+            { soal: "Gerak berirama mengikuti ....", pilihan: ["tepukan atau lagu", "arah angin saja", "jumlah turus"], jawaban: 0, penjelasan: "Irama menjadi pengaturnya." },
+            { soal: "Sebelum mengikuti irama cepat, kita ....", pilihan: ["meniru gerak pelan dulu", "menutup mata dan berlari", "duduk sepanjang waktu"], jawaban: 0, penjelasan: "Gerakan pelan membantu tubuh meniru dengan benar." }
+          ],
+          [
+            { soal: "Meregangkan tangan ke atas tanpa melangkah adalah gerak ....", pilihan: ["di tempat", "lokomotor", "meloncat"], jawaban: 0, penjelasan: "Tubuh tidak berpindah." },
+            { soal: "Mengayun lengan seperti bandul dilakukan ....", pilihan: ["di tempat", "sambil wajib berlari", "hanya di air"], jawaban: 0, penjelasan: "Ayunan lengan adalah gerak nonlokomotor." },
+            { soal: "Pada tepukan pertama tangan diangkat, pada tepukan kedua tangan turun. Itu gerak ....", pilihan: ["berirama", "tanpa aturan", "hanya diam"], jawaban: 0, penjelasan: "Gerak berubah sesuai tepukan." },
+            { soal: "Menekuk lutut sedikit sambil berdiri termasuk ....", pilihan: ["nonlokomotor", "lari", "pindah kelas"], jawaban: 0, penjelasan: "Lutut ditekuk, tempat berdiri tetap." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Sebutkan tiga gerak di tempat.", contohJawaban: "Menekuk, memutar, mengayun, atau meregang." },
+            { soal: "Apa yang dimaksud gerak berirama?", contohJawaban: "Gerak yang mengikuti tepukan, hitungan, atau lagu." },
+            { soal: "Mengapa gerak pelan dilakukan lebih dulu?", contohJawaban: "Agar tubuh dapat meniru gerakan dengan benar sebelum iramanya lebih cepat." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan gerak dengan jenisnya!",
+          pasangan: [
+            { kiri: { emoji: "🙇", teks: "Menekuk" }, kanan: "Gerak di tempat" },
+            { kiri: { emoji: "🔄", teks: "Memutar badan" }, kanan: "Tidak berpindah tempat" },
+            { kiri: { emoji: "👏", teks: "Ikut tepukan" }, kanan: "Gerak berirama" },
+            { kiri: { emoji: "🤸", teks: "Meregang" }, kanan: "Tubuh tetap di tempat" }
+          ]
+        }]
+      },
+
+      {
+        id: "tubuh-bersih-bugar",
+        judul: "Tubuh Bersih dan Bugar",
+        emoji: "💪",
+        ringkasan: [
+          { emoji: "💪", teks: "Kebugaran dijaga dengan bergerak, pemanasan, dan istirahat." },
+          { emoji: "🤸", teks: "Pemanasan menyiapkan otot sebelum bermain lebih kuat." },
+          { emoji: "💧", teks: "Minum air setelah bergerak. Berhenti jika tubuh terlalu lelah." },
+          { emoji: "🧼", teks: "Hidup bersih: cuci tangan, sikat gigi, dan mandi." },
+          { emoji: "👀", teks: "Mata, telinga, tangan, dan kaki punya tugas. Kita merawatnya." },
+          { emoji: "👕", teks: "Pakai pakaian yang mudah bergerak saat berolahraga." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Sebelum bermain lebih kuat, kita melakukan ....", pilihan: ["pemanasan", "langsung tidur", "makan permen dulu"], jawaban: 0, penjelasan: "Pemanasan menyiapkan tubuh." },
+            { soal: "Setelah bergerak, kita ....", pilihan: ["minum air", "menahan haus terus", "menutup hidung"], jawaban: 0, penjelasan: "Air mengganti cairan yang keluar." },
+            { soal: "Cuci tangan, sikat gigi, dan mandi adalah ....", pilihan: ["pola hidup bersih", "gerak lokomotor", "soal pecahan"], jawaban: 0, penjelasan: "Kebersihan diri bagian dari hidup sehat." },
+            { soal: "Jika tubuh terlalu lelah, kita ....", pilihan: ["berhenti dan istirahat", "terus berlari tanpa napas", "tidak minum sama sekali"], jawaban: 0, penjelasan: "Istirahat menjaga tubuh tetap aman." }
+          ],
+          [
+            { soal: "Mata berguna untuk ....", pilihan: ["melihat", "mendengar", "mengunyah"], jawaban: 0, penjelasan: "Setiap anggota tubuh punya tugas." },
+            { soal: "Pakaian olahraga sebaiknya ....", pilihan: ["mudah dipakai bergerak", "sangat sempit dan kaku", "basah sejak awal"], jawaban: 0, penjelasan: "Pakaian yang leluasa membantu gerak." },
+            { soal: "Telinga berguna untuk ....", pilihan: ["mendengar", "melihat warna", "berlari"], jawaban: 0, penjelasan: "Kita menjaga telinga dari suara yang terlalu keras." },
+            { soal: "Gerak yang teratur membantu tubuh menjadi ....", pilihan: ["lebih bugar", "tidak perlu istirahat selamanya", "tidak perlu air"], jawaban: 0, penjelasan: "Kebugaran tumbuh dari gerak, air, dan istirahat." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Mengapa pemanasan dilakukan sebelum bermain?", contohJawaban: "Agar otot siap dan tubuh lebih aman saat bergerak lebih kuat." },
+            { soal: "Sebutkan tiga kebiasaan hidup bersih.", contohJawaban: "Cuci tangan, sikat gigi, dan mandi." },
+            { soal: "Apa yang dilakukan jika tubuh terlalu lelah?", contohJawaban: "Berhenti, istirahat, dan minum air." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan anggota tubuh dengan tugasnya!",
+          pasangan: [
+            { kiri: { emoji: "👀", teks: "Mata" }, kanan: "Melihat" },
+            { kiri: { emoji: "👂", teks: "Telinga" }, kanan: "Mendengar" },
+            { kiri: { emoji: "🦵", teks: "Kaki" }, kanan: "Berjalan dan berlari" },
+            { kiri: { emoji: "💪", teks: "Istirahat" }, kanan: "Saat tubuh terlalu lelah" }
+          ]
+        }]
       }
     ]
   },
@@ -5593,7 +6540,7 @@ const SUBJECTS = [
     nama: "Agama",
     ikon: "✝️",
     warna: "#8338ec",
-    deskripsi: "Belajar hidup rukun, merawat ciptaan Tuhan, dan kisah para nabi.",
+    deskripsi: "Belajar keluarga, teman, guru, tubuh, gereja, Alkitab, perbedaan, dan kisah para nabi.",
     topik: [
       {
         id: "hidup-rukun-dengan-tetangga",
@@ -5989,7 +6936,7 @@ const SUBJECTS = [
           { emoji: "🛍️", teks: "Kita mengurangi penggunaan plastik." },
           { emoji: "🌳", teks: "Taman Eden menggambarkan lingkungan yang sempurna, subur, indah, dan kaya akan sumber daya alam." },
           { emoji: "💛", teks: "Menjaga lingkungan dimulai dari diri sendiri, lewat tindakan sederhana setiap hari." },
-          { emoji: "🌸", teks: "Kita bersyukur atas ciptaan Tuhan dengan menjaga kebersihan dan merawat tumbuhan." }
+          { emoji: "🌸", teks: "Kita harus bersyukur atas ciptaan Tuhan dengan menjaga kebersihan, merawat tumbuhan, dan melestarikan alam." }
         ],
 
         pilihanGandaSets: [
@@ -6046,9 +6993,9 @@ const SUBJECTS = [
             },
             {
               soal: "Kita bersyukur atas ciptaan Tuhan dengan ....",
-              pilihan: ["menjaga kebersihan dan merawat tumbuhan", "membiarkan rumah kotor", "memetik semua bunga"],
+              pilihan: ["menjaga kebersihan, merawat tumbuhan, dan melestarikan alam", "membiarkan rumah kotor", "memetik semua bunga"],
               jawaban: 0,
-              penjelasan: "Bersyukur ditunjukkan dengan menjaga kebersihan dan merawat tumbuhan."
+              penjelasan: "Kesimpulan catatan kelas: bersyukur berarti menjaga kebersihan, merawat tumbuhan, dan melestarikan alam."
             },
             {
               soal: "Membersihkan rumah dan sekolah membuat ciptaan Tuhan ....",
@@ -6075,7 +7022,7 @@ const SUBJECTS = [
             },
             {
               soal: "Bagaimana cara kita bersyukur atas ciptaan Tuhan?",
-              contohJawaban: "Dengan menjaga kebersihan dan merawat tumbuhan, mulai dari tindakan sederhana setiap hari."
+              contohJawaban: "Dengan menjaga kebersihan, merawat tumbuhan, dan melestarikan alam."
             }
           ]
         ],
@@ -6089,6 +7036,14 @@ const SUBJECTS = [
               { kiri: { emoji: "🌊", teks: "Selokan tersumbat" }, kanan: "Dibersihkan dari sampah" },
               { kiri: { emoji: "🛍️", teks: "Plastik" }, kanan: "Penggunaannya dikurangi" },
               { kiri: { emoji: "🌸", teks: "Tumbuhan" }, kanan: "Dirawat" }
+            ]
+          },
+          {
+            instruksi: "Pasangkan cara bersyukur dengan contohnya!",
+            pasangan: [
+              { kiri: { emoji: "🧹", teks: "Menjaga kebersihan" }, kanan: "Membuang sampah pada tempatnya" },
+              { kiri: { emoji: "🌱", teks: "Merawat tumbuhan" }, kanan: "Menyiram dan menjaga tanaman" },
+              { kiri: { emoji: "🌳", teks: "Melestarikan alam" }, kanan: "Menjaga alam ciptaan Tuhan tetap lestari" }
             ]
           }
         ]
@@ -6358,6 +7313,293 @@ const SUBJECTS = [
             ]
           }
         ]
+      },
+
+      {
+        id: "keluargaku-pemberian-tuhan",
+        judul: "Keluargaku Pemberian Tuhan",
+        emoji: "🏡",
+        ringkasan: [
+          { emoji: "🏡", teks: "Keluarga adalah pemberian Tuhan." },
+          { emoji: "🍲", teks: "Melalui keluarga, Tuhan memelihara kita: ada rumah, makanan, dan kasih." },
+          { emoji: "🙏", teks: "Kita menghormati orang tua dengan mendengarkan dan berkata sopan." },
+          { emoji: "👨‍👩‍👧", teks: "Keluarga Yesus juga merawat-Nya. Maria dan Yusuf menjaga Yesus." },
+          { emoji: "💛", teks: "Kita mengucap syukur untuk keluarga, juga saat keluarga kita sederhana." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Keluarga adalah pemberian ....", pilihan: ["Tuhan", "televisi", "toko"], jawaban: 0, penjelasan: "Kita mensyukuri keluarga sebagai pemberian Tuhan." },
+            { soal: "Tuhan memelihara kita melalui keluarga dengan ....", pilihan: ["rumah, makanan, dan kasih", "membiarkan kita sendirian", "melarang kita belajar"], jawaban: 0, penjelasan: "Keluarga menjadi cara Tuhan memelihara." },
+            { soal: "Menghormati orang tua berarti ....", pilihan: ["mendengarkan dan berkata sopan", "membentak", "pergi tanpa pamit"], jawaban: 0, penjelasan: "Sopan dan mau mendengar adalah hormat." },
+            { soal: "Maria dan Yusuf ....", pilihan: ["menjaga Yesus", "meninggalkan Yesus", "adalah teman sekolah Yesus"], jawaban: 0, penjelasan: "Mereka merawat Yesus dalam keluarga-Nya." }
+          ],
+          [
+            { soal: "Doa syukur untuk keluarga dapat diucapkan ....", pilihan: ["setiap hari", "hanya jika dapat hadiah besar", "tidak pernah"], jawaban: 0, penjelasan: "Syukur tidak menunggu hal yang besar." },
+            { soal: "Keluarga yang sederhana tetap ....", pilihan: ["patut disyukuri", "tidak boleh disayangi", "bukan pemberian Tuhan"], jawaban: 0, penjelasan: "Kasih dalam keluarga lebih penting daripada barang." },
+            { soal: "Berkata sopan kepada orang tua adalah cara ....", pilihan: ["menghormati", "mengejek", "melupakan mereka"], jawaban: 0, penjelasan: "Hormat tampak dari kata-kata." },
+            { soal: "Yesus bertumbuh dalam ....", pilihan: ["perawatan keluarga", "kehampaan", "tanpa ada yang menjaga"], jawaban: 0, penjelasan: "Maria dan Yusuf menjaga-Nya." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Mengapa keluarga disebut pemberian Tuhan?", contohJawaban: "Karena melalui keluarga Tuhan memelihara kita dengan rumah, makanan, dan kasih." },
+            { soal: "Bagaimana cara menghormati orang tua?", contohJawaban: "Mendengarkan dan berkata sopan." },
+            { soal: "Siapa yang menjaga Yesus dalam keluarga-Nya?", contohJawaban: "Maria dan Yusuf." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan pemberian dengan cara mensyukurinya!",
+          pasangan: [
+            { kiri: { emoji: "🏡", teks: "Keluarga" }, kanan: "Pemberian Tuhan" },
+            { kiri: { emoji: "🍲", teks: "Makanan di rumah" }, kanan: "Cara Tuhan memelihara" },
+            { kiri: { emoji: "🙏", teks: "Kata yang sopan" }, kanan: "Hormat kepada orang tua" },
+            { kiri: { emoji: "👨‍👩‍👧", teks: "Maria dan Yusuf" }, kanan: "Menjaga Yesus" }
+          ]
+        }]
+      },
+
+      {
+        id: "mengasihi-teman",
+        judul: "Aku Mengasihi Teman",
+        emoji: "🤝",
+        ringkasan: [
+          { emoji: "🤝", teks: "Teman adalah pemberian Tuhan." },
+          { emoji: "⚽", teks: "Bersama teman kita belajar dan bermain." },
+          { emoji: "💛", teks: "Mengasihi teman berarti tidak memilih-milih dan tidak mengejek." },
+          { emoji: "🦽", teks: "Dalam sebuah cerita, teman-teman membawa orang yang tidak bisa berjalan agar ditolong Yesus." },
+          { emoji: "🙏", teks: "Kita bersyukur karena ada teman yang menemani." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Teman adalah pemberian ....", pilihan: ["Tuhan", "kebetulan yang tidak perlu disyukuri", "barang"], jawaban: 0, penjelasan: "Kehadiran teman patut disyukuri." },
+            { soal: "Mengasihi teman berarti ....", pilihan: ["tidak mengejek", "memilih-milih", "meninggalkan yang kesepian"], jawaban: 0, penjelasan: "Kasih tidak menertawakan teman." },
+            { soal: "Dalam cerita orang yang tidak bisa berjalan, teman-temannya ....", pilihan: ["membawanya agar ditolong", "meninggalkannya", "menertawakannya"], jawaban: 0, penjelasan: "Mereka menolong bersama-sama." },
+            { soal: "Belajar dan bermain bersama adalah kegiatan dengan ....", pilihan: ["teman", "benda mati", "bayangan"], jawaban: 0, penjelasan: "Teman menemani kegiatan itu." }
+          ],
+          [
+            { soal: "Saat teman kesepian, kita dapat ....", pilihan: ["mengajaknya ikut", "berpura-pura tidak melihat", "mengejeknya"], jawaban: 0, penjelasan: "Mengajak adalah tanda mengasihi." },
+            { soal: "Memilih-milih teman ....", pilihan: ["bukan cara mengasihi", "wajib dilakukan", "diperintahkan cerita itu"], jawaban: 0, penjelasan: "Kasih tidak menyingkirkan teman." },
+            { soal: "Kita bersyukur untuk teman dengan ....", pilihan: ["menjaga persahabatan", "melupakannya", "merebut miliknya"], jawaban: 0, penjelasan: "Persahabatan dijaga." },
+            { soal: "Orang yang ditolong dalam cerita itu tidak bisa ....", pilihan: ["berjalan", "tersenyum", "punya teman"], jawaban: 0, penjelasan: "Teman-temannya membawanya." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Mengapa teman disebut pemberian Tuhan?", contohJawaban: "Karena Tuhan memelihara kita juga melalui teman yang menemani." },
+            { soal: "Apa yang dilakukan teman-teman dalam cerita orang yang tidak bisa berjalan?", contohJawaban: "Mereka membawanya agar ditolong Yesus." },
+            { soal: "Sebutkan satu cara mengasihi teman di sekolah.", contohJawaban: "Tidak mengejek, atau mengajak teman yang kesepian." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan sikap dengan hasilnya!",
+          pasangan: [
+            { kiri: { emoji: "🤝", teks: "Tidak mengejek" }, kanan: "Cara mengasihi" },
+            { kiri: { emoji: "🦽", teks: "Membawa teman yang sulit berjalan" }, kanan: "Menolong bersama" },
+            { kiri: { emoji: "⚽", teks: "Bermain bersama" }, kanan: "Kegiatan dengan teman" },
+            { kiri: { emoji: "🙏", teks: "Bersyukur" }, kanan: "Karena ada teman" }
+          ]
+        }]
+      },
+
+      {
+        id: "menghormati-guru",
+        judul: "Aku Menghormati Guru",
+        emoji: "🧑‍🏫",
+        ringkasan: [
+          { emoji: "🧑‍🏫", teks: "Guru adalah pemberian Tuhan yang membantu kita belajar." },
+          { emoji: "👂", teks: "Menghormati guru berarti mendengarkan saat guru menjelaskan." },
+          { emoji: "🙏", teks: "Kita mengucapkan terima kasih dan tidak menertawakan guru." },
+          { emoji: "📖", teks: "Tuhan Yesus juga mengajar para murid. Murid belajar dari-Nya." },
+          { emoji: "💛", teks: "Kita bersyukur karena ada guru di sekolah." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Guru membantu kita ....", pilihan: ["belajar", "bolos", "mengejek teman"], jawaban: 0, penjelasan: "Guru menemani kita memahami pelajaran." },
+            { soal: "Saat guru menjelaskan, kita ....", pilihan: ["mendengarkan", "berteriak", "memotong terus"], jawaban: 0, penjelasan: "Mendengarkan adalah hormat." },
+            { soal: "Menertawakan guru adalah sikap yang ....", pilihan: ["tidak hormat", "wajib", "cara berterima kasih"], jawaban: 0, penjelasan: "Hormat tidak menertawakan." },
+            { soal: "Yesus mengajar ....", pilihan: ["para murid", "agar murid tidak belajar", "hanya benda mati"], jawaban: 0, penjelasan: "Para murid belajar dari Yesus." }
+          ],
+          [
+            { soal: "Ucapan terima kasih kepada guru menunjukkan ....", pilihan: ["rasa hormat", "rasa malas", "rasa ejek"], jawaban: 0, penjelasan: "Terima kasih menghargai bantuan guru." },
+            { soal: "Tuhan memelihara kita melalui guru karena guru ....", pilihan: ["membimbing belajar", "meninggalkan kelas", "melarang semua pertanyaan"], jawaban: 0, penjelasan: "Bimbingan guru adalah cara pemeliharaan Tuhan." },
+            { soal: "Bertanya dengan sopan ....", pilihan: ["boleh dilakukan", "dilarang selamanya", "sama dengan berteriak"], jawaban: 0, penjelasan: "Sopan saat bertanya juga menghormati." },
+            { soal: "Kita bersyukur untuk guru dengan ....", pilihan: ["belajar sungguh-sungguh", "mengabaikan penjelasan", "menyembunyikan tugas"], jawaban: 0, penjelasan: "Belajar dengan sungguh adalah ucapan syukur." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Mengapa guru disebut pemberian Tuhan?", contohJawaban: "Karena melalui guru Tuhan membantu kita belajar." },
+            { soal: "Sebutkan dua cara menghormati guru.", contohJawaban: "Mendengarkan dan mengucapkan terima kasih." },
+            { soal: "Apa yang dilakukan para murid Yesus?", contohJawaban: "Mereka belajar dari pengajaran-Nya." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan sikap dengan artinya!",
+          pasangan: [
+            { kiri: { emoji: "👂", teks: "Mendengarkan" }, kanan: "Hormat saat guru menjelaskan" },
+            { kiri: { emoji: "🙏", teks: "Terima kasih" }, kanan: "Menghargai bantuan guru" },
+            { kiri: { emoji: "📖", teks: "Murid Yesus" }, kanan: "Belajar dari pengajaran-Nya" },
+            { kiri: { emoji: "💛", teks: "Belajar sungguh-sungguh" }, kanan: "Cara bersyukur" }
+          ]
+        }]
+      },
+
+      {
+        id: "tubuhku-untuk-berbuat-baik",
+        judul: "Tubuhku untuk Berbuat Baik",
+        emoji: "🫶",
+        ringkasan: [
+          { emoji: "🫶", teks: "Tubuh kita adalah ciptaan Tuhan, dan setiap orang unik." },
+          { emoji: "🥗", teks: "Merawat tubuh: makan secukupnya, tidur, bergerak, dan menjaga kebersihan." },
+          { emoji: "🤝", teks: "Tubuh dipakai untuk menolong, bukan untuk menyakiti." },
+          { emoji: "💧", teks: "Cerita Ribka mengajarkan perbuatan baik: ia memberi minum kepada orang yang membutuhkan." },
+          { emoji: "🙏", teks: "Kita bersyukur atas tubuh dengan merawatnya dan memakainya untuk kebaikan." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Tubuh kita adalah ....", pilihan: ["ciptaan Tuhan", "benda yang boleh dirusak", "milik ejekan"], jawaban: 0, penjelasan: "Tubuh patut disyukuri." },
+            { soal: "Setiap orang unik berarti ....", pilihan: ["ciri kita tidak harus sama", "semua harus sama persis", "perbedaan itu salah"], jawaban: 0, penjelasan: "Keunikan tidak perlu diejek." },
+            { soal: "Memberi minum kepada orang yang membutuhkan mirip dengan cerita ....", pilihan: ["Ribka", "tentang batu", "tentang angka"], jawaban: 0, penjelasan: "Ribka memberi minum sebagai perbuatan baik." },
+            { soal: "Tangan dipakai untuk ....", pilihan: ["menolong", "memukul teman", "merusak buku teman"], jawaban: 0, penjelasan: "Tubuh dipakai untuk kebaikan." }
+          ],
+          [
+            { soal: "Tidur dan makan secukupnya adalah cara ....", pilihan: ["merawat tubuh", "merusak tubuh", "mengejek tubuh"], jawaban: 0, penjelasan: "Tubuh butuh istirahat dan makanan." },
+            { soal: "Mengejek tubuh teman ....", pilihan: ["tidak baik", "wajib", "cara bersyukur"], jawaban: 0, penjelasan: "Keunikan teman dihargai." },
+            { soal: "Perbuatan baik disukai Tuhan. Contohnya ....", pilihan: ["membantu membawa barang", "menyembunyikan sepatu teman", "berteriak di kelas"], jawaban: 0, penjelasan: "Membantu adalah pemakaian tubuh yang baik." },
+            { soal: "Bersyukur atas tubuh berarti ....", pilihan: ["merawatnya", "membiarkannya sakit", "tidak pernah bergerak"], jawaban: 0, penjelasan: "Rawat tubuh, lalu pakai untuk kebaikan." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Sebutkan dua cara merawat tubuh.", contohJawaban: "Makan secukupnya, tidur, bergerak, atau menjaga kebersihan." },
+            { soal: "Apa yang diajarkan cerita Ribka?", contohJawaban: "Perbuatan baik, yaitu memberi minum kepada orang yang membutuhkan." },
+            { soal: "Untuk apa tangan kita dipakai?", contohJawaban: "Untuk menolong, bukan untuk menyakiti." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan perawatan dengan tubuh!",
+          pasangan: [
+            { kiri: { emoji: "🥗", teks: "Makan secukupnya" }, kanan: "Merawat tubuh" },
+            { kiri: { emoji: "😴", teks: "Tidur" }, kanan: "Istirahat untuk tubuh" },
+            { kiri: { emoji: "💧", teks: "Memberi minum" }, kanan: "Perbuatan baik seperti Ribka" },
+            { kiri: { emoji: "🤝", teks: "Menolong" }, kanan: "Tangan dipakai untuk kebaikan" }
+          ]
+        }]
+      },
+
+      {
+        id: "rajin-ke-gereja",
+        judul: "Aku Rajin ke Gereja",
+        emoji: "⛪",
+        ringkasan: [
+          { emoji: "⛪", teks: "Gereja adalah tempat umat Kristen beribadah dan belajar firman." },
+          { emoji: "⏰", teks: "Kita datang dengan sikap tenang, tidak berlari-lari di dalam ruang ibadah." },
+          { emoji: "🎵", teks: "Di gereja kita berdoa, menyanyi, dan mendengarkan." },
+          { emoji: "👨‍👩‍👧‍👦", teks: "Sekolah minggu adalah waktu belajar firman bersama teman dan guru." },
+          { emoji: "🙏", teks: "Kita bersyukur karena ada tempat untuk beribadah." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Gereja adalah tempat ....", pilihan: ["beribadah", "berlomba lari", "membuang sampah"], jawaban: 0, penjelasan: "Umat berkumpul untuk beribadah dan belajar firman." },
+            { soal: "Di dalam ruang ibadah, kita ....", pilihan: ["duduk tenang", "berlari", "berteriak"], jawaban: 0, penjelasan: "Sikap tenang menghormati ibadah." },
+            { soal: "Kegiatan di gereja antara lain ....", pilihan: ["berdoa dan menyanyi", "mengejek", "merusak buku"], jawaban: 0, penjelasan: "Doa, nyanyian, dan mendengarkan adalah bagian ibadah." },
+            { soal: "Sekolah minggu adalah waktu ....", pilihan: ["belajar firman bersama", "tidur di kelas sekolah", "bermain bola di dalam ruang"], jawaban: 0, penjelasan: "Teman dan guru sekolah minggu belajar bersama." }
+          ],
+          [
+            { soal: "Datang ke gereja menunjukkan ....", pilihan: ["kerajinan beribadah", "rasa malas", "rasa marah"], jawaban: 0, penjelasan: "Rajin berarti hadir dan mengikuti dengan baik." },
+            { soal: "Mendengarkan di gereja berarti ....", pilihan: ["memperhatikan firman", "berbicara terus", "berlari keliling"], jawaban: 0, penjelasan: "Telinga dipakai untuk mendengarkan." },
+            { soal: "Kita bersyukur karena ....", pilihan: ["ada tempat beribadah", "gereja adalah tempat berlomba", "ibadah tidak perlu sikap"], jawaban: 0, penjelasan: "Tempat ibadah adalah pemberian yang dijaga." },
+            { soal: "Sikap yang tidak sesuai di ruang ibadah adalah ....", pilihan: ["berlari-lari", "berdoa", "menyanyi bersama"], jawaban: 0, penjelasan: "Berlari mengganggu ibadah." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Apa itu gereja?", contohJawaban: "Tempat umat Kristen beribadah dan belajar firman." },
+            { soal: "Sebutkan dua sikap yang baik saat ibadah.", contohJawaban: "Duduk tenang, berdoa, menyanyi, atau mendengarkan." },
+            { soal: "Apa itu sekolah minggu?", contohJawaban: "Waktu belajar firman bersama teman dan guru." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan kegiatan gereja dengan sikapnya!",
+          pasangan: [
+            { kiri: { emoji: "⛪", teks: "Ruang ibadah" }, kanan: "Duduk tenang" },
+            { kiri: { emoji: "🙏", teks: "Berdoa" }, kanan: "Bagian ibadah" },
+            { kiri: { emoji: "🎵", teks: "Menyanyi" }, kanan: "Dilakukan bersama" },
+            { kiri: { emoji: "📖", teks: "Sekolah minggu" }, kanan: "Belajar firman" }
+          ]
+        }]
+      },
+
+      {
+        id: "suka-membaca-alkitab",
+        judul: "Aku Suka Membaca Alkitab",
+        emoji: "📖",
+        ringkasan: [
+          { emoji: "📖", teks: "Alkitab adalah firman Tuhan." },
+          { emoji: "🙏", teks: "Sebelum membaca, kita berdoa supaya dapat mengerti." },
+          { emoji: "👦", teks: "Timotius belajar firman Tuhan sejak ia masih kecil." },
+          { emoji: "📅", teks: "Rajin berarti membaca sedikit demi sedikit, tidak harus banyak sekaligus." },
+          { emoji: "🪑", teks: "Bacalah di tempat yang tenang agar dapat memperhatikan." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Alkitab berisi ....", pilihan: ["firman Tuhan", "daftar belanja", "soal pengurangan"], jawaban: 0, penjelasan: "Alkitab adalah firman Tuhan." },
+            { soal: "Sebelum membaca Alkitab, kita ....", pilihan: ["berdoa", "berlari", "menutupnya terus"], jawaban: 0, penjelasan: "Doa membantu kita bersiap mengerti." },
+            { soal: "Timotius belajar firman Tuhan sejak ....", pilihan: ["kecil", "lupa selamanya", "tidak pernah"], jawaban: 0, penjelasan: "Ia belajar sejak masih anak-anak." },
+            { soal: "Membaca sedikit demi sedikit tetap disebut ....", pilihan: ["rajin", "malas", "tidak berguna"], jawaban: 0, penjelasan: "Rajin tidak harus banyak sekaligus." }
+          ],
+          [
+            { soal: "Tempat yang baik untuk membaca adalah tempat yang ....", pilihan: ["tenang", "sangat ramai dan gelap", "penuh ejekan"], jawaban: 0, penjelasan: "Tempat tenang membantu kita memperhatikan." },
+            { soal: "Alkitab dibaca supaya kita ....", pilihan: ["mengenal firman Tuhan", "menghafal iklan", "mengukur panjang"], jawaban: 0, penjelasan: "Isinya adalah firman Tuhan." },
+            { soal: "Menutup Alkitab tanpa pernah membukanya ....", pilihan: ["bukan cara rajin", "adalah cara Timotius", "sama dengan berdoa"], jawaban: 0, penjelasan: "Rajin berarti mau membacanya." },
+            { soal: "Doa sebelum membaca adalah sikap ....", pilihan: ["siap mendengar", "malas", "marah"], jawaban: 0, penjelasan: "Kita meminta dapat mengerti." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Apa itu Alkitab?", contohJawaban: "Firman Tuhan." },
+            { soal: "Mengapa kita berdoa sebelum membaca Alkitab?", contohJawaban: "Supaya kita siap dan dapat mengerti." },
+            { soal: "Apa yang dapat ditiru dari Timotius?", contohJawaban: "Belajar firman Tuhan sejak masih kecil, sedikit demi sedikit." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan kebiasaan dengan artinya!",
+          pasangan: [
+            { kiri: { emoji: "📖", teks: "Alkitab" }, kanan: "Firman Tuhan" },
+            { kiri: { emoji: "🙏", teks: "Doa sebelum membaca" }, kanan: "Siap mengerti" },
+            { kiri: { emoji: "👦", teks: "Timotius" }, kanan: "Belajar sejak kecil" },
+            { kiri: { emoji: "📅", teks: "Sedikit demi sedikit" }, kanan: "Cara yang rajin" }
+          ]
+        }]
+      },
+
+      {
+        id: "mengasihi-yang-berbeda",
+        judul: "Mengasihi yang Berbeda",
+        emoji: "🌏",
+        ringkasan: [
+          { emoji: "🌏", teks: "Indonesia punya banyak suku dan agama." },
+          { emoji: "💛", teks: "Kasih Tuhan untuk semua orang, bukan hanya yang sama dengan kita." },
+          { emoji: "👋", teks: "Kita menyapa dengan sopan teman yang berbeda suku atau agama." },
+          { emoji: "🚫", teks: "Mengejek suku, bahasa, atau agama seseorang tidak menunjukkan kasih." },
+          { emoji: "🤝", teks: "Keragaman dapat membuat kita belajar kebiasaan baru tanpa meninggalkan keyakinan sendiri." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Indonesia memiliki suku dan agama yang ....", pilihan: ["beragam", "hanya satu dan yang lain dilarang", "tidak boleh dikenal"], jawaban: 0, penjelasan: "Keragaman ada di Indonesia." },
+            { soal: "Kasih Tuhan ditujukan untuk ....", pilihan: ["semua orang", "hanya teman yang sama", "hanya satu suku"], jawaban: 0, penjelasan: "Semua orang dikasihi Tuhan." },
+            { soal: "Mengejek agama teman adalah sikap yang ....", pilihan: ["tidak baik", "wajib", "cara menyapa"], jawaban: 0, penjelasan: "Kasih tidak mengejek." },
+            { soal: "Menyapa dengan sopan teman yang berbeda suku berarti ....", pilihan: ["menghargai", "menjauhi", "memaksa ia berubah"], jawaban: 0, penjelasan: "Sapa yang sopan menunjukkan hormat." }
+          ],
+          [
+            { soal: "Kita boleh belajar kebiasaan baru tanpa ....", pilihan: ["meninggalkan keyakinan sendiri", "perlu sopan", "boleh berteman"], jawaban: 0, penjelasan: "Menghargai tidak berarti mengganti iman sendiri." },
+            { soal: "Bahasa daerah yang berbeda ....", pilihan: ["tetap dihargai", "harus ditertawakan", "tidak boleh didengar"], jawaban: 0, penjelasan: "Bahasa adalah bagian kekayaan suku." },
+            { soal: "Hidup rukun terjadi jika perbedaan ....", pilihan: ["dihargai", "dijadikan bahan ejekan", "disembunyikan dengan takut"], jawaban: 0, penjelasan: "Hormat membuat hidup rukun." },
+            { soal: "Teman yang beribadah berbeda ....", pilihan: ["tetap teman", "bukan lagi teman", "harus diusir"], jawaban: 0, penjelasan: "Perbedaan agama tidak menghapus pertemanan." }
+          ]
+        ],
+        esaiSets: [[
+            { soal: "Mengapa kita tidak boleh mengejek suku atau agama teman?", contohJawaban: "Karena kasih Tuhan untuk semua orang, dan ejekan merusak kerukunan." },
+            { soal: "Bagaimana cara menyapa teman yang berbeda suku?", contohJawaban: "Dengan sopan." },
+            { soal: "Apa yang tetap kita jaga saat belajar kebiasaan baru?", contohJawaban: "Keyakinan kita sendiri." }
+          ]],
+        cocokkanSets: [{
+          instruksi: "Pasangkan perbedaan dengan sikapnya!",
+          pasangan: [
+            { kiri: { emoji: "🌏", teks: "Banyak suku" }, kanan: "Kekayaan Indonesia" },
+            { kiri: { emoji: "🙏", teks: "Agama yang berbeda" }, kanan: "Tetap dihargai" },
+            { kiri: { emoji: "👋", teks: "Sapa yang sopan" }, kanan: "Cara mengasihi" },
+            { kiri: { emoji: "🚫", teks: "Mengejek" }, kanan: "Bukan kasih" }
+          ]
+        }]
       }
     ]
   }
