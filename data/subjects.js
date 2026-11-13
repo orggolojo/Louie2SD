@@ -7176,6 +7176,136 @@ const SUBJECTS = [
         ]
       },
       {
+        id: "ishak-membawa-damai",
+        judul: "Ishak: Anak Abraham yang Membawa Damai",
+        emoji: "🕊️",
+
+        ringkasan: [
+          { emoji: "💛", teks: "Damai dapat tercipta jika kita memiliki kasih dan persahabatan." },
+          { emoji: "🤗", teks: "Kasih ditunjukkan dengan saling mengerti, peduli, dan menyayangi saudara serta teman." },
+          { emoji: "🤝", teks: "Mengalah bukan berarti kalah. Mengalah berarti mau menjaga persahabatan dan menghindari pertengkaran." },
+          { emoji: "🌱", teks: "Kasih membutuhkan pengorbanan. Orang yang menabur kasih memperoleh kedamaian dan sukacita." },
+          { emoji: "👨‍👩‍👦", teks: "Ishak adalah anak Abraham dan Sara. Sara juga disebut Sarah. Ishak sangat taat kepada Tuhan dan diberkati oleh-Nya." },
+          { emoji: "🏕️", teks: "Tuhan memerintahkan Ishak tinggal di tanah Gerar sebagai orang asing." },
+          { emoji: "🌾", teks: "Tuhan memberkati Ishak. Hasil panennya melimpah, dan ia menjadi orang kaya." },
+          { emoji: "🕊️", teks: "Ishak memilih mengalah dan menjauhi pertengkaran agar tetap hidup damai dengan orang lain." },
+          { emoji: "⏳", teks: "Kesabaran dan ketaatan Ishak kepada Tuhan mendatangkan berkat yang melimpah." },
+          { emoji: "🌟", teks: "Ishak menjadi teladan bagi kita untuk membawa kedamaian, kasih, dan persahabatan." },
+          { emoji: "🙏", teks: "Ishak mengajarkan kita untuk selalu menaati perintah Tuhan." },
+          { emoji: "✨", teks: "Tuhan berjanji memberikan keturunan kepada Ishak sebanyak bintang di langit." },
+          { emoji: "👂", teks: "Saat ini kita dapat mendengarkan perintah Tuhan melalui nasihat orang tua dan pengajaran bapak atau ibu guru." }
+        ],
+
+        pilihanGandaSets: [
+          [
+            {
+              soal: "Damai dapat tercipta jika kita memiliki ....",
+              pilihan: ["kasih dan persahabatan", "pertengkaran", "rasa ingin menang sendiri"],
+              jawaban: 0,
+              penjelasan: "Damai tumbuh dari kasih dan persahabatan."
+            },
+            {
+              soal: "Kasih kepada saudara dan teman ditunjukkan dengan ....",
+              pilihan: ["mengejek", "saling mengerti, peduli, dan menyayangi", "berebut terus"],
+              jawaban: 1,
+              penjelasan: "Kasih tampak saat kita saling mengerti, peduli, dan menyayangi."
+            },
+            {
+              soal: "Mengalah berarti ....",
+              pilihan: ["kita kalah dan malu", "mau menjaga persahabatan dan menghindari pertengkaran", "tidak punya teman"],
+              jawaban: 1,
+              penjelasan: "Mengalah bukan berarti kalah. Kita menjaga persahabatan."
+            },
+            {
+              soal: "Orang yang menabur kasih akan memperoleh ....",
+              pilihan: ["pertengkaran", "kedamaian dan sukacita", "kesepian"],
+              jawaban: 1,
+              penjelasan: "Kasih membutuhkan pengorbanan, lalu mendatangkan kedamaian dan sukacita."
+            },
+            {
+              soal: "Ishak adalah anak ....",
+              pilihan: ["Nuh dan Sara", "Abraham dan Sara", "Terah dan Lot"],
+              jawaban: 1,
+              penjelasan: "Ishak adalah anak Abraham dan Sara. Sara juga disebut Sarah."
+            }
+          ],
+          [
+            {
+              soal: "Tuhan memerintahkan Ishak tinggal di tanah ....",
+              pilihan: ["Gerar", "Ararat", "Ur Kasdim"],
+              jawaban: 0,
+              penjelasan: "Ishak tinggal di tanah Gerar sebagai orang asing, karena Tuhan memerintahkannya."
+            },
+            {
+              soal: "Karena berkat Tuhan, panen Ishak menjadi ....",
+              pilihan: ["gagal", "melimpah, dan ia menjadi kaya", "hilang"],
+              jawaban: 1,
+              penjelasan: "Tuhan memberkati Ishak sehingga hasil panennya melimpah."
+            },
+            {
+              soal: "Saat hampir bertengkar, Ishak memilih ....",
+              pilihan: ["balas marah", "mengalah dan menjauhi pertengkaran", "pergi tanpa alasan"],
+              jawaban: 1,
+              penjelasan: "Ishak mengalah agar tetap hidup damai dengan orang lain."
+            },
+            {
+              soal: "Tuhan berjanji keturunan Ishak sebanyak ....",
+              pilihan: ["bintang di langit", "batu di jalan", "daun di satu pohon"],
+              jawaban: 0,
+              penjelasan: "Tuhan berjanji memberikan keturunan sebanyak bintang di langit."
+            },
+            {
+              soal: "Sekarang, perintah Tuhan dapat kita dengarkan melalui ....",
+              pilihan: ["nasihat orang tua dan pengajaran guru", "pertengkaran", "rasa malas"],
+              jawaban: 0,
+              penjelasan: "Nasihat orang tua dan pengajaran bapak atau ibu guru menolong kita menaati Tuhan."
+            }
+          ]
+        ],
+
+        esaiSets: [
+          [
+            {
+              soal: "Siapa Ishak, dan bagaimana sikapnya kepada Tuhan?",
+              contohJawaban: "Ishak adalah anak Abraham dan Sara. Ia sangat taat kepada Tuhan dan diberkati oleh-Nya."
+            },
+            {
+              soal: "Mengapa mengalah tidak berarti kalah?",
+              contohJawaban: "Karena mengalah berarti mau menjaga persahabatan dan menghindari pertengkaran."
+            },
+            {
+              soal: "Apa yang terjadi saat Ishak tinggal di tanah Gerar?",
+              contohJawaban: "Tuhan memberkati panennya sampai melimpah, dan Ishak menjadi orang kaya. Ia tetap memilih mengalah agar hidup damai."
+            },
+            {
+              soal: "Bagaimana kita dapat menaati perintah Tuhan saat ini?",
+              contohJawaban: "Dengan mendengarkan nasihat orang tua dan pengajaran bapak atau ibu guru."
+            }
+          ]
+        ],
+
+        cocokkanSets: [
+          {
+            instruksi: "Pasangkan bagian kisah Ishak dengan faktanya!",
+            pasangan: [
+              { kiri: { emoji: "👨‍👩‍👦", teks: "Orang tua Ishak" }, kanan: "Abraham dan Sara" },
+              { kiri: { emoji: "🏕️", teks: "Tanah Gerar" }, kanan: "Tempat Ishak tinggal sebagai orang asing" },
+              { kiri: { emoji: "🌾", teks: "Panen melimpah" }, kanan: "Berkat Tuhan bagi Ishak" },
+              { kiri: { emoji: "✨", teks: "Keturunan sebanyak bintang" }, kanan: "Janji Tuhan kepada Ishak" }
+            ]
+          },
+          {
+            instruksi: "Pasangkan sikap Ishak dengan artinya!",
+            pasangan: [
+              { kiri: { emoji: "🕊️", teks: "Mengalah" }, kanan: "Menjaga persahabatan" },
+              { kiri: { emoji: "💛", teks: "Menabur kasih" }, kanan: "Memperoleh kedamaian dan sukacita" },
+              { kiri: { emoji: "🙏", teks: "Taati Tuhan" }, kanan: "Teladan dari Ishak" },
+              { kiri: { emoji: "👂", teks: "Nasihat orang tua dan guru" }, kanan: "Cara kita mendengar perintah Tuhan" }
+            ]
+          }
+        ]
+      },
+      {
         id: "kisah-nabi-nuh",
         judul: "Kisah Nabi Nuh",
         emoji: "⛵",
