@@ -1740,7 +1740,7 @@ const IPAS_SUBJECT = {
   nama: "IPAS",
   ikon: "🔬",
   warna: "#3a86ff",
-  deskripsi: "Mengenal cuaca, makhluk hidup, tempat hidup, dan manfaatnya.",
+  deskripsi: "Mengenal cuaca, wujud benda, makhluk hidup, tempat hidup, dan manfaatnya.",
   topik: [
 
     /* ========================================================
@@ -2093,6 +2093,13 @@ const IPAS_SUBJECT = {
             jawaban: 0,
             penjelasan: "Cuaca berangin membuat suhu lebih dingin."
           }
+        ],
+        [
+          { soal: "Matahari terbenam di arah ....", pilihan: ["barat", "timur", "bawah tanah"], jawaban: 0, penjelasan: "Matahari terbenam di barat." },
+          { soal: "Matahari memberikan cahaya dan .... bagi bumi.", pilihan: ["panas", "hujan es setiap saat", "gelap"], jawaban: 0, penjelasan: "Matahari memberi cahaya dan panas." },
+          { soal: "Saat cuaca hujan, kita sebaiknya membawa ....", pilihan: ["payung", "bola basket", "es batu"], jawaban: 0, penjelasan: "Payung atau jas hujan menjaga tubuh tidak basah." },
+          { soal: "Awan berwarna gelap biasanya menjadi tanda akan turun ....", pilihan: ["hujan", "pasir", "pensil"], jawaban: 0, penjelasan: "Awan gelap menandakan hujan." },
+          { soal: "Saat cuaca panas, tubuh kita mudah mengeluarkan ....", pilihan: ["keringat", "batu", "daun"], jawaban: 0, penjelasan: "Tubuh berkeringat saat panas." }
         ]
       ],
 
@@ -2250,6 +2257,13 @@ const IPAS_SUBJECT = {
             soal: "Sebutkan dua tanda bahwa hujan akan turun!",
             contohJawaban: "Awan menebal menjadi hitam, dan langit menjadi gelap."
           }
+        ],
+        [
+          { soal: "Matahari terbenam di arah ....", contohJawaban: "Barat." },
+          { soal: "Matahari memberikan cahaya dan .... bagi bumi.", contohJawaban: "Panas." },
+          { soal: "Saat cuaca hujan, kita sebaiknya membawa ....", contohJawaban: "Payung atau jas hujan." },
+          { soal: "Awan berwarna gelap biasanya menjadi tanda akan turun ....", contohJawaban: "Hujan." },
+          { soal: "Saat cuaca panas, tubuh kita mudah mengeluarkan ....", contohJawaban: "Keringat." }
         ]
       ],
 
@@ -2306,6 +2320,42 @@ const IPAS_SUBJECT = {
     },
 
     {
+      id: "wujud-benda",
+      judul: "Wujud Benda",
+      emoji: "🧊",
+      ringkasan: [
+        { emoji: "✏️", teks: "Benda yang dipakai untuk menulis, misalnya pensil, adalah benda padat." },
+        { emoji: "💧", teks: "Air termasuk benda berwujud cair. Bentuknya mengikuti wadahnya." },
+        { emoji: "🧊", teks: "Es batu yang dibiarkan di tempat terbuka lama-kelamaan akan mencair." },
+        { emoji: "🟡", teks: "Plastisin adalah benda padat. Bentuknya dapat berubah jika ditekan atau dibentuk." },
+        { emoji: "🏀", teks: "Volume adalah besar tempat yang diisi benda. Bola basket lebih besar daripada kelereng dan bola pingpong." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Benda yang digunakan untuk menulis adalah ....", pilihan: ["Pensil", "Air", "Angin"], jawaban: 0, penjelasan: "Pensil dipakai untuk menulis. Pensil adalah benda padat." },
+          { soal: "Air termasuk benda berwujud ....", pilihan: ["padat", "cair", "suara"], jawaban: 1, penjelasan: "Air adalah benda cair." },
+          { soal: "Es batu yang dibiarkan di tempat terbuka lama-kelamaan akan ....", pilihan: ["mencair", "menjadi batu", "berlari"], jawaban: 0, penjelasan: "Es yang kena udara terbuka berubah menjadi air. Itu disebut mencair." },
+          { soal: "Plastisin dapat berubah bentuk jika ....", pilihan: ["ditekan atau dibentuk", "dibiarkan tanpa disentuh", "dijadikan angin"], jawaban: 0, penjelasan: "Plastisin berubah bentuk saat ditekan atau dibentuk." },
+          { soal: "Antara kelereng, bola basket, dan bola pingpong, volume paling besar adalah ....", pilihan: ["kelereng", "bola pingpong", "bola basket"], jawaban: 2, penjelasan: "Bola basket paling besar, jadi volumenya paling besar." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Benda apa yang digunakan untuk menulis, dan apa wujud air?", contohJawaban: "Pensil untuk menulis. Air berwujud cair." },
+        { soal: "Apa yang terjadi pada es batu di tempat terbuka?", contohJawaban: "Es batu lama-kelamaan mencair." },
+        { soal: "Kapan plastisin berubah bentuk, dan benda mana yang volumenya paling besar: kelereng, bola basket, atau bola pingpong?", contohJawaban: "Plastisin berubah bentuk jika ditekan atau dibentuk. Volume paling besar adalah bola basket." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan benda dengan wujud atau perubahannya!",
+        pasangan: [
+          { kiri: { emoji: "💧", teks: "Air" }, kanan: "Benda cair" },
+          { kiri: { emoji: "🧊", teks: "Es batu di tempat terbuka" }, kanan: "Mencair" },
+          { kiri: { emoji: "🟡", teks: "Plastisin ditekan" }, kanan: "Bentuknya berubah" },
+          { kiri: { emoji: "🏀", teks: "Bola basket" }, kanan: "Volume paling besar" }
+        ]
+      }]
+    },
+
+    {
       id: "ciri-makhluk-hidup",
       judul: "Ciri-ciri Makhluk Hidup",
       emoji: "🐾",
@@ -2314,7 +2364,9 @@ const IPAS_SUBJECT = {
         { emoji: "🌬️", teks: "Manusia bernapas dengan udara. Ikan bernapas di dalam air." },
         { emoji: "🌱", teks: "Tumbuhan tumbuh dari kecil menjadi lebih besar. Anak juga bertambah tinggi." },
         { emoji: "🐣", teks: "Berkembang biak berarti punya keturunan, misalnya ayam punya anak ayam." },
-        { emoji: "🪨", teks: "Batu tidak bernapas, tidak makan, dan tidak tumbuh. Batu bukan makhluk hidup." }
+        { emoji: "🪨", teks: "Batu tidak bernapas, tidak makan, dan tidak tumbuh. Batu bukan makhluk hidup." },
+        { emoji: "🐾", teks: "Manusia, hewan, dan tumbuhan termasuk makhluk hidup." },
+        { emoji: "💧", teks: "Agar tumbuh subur, tanaman disiram secara teratur." }
       ],
       pilihanGandaSets: [
         [
@@ -2328,12 +2380,18 @@ const IPAS_SUBJECT = {
           { soal: "Anak yang bertambah tinggi sedang ....", pilihan: ["tumbuh", "menjadi batu", "berhenti hidup"], jawaban: 0, penjelasan: "Bertambah besar atau tinggi adalah tumbuh." },
           { soal: "Kucing pindah tempat. Itu ciri ....", pilihan: ["bergerak", "diam selamanya", "tidak hidup"], jawaban: 0, penjelasan: "Makhluk hidup dapat bergerak." },
           { soal: "Meja tidak makan dan tidak tumbuh. Meja adalah ....", pilihan: ["benda tak hidup", "hewan", "tumbuhan"], jawaban: 0, penjelasan: "Meja tidak punya ciri makhluk hidup." }
+        ],
+        [
+          { soal: "Manusia, hewan, dan tumbuhan termasuk ....", pilihan: ["makhluk hidup", "benda cair", "benda mati"], jawaban: 0, penjelasan: "Ketiganya hidup, jadi disebut makhluk hidup." },
+          { soal: "Agar tumbuh subur, tanaman harus disiram secara ....", pilihan: ["teratur", "setahun sekali saja", "tidak pernah"], jawaban: 0, penjelasan: "Tanaman disiram secara teratur agar subur." }
         ]
       ],
       esaiSets: [[
           { soal: "Sebutkan tiga ciri makhluk hidup.", contohJawaban: "Bergerak, bernapas, butuh makan, tumbuh, atau berkembang biak." },
           { soal: "Mengapa batu bukan makhluk hidup?", contohJawaban: "Batu tidak bernapas, tidak makan, dan tidak tumbuh." },
-          { soal: "Apa arti berkembang biak?", contohJawaban: "Punya keturunan, misalnya ayam punya anak ayam." }
+          { soal: "Apa arti berkembang biak?", contohJawaban: "Punya keturunan, misalnya ayam punya anak ayam." },
+          { soal: "Manusia, hewan, dan tumbuhan termasuk apa?", contohJawaban: "Makhluk hidup." },
+          { soal: "Bagaimana cara menyiram tanaman agar tumbuh subur?", contohJawaban: "Disiram secara teratur." }
         ]],
       cocokkanSets: [{
         instruksi: "Pasangkan makhluk dengan cirinya!",
@@ -2356,7 +2414,10 @@ const IPAS_SUBJECT = {
         { emoji: "🐱", teks: "Kucing hidup di darat." },
         { emoji: "🐦", teks: "Burung banyak tinggal di pohon dan terbang di udara." },
         { emoji: "🪱", teks: "Cacing hidup di tanah." },
-        { emoji: "🐸", teks: "Katak dapat hidup di air dan di darat." }
+        { emoji: "🐸", teks: "Katak dapat hidup di air dan di darat." },
+        { emoji: "🪷", teks: "Tumbuhan yang hidup di air contohnya teratai." },
+        { emoji: "🐟", teks: "Ikan hidup di air dan bernapas menggunakan insang." },
+        { emoji: "🏠", teks: "Tempat tinggal suatu makhluk hidup disebut habitat." }
       ],
       pilihanGandaSets: [
         [
@@ -2370,12 +2431,19 @@ const IPAS_SUBJECT = {
           { soal: "Tempat hidup yang cocok membantu makhluk itu ....", pilihan: ["tetap hidup", "berubah menjadi batu", "tidak perlu makan"], jawaban: 0, penjelasan: "Tempat yang cocok menyediakan kebutuhan hidupnya." },
           { soal: "Ikan yang dijauhkan dari air akan ....", pilihan: ["kesulitan hidup", "semakin kuat", "berubah menjadi burung"], jawaban: 0, penjelasan: "Ikan membutuhkan air." },
           { soal: "Tanah adalah tempat hidup ....", pilihan: ["cacing", "ikan laut", "awan"], jawaban: 0, penjelasan: "Cacing hidup di tanah." }
+        ],
+        [
+          { soal: "Tumbuhan yang hidup di air contohnya ....", pilihan: ["teratai", "kaktus di gurun", "pohon pinus di gunung kering"], jawaban: 0, penjelasan: "Teratai hidup di air." },
+          { soal: "Hewan yang hidup di air dan bernapas menggunakan insang adalah ....", pilihan: ["ikan", "kucing", "burung"], jawaban: 0, penjelasan: "Ikan hidup di air dan bernapas dengan insang." },
+          { soal: "Tempat tinggal suatu makhluk hidup disebut ....", pilihan: ["habitat", "volume", "cuaca"], jawaban: 0, penjelasan: "Habitat adalah tempat tinggal makhluk hidup." }
         ]
       ],
       esaiSets: [[
           { soal: "Sebutkan tempat hidup ikan, kucing, dan cacing.", contohJawaban: "Ikan di air, kucing di darat, cacing di tanah." },
           { soal: "Mengapa katak disebut dapat hidup di dua tempat?", contohJawaban: "Karena katak dapat hidup di air dan di darat." },
-          { soal: "Apa yang terjadi jika ikan dijauhkan dari air?", contohJawaban: "Ikan kesulitan hidup karena air adalah tempatnya." }
+          { soal: "Apa yang terjadi jika ikan dijauhkan dari air?", contohJawaban: "Ikan kesulitan hidup karena air adalah tempatnya." },
+          { soal: "Sebutkan contoh tumbuhan yang hidup di air.", contohJawaban: "Teratai." },
+          { soal: "Hewan apa yang hidup di air dan bernapas dengan insang? Apa nama tempat tinggal makhluk hidup?", contohJawaban: "Ikan. Tempat tinggalnya disebut habitat." }
         ]],
       cocokkanSets: [{
         instruksi: "Pasangkan makhluk dengan tempatnya!",
@@ -2916,7 +2984,10 @@ const MATEMATIKA_SUBJECT = {
         { emoji: "🚌", teks: "Di jalan, bus sekolah berada di sebelah kiri mobil merah." },
         { emoji: "🚗", teks: "Mobil merah berada di antara bus dan truk." },
         { emoji: "🚚", teks: "Truk berada di belakang mobil merah." },
-        { emoji: "🐓", teks: "Dua ekor ayam berada di depan Rumah Ais." }
+        { emoji: "🐓", teks: "Dua ekor ayam berada di depan Rumah Ais." },
+        { emoji: "👟", teks: "Jika buku ada di atas meja dan sandal di bawah meja, posisi sandal adalah di bawah meja." },
+        { emoji: "👩", teks: "Jika ibu duduk di belakang ayah, yang berada di posisi belakang adalah ibu." },
+        { emoji: "🍽️", teks: "Jika piring berada di atas meja, meja berada di bawah piring." }
       ],
 
       pilihanGandaSets: [
@@ -3015,6 +3086,11 @@ const MATEMATIKA_SUBJECT = {
             jawaban: 0,
             penjelasan: "Depan berlawanan dengan belakang."
           }
+        ],
+        [
+          { soal: "Buku cerita terletak di atas meja, sedangkan sandal terletak di bawah meja. Di mana posisi sandal?", pilihan: ["Atas meja", "Bawah meja", "Samping kursi"], jawaban: 1, penjelasan: "Sandal berada di bawah meja." },
+          { soal: "Ayah duduk di depan ibu, sedangkan ibu duduk di belakang ayah. Siapa yang berada di posisi belakang?", pilihan: ["Ayah", "Ibu", "Kakak"], jawaban: 1, penjelasan: "Ibu duduk di belakang ayah." },
+          { soal: "Piring berada di atas meja. Maka meja berada di .... piring.", pilihan: ["bawah", "atas", "dalam"], jawaban: 0, penjelasan: "Yang di bawah piring adalah meja." }
         ]
       ],
 
@@ -3053,6 +3129,18 @@ const MATEMATIKA_SUBJECT = {
           {
             soal: "Apa yang ada di sebelah kiri Bimbel Brilian?",
             contohJawaban: "Rumah Albab."
+          },
+          {
+            soal: "Buku ada di atas meja dan sandal di bawah meja. Di mana sandal?",
+            contohJawaban: "Di bawah meja."
+          },
+          {
+            soal: "Ibu duduk di belakang ayah. Siapa yang di posisi belakang?",
+            contohJawaban: "Ibu."
+          },
+          {
+            soal: "Piring ada di atas meja. Meja berada di mana terhadap piring?",
+            contohJawaban: "Meja berada di bawah piring."
           }
         ]
       ],
@@ -3254,7 +3342,13 @@ const MATEMATIKA_SUBJECT = {
         { emoji: "🔴", teks: "Pola bisa berupa warna, bentuk, atau bunyi." },
         { emoji: "🔵", teks: "Pada pola merah-biru-merah-biru, berikutnya adalah merah." },
         { emoji: "🔺", teks: "Kita bisa meniru pola, lalu melanjutkannya." },
-        { emoji: "👂", teks: "Tepuk-diam-tepuk-diam juga sebuah pola bunyi." }
+        { emoji: "👂", teks: "Tepuk-diam-tepuk-diam juga sebuah pola bunyi." },
+        { emoji: "🔺", teks: "Pola bentuk Lingkaran, Segitiga, Kotak berulang. Setelah Kotak, berikutnya Lingkaran lalu Segitiga." },
+        { emoji: "🐱", teks: "Pola bunyi Krik, Meong berulang. Setelah Krik, berikutnya Meong." },
+        { emoji: "🟣", teks: "Pola warna Ungu, Kuning, Merah berulang." },
+        { emoji: "🔤", teks: "Pola huruf A, B, C, D juga berulang." },
+        { emoji: "⭐", teks: "Pola gambar bintang, segitiga, segitiga lalu berulang." },
+        { emoji: "🌦️", teks: "Pola simbol cuaca matahari, awan hujan, awan lalu berulang. Setelah matahari adalah awan hujan." }
       ],
       pilihanGandaSets: [
         [
@@ -3268,12 +3362,21 @@ const MATEMATIKA_SUBJECT = {
           { soal: "Kita bisa meniru pola, lalu ....", pilihan: ["melanjutkannya", "menghapus aturannya", "mengacak semuanya"], jawaban: 0, penjelasan: "Setelah meniru, kita lanjut sesuai aturan yang sama." },
           { soal: "Pola tidak hanya warna. Pola juga bisa berupa ....", pilihan: ["bentuk atau bunyi", "hanya angka besar", "hanya bau"], jawaban: 0, penjelasan: "Bentuk dan bunyi juga bisa disusun berulang." },
           { soal: "Biru, biru, kuning, biru, biru, kuning, .... Berikutnya adalah ....", pilihan: ["biru", "kuning", "merah"], jawaban: 0, penjelasan: "Dua biru dulu, baru kuning." }
+        ],
+        [
+          { soal: "Lanjutkan pola bentuk: Lingkaran, Segitiga, Kotak, Lingkaran, Segitiga, Kotak, ....", pilihan: ["Lingkaran, Segitiga", "Kotak, Lingkaran", "Segitiga, Kotak"], jawaban: 0, penjelasan: "Pola Lingkaran-Segitiga-Kotak berulang, jadi berikutnya Lingkaran lalu Segitiga." },
+          { soal: "Pola bunyi: Krik, Meong, Krik, Meong, Krik, .... Kata berikutnya adalah ....", pilihan: ["Krik", "Cit", "Meong"], jawaban: 2, penjelasan: "Krik dan Meong bergantian. Setelah Krik adalah Meong." },
+          { soal: "Warna bunga: Ungu, Kuning, Merah, Ungu, Kuning, Merah, Ungu, .... Warna berikutnya adalah ....", pilihan: ["Merah", "Kuning", "Ungu"], jawaban: 1, penjelasan: "Urutannya Ungu, Kuning, Merah. Setelah Ungu adalah Kuning." },
+          { soal: "Simbol cuaca berulang: matahari, awan hujan, awan. Simbol setelah matahari adalah ....", pilihan: ["awan hujan", "pelangi", "bintang"], jawaban: 0, penjelasan: "Setelah matahari pada pola itu adalah awan hujan." }
         ]
       ],
       esaiSets: [[
           { soal: "Apa yang dimaksud pola?", contohJawaban: "Susunan yang berulang." },
           { soal: "Lanjutkan: segitiga, persegi, segitiga, persegi, ....", contohJawaban: "Segitiga." },
-          { soal: "Sebutkan satu pola bunyi.", contohJawaban: "Contoh: tepuk, diam, tepuk, diam." }
+          { soal: "Sebutkan satu pola bunyi.", contohJawaban: "Contoh: tepuk, diam, tepuk, diam." },
+          { soal: "Lengkapi: Apel, Jeruk, Mangga, Apel, Jeruk, Mangga, Apel, ....", contohJawaban: "Jeruk." },
+          { soal: "Lengkapi huruf: A, B, C, D, A, B, C, D, A, .... , ....", contohJawaban: "B, C." },
+          { soal: "Pola gambarnya bintang, segitiga, segitiga, lalu berulang. Setelah bintang, apa berikutnya?", contohJawaban: "Segitiga." }
         ]],
       cocokkanSets: [{
         instruksi: "Pasangkan pola dengan lanjutan yang benar!",
@@ -5218,6 +5321,69 @@ const SBDP_SUBJECT = {
   ]
 };
 
+
+/* ============================================================
+ *  MATA PELAJARAN: BAHASA INGGRIS
+ *  Unit 5 — Present Continuous Tense (kelas 2)
+ * ============================================================ */
+const BAHASA_INGGRIS_SUBJECT = {
+  id: "bahasa-inggris",
+  nama: "Bahasa Inggris",
+  ikon: "🇬🇧",
+  warna: "#118ab2",
+  deskripsi: "Belajar kalimat yang sedang terjadi: am, is, are + kata kerja ing.",
+  topik: [
+    {
+      id: "present-continuous",
+      judul: "Unit 5: Present Continuous Tense",
+      emoji: "📖",
+      ringkasan: [
+        { emoji: "⏱️", teks: "Present continuous dipakai untuk kejadian yang sedang terjadi." },
+        { emoji: "➕", teks: "Kalimat positif: S + am, is, are + Ving. Contoh: Andi is reading a book." },
+        { emoji: "➖", teks: "Kalimat negatif: tambahkan not. Contoh: Andi is not reading a book." },
+        { emoji: "❓", teks: "Kalimat tanya: am, is, atau are pindah ke depan. Contoh: Is Andy reading a book?" },
+        { emoji: "👦", teks: "Untuk he, she, it, dan nama satu orang seperti Andi, kita memakai is." },
+        { emoji: "👫", teks: "Untuk they, we, dan you, kita memakai are. I memakai am." },
+        { emoji: "📚", teks: "Andi sedang membaca sebuah buku: Andi is reading a book." },
+        { emoji: "🎵", teks: "Mereka sedang menyanyikan sebuah lagu: They are singing a song." },
+        { emoji: "✅", teks: "Jawaban singkat: Yes, he is. No, he is not. Yes, they are. No, they are not." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Present continuous menyatakan kejadian yang ....", pilihan: ["sedang terjadi", "sudah lama selesai", "tidak pernah terjadi"], jawaban: 0, penjelasan: "Kita memakainya untuk sesuatu yang sedang terjadi sekarang." },
+          { soal: "Andi sedang membaca sebuah buku. Dalam bahasa Inggris: ....", pilihan: ["Andi is reading a book", "Andi reading a book", "Andi are read a book"], jawaban: 0, penjelasan: "Satu orang memakai is, lalu kata kerja ditambah ing." },
+          { soal: "Mereka sedang menyanyikan sebuah lagu. Kalimat yang benar adalah ....", pilihan: ["They are singing a song", "They is sing a song", "They singing song"], jawaban: 0, penjelasan: "They memakai are: They are singing a song." },
+          { soal: "Bentuk negatif dari Andi is reading a book adalah ....", pilihan: ["Andi is not reading a book", "Andi not is reading a book", "Andi no reading a book"], jawaban: 0, penjelasan: "Not diletakkan setelah is: is not." },
+          { soal: "Is Andy reading a book? Jawaban singkat Ya adalah ....", pilihan: ["Yes, he is", "Yes, he are", "Yes, they is"], jawaban: 0, penjelasan: "Untuk he, jawaban singkatnya Yes, he is." }
+        ],
+        [
+          { soal: "Are they singing a song? Jawaban singkat Tidak adalah ....", pilihan: ["No, they are not", "No, they is not", "No, he are not"], jawaban: 0, penjelasan: "They memakai are, jadi No, they are not." },
+          { soal: "Kata is dipakai untuk ....", pilihan: ["he, she, it, atau satu nama", "they dan we", "hanya untuk benda jamak"], jawaban: 0, penjelasan: "Andi, he, she, dan it memakai is." },
+          { soal: "Kata are dipakai untuk ....", pilihan: ["they, we, dan you", "he dan she", "hanya I"], jawaban: 0, penjelasan: "They are singing. I memakai am." },
+          { soal: "Kalimat tanya yang benar adalah ....", pilihan: ["Is Andy reading a book?", "Andy is reading a book?", "Reading Andy is a book?"], jawaban: 0, penjelasan: "Is pindah ke depan subjek." },
+          { soal: "Ving pada reading dan singing berarti kata kerja ....", pilihan: ["ditambah ing", "tanpa perubahan", "diganti angka"], jawaban: 0, penjelasan: "read menjadi reading, sing menjadi singing." }
+        ]
+      ],
+      esaiSets: [[
+        { soal: "Tuliskan kalimat positif: Andi sedang membaca sebuah buku.", contohJawaban: "Andi is reading a book." },
+        { soal: "Tuliskan kalimat negatif dan kalimat tanya untuk They are singing a song.", contohJawaban: "They are not singing a song. Are they singing a song?" },
+        { soal: "Apa jawaban singkat untuk Is Andy reading a book? jika ya, dan jika tidak.", contohJawaban: "Yes, he is. No, he is not." },
+        { soal: "Kapan we memakai am, is, atau are? Sebutkan satu contoh untuk I, he, dan they.", contohJawaban: "I memakai am, he memakai is, they memakai are. Contoh: I am reading. He is reading. They are reading." }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan kalimat Indonesia dengan bahasa Inggrisnya!",
+        pasangan: [
+          { kiri: { emoji: "📚", teks: "Andi sedang membaca" }, kanan: "Andi is reading a book" },
+          { kiri: { emoji: "🎵", teks: "Mereka sedang menyanyi" }, kanan: "They are singing a song" },
+          { kiri: { emoji: "🚫", teks: "Andi tidak sedang membaca" }, kanan: "Andi is not reading a book" },
+          { kiri: { emoji: "❓", teks: "Apakah mereka sedang menyanyi?" }, kanan: "Are they singing a song?" },
+          { kiri: { emoji: "✅", teks: "Ya, dia sedang" }, kanan: "Yes, he is" }
+        ]
+      }]
+    }
+  ]
+};
+
 const SUBJECTS = [
   {
     id: "pancasila",
@@ -7062,7 +7228,9 @@ const SUBJECTS = [
           { emoji: "💛", teks: "Sarai kemudian dikenal sebagai Sarah." },
           { emoji: "🌾", teks: "Allah berjanji: Abraham menjadi bapa bangsa, memiliki tanah subur, dan selalu diberkati." },
           { emoji: "🙏", teks: "Sikap Abraham yang menjadi contoh adalah percaya dan taat pada Tuhan." },
-          { emoji: "🏡", teks: "Percaya dan taat pada Tuhan dapat kita wujudkan dengan percaya dan taat pada orang tua." }
+          { emoji: "🏡", teks: "Percaya dan taat pada Tuhan dapat kita wujudkan dengan percaya dan taat pada orang tua." },
+          { emoji: "🌙", teks: "Allah memanggil Abraham untuk pergi ke negeri yang akan ditunjukkan-Nya. Abraham percaya dan taat." },
+          { emoji: "⭐", teks: "Allah berjanji menjadikan Abraham bangsa yang besar, dan Allah selalu menyertai dia." }
         ],
 
         pilihanGandaSets: [
@@ -7129,6 +7297,22 @@ const SUBJECTS = [
               jawaban: 0,
               penjelasan: "Catatan kelas: percaya dan taat pada Tuhan diwujudkan dengan percaya dan taat pada orang tua."
             }
+          ],
+
+          // ---------- Permainan: Allah Memanggil Abraham ----------
+          [
+            { soal: "Siapakah yang dipanggil Allah?", pilihan: ["Nuh", "Abraham", "Raja"], jawaban: 1, penjelasan: "Allah memanggil Abraham." },
+            { soal: "Apa yang diminta Allah kepada Abraham?", pilihan: ["Pergi ke negeri yang ditunjukkan-Nya", "Membuat bahtera", "Membuat istana"], jawaban: 0, penjelasan: "Abraham diminta pergi ke negeri yang Allah tunjukkan." },
+            { soal: "Bagaimana sikap Abraham ketika dipanggil Allah?", pilihan: ["Percaya dan taat", "Bersembunyi", "Marah"], jawaban: 0, penjelasan: "Abraham percaya dan taat." },
+            { soal: "Apakah Abraham percaya kepada Allah?", pilihan: ["Tidak", "Ya, Abraham percaya", "Abraham lupa"], jawaban: 1, penjelasan: "Abraham percaya kepada Allah." },
+            { soal: "Apa janji Allah kepada Abraham?", pilihan: ["Menjadikannya bangsa yang besar", "Memberinya kapal", "Memberinya mahkota"], jawaban: 0, penjelasan: "Allah berjanji menjadikan Abraham bangsa yang besar." }
+          ],
+          [
+            { soal: "Siapa yang menyertai Abraham dalam perjalanannya?", pilihan: ["Allah", "Raja", "Prajurit"], jawaban: 0, penjelasan: "Allah menyertai Abraham." },
+            { soal: "Mengapa Abraham mau mengikuti panggilan Allah?", pilihan: ["Karena ia percaya kepada Allah", "Karena ingin bermain", "Karena takut pada teman"], jawaban: 0, penjelasan: "Abraham ikut karena ia percaya." },
+            { soal: "Apa yang dapat kita teladani dari Abraham?", pilihan: ["Percaya dan taat kepada Allah", "Suka membantah", "Tidak peduli"], jawaban: 0, penjelasan: "Kita meneladani percaya dan taat." },
+            { soal: "Bagaimana cara menunjukkan sikap percaya kepada Allah?", pilihan: ["Berdoa dan melakukan hal baik", "Mengejek teman", "Tidak mau menolong"], jawaban: 0, penjelasan: "Percaya ditunjukkan dengan berdoa dan berbuat baik." },
+            { soal: "Apa yang harus kita lakukan ketika orang tua atau guru memberikan nasihat yang baik?", pilihan: ["Mendengarkan dan melakukannya", "Mengabaikannya", "Berlari pergi"], jawaban: 0, penjelasan: "Nasihat yang baik kita dengarkan dan lakukan, seperti Abraham menaati panggilan Allah." }
           ]
         ],
 
@@ -7149,6 +7333,16 @@ const SUBJECTS = [
             {
               soal: "Sikap apa yang dapat kita contoh dari Abraham di rumah?",
               contohJawaban: "Percaya dan taat pada Tuhan. Itu dapat diwujudkan dengan percaya dan taat pada orang tua."
+            }
+          ],
+          [
+            {
+              soal: "Ke mana Allah memanggil Abraham, dan bagaimana sikap Abraham?",
+              contohJawaban: "Allah memanggil Abraham pergi ke negeri yang akan ditunjukkan-Nya. Abraham percaya dan taat."
+            },
+            {
+              soal: "Apa janji Allah, dan siapa yang menyertai Abraham?",
+              contohJawaban: "Allah berjanji menjadikan Abraham bangsa yang besar. Allah selalu menyertai dia."
             }
           ]
         ],
@@ -7322,7 +7516,8 @@ const SUBJECTS = [
           { emoji: "⛰️", teks: "Bahtera Nuh akhirnya berhenti di Pegunungan Ararat." },
           { emoji: "🙏", teks: "Nuh bersyukur dengan mendirikan mezbah dan mempersembahkan kurban." },
           { emoji: "🌈", teks: "Allah berjanji tidak akan mendatangkan air bah lagi untuk membinasakan seluruh bumi." },
-          { emoji: "💛", teks: "Allah juga memberkati keluarga Nuh." }
+          { emoji: "💛", teks: "Allah juga memberkati keluarga Nuh." },
+          { emoji: "🚢", teks: "Nuh mendengarkan perintah Allah, membuat bahtera besar, dan membawa keluarganya serta berbagai binatang. Allah melindungi mereka." }
         ],
 
         pilihanGandaSets: [
@@ -7389,6 +7584,22 @@ const SUBJECTS = [
               jawaban: 0,
               penjelasan: "Allah berjanji tidak akan air bah lagi untuk membinasakan seluruh bumi, dan Ia memberkati keluarga Nuh."
             }
+          ],
+
+          // ---------- Permainan: Nuh, Hamba Allah yang Taat ----------
+          [
+            { soal: "Siapakah yang taat kepada Allah?", pilihan: ["Nuh", "Raja", "Prajurit"], jawaban: 0, penjelasan: "Nuh taat kepada Allah." },
+            { soal: "Apa yang diperintahkan Allah kepada Nuh?", pilihan: ["Membuat bahtera besar", "Membuat menara", "Membuat kereta"], jawaban: 0, penjelasan: "Allah meminta Nuh membuat bahtera besar." },
+            { soal: "Apa nama kapal besar yang dibuat Nuh?", pilihan: ["Perahu kecil", "Bahtera", "Pesawat"], jawaban: 1, penjelasan: "Kapal besar itu disebut bahtera." },
+            { soal: "Siapa yang diajak Nuh masuk ke dalam bahtera?", pilihan: ["Keluarganya", "Hanya tetangga", "Tidak ada"], jawaban: 0, penjelasan: "Nuh mengajak keluarganya." },
+            { soal: "Mengapa Nuh membuat bahtera?", pilihan: ["Karena menaati perintah Allah", "Karena ingin lomba", "Karena ingin bermain"], jawaban: 0, penjelasan: "Nuh membuat bahtera karena menaati Allah." }
+          ],
+          [
+            { soal: "Bagaimana sikap Nuh terhadap perintah Allah?", pilihan: ["Mengabaikannya", "Marah-marah", "Mendengarkan dan melakukannya"], jawaban: 2, penjelasan: "Nuh mendengarkan dan melakukan perintah Allah." },
+            { soal: "Apa yang dilakukan Nuh terhadap binatang-binatang?", pilihan: ["Membawanya ke dalam bahtera", "Meninggalkannya", "Mengusirnya"], jawaban: 0, penjelasan: "Nuh membawa berbagai binatang ke dalam bahtera." },
+            { soal: "Siapa yang melindungi Nuh dan keluarganya?", pilihan: ["Allah", "Raja", "Prajurit"], jawaban: 0, penjelasan: "Allah melindungi Nuh dan keluarganya." },
+            { soal: "Apa yang dapat kita pelajari dari sikap Nuh?", pilihan: ["Belajar taat kepada Allah", "Tidak mau mendengar", "Suka bertengkar"], jawaban: 0, penjelasan: "Kita belajar taat kepada Allah seperti Nuh." },
+            { soal: "Bagaimana cara kita meneladani Nuh di rumah dan sekolah?", pilihan: ["Mendengarkan nasihat baik", "Mengganggu teman", "Tidak mau membantu"], jawaban: 0, penjelasan: "Kita meneladani Nuh dengan mendengarkan nasihat yang baik." }
           ]
         ],
 
@@ -7427,6 +7638,16 @@ const SUBJECTS = [
             {
               soal: "Apa janji Allah setelah air bah?",
               contohJawaban: "Allah tidak akan mendatangkan air bah lagi untuk membinasakan seluruh bumi, dan Ia memberkati keluarga Nuh."
+            }
+          ],
+          [
+            {
+              soal: "Apa yang diperintahkan Allah kepada Nuh, dan apa sikap Nuh?",
+              contohJawaban: "Allah memerintahkan Nuh membuat bahtera besar. Nuh mendengarkan dan melakukannya."
+            },
+            {
+              soal: "Siapa yang Nuh bawa, dan siapa yang melindungi mereka?",
+              contohJawaban: "Nuh mengajak keluarganya dan membawa berbagai binatang. Allah melindungi mereka."
             }
           ]
         ],
@@ -7783,6 +8004,8 @@ const SUBJECTS = [
   BAHASA_MANDARIN_SUBJECT
   ,
   SBDP_SUBJECT
+  ,
+  BAHASA_INGGRIS_SUBJECT
 
   // ====== TAMBAHKAN MATA PELAJARAN BARU DI SINI ======
 
