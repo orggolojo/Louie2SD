@@ -6125,7 +6125,7 @@ const SUBJECTS = [
     nama: "PJOK",
     ikon: "⚽",
     warna: "#2a9d8f",
-    deskripsi: "Belajar gerak lokomotor, gerak di tempat, hidup sehat, serta menangkap dan melempar.",
+    deskripsi: "Belajar gerak, hidup sehat, dan bermain bersama teman.",
     topik: [
       {
         id: "gerak-menggunakan-benda",
@@ -6688,6 +6688,88 @@ const SUBJECTS = [
             { kiri: { emoji: "💪", teks: "Istirahat" }, kanan: "Saat tubuh terlalu lelah" }
           ]
         }]
+      },
+      {
+        id: "ayo-bermain-bersama",
+        judul: "Bab 4: Ayo, Bermain Bersama",
+        emoji: "🤝",
+        ringkasan: [
+          { emoji: "😄", teks: "Bermain adalah kegiatan menyenangkan. Kita bisa bergerak dengan bebas." },
+          { emoji: "💪", teks: "Tubuh menjadi lebih sehat, lebih kuat, dan lebih lincah." },
+          { emoji: "😌", teks: "Bermain membuat pikiran rileks. Setelah bermain, kita siap belajar lagi." },
+          { emoji: "👫", teks: "Bermain bersama teman lebih seru. Kita bisa tertawa dan bersenang-senang." },
+          { emoji: "📜", teks: "Setiap permainan punya aturan. Aturan harus dipatuhi agar permainan adil." },
+          { emoji: "🤝", teks: "Saat bermain kita belajar kerja sama dan menghargai perbedaan." },
+          { emoji: "🏆", teks: "Kadang menang, kadang kalah. Itu wajar. Kalah bukan gagal. Menang bukan sombong." },
+          { emoji: "💛", teks: "Hal penting adalah bermain dengan jujur." },
+          { emoji: "🏃", teks: "Bermain melatih ketangkasan: berlari, melompat, dan melempar. Semua itu baik untuk tubuh." },
+          { emoji: "1️⃣", teks: "Ada permainan individu (sendirian), berpasangan (dua orang), dan berkelompok (banyak teman)." },
+          { emoji: "🧣", teks: "Loncat sarung berpasangan: dua orang masuk satu sarung besar, memegang sarung di pinggang, lalu meloncat bersama sejauh 10 meter sampai garis finis." },
+          { emoji: "🪢", teks: "Loncat sarung melatih kerja sama dan kekompakan. Lakukan hati-hati agar tidak jatuh. Pemenangnya pasangan tercepat." },
+          { emoji: "📚", teks: "Lomba berjalan mundur: dua buku kecil yang sama diletakkan di atas kepala. Pasangan bergandengan dan berjalan mundur 10 meter." },
+          { emoji: "⚖️", teks: "Berjalan mundur melatih keseimbangan dan kerja sama. Buku tidak boleh jatuh, dan gandengan tidak boleh lepas." },
+          { emoji: "🙈", teks: "Jembatan sakti: mata penyeberang ditutup kain. Ia berjalan di atas papan atau kardus. Pemandu memberi aba-aba maju, mundur, kanan, atau kiri." },
+          { emoji: "🗣️", teks: "Jembatan sakti melatih kepercayaan dan kerja sama. Pemenangnya pasangan tercepat yang menyeberang dengan aman." },
+          { emoji: "📖", teks: "Dari permainan ini kita belajar kerja sama, komunikasi, dan mematuhi aturan. Jika tidak bekerja sama, permainan tidak selesai dengan baik." },
+          { emoji: "👨‍👩‍👧‍👦", teks: "Bermain berkelompok sangat menyenangkan karena kita bermain bersama banyak teman." }
+        ],
+        pilihanGandaSets: [
+          [
+            { soal: "Bermain membuat tubuh menjadi ....", pilihan: ["lebih sehat, kuat, dan lincah", "lebih lemas dan malas", "tidak berubah"], jawaban: 0, penjelasan: "Bermain menyehatkan tubuh dan membuat kita lebih kuat serta lincah." },
+            { soal: "Setelah bermain, pikiran menjadi rileks sehingga kita ....", pilihan: ["siap belajar lagi", "tidak boleh belajar", "harus marah"], jawaban: 0, penjelasan: "Pikiran yang rileks membuat kita siap belajar lagi." },
+            { soal: "Aturan permainan harus dipatuhi agar permainan ....", pilihan: ["adil", "kacau", "tanpa pemenang"], jawaban: 0, penjelasan: "Aturan membuat permainan adil." },
+            { soal: "Kalah dalam permainan berarti ....", pilihan: ["kita gagal selamanya", "hal yang wajar, bukan berarti gagal", "kita harus sombong"], jawaban: 1, penjelasan: "Kalah bukan berarti gagal. Menang juga bukan berarti sombong." },
+            { soal: "Hal penting saat bermain adalah ....", pilihan: ["bermain dengan jujur", "menang dengan curang", "mengejek yang kalah"], jawaban: 0, penjelasan: "Kita bermain dengan jujur." }
+          ],
+          [
+            { soal: "Permainan yang dilakukan oleh dua orang disebut permainan ....", pilihan: ["berpasangan", "individu", "sendirian"], jawaban: 0, penjelasan: "Berpasangan berarti dua orang bermain bersama." },
+            { soal: "Alat permainan loncat sarung adalah ....", pilihan: ["satu sarung besar", "dua buku", "kain penutup mata"], jawaban: 0, penjelasan: "Dua pemain masuk ke dalam satu sarung besar." },
+            { soal: "Saat loncat sarung, kedua pemain memegang sarung di ....", pilihan: ["pinggang", "kepala", "kaki saja"], jawaban: 0, penjelasan: "Sarung dipegang di pinggang, lalu mereka meloncat bersama." },
+            { soal: "Jarak loncat sarung pada permainan dasar adalah ....", pilihan: ["10 meter", "1 meter", "100 meter"], jawaban: 0, penjelasan: "Mereka meloncat sejauh 10 meter sampai garis finis." },
+            { soal: "Pemenang loncat sarung adalah pasangan yang ....", pilihan: ["sampai garis finis paling cepat", "jatuh lebih dulu", "berdiri diam"], jawaban: 0, penjelasan: "Pasangan tercepat yang sampai garis finis adalah pemenangnya." }
+          ],
+          [
+            { soal: "Pada lomba berjalan mundur, buku diletakkan di ....", pilihan: ["atas kepala", "dalam sepatu", "bawah meja"], jawaban: 0, penjelasan: "Setiap pemain meletakkan buku di atas kepala." },
+            { soal: "Berjalan mundur melatih ....", pilihan: ["keseimbangan dan kerja sama", "hanya membaca", "hanya melempar"], jawaban: 0, penjelasan: "Permainan ini melatih keseimbangan dan kerja sama." },
+            { soal: "Agar menang berjalan mundur, buku tidak jatuh dan gandengan ....", pilihan: ["tidak terlepas", "harus dilepas", "diganti tali"], jawaban: 0, penjelasan: "Buku tidak boleh jatuh dan gandengan tidak boleh lepas." },
+            { soal: "Pada jembatan sakti, mata penyeberang ditutup dengan ....", pilihan: ["kain", "buku", "sarung di kaki"], jawaban: 0, penjelasan: "Mata ditutup kain, lalu pemandu memberi arahan." },
+            { soal: "Aba-aba pemandu pada jembatan sakti adalah ....", pilihan: ["maju, mundur, kanan, atau kiri", "diam saja", "berteriak tanpa arah"], jawaban: 0, penjelasan: "Pemandu memberi petunjuk dengan suara: maju, mundur, kanan, atau kiri." }
+          ]
+        ],
+        esaiSets: [
+          [
+            { soal: "Sebutkan dua manfaat bermain bagi tubuh dan pikiran.", contohJawaban: "Tubuh lebih sehat, kuat, dan lincah. Pikiran menjadi rileks sehingga kita siap belajar lagi." },
+            { soal: "Mengapa aturan permainan harus dipatuhi?", contohJawaban: "Agar permainan menjadi adil." },
+            { soal: "Apa arti kalah dan menang saat bermain?", contohJawaban: "Kalah bukan berarti gagal. Menang bukan berarti sombong. Yang penting bermain dengan jujur." },
+            { soal: "Sebutkan tiga macam permainan menurut jumlah pemainnya.", contohJawaban: "Permainan individu, berpasangan, dan berkelompok." }
+          ],
+          [
+            { soal: "Bagaimana cara bermain loncat sarung berpasangan?", contohJawaban: "Siapkan sarung besar dan tempat yang aman. Dua orang masuk sarung, memegangnya di pinggang, lalu meloncat bersama sejauh 10 meter sampai garis finis." },
+            { soal: "Apa aturan lomba berjalan mundur berpasangan?", contohJawaban: "Buku diletakkan di atas kepala. Pasangan bergandengan dan berjalan mundur. Buku tidak boleh jatuh dan gandengan tidak boleh lepas." },
+            { soal: "Apa tugas pemandu dan penyeberang pada jembatan sakti?", contohJawaban: "Mata penyeberang ditutup kain dan ia berjalan di atas papan atau kardus. Pemandu memberi aba-aba maju, mundur, kanan, atau kiri." },
+            { soal: "Apa yang terjadi jika pasangan tidak bekerja sama?", contohJawaban: "Mereka tidak dapat menyelesaikan permainan dengan baik, misalnya jatuh atau tidak sampai tujuan." }
+          ]
+        ],
+        cocokkanSets: [
+          {
+            instruksi: "Pasangkan permainan dengan alatnya!",
+            pasangan: [
+              { kiri: { emoji: "🧣", teks: "Loncat sarung" }, kanan: "Satu sarung besar" },
+              { kiri: { emoji: "📚", teks: "Berjalan mundur" }, kanan: "Dua buku di atas kepala" },
+              { kiri: { emoji: "🙈", teks: "Jembatan sakti" }, kanan: "Papan atau kardus dan kain" },
+              { kiri: { emoji: "🏃", teks: "Ketangkasan" }, kanan: "Berlari, melompat, dan melempar" }
+            ]
+          },
+          {
+            instruksi: "Pasangkan permainan dengan yang dilatihnya!",
+            pasangan: [
+              { kiri: { emoji: "🧣", teks: "Loncat sarung" }, kanan: "Kerja sama dan kekompakan" },
+              { kiri: { emoji: "📚", teks: "Berjalan mundur" }, kanan: "Keseimbangan dan kerja sama" },
+              { kiri: { emoji: "🙈", teks: "Jembatan sakti" }, kanan: "Kepercayaan dan kerja sama" },
+              { kiri: { emoji: "📜", teks: "Mematuhi aturan" }, kanan: "Permainan menjadi adil" }
+            ]
+          }
+        ]
       }
     ]
   },
