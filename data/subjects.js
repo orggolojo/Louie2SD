@@ -3027,7 +3027,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["atas", "bawah", "dalam"],
             jawaban: 0,
             penjelasan: "Tiga burung terbang di atas Rumah Ais."
-          }
+          },
+          { soal: "Di sebelah kanan Rumah Albab terdapat ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["Bimbel Brilian", "Rumah Ais", "bus"], jawaban: 0, penjelasan: "Rumah Albab di kiri, lalu Bimbel Brilian di tengah." },
+          { soal: "Rumah yang berada di paling kanan adalah ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["Rumah Ais", "Rumah Albab", "Bimbel Brilian"], jawaban: 0, penjelasan: "Rumah biru Ais berada di paling kanan." },
+          { soal: "Tiga burung berada di .... Rumah Ais.", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["atas", "bawah", "dalam"], jawaban: 0, penjelasan: "Burung terbang di langit, di atas rumah biru." },
+          { soal: "Pot bunga berada di depan rumah berwarna ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["hijau", "merah", "biru"], jawaban: 0, penjelasan: "Pot bunga ada di depan Bimbel Brilian yang hijau." },
+          { soal: "Dua pohon berada di belakang rumah berwarna ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["merah", "biru", "hijau"], jawaban: 0, penjelasan: "Pohon berdiri di belakang Rumah Albab yang merah." }
         ],
         [
           {
@@ -3059,7 +3064,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["Rumah Albab", "Rumah Ais", "truk"],
             jawaban: 0,
             penjelasan: "Rumah Albab berada di sebelah kiri Bimbel Brilian."
-          }
+          },
+          { soal: "Mobil merah berada di sebelah .... bus.", gambar: "img/posisi/jalan-kendaraan.svg", pilihan: ["kanan", "kiri", "atas"], jawaban: 0, penjelasan: "Bus ada di kiri, jadi mobil merah ada di kanan bus." },
+          { soal: "Di sebelah kanan mobil merah terdapat ....", gambar: "img/posisi/jalan-kendaraan.svg", pilihan: ["truk", "bus", "ayam"], jawaban: 0, penjelasan: "Truk berada di kanan mobil merah." },
+          { soal: "Ayam berada di depan rumah berwarna ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["biru", "merah", "hijau"], jawaban: 0, penjelasan: "Dua ayam berdiri di depan Rumah Ais yang biru." },
+          { soal: "Tong sampah pada gambar jalan berada di .... pohon.", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["bawah", "atas", "dalam"], jawaban: 0, penjelasan: "Tong sampah terletak di bawah pohon." },
+          { soal: "Di sebelah kanan Bimbel Brilian terdapat ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["Rumah Ais", "Rumah Albab", "bus"], jawaban: 0, penjelasan: "Rumah Ais berada di kanan rumah hijau." }
         ],
         [
           {
@@ -3091,12 +3101,24 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["belakang", "atas", "antara"],
             jawaban: 0,
             penjelasan: "Depan berlawanan dengan belakang."
-          }
+          },
+          { soal: "Kata yang berlawanan dengan atas adalah ....", gambar: "img/posisi/depan-belakang.svg", pilihan: ["bawah", "kiri", "depan"], jawaban: 0, penjelasan: "Atas berlawanan dengan bawah." },
+          { soal: "Kata yang berlawanan dengan belakang adalah ....", gambar: "img/posisi/depan-belakang.svg", pilihan: ["depan", "kanan", "bawah"], jawaban: 0, penjelasan: "Belakang berlawanan dengan depan." },
+          { soal: "Di antara bus dan truk terdapat ....", gambar: "img/posisi/jalan-kendaraan.svg", pilihan: ["mobil merah", "burung", "ayam"], jawaban: 0, penjelasan: "Urutannya bus, mobil merah, lalu truk." },
+          { soal: "Yang berada di antara Rumah Albab dan Rumah Ais adalah ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["Bimbel Brilian", "bus", "truk"], jawaban: 0, penjelasan: "Bimbel Brilian ada di tengah dua rumah itu." },
+          { soal: "Tong sampah berada di antara Bimbel Brilian dan ....", gambar: "img/posisi/jalan-rumah.svg", pilihan: ["Rumah Ais", "Rumah Albab", "bus"], jawaban: 0, penjelasan: "Tong sampah ada di antara rumah hijau dan rumah biru." }
         ],
         [
           { soal: "Buku cerita terletak di atas meja, sedangkan sandal terletak di bawah meja. Di mana posisi sandal?", gambar: "img/posisi/buku-sandal.svg", pilihan: ["Atas meja", "Bawah meja", "Samping kursi"], jawaban: 1, penjelasan: "Sandal berada di bawah meja." },
           { soal: "Ayah duduk di depan ibu, sedangkan ibu duduk di belakang ayah. Siapa yang berada di posisi belakang?", gambar: "img/posisi/ayah-ibu.svg", pilihan: ["Ayah", "Ibu", "Kakak"], jawaban: 1, penjelasan: "Ibu duduk di belakang ayah." },
-          { soal: "Piring berada di atas meja. Maka meja berada di .... piring.", gambar: "img/posisi/piring-meja.svg", pilihan: ["bawah", "atas", "dalam"], jawaban: 0, penjelasan: "Yang di bawah piring adalah meja." }
+          { soal: "Piring berada di atas meja. Maka meja berada di .... piring.", gambar: "img/posisi/piring-meja.svg", pilihan: ["bawah", "atas", "dalam"], jawaban: 0, penjelasan: "Yang di bawah piring adalah meja." },
+          { soal: "Buku cerita pada gambar ada di .... meja.", gambar: "img/posisi/buku-sandal.svg", pilihan: ["atas", "bawah", "belakang"], jawaban: 0, penjelasan: "Buku diletakkan di atas meja." },
+          { soal: "Sandal pada gambar ada di .... meja.", gambar: "img/posisi/buku-sandal.svg", pilihan: ["bawah", "atas", "belakang"], jawaban: 0, penjelasan: "Sandal berada di kolong meja." },
+          { soal: "Ayah berada di .... Ibu.", gambar: "img/posisi/ayah-ibu.svg", pilihan: ["depan", "belakang", "atas"], jawaban: 0, penjelasan: "Ayah di depan, Ibu di belakang." },
+          { soal: "Jika Ibu di belakang Ayah, Ayah berada di .... Ibu.", gambar: "img/posisi/ayah-ibu.svg", pilihan: ["depan", "bawah", "kanan"], jawaban: 0, penjelasan: "Yang di muka adalah Ayah." },
+          { soal: "Piring pada gambar ada di .... meja.", gambar: "img/posisi/piring-meja.svg", pilihan: ["atas", "bawah", "dalam"], jawaban: 0, penjelasan: "Piring diletakkan di atas meja." },
+          { soal: "Benda yang ada di bawah piring adalah ....", gambar: "img/posisi/piring-meja.svg", pilihan: ["meja", "sandal", "buku"], jawaban: 0, penjelasan: "Meja menopang piring." },
+          { soal: "Benda yang ada di atas meja pada gambar buku dan sandal adalah ....", gambar: "img/posisi/buku-sandal.svg", pilihan: ["buku", "sandal", "piring"], jawaban: 0, penjelasan: "Buku di atas meja. Sandal di bawah meja." }
         ],
         [
 {
@@ -3133,7 +3155,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["kiri", "kanan", "atas"],
             jawaban: 0,
             penjelasan: "Dari pembaca, pintu berada di sebelah kiri jendela.",
-          }
+          },
+          { soal: "Anak ayam berada di .... induk ayam.", gambar: "img/posisi/ayam-depan.svg", pilihan: ["belakang", "depan", "atas"], jawaban: 0, penjelasan: "Induk berjalan di depan, jadi anak ayam di belakang." },
+          { soal: "Jendela ada di sebelah .... pintu.", gambar: "img/posisi/pintu-jendela.svg", pilihan: ["kanan", "kiri", "bawah"], jawaban: 0, penjelasan: "Dari pembaca, jendela ada di kanan pintu." },
+          { soal: "Tumpukan buku ada di .... kursi.", gambar: "img/posisi/buku-atas-kursi.svg", pilihan: ["atas", "bawah", "belakang"], jawaban: 0, penjelasan: "Buku diletakkan di atas kursi." },
+          { soal: "Bola hijau ada di .... meja.", gambar: "img/posisi/bola-bawah-meja.svg", pilihan: ["bawah", "atas", "belakang"], jawaban: 0, penjelasan: "Bola berada di kolong meja." },
+          { soal: "Boneka pada gambar papan ada di .... papan tulis.", gambar: "img/posisi/boneka-papan.svg", pilihan: ["belakang", "depan", "atas"], jawaban: 0, penjelasan: "Boneka berdiri di balik papan tulis." }
         ],
         [
 {
@@ -3170,7 +3197,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["belakang", "depan", "bawah"],
             jawaban: 0,
             penjelasan: "Kursi berada di sisi belakang meja.",
-          }
+          },
+          { soal: "Gitar ada di sebelah .... meja.", gambar: "img/posisi/meja-barang.svg", pilihan: ["kanan", "kiri", "bawah"], jawaban: 0, penjelasan: "Gitar berdiri di sebelah kanan meja." },
+          { soal: "Vas bunga ada di sebelah .... kipas.", gambar: "img/posisi/meja-barang.svg", pilihan: ["kanan", "kiri", "bawah"], jawaban: 0, penjelasan: "Kipas di kiri. Vas ada lebih ke kanan." },
+          { soal: "Mainan ada di .... vas bunga.", gambar: "img/posisi/meja-barang.svg", pilihan: ["bawah", "atas", "belakang"], jawaban: 0, penjelasan: "Mainan ada di kolong meja, vas ada di atas meja." },
+          { soal: "Sapu ada di sebelah .... gitar.", gambar: "img/posisi/meja-barang.svg", pilihan: ["kanan", "kiri", "atas"], jawaban: 0, penjelasan: "Sapu berada lebih kanan daripada gitar." },
+          { soal: "Kursi pada gambar barang ada di .... vas bunga.", gambar: "img/posisi/meja-barang.svg", pilihan: ["belakang", "depan", "bawah"], jawaban: 0, penjelasan: "Kursi berada di belakang vas." }
         ],
         [
 {
@@ -3207,7 +3239,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["atas", "bawah", "dalam"],
             jawaban: 0,
             penjelasan: "Jam dinding berada di atas sofa. Kucing duduk di sebelah kanan.",
-          }
+          },
+          { soal: "Buku di kamar tidur ada di .... selimut.", gambar: "img/posisi/kamar-tidur.svg", pilihan: ["atas", "bawah", "belakang"], jawaban: 0, penjelasan: "Buku terletak di atas selimut." },
+          { soal: "Bola di kamar tidur ada di .... kucing.", gambar: "img/posisi/kamar-tidur.svg", pilihan: ["depan", "belakang", "atas"], jawaban: 0, penjelasan: "Bola lebih dekat ke pembaca, di depan kucing." },
+          { soal: "Bangku kecil ada di .... meja belajar kamar.", gambar: "img/posisi/kamar-tidur.svg", pilihan: ["bawah", "atas", "kiri"], jawaban: 0, penjelasan: "Bangku berada di kolong meja." },
+          { soal: "Jam dinding kamar ada di .... tempat tidur.", gambar: "img/posisi/kamar-tidur.svg", pilihan: ["atas", "bawah", "dalam"], jawaban: 0, penjelasan: "Jam di dinding, lebih tinggi dari tempat tidur." },
+          { soal: "Kucing ruang tamu ada di sebelah .... sofa.", gambar: "img/posisi/ruang-tamu.svg", pilihan: ["kanan", "kiri", "atas"], jawaban: 0, penjelasan: "Dari pembaca, kucing duduk di kanan sofa." }
         ],
         [
 {
@@ -3244,7 +3281,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["Adit", "Tiur", "Nara"],
             jawaban: 0,
             penjelasan: "Urutannya Tiur, Ari, Adit, Ayu, Nara. Di antara Ari dan Ayu adalah Adit.",
-          }
+          },
+          { soal: "Bangku ada di .... kucing yang di kolongnya.", gambar: "img/posisi/kucing-bangku.svg", pilihan: ["atas", "bawah", "kanan"], jawaban: 0, penjelasan: "Kucing di bawah bangku, jadi bangku di atas kucing." },
+          { soal: "Apel ada di sebelah .... kardus.", gambar: "img/posisi/meja-apel.svg", pilihan: ["kiri", "kanan", "bawah"], jawaban: 0, penjelasan: "Dari pembaca, apel berada di kiri kardus." },
+          { soal: "Pisang ada di .... kardus.", gambar: "img/posisi/meja-apel.svg", pilihan: ["atas", "bawah", "kiri"], jawaban: 0, penjelasan: "Pisang diletakkan di atas kardus." },
+          { soal: "Tempat sampah pada gambar apel ada di .... meja.", gambar: "img/posisi/meja-apel.svg", pilihan: ["bawah", "atas", "belakang"], jawaban: 0, penjelasan: "Tempat sampah berada di kolong meja." },
+          { soal: "Anak yang berdiri paling kiri adalah ....", gambar: "img/posisi/lima-anak.svg", pilihan: ["Tiur", "Adit", "Nara"], jawaban: 0, penjelasan: "Dari kiri: Tiur, Ari, Adit, Ayu, Nara." }
         ],
         [
 {
@@ -3281,7 +3323,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["tong sampah", "bola", "kucing"],
             jawaban: 0,
             penjelasan: "Tong sampah hijau berada di sebelah kiri meja.",
-          }
+          },
+          { soal: "Anak yang berdiri paling kanan adalah ....", gambar: "img/posisi/lima-anak.svg", pilihan: ["Nara", "Tiur", "Ari"], jawaban: 0, penjelasan: "Nara berdiri di ujung kanan." },
+          { soal: "Adit berdiri di sebelah .... Ari.", gambar: "img/posisi/lima-anak.svg", pilihan: ["kanan", "kiri", "atas"], jawaban: 0, penjelasan: "Urutannya Ari lalu Adit, jadi Adit di kanan Ari." },
+          { soal: "Boneka pada lemari ada di bagian ....", gambar: "img/posisi/lemari-jam.svg", pilihan: ["tengah", "paling atas", "paling bawah"], jawaban: 0, penjelasan: "Rak tengah berisi boneka." },
+          { soal: "Sepatu pada lemari ada di bagian ....", gambar: "img/posisi/lemari-jam.svg", pilihan: ["bawah", "tengah", "paling atas"], jawaban: 0, penjelasan: "Sepatu diletakkan di rak bawah." },
+          { soal: "Tong sampah hijau ada di sebelah .... meja belajar.", gambar: "img/posisi/meja-belajar.svg", pilihan: ["kiri", "kanan", "atas"], jawaban: 0, penjelasan: "Dari pembaca, tong sampah ada di kiri meja." }
         ],
         [
 {
@@ -3318,7 +3365,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["bentuk", "gerakan", "suara"],
             jawaban: 0,
             penjelasan: "Jendelanya sama bentuknya dan berulang. Itu pola bentuk.",
-          }
+          },
+          { soal: "Lemari pada susunan HOTS ada di sebelah .... meja.", gambar: "img/posisi/hots-susun.svg", pilihan: ["kiri", "kanan", "atas"], jawaban: 0, penjelasan: "Lemari berdiri di kiri meja." },
+          { soal: "Vas bunga pada susunan HOTS ada di sebelah .... gelas.", gambar: "img/posisi/hots-susun.svg", pilihan: ["kanan", "kiri", "bawah"], jawaban: 0, penjelasan: "Vas berada di kanan gelas." },
+          { soal: "Pohon palem ada di samping Gedung Sate. Pernyataan itu ....", gambar: "img/posisi/gedung-sate.svg", pilihan: ["Benar", "Salah"], jawaban: 0, penjelasan: "Pohon palem berdiri di samping gedung." },
+          { soal: "Piring pada susunan HOTS ada di sebelah .... vas bunga.", gambar: "img/posisi/hots-susun.svg", pilihan: ["kiri", "kanan", "bawah"], jawaban: 0, penjelasan: "Piring berada di kiri vas bunga." },
+          { soal: "Tiang bendera ada di .... Gedung Sate.", gambar: "img/posisi/gedung-sate.svg", pilihan: ["depan", "belakang", "dalam"], jawaban: 0, penjelasan: "Tiang bendera berdiri di halaman depan." }
         ]
       ],
 
@@ -3468,13 +3520,25 @@ const MATEMATIKA_SUBJECT = {
           { soal: "3 puluhan + 4 satuan = ....", pilihan: ["34", "43", "7"], jawaban: 0, penjelasan: "3 puluhan = 30, ditambah 4 satuan = 34." },
           { soal: "Bilangan yang lebih besar adalah ....", pilihan: ["46", "64", "keduanya sama"], jawaban: 1, penjelasan: "64 punya 6 puluhan. 46 hanya punya 4 puluhan." },
           { soal: "Bilangan setelah 29 adalah ....", pilihan: ["28", "30", "39"], jawaban: 1, penjelasan: "Setelah 29, puluhannya bertambah: 30." },
-          { soal: "5 puluhan + 0 satuan = ....", pilihan: ["5", "50", "15"], jawaban: 1, penjelasan: "5 puluhan = 50. Satuan nol tidak menambah." }
+          { soal: "5 puluhan + 0 satuan = ....", pilihan: ["5", "50", "15"], jawaban: 1, penjelasan: "5 puluhan = 50. Satuan nol tidak menambah." },
+          { soal: "4 puluhan + 2 satuan = ....", pilihan: ["42", "24", "6"], jawaban: 0, penjelasan: "4 puluhan sama dengan 40, ditambah 2 menjadi 42." },
+          { soal: "7 puluhan = ....", pilihan: ["70", "7", "17"], jawaban: 0, penjelasan: "7 puluhan sama dengan 70." },
+          { soal: "Bilangan sebelum 40 adalah ....", pilihan: ["39", "41", "50"], jawaban: 0, penjelasan: "Sebelum 40 adalah 39." },
+          { soal: "60 lebih besar daripada ....", pilihan: ["59", "70", "61"], jawaban: 0, penjelasan: "59 lebih kecil dari 60." },
+          { soal: "2 puluhan + 8 satuan = ....", pilihan: ["28", "82", "10"], jawaban: 0, penjelasan: "20 ditambah 8 sama dengan 28." },
+          { soal: "9 puluhan + 1 satuan = ....", pilihan: ["91", "19", "10"], jawaban: 0, penjelasan: "90 ditambah 1 sama dengan 91." }
         ],
         [
           { soal: "20 terdiri dari .... puluhan.", pilihan: ["2", "20", "0"], jawaban: 0, penjelasan: "20 = 2 puluhan." },
           { soal: "Urutan yang benar adalah ....", pilihan: ["18, 19, 20", "20, 18, 19", "19, 18, 20"], jawaban: 0, penjelasan: "18, lalu 19, lalu 20." },
           { soal: "Mana yang lebih kecil?", pilihan: ["72", "27", "keduanya sama"], jawaban: 1, penjelasan: "27 hanya punya 2 puluhan. 72 punya 7 puluhan." },
-          { soal: "100 dibaca ....", pilihan: ["sepuluh", "seratus", "seribu"], jawaban: 1, penjelasan: "100 dibaca seratus." }
+          { soal: "100 dibaca ....", pilihan: ["sepuluh", "seratus", "seribu"], jawaban: 1, penjelasan: "100 dibaca seratus." },
+          { soal: "80 terdiri dari .... puluhan.", pilihan: ["8", "80", "0"], jawaban: 0, penjelasan: "80 sama dengan 8 puluhan." },
+          { soal: "Urutan yang benar dari kecil ke besar adalah ....", pilihan: ["15, 16, 17", "17, 16, 15", "16, 15, 17"], jawaban: 0, penjelasan: "15, lalu 16, lalu 17." },
+          { soal: "Mana yang lebih besar, 81 atau 18?", pilihan: ["81", "18", "keduanya sama"], jawaban: 0, penjelasan: "81 punya 8 puluhan. 18 hanya punya 1 puluhan." },
+          { soal: "100 terdiri dari .... puluhan.", pilihan: ["10", "100", "1"], jawaban: 0, penjelasan: "10 puluhan sama dengan 100." },
+          { soal: "Bilangan di antara 49 dan 51 adalah ....", pilihan: ["50", "48", "52"], jawaban: 0, penjelasan: "49, 50, 51. Yang di tengah adalah 50." },
+          { soal: "6 puluhan + 3 satuan = ....", pilihan: ["63", "36", "9"], jawaban: 0, penjelasan: "60 ditambah 3 sama dengan 63." }
         ]
       ],
       esaiSets: [[
@@ -3509,13 +3573,25 @@ const MATEMATIKA_SUBJECT = {
           { soal: "8 + 7 = ....", pilihan: ["14", "15", "16"], jawaban: 1, penjelasan: "8 ditambah 7 sama dengan 15." },
           { soal: "14 − 5 = ....", pilihan: ["9", "8", "19"], jawaban: 0, penjelasan: "Dari 14, ambil 5, tersisa 9." },
           { soal: "10 + 10 = ....", pilihan: ["20", "10", "110"], jawaban: 0, penjelasan: "Sepuluh ditambah sepuluh sama dengan 20." },
-          { soal: "Tanda = berarti ....", pilihan: ["tambah", "sama dengan", "kurang"], jawaban: 1, penjelasan: "Hasil di kiri sama dengan hasil di kanan." }
+          { soal: "Tanda = berarti ....", pilihan: ["tambah", "sama dengan", "kurang"], jawaban: 1, penjelasan: "Hasil di kiri sama dengan hasil di kanan." },
+          { soal: "7 + 6 = ....", pilihan: ["13", "12", "14"], jawaban: 0, penjelasan: "7 ditambah 6 sama dengan 13." },
+          { soal: "11 - 4 = ....", pilihan: ["7", "15", "8"], jawaban: 0, penjelasan: "Dari 11 diambil 4, tersisa 7." },
+          { soal: "5 + 9 = ....", pilihan: ["14", "13", "15"], jawaban: 0, penjelasan: "5 ditambah 9 sama dengan 14." },
+          { soal: "18 - 9 = ....", pilihan: ["9", "8", "27"], jawaban: 0, penjelasan: "18 dikurangi 9 sama dengan 9." },
+          { soal: "4 + 4 = ....", pilihan: ["8", "44", "0"], jawaban: 0, penjelasan: "4 ditambah 4 sama dengan 8." },
+          { soal: "Tanda + berarti ....", pilihan: ["tambah", "kurang", "sama dengan"], jawaban: 0, penjelasan: "Tanda + dipakai untuk penjumlahan." }
         ],
         [
           { soal: "9 + 6 = ....", pilihan: ["14", "15", "16"], jawaban: 1, penjelasan: "9 + 6 = 15." },
           { soal: "20 − 7 = ....", pilihan: ["13", "27", "12"], jawaban: 0, penjelasan: "20 dikurangi 7 sama dengan 13." },
           { soal: "12 − 4 = ....", pilihan: ["8", "16", "9"], jawaban: 0, penjelasan: "12 − 4 = 8." },
-          { soal: "6 + 8 = ....", pilihan: ["12", "14", "15"], jawaban: 1, penjelasan: "6 + 8 = 14." }
+          { soal: "6 + 8 = ....", pilihan: ["12", "14", "15"], jawaban: 1, penjelasan: "6 + 8 = 14." },
+          { soal: "13 - 6 = ....", pilihan: ["7", "19", "8"], jawaban: 0, penjelasan: "Dari 13 diambil 6, tersisa 7." },
+          { soal: "7 + 8 = ....", pilihan: ["15", "14", "16"], jawaban: 0, penjelasan: "7 ditambah 8 sama dengan 15." },
+          { soal: "16 - 8 = ....", pilihan: ["8", "24", "9"], jawaban: 0, penjelasan: "16 dikurangi 8 sama dengan 8." },
+          { soal: "9 + 9 = ....", pilihan: ["18", "17", "0"], jawaban: 0, penjelasan: "9 ditambah 9 sama dengan 18." },
+          { soal: "15 - 9 = ....", pilihan: ["6", "24", "5"], jawaban: 0, penjelasan: "15 dikurangi 9 sama dengan 6." },
+          { soal: "3 + 12 = ....", pilihan: ["15", "9", "312"], jawaban: 0, penjelasan: "3 ditambah 12 sama dengan 15." }
         ]
       ],
       esaiSets: [[
@@ -3550,13 +3626,25 @@ const MATEMATIKA_SUBJECT = {
           { soal: "Setengah adalah 1 bagian dari .... bagian sama besar.", pilihan: ["2", "4", "3"], jawaban: 0, penjelasan: "Setengah membagi sesuatu menjadi 2 bagian sama." },
           { soal: "Seperempat adalah 1 bagian dari .... bagian sama besar.", pilihan: ["2", "4", "8"], jawaban: 1, penjelasan: "Seperempat membagi sesuatu menjadi 4 bagian sama." },
           { soal: "Setengah dari 8 kelereng adalah ....", pilihan: ["2", "4", "8"], jawaban: 1, penjelasan: "8 dibagi 2 sama dengan 4." },
-          { soal: "Seperempat dari 8 kelereng adalah ....", pilihan: ["2", "4", "6"], jawaban: 0, penjelasan: "8 dibagi 4 sama dengan 2." }
+          { soal: "Seperempat dari 8 kelereng adalah ....", pilihan: ["2", "4", "6"], jawaban: 0, penjelasan: "8 dibagi 4 sama dengan 2." },
+          { soal: "Setengah dari 6 kelereng adalah ....", pilihan: ["3", "2", "6"], jawaban: 0, penjelasan: "6 dibagi 2 sama dengan 3." },
+          { soal: "Seperempat dari 4 kelereng adalah ....", pilihan: ["1", "2", "4"], jawaban: 0, penjelasan: "4 dibagi 4 sama dengan 1." },
+          { soal: "Dua bagian yang sama besar disebut ....", pilihan: ["setengah", "seperempat", "sepertiga"], jawaban: 0, penjelasan: "Satu dari dua bagian sama adalah setengah." },
+          { soal: "Setengah dari 12 adalah ....", pilihan: ["6", "4", "2"], jawaban: 0, penjelasan: "12 dibagi 2 sama dengan 6." },
+          { soal: "Seperempat dari 12 adalah ....", pilihan: ["3", "6", "4"], jawaban: 0, penjelasan: "12 dibagi 4 sama dengan 3." },
+          { soal: "Setengah berarti 1 bagian dari .... bagian sama.", pilihan: ["2", "4", "3"], jawaban: 0, penjelasan: "Setengah membagi sesuatu menjadi 2 bagian sama." }
         ],
         [
           { soal: "Setengah dari 10 apel adalah ....", pilihan: ["4", "5", "10"], jawaban: 1, penjelasan: "10 dibagi 2 sama dengan 5." },
           { soal: "Dua seperempat yang sama besar sama dengan ....", pilihan: ["satu setengah", "satu utuh", "tiga"], jawaban: 0, penjelasan: "1/4 + 1/4 = 1/2." },
           { soal: "Kue dibagi 4 sama besar. Satu potong disebut ....", pilihan: ["setengah", "seperempat", "sepertiga"], jawaban: 1, penjelasan: "Satu dari empat bagian sama adalah seperempat." },
-          { soal: "Bagian yang tidak sama besar ....", pilihan: ["belum disebut setengah", "tetap disebut setengah", "disebut seratus"], jawaban: 0, penjelasan: "Setengah harus dua bagian yang sama besar." }
+          { soal: "Bagian yang tidak sama besar ....", pilihan: ["belum disebut setengah", "tetap disebut setengah", "disebut seratus"], jawaban: 0, penjelasan: "Setengah harus dua bagian yang sama besar." },
+          { soal: "Setengah dari 4 kue adalah .... kue.", pilihan: ["2", "1", "4"], jawaban: 0, penjelasan: "4 dibagi 2 sama dengan 2." },
+          { soal: "Empat potong seperempat yang sama besar menjadi ....", pilihan: ["satu utuh", "setengah", "dua utuh"], jawaban: 0, penjelasan: "Empat seperempat menyusun satu utuh." },
+          { soal: "Seperempat lebih .... daripada setengah.", pilihan: ["kecil", "besar", "sama"], jawaban: 0, penjelasan: "Seperempat lebih kecil daripada setengah." },
+          { soal: "Setengah dari 20 adalah ....", pilihan: ["10", "5", "2"], jawaban: 0, penjelasan: "20 dibagi 2 sama dengan 10." },
+          { soal: "Seperempat dari 20 adalah ....", pilihan: ["5", "10", "4"], jawaban: 0, penjelasan: "20 dibagi 4 sama dengan 5." },
+          { soal: "Kue dibagi 2 sama besar. Satu potong disebut ....", pilihan: ["setengah", "seperempat", "sepertiga"], jawaban: 0, penjelasan: "Satu dari dua bagian sama adalah setengah." }
         ]
       ],
       esaiSets: [[
@@ -3591,13 +3679,25 @@ const MATEMATIKA_SUBJECT = {
           { soal: "Pensil lebih .... daripada sapu.", pilihan: ["pendek", "panjang", "berat sekali"], jawaban: 0, penjelasan: "Saat disandingkan, pensil lebih pendek daripada sapu." },
           { soal: "Jengkal disebut satuan tidak baku karena ....", pilihan: ["hasilnya bisa beda tiap orang", "semua orang hasilnya selalu sama", "ia adalah jam"], jawaban: 0, penjelasan: "Panjang jengkal tiap orang tidak sama." },
           { soal: "Buku biasanya lebih .... daripada pensil.", pilihan: ["berat", "ringan", "singkat"], jawaban: 0, penjelasan: "Buku menekan lebih kuat daripada pensil." },
-          { soal: "Tepuk tangan sekali lebih .... daripada menonton cerita.", pilihan: ["singkat", "lama", "berat"], jawaban: 0, penjelasan: "Tepuk sekali selesai lebih cepat." }
+          { soal: "Tepuk tangan sekali lebih .... daripada menonton cerita.", pilihan: ["singkat", "lama", "berat"], jawaban: 0, penjelasan: "Tepuk sekali selesai lebih cepat." },
+          { soal: "Sapu lebih .... daripada pensil.", pilihan: ["panjang", "pendek", "ringan"], jawaban: 0, penjelasan: "Saat disandingkan, sapu lebih panjang." },
+          { soal: "Buku lebih .... daripada pensil.", pilihan: ["berat", "ringan", "singkat"], jawaban: 0, penjelasan: "Buku menekan lebih kuat daripada pensil." },
+          { soal: "Menonton cerita lebih .... daripada tepuk sekali.", pilihan: ["lama", "singkat", "ringan"], jawaban: 0, penjelasan: "Menonton cerita selesai lebih lambat." },
+          { soal: "Benda yang lebih pendek adalah ....", pilihan: ["pensil", "sapu", "keduanya sama"], jawaban: 0, penjelasan: "Pensil lebih pendek daripada sapu." },
+          { soal: "Durasi berarti ....", pilihan: ["lama suatu kegiatan", "warna benda", "jumlah sisi"], jawaban: 0, penjelasan: "Durasi adalah berapa lama kegiatan berlangsung." },
+          { soal: "Jengkal dipakai untuk membandingkan ....", pilihan: ["panjang", "berat", "waktu"], jawaban: 0, penjelasan: "Jengkal membandingkan panjang." }
         ],
         [
           { soal: "Membandingkan panjang bisa dilakukan dengan ....", pilihan: ["menyandingkan kedua benda", "hanya menebak warna", "menghitung huruf"], jawaban: 0, penjelasan: "Susun kedua benda dari ujung yang sama, lalu lihat mana yang lebih panjang." },
           { soal: "Langkah Lou dan langkah ayah bisa berbeda karena langkah adalah satuan ....", pilihan: ["tidak baku", "yang selalu sama", "waktu"], jawaban: 0, penjelasan: "Satuan tidak baku hasilnya tidak selalu sama." },
           { soal: "Kegiatan yang selesai belakangan berlangsung lebih ....", pilihan: ["lama", "singkat", "ringan"], jawaban: 0, penjelasan: "Yang selesai belakangan durasinya lebih lama." },
-          { soal: "Mana yang lebih ringan?", pilihan: ["buku tulis", "pensil", "keduanya sama berat"], jawaban: 1, penjelasan: "Pensil lebih ringan daripada buku." }
+          { soal: "Mana yang lebih ringan?", pilihan: ["buku tulis", "pensil", "keduanya sama berat"], jawaban: 1, penjelasan: "Pensil lebih ringan daripada buku." },
+          { soal: "Yang biasanya lebih berat adalah ....", pilihan: ["buku", "pensil", "tepukan"], jawaban: 0, penjelasan: "Buku lebih berat daripada pensil." },
+          { soal: "Kegiatan yang selesai lebih dulu berlangsung lebih ....", pilihan: ["singkat", "lama", "berat"], jawaban: 0, penjelasan: "Yang selesai dulu durasinya lebih singkat." },
+          { soal: "Langkah adalah satuan ....", pilihan: ["tidak baku", "yang selalu sama", "pecahan"], jawaban: 0, penjelasan: "Panjang langkah tiap orang tidak sama." },
+          { soal: "Menyandingkan dua benda berguna untuk membandingkan ....", pilihan: ["panjang", "huruf", "bau"], jawaban: 0, penjelasan: "Ujung yang lebih jauh menunjukkan benda yang lebih panjang." },
+          { soal: "Pasangan dari lebih lama adalah lebih ....", pilihan: ["singkat", "berat", "panjang"], jawaban: 0, penjelasan: "Lama berlawanan dengan singkat." },
+          { soal: "Pensil lebih .... daripada buku.", pilihan: ["ringan", "berat", "lama"], jawaban: 0, penjelasan: "Pensil lebih ringan daripada buku." }
         ]
       ],
       esaiSets: [[
@@ -3642,19 +3742,37 @@ const MATEMATIKA_SUBJECT = {
           { soal: "Merah, biru, merah, biru, .... Berikutnya adalah ....", gambar: "img/pola/merah-biru.svg", pilihan: ["merah", "kuning", "hijau"], jawaban: 0, penjelasan: "Warna berganti dua-dua, jadi setelah biru kembali merah." },
           { soal: "Lingkaran, segitiga, lingkaran, segitiga, .... Berikutnya adalah ....", gambar: "img/pola/lingkaran-segitiga.svg", pilihan: ["lingkaran", "persegi", "bintang"], jawaban: 0, penjelasan: "Bentuknya berulang: lingkaran lalu segitiga." },
           { soal: "Pola adalah susunan yang ....", gambar: "img/pola/hati-warna.svg", pilihan: ["berulang", "selalu acak", "tidak punya urutan"], jawaban: 0, penjelasan: "Bagian pola kembali dengan aturan yang sama." },
-          { soal: "Tepuk, diam, tepuk, diam, .... Berikutnya adalah ....", gambar: "img/pola/tepuk-diam.svg", pilihan: ["tepuk", "lompat", "duduk"], jawaban: 0, penjelasan: "Bunyi dan diam bergantian." }
+          { soal: "Tepuk, diam, tepuk, diam, .... Berikutnya adalah ....", gambar: "img/pola/tepuk-diam.svg", pilihan: ["tepuk", "lompat", "duduk"], jawaban: 0, penjelasan: "Bunyi dan diam bergantian." },
+          { soal: "Pada pola merah-biru, setelah merah berikutnya adalah ....", gambar: "img/pola/merah-biru.svg", pilihan: ["biru", "kuning", "hijau"], jawaban: 0, penjelasan: "Merah dan biru bergantian." },
+          { soal: "Pada pola lingkaran-segitiga, setelah segitiga berikutnya adalah ....", gambar: "img/pola/lingkaran-segitiga.svg", pilihan: ["lingkaran", "persegi", "bintang"], jawaban: 0, penjelasan: "Lingkaran dan segitiga bergantian." },
+          { soal: "Pada pola tepuk-diam, setelah diam berikutnya adalah ....", gambar: "img/pola/tepuk-diam.svg", pilihan: ["tepuk", "lompat", "duduk"], jawaban: 0, penjelasan: "Tepuk dan diam bergantian." },
+          { soal: "Pada pola dua bintang lalu bulan, setelah bulan berikutnya adalah ....", gambar: "img/pola/bintang-bulan.svg", pilihan: ["bintang", "bulan", "matahari"], jawaban: 0, penjelasan: "Setelah bulan, pola kembali ke bintang." },
+          { soal: "Susunan warna yang berulang disebut ....", gambar: "img/pola/hati-warna.svg", pilihan: ["pola", "acak", "bilangan"], jawaban: 0, penjelasan: "Susunan yang berulang dan teratur adalah pola." },
+          { soal: "Pada pola dua biru lalu kuning, setelah kuning berikutnya adalah ....", gambar: "img/pola/biru-kuning.svg", pilihan: ["biru", "kuning", "merah"], jawaban: 0, penjelasan: "Setelah kuning, pola kembali ke biru." }
         ],
         [
           { soal: "⭐, ⭐, 🌙, ⭐, ⭐, 🌙, .... Berikutnya adalah ....", gambar: "img/pola/bintang-bulan.svg", pilihan: ["⭐", "🌙", "☀️"], jawaban: 0, penjelasan: "Dua bintang, lalu bulan, lalu pola itu berulang." },
           { soal: "Kita bisa meniru pola, lalu ....", gambar: "img/pola/lsk.svg", pilihan: ["melanjutkannya", "menghapus aturannya", "mengacak semuanya"], jawaban: 0, penjelasan: "Setelah meniru, kita lanjut sesuai aturan yang sama." },
           { soal: "Pola tidak hanya warna. Pola juga bisa berupa ....", gambar: "img/pola/tepuk-diam.svg", pilihan: ["bentuk atau bunyi", "hanya angka besar", "hanya bau"], jawaban: 0, penjelasan: "Bentuk dan bunyi juga bisa disusun berulang." },
-          { soal: "Biru, biru, kuning, biru, biru, kuning, .... Berikutnya adalah ....", gambar: "img/pola/biru-kuning.svg", pilihan: ["biru", "kuning", "merah"], jawaban: 0, penjelasan: "Dua biru dulu, baru kuning." }
+          { soal: "Biru, biru, kuning, biru, biru, kuning, .... Berikutnya adalah ....", gambar: "img/pola/biru-kuning.svg", pilihan: ["biru", "kuning", "merah"], jawaban: 0, penjelasan: "Dua biru dulu, baru kuning." },
+          { soal: "Pada pola lingkaran, segitiga, kotak, setelah kotak berikutnya adalah ....", gambar: "img/pola/lsk.svg", pilihan: ["lingkaran", "kotak", "bintang"], jawaban: 0, penjelasan: "Tiga bentuk itu berulang dari lingkaran." },
+          { soal: "Pada pola krik-meong, setelah meong berikutnya adalah ....", gambar: "img/pola/krik-meong.svg", pilihan: ["krik", "cit", "dung"], jawaban: 0, penjelasan: "Krik dan meong bergantian." },
+          { soal: "Pada pola ungu, kuning, merah, setelah merah berikutnya adalah ....", gambar: "img/pola/ungu-kuning-merah.svg", pilihan: ["ungu", "kuning", "hijau"], jawaban: 0, penjelasan: "Setelah merah, pola kembali ke ungu." },
+          { soal: "Pada pola cuaca, setelah awan berikutnya adalah ....", gambar: "img/pola/cuaca.svg", pilihan: ["matahari", "pelangi", "bintang"], jawaban: 0, penjelasan: "Setelah awan, pola kembali ke matahari." },
+          { soal: "Pada pola A, B, C, D, setelah D berikutnya adalah ....", gambar: "img/pola/abcd.svg", pilihan: ["A", "B", "E"], jawaban: 0, penjelasan: "Hurufnya berulang dari A." },
+          { soal: "Pada pola apel, jeruk, mangga, setelah mangga berikutnya adalah ....", gambar: "img/pola/apel-jeruk.svg", pilihan: ["apel", "jeruk", "pisang"], jawaban: 0, penjelasan: "Tiga buah itu berulang dari apel." }
         ],
         [
           { soal: "Lanjutkan pola bentuk: Lingkaran, Segitiga, Kotak, Lingkaran, Segitiga, Kotak, ....", gambar: "img/pola/lsk.svg", pilihan: ["Lingkaran, Segitiga", "Kotak, Lingkaran", "Segitiga, Kotak"], jawaban: 0, penjelasan: "Pola Lingkaran-Segitiga-Kotak berulang, jadi berikutnya Lingkaran lalu Segitiga." },
           { soal: "Pola bunyi: Krik, Meong, Krik, Meong, Krik, .... Kata berikutnya adalah ....", gambar: "img/pola/krik-meong.svg", pilihan: ["Krik", "Cit", "Meong"], jawaban: 2, penjelasan: "Krik dan Meong bergantian. Setelah Krik adalah Meong." },
           { soal: "Warna bunga: Ungu, Kuning, Merah, Ungu, Kuning, Merah, Ungu, .... Warna berikutnya adalah ....", gambar: "img/pola/ungu-kuning-merah.svg", pilihan: ["Merah", "Kuning", "Ungu"], jawaban: 1, penjelasan: "Urutannya Ungu, Kuning, Merah. Setelah Ungu adalah Kuning." },
-          { soal: "Simbol cuaca berulang: matahari, awan hujan, awan. Simbol setelah matahari adalah ....", gambar: "img/pola/cuaca.svg", pilihan: ["awan hujan", "pelangi", "bintang"], jawaban: 0, penjelasan: "Setelah matahari pada pola itu adalah awan hujan." }
+          { soal: "Simbol cuaca berulang: matahari, awan hujan, awan. Simbol setelah matahari adalah ....", gambar: "img/pola/cuaca.svg", pilihan: ["awan hujan", "pelangi", "bintang"], jawaban: 0, penjelasan: "Setelah matahari pada pola itu adalah awan hujan." },
+          { soal: "Pada pola bintang, segitiga, segitiga, setelah dua segitiga berikutnya adalah ....", gambar: "img/pola/bintang-segitiga.svg", pilihan: ["bintang", "kotak", "bulan"], jawaban: 0, penjelasan: "Setelah dua segitiga, pola kembali ke bintang." },
+          { soal: "Pada pola bunga matahari dan anggrek, setelah anggrek berikutnya adalah ....", gambar: "img/pola/bunga-matahari.svg", pilihan: ["bunga matahari", "mawar", "daun"], jawaban: 0, penjelasan: "Dua bunga itu bergantian." },
+          { soal: "Pada pola merah, hijau, biru, setelah biru berikutnya adalah ....", gambar: "img/pola/hati-warna.svg", pilihan: ["merah", "hijau", "kuning"], jawaban: 0, penjelasan: "Tiga warna itu berulang dari merah." },
+          { soal: "Dua bunyi di awal pola tuk, tuk, prok adalah ....", gambar: "img/pola/tuk-prok.svg", pilihan: ["tuk, tuk", "prok, prok", "tuk, prok"], jawaban: 0, penjelasan: "Pola dimulai dengan dua kali tuk." },
+          { soal: "Pada pola gerakan tangan bawah lalu atas, setelah tangan atas berikutnya adalah ....", gambar: "img/pola/gerakan.svg", pilihan: ["tangan bawah", "diam", "lompat"], jawaban: 0, penjelasan: "Gerakannya kembali ke tangan bawah." },
+          { soal: "Pada pola prok, prok, tik, setelah dua prok berikutnya adalah ....", gambar: "img/pola/prok-tik.svg", pilihan: ["tik", "prok", "dung"], jawaban: 0, penjelasan: "Bunyi ketiga pada pola itu adalah tik." }
         ],
         [
 {
@@ -3691,7 +3809,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["gerakan", "bau", "berat"],
             jawaban: 0,
             penjelasan: "Pola gerakan adalah susunan gerak yang berulang.",
-          }
+          },
+          { soal: "Pada pola bunga matahari-anggrek, bunga yang pertama adalah ....", gambar: "img/pola/bunga-matahari.svg", pilihan: ["bunga matahari", "anggrek", "mawar"], jawaban: 0, penjelasan: "Gambar dimulai dengan bunga matahari." },
+          { soal: "Pada pola lingkaran-segitiga, bentuk yang pertama adalah ....", gambar: "img/pola/lingkaran-segitiga.svg", pilihan: ["lingkaran", "segitiga", "kotak"], jawaban: 0, penjelasan: "Gambar dimulai dengan lingkaran." },
+          { soal: "Pada pola warna hati, warna kedua adalah ....", gambar: "img/pola/hati-warna.svg", pilihan: ["hijau", "merah", "biru"], jawaban: 0, penjelasan: "Urutannya merah, hijau, biru." },
+          { soal: "Pada tuk, tuk, prok, bunyi ketiga adalah ....", gambar: "img/pola/tuk-prok.svg", pilihan: ["prok", "tuk", "diam"], jawaban: 0, penjelasan: "Dua tuk dulu, lalu prok." },
+          { soal: "Pola gerakan pada gambar berganti antara tangan bawah dan tangan ....", gambar: "img/pola/gerakan.svg", pilihan: ["atas", "diam", "duduk"], jawaban: 0, penjelasan: "Tangan bawah lalu tangan atas." }
         ],
         [
 {
@@ -3728,7 +3851,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["bunga kuning", "daun", "bintang"],
             jawaban: 0,
             penjelasan: "Polanya daun, bunga kuning, bunga hijau. Setelah daun adalah bunga kuning.",
-          }
+          },
+          { soal: "Baris a pada gambar berulang setiap .... gambar.", gambar: "img/pola/empat-baris.svg", pilihan: ["3", "2", "5"], jawaban: 0, penjelasan: "Dua batang lalu satu kue, jadi kelompoknya 3 gambar." },
+          { soal: "Baris c berulang: segitiga lalu ....", gambar: "img/pola/empat-baris.svg", pilihan: ["persegi", "lingkaran", "bintang"], jawaban: 0, penjelasan: "Segitiga dan persegi bergantian." },
+          { soal: "Pada kupu-kupu, setelah hijau berikutnya berwarna ....", gambar: "img/pola/kupu.svg", pilihan: ["kuning", "biru", "merah muda"], jawaban: 0, penjelasan: "Setelah hijau, pola kembali ke kuning." },
+          { soal: "Pada hati, balon, hati ungu, setelah ungu berikutnya adalah ....", gambar: "img/pola/hati-balon.svg", pilihan: ["hati merah", "balon", "bintang"], jawaban: 0, penjelasan: "Setelah ungu, pola kembali ke hati merah." },
+          { soal: "Pada pita, setelah kuning berikutnya berwarna ....", gambar: "img/pola/pita.svg", pilihan: ["merah muda", "hijau", "biru"], jawaban: 0, penjelasan: "Setelah kuning, pola kembali ke merah muda." }
         ],
         [
 {
@@ -3765,7 +3893,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["dung, ting", "tok, tok", "ting, dung"],
             jawaban: 0,
             penjelasan: "Polanya empat bunyi: dung, ting, tok, tok, lalu kembali ke dung, ting.",
-          }
+          },
+          { soal: "Baris 1 berulang: lingkaran lalu ....", gambar: "img/pola/tiga-baris.svg", pilihan: ["segitiga", "persegi", "hati"], jawaban: 0, penjelasan: "Lingkaran dan segitiga bergantian." },
+          { soal: "Pada dung, prok, prok, bunyi tepat setelah dung adalah ....", gambar: "img/pola/dung-prok.svg", pilihan: ["prok", "dung", "ting"], jawaban: 0, penjelasan: "Setelah dung ada prok." },
+          { soal: "Baris A pada gambar pilihan mengulang ....", gambar: "img/pola/warna-pilihan.svg", pilihan: ["warna", "arah panah", "bau"], jawaban: 0, penjelasan: "Kotak-kotak baris A berganti warna secara teratur." },
+          { soal: "Pada dung, ting, tok, tok, bunyi setelah ting adalah ....", gambar: "img/pola/dung-ting.svg", pilihan: ["tok", "dung", "prok"], jawaban: 0, penjelasan: "Setelah ting ada tok." },
+          { soal: "Satu ulangan gerakan tangan adalah ....", gambar: "img/pola/gerakan.svg", pilihan: ["bawah lalu atas", "atas lalu atas", "diam saja"], jawaban: 0, penjelasan: "Tangan bawah dan tangan atas bergantian." }
         ],
         [
 {
@@ -3802,7 +3935,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["biru", "kuning", "toska"],
             jawaban: 0,
             penjelasan: "Urutannya biru, kuning, toska, lalu berulang. Setelah toska adalah biru.",
-          }
+          },
+          { soal: "Pada tik, prok, prok, bunyi tepat setelah tik adalah ....", gambar: "img/pola/tik-prok.svg", pilihan: ["prok", "tik", "dung"], jawaban: 0, penjelasan: "Setelah tik ada prok." },
+          { soal: "Pada kaos ungu, kuning, biru, setelah kuning berikutnya adalah ....", gambar: "img/pola/kaos.svg", pilihan: ["biru", "ungu", "merah"], jawaban: 0, penjelasan: "Urutannya ungu, kuning, lalu biru." },
+          { soal: "Pada singa dan harimau, setelah harimau berikutnya adalah ....", gambar: "img/pola/singa-harimau.svg", pilihan: ["singa", "beruang", "gajah"], jawaban: 0, penjelasan: "Singa dan harimau bergantian." },
+          { soal: "Pada berlian, setelah kuning berikutnya berwarna ....", gambar: "img/pola/berlian.svg", pilihan: ["toska", "biru", "merah"], jawaban: 0, penjelasan: "Urutannya biru, kuning, toska." },
+          { soal: "Pada bunga merah dan kuning, setelah merah berikutnya adalah ....", gambar: "img/pola/bunga-merah-kuning.svg", pilihan: ["kuning", "biru", "hijau"], jawaban: 0, penjelasan: "Merah dan kuning bergantian." }
         ],
         [
 {
@@ -3825,7 +3963,14 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["prok", "tik", "diam"],
             jawaban: 0,
             penjelasan: "Setelah tik, pola kembali ke prok.",
-          }
+          },
+          { soal: "Pada pola HOTS, setelah segitiga berikutnya adalah ....", gambar: "img/pola/hots-bentuk.svg", pilihan: ["persegi panjang", "bintang", "hati"], jawaban: 0, penjelasan: "Setelah segitiga, pola kembali ke persegi panjang." },
+          { soal: "Prok, prok, tik adalah pola ....", gambar: "img/pola/prok-tik.svg", pilihan: ["suara", "warna", "bilangan"], jawaban: 0, penjelasan: "Prok dan tik adalah bunyi." },
+          { soal: "Dua bunyi setelah tok, tok pada pola dung-ting adalah ....", gambar: "img/pola/dung-ting.svg", pilihan: ["dung dan ting", "tok dan tok", "ting dan dung"], jawaban: 0, penjelasan: "Setelah tok tok, pola kembali ke dung lalu ting." },
+          { soal: "Warna ketiga pada merah, hijau, biru adalah ....", gambar: "img/pola/hati-warna.svg", pilihan: ["biru", "merah", "kuning"], jawaban: 0, penjelasan: "Pertama merah, kedua hijau, ketiga biru." },
+          { soal: "Setelah kotak, dua gambar berikutnya pada lingkaran-segitiga-kotak adalah ....", gambar: "img/pola/lsk.svg", pilihan: ["lingkaran lalu segitiga", "kotak lalu lingkaran", "segitiga lalu kotak"], jawaban: 0, penjelasan: "Pola tiga bentuk itu berulang dari lingkaran." },
+          { soal: "Pada bunga merah-kuning, setelah kuning berikutnya adalah ....", gambar: "img/pola/bunga-merah-kuning.svg", pilihan: ["merah", "hijau", "biru"], jawaban: 0, penjelasan: "Kuning dan merah bergantian." },
+          { soal: "Selain bentuk, warna, dan gerakan, jenis pola yang lain adalah pola ....", gambar: "img/pola/tuk-prok.svg", pilihan: ["suara", "bau", "berat"], jawaban: 0, penjelasan: "Empat jenis pola: bentuk, warna, gerakan, dan suara." }
         ]
       ],
       esaiSets: [[
@@ -3947,7 +4092,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["4 buah", "13 buah", "17 buah"],
             jawaban: 0,
             penjelasan: "Wortel 39 dan terong 35. 39 − 35 = 4.",
-          }
+          },
+          { soal: "Banyak tomat pada gambar adalah ....", gambar: "img/semester/sayur.svg", pilihan: ["22", "20", "35"], jawaban: 0, penjelasan: "Empat baris berisi 5 tomat dan baris terakhir berisi 2. Jadi 22." },
+          { soal: "Wortel lebih banyak daripada terong sebanyak ....", gambar: "img/semester/sayur.svg", pilihan: ["4 buah", "13 buah", "17 buah"], jawaban: 0, penjelasan: "39 kurang 35 sama dengan 4." },
+          { soal: "Selisih tomat dan wortel adalah ....", gambar: "img/semester/sayur.svg", pilihan: ["17 buah", "13 buah", "4 buah"], jawaban: 0, penjelasan: "39 kurang 22 sama dengan 17." },
+          { soal: "Sayuran yang paling sedikit adalah ....", gambar: "img/semester/sayur.svg", pilihan: ["tomat", "wortel", "terong"], jawaban: 0, penjelasan: "Tomat 22, terong 35, wortel 39." },
+          { soal: "35 - 22 = ....", gambar: "img/semester/sayur.svg", pilihan: ["13", "4", "17"], jawaban: 0, penjelasan: "Selisih terong dan tomat adalah 13." }
         ],
         [
 {
@@ -3984,7 +4134,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["29, 31, 35, 43, 46", "46, 43, 35, 31, 29", "31, 29, 35, 43, 46"],
             jawaban: 0,
             penjelasan: "Bandingkan puluhan dulu, lalu satuan.",
-          }
+          },
+          { soal: "Bilangan setelah 29 pada urutan kartu adalah ....", gambar: "img/semester/kartu-bilangan.svg", pilihan: ["31", "35", "43"], jawaban: 0, penjelasan: "Urutan dari kecil: 29, 31, 35, 43, 46." },
+          { soal: "Bilangan sebelum 46 adalah ....", gambar: "img/semester/kartu-bilangan.svg", pilihan: ["43", "35", "29"], jawaban: 0, penjelasan: "Sebelum 46 adalah 43." },
+          { soal: "Banyak kartu bilangan pada gambar adalah ....", gambar: "img/semester/kartu-bilangan.svg", pilihan: ["5", "4", "6"], jawaban: 0, penjelasan: "Kartunya 31, 46, 35, 29, dan 43." },
+          { soal: "46 lebih .... daripada 31.", gambar: "img/semester/kartu-bilangan.svg", pilihan: ["besar", "kecil", "sama"], jawaban: 0, penjelasan: "46 punya 4 puluhan. 31 hanya punya 3 puluhan." },
+          { soal: "Bilangan yang tidak ada pada kartu adalah ....", gambar: "img/semester/kartu-bilangan.svg", pilihan: ["30", "35", "43"], jawaban: 0, penjelasan: "30 tidak ada pada kartu." }
         ],
         [
 {
@@ -4021,7 +4176,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["segi enam", "lingkaran", "segitiga"],
             jawaban: 0,
             penjelasan: "Bingkai jam memiliki 6 sisi, yaitu segi enam.",
-          }
+          },
+          { soal: "39 - 20 = ....", gambar: "img/semester/uraian-39.svg", pilihan: ["19", "29", "9"], jawaban: 0, penjelasan: "20 ditambah 19 sama dengan 39." },
+          { soal: "39 - 9 = ....", gambar: "img/semester/uraian-39.svg", pilihan: ["30", "20", "48"], jawaban: 0, penjelasan: "30 ditambah 9 sama dengan 39." },
+          { soal: "39 - 15 = ....", gambar: "img/semester/uraian-39.svg", pilihan: ["24", "14", "54"], jawaban: 0, penjelasan: "15 ditambah 24 sama dengan 39." },
+          { soal: "39 - 17 = ....", gambar: "img/semester/uraian-39.svg", pilihan: ["22", "12", "56"], jawaban: 0, penjelasan: "17 ditambah 22 sama dengan 39." },
+          { soal: "19 + 20 = ....", gambar: "img/semester/uraian-39.svg", pilihan: ["39", "29", "49"], jawaban: 0, penjelasan: "19 ditambah 20 sama dengan 39." }
         ],
         [
 {
@@ -4058,7 +4218,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["lingkaran", "segitiga", "persegi"],
             jawaban: 0,
             penjelasan: "Piza berbentuk bulat.",
-          }
+          },
+          { soal: "Cokelat pada gambar berbentuk ....", gambar: "img/semester/benda-bangun.svg", pilihan: ["persegi panjang", "lingkaran", "segitiga"], jawaban: 0, penjelasan: "Kemasan cokelat berbentuk persegi panjang." },
+          { soal: "Bangun segitiga pada soal sisi punya .... sisi.", gambar: "img/semester/banyak-sisi.svg", pilihan: ["3", "6", "8"], jawaban: 0, penjelasan: "Segitiga memiliki 3 sisi." },
+          { soal: "Bangun biru segi delapan punya .... sisi.", gambar: "img/semester/banyak-sisi.svg", pilihan: ["8", "12", "6"], jawaban: 0, penjelasan: "Segi delapan punya 8 sisi, bukan 12." },
+          { soal: "Piza termasuk bangun ....", gambar: "img/semester/pizza.svg", pilihan: ["datar", "ruang", "tabung"], jawaban: 0, penjelasan: "Piza rata dan bulat, jadi bangun datar." },
+          { soal: "Roda dipasangkan dengan bangun ....", gambar: "img/semester/benda-bangun.svg", pilihan: ["lingkaran", "segi enam", "segitiga"], jawaban: 0, penjelasan: "Roda berbentuk bulat." }
         ],
         [
 {
@@ -4095,7 +4260,12 @@ const MATEMATIKA_SUBJECT = {
             pilihan: ["boneka dan botol", "pohon dan anjing", "hanya bola"],
             jawaban: 0,
             penjelasan: "Di kanan tas ada boneka beruang dan botol minum.",
-          }
+          },
+          { soal: "Bola pada taman ada di .... bangku.", gambar: "img/posisi/taman.svg", pilihan: ["bawah", "atas", "dalam"], jawaban: 0, penjelasan: "Bola berada di tanah, di bawah bangku." },
+          { soal: "Tas pada taman ada di .... bangku.", gambar: "img/posisi/taman.svg", pilihan: ["atas", "bawah", "belakang"], jawaban: 0, penjelasan: "Tas diletakkan di atas bangku." },
+          { soal: "Anjing ada di sebelah .... pohon.", gambar: "img/posisi/taman.svg", pilihan: ["kiri", "kanan", "atas"], jawaban: 0, penjelasan: "Dari pembaca, anjing duduk di kiri pohon." },
+          { soal: "Botol di taman ada di sebelah .... boneka.", gambar: "img/posisi/taman.svg", pilihan: ["kanan", "kiri", "bawah"], jawaban: 0, penjelasan: "Botol berada di kanan boneka." },
+          { soal: "Sepatu ada di sebelah .... bola.", gambar: "img/posisi/taman.svg", pilihan: ["kanan", "kiri", "atas"], jawaban: 0, penjelasan: "Dari pembaca, sepatu berada di kanan bola." }
         ]
       ],
       esaiSets: [
@@ -4172,13 +4342,25 @@ const MATEMATIKA_SUBJECT = {
           { soal: "Empat garis tegak dan satu garis miring pada turus berarti ....", pilihan: ["4", "5", "6"], jawaban: 1, penjelasan: "Garis kelima yang miring membuat jumlahnya 5." },
           { soal: "Pada piktogram, satu gambar apel berarti ....", pilihan: ["1 apel", "10 apel", "0 apel"], jawaban: 0, penjelasan: "Satu gambar mewakili satu benda." },
           { soal: "Jika gambar apel ada 3 dan gambar jeruk ada 5, yang lebih banyak adalah ....", pilihan: ["jeruk", "apel", "sama banyak"], jawaban: 0, penjelasan: "5 lebih banyak daripada 3." },
-          { soal: "Data sederhana di kelas ini paling banyak .... kategori.", pilihan: ["4", "40", "100"], jawaban: 0, penjelasan: "Piktogram fase ini memakai paling banyak 4 kategori." }
+          { soal: "Data sederhana di kelas ini paling banyak .... kategori.", pilihan: ["4", "40", "100"], jawaban: 0, penjelasan: "Piktogram fase ini memakai paling banyak 4 kategori." },
+          { soal: "Dua garis tegak pada turus berarti ....", pilihan: ["2", "5", "10"], jawaban: 0, penjelasan: "Setiap garis tegak dihitung satu." },
+          { soal: "Lima gambar jeruk berarti ada .... jeruk.", pilihan: ["5", "50", "1"], jawaban: 0, penjelasan: "Satu gambar mewakili satu jeruk." },
+          { soal: "Gambar paling banyak berarti kategori yang paling ....", pilihan: ["sering", "jarang", "berat"], jawaban: 0, penjelasan: "Gambar banyak berarti jumlahnya lebih besar." },
+          { soal: "Apel, jeruk, mangga, dan pisang adalah .... kategori.", pilihan: ["4", "3", "5"], jawaban: 0, penjelasan: "Ada empat jenis buah." },
+          { soal: "Turus 5 ditulis dengan ....", pilihan: ["empat garis tegak dan satu miring", "lima garis miring", "satu garis tegak"], jawaban: 0, penjelasan: "Garis kelima dibuat miring." },
+          { soal: "Data adalah kumpulan ....", pilihan: ["keterangan", "warna saja", "lagu"], jawaban: 0, penjelasan: "Data mengumpulkan keterangan." }
         ],
         [
           { soal: "Turus berguna untuk ....", pilihan: ["mencatat jumlah", "mengukur berat", "mewarnai bendera"], jawaban: 0, penjelasan: "Setiap hitungan ditandai dengan garis." },
           { soal: "Tiga gambar pisang pada piktogram berarti ada .... pisang.", pilihan: ["3", "30", "1"], jawaban: 0, penjelasan: "Satu gambar = satu pisang, jadi tiga gambar = 3." },
           { soal: "Kategori yang gambarnya paling sedikit adalah yang ....", pilihan: ["paling jarang", "paling sering", "paling berat"], jawaban: 0, penjelasan: "Gambar sedikit berarti jumlahnya lebih kecil." },
-          { soal: "Apel, jeruk, mangga, dan pisang adalah contoh ....", pilihan: ["4 kategori", "4 bilangan", "4 satuan waktu"], jawaban: 0, penjelasan: "Masing-masing jenis buah adalah satu kategori." }
+          { soal: "Apel, jeruk, mangga, dan pisang adalah contoh ....", pilihan: ["4 kategori", "4 bilangan", "4 satuan waktu"], jawaban: 0, penjelasan: "Masing-masing jenis buah adalah satu kategori." },
+          { soal: "Jika pisang ada 6 dan apel ada 2, yang lebih banyak adalah ....", pilihan: ["pisang", "apel", "sama banyak"], jawaban: 0, penjelasan: "6 lebih banyak daripada 2." },
+          { soal: "Selisih 6 dan 2 adalah ....", pilihan: ["4", "8", "3"], jawaban: 0, penjelasan: "6 dikurangi 2 sama dengan 4." },
+          { soal: "Satu gambar pada piktogram mewakili .... benda.", pilihan: ["1", "10", "0"], jawaban: 0, penjelasan: "Satu gambar dihitung satu benda." },
+          { soal: "Kategori yang paling jarang dipilih gambarnya paling ....", pilihan: ["sedikit", "banyak", "besar"], jawaban: 0, penjelasan: "Gambar sedikit berarti jumlahnya lebih kecil." },
+          { soal: "Empat garis tegak tanpa garis miring berarti ....", pilihan: ["4", "5", "9"], jawaban: 0, penjelasan: "Empat garis tegak dihitung 4." },
+          { soal: "Piktogram memakai .... untuk mencatat jumlah.", pilihan: ["gambar", "hanya jam", "hanya berat"], jawaban: 0, penjelasan: "Piktogram memakai gambar." }
         ]
       ],
       esaiSets: [[
