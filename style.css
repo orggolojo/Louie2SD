@@ -304,13 +304,23 @@ h1, h2, h3, .brand-text, .btn, .tab {
   margin: 0 auto;
   animation: pop 0.35s ease both;
 }
-.q-img {
+.q-img,
+.q-gambar {
   display: block;
   width: 100%;
-  max-width: 340px;
-  max-height: 230px;
-  object-fit: contain;
+  max-width: 360px;
   margin: 0 auto 16px;
+}
+.q-img {
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #f8fafc;
+}
+.q-gambar svg {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 16px;
 }
 .quiz-question {
@@ -489,7 +499,15 @@ h1, h2, h3, .brand-text, .btn, .tab {
 .match-item.shake { animation: shake 0.4s; border-color: var(--merah); background: #ffe8ea; }
 
 .match-emoji { font-size: 2.1rem; line-height: 1; }
-.match-img { width: 48px; height: 48px; object-fit: contain; }
+.match-img { width: 64px; height: 64px; object-fit: contain; flex: none; }
+.match-item .q-gambar {
+  width: 64px;
+  max-width: 64px;
+  height: 64px;
+  margin: 0;
+  flex: none;
+}
+.match-item .q-gambar svg { width: 64px; height: 64px; max-height: 64px; }
 .match-teks { flex: 1; }
 .match-item.kanan .match-teks { flex: none; }
 

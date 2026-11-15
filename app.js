@@ -24,7 +24,20 @@ function el(tag, opts = {}, children = []) {
 function clear() { app.innerHTML = ""; }
 
 // Gambar opsional untuk soal / ringkasan (properti "gambar" di data).
+// Nilainya boleh path berkas ("img/...svg") atau teks SVG yang diawali <svg.
 function gambar(src, kelas, alt = "") {
+  const teks = typeof src === "string" ? src.trim() : "";
+  if (teks.startsWith("<svg")) {
+    const wrap = el("div", { class: "q-gambar " + (kelas || "") });
+    wrap.innerHTML = teks;
+    const svg = wrap.querySelector("svg");
+    if (svg) {
+      svg.setAttribute("role", "img");
+      if (alt) svg.setAttribute("aria-label", alt);
+      if (!svg.getAttribute("focusable")) svg.setAttribute("focusable", "false");
+    }
+    return wrap;
+  }
   const img = el("img", { class: kelas });
   img.src = src;
   img.alt = alt;
@@ -399,11 +412,11 @@ function renderEsai(root, topic) {
     list.innerHTML = "";
     soalEsai.forEach((item, i) => {
       const card = el("div", { class: "essay-card" });
+      if (item.gambar) card.appendChild(gambar(item.gambar, "q-img", "Gambar soal"));
       card.appendChild(el("div", { class: "essay-q" }, [
         el("span", { class: "essay-num", text: String(i + 1) }),
         document.createTextNode(item.soal)
       ]));
-      if (item.gambar) card.appendChild(gambar(item.gambar, "q-img", "Gambar soal"));
       const textarea = el("textarea", { });
       card.appendChild(textarea);
       const answer = el("div", { class: "answer-box", html: "<strong>Contoh jawaban:</strong> " + item.contohJawaban });
@@ -511,9 +524,7 @@ function renderCocok(root, subject, topic) {
     kiriAcak.forEach((p) => {
       const isi = [];
       if (p.kiri.gambar) {
-        isi.push(el("img", { class: "match-img" }));
-        isi[isi.length - 1].src = p.kiri.gambar;
-        isi[isi.length - 1].alt = p.kiri.teks || "";
+        isi.push(gambar(p.kiri.gambar, "match-img", p.kiri.teks || ""));
       } else {
         isi.push(el("span", { class: "match-emoji", text: p.kiri.emoji || "❓" }));
       }
