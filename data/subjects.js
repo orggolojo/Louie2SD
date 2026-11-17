@@ -5455,6 +5455,12 @@ const PLH_SUBJECT = {
  *  MATA PELAJARAN: BAHASA MANDARIN
  *  Kosakata pemula Kelas 2: hanzi, pinyin, dan arti bahasa Indonesia.
  * ============================================================ */
+const SVG_SUSU = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 180\"><title>Susu</title><rect width=\"360\" height=\"180\" rx=\"16\" fill=\"#F8FAFC\"/><rect x=\"48\" y=\"28\" width=\"90\" height=\"124\" rx=\"8\" fill=\"#fff\" stroke=\"#0F172A\" stroke-width=\"3\"/><rect x=\"48\" y=\"28\" width=\"90\" height=\"26\" fill=\"#60A5FA\"/><text x=\"93\" y=\"74\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"16\" font-weight=\"700\" fill=\"#1D4ED8\">MILK</text><circle cx=\"93\" cy=\"108\" r=\"24\" fill=\"#FDE68A\" stroke=\"#0F172A\" stroke-width=\"2\"/><circle cx=\"84\" cy=\"104\" r=\"3\" fill=\"#0F172A\"/><circle cx=\"102\" cy=\"104\" r=\"3\" fill=\"#0F172A\"/><ellipse cx=\"93\" cy=\"116\" rx=\"8\" ry=\"5\" fill=\"#FB7185\"/><path d=\"M200 48 h56 l10 18 v86 h-76 v-86 z\" fill=\"#E0F2FE\" stroke=\"#0F172A\" stroke-width=\"3\"/><rect x=\"206\" y=\"96\" width=\"54\" height=\"48\" fill=\"#F8FAFC\"/><text x=\"230\" y=\"170\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" font-weight=\"700\" fill=\"#1E3A8A\">susu</text></svg>";
+const SVG_KOLA = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 180\"><title>Cola</title><rect width=\"360\" height=\"180\" rx=\"16\" fill=\"#F8FAFC\"/><rect x=\"130\" y=\"22\" width=\"100\" height=\"136\" rx=\"18\" fill=\"#DC2626\" stroke=\"#0F172A\" stroke-width=\"3\"/><rect x=\"130\" y=\"22\" width=\"100\" height=\"20\" rx=\"8\" fill=\"#E5E7EB\"/><rect x=\"130\" y=\"138\" width=\"100\" height=\"20\" rx=\"8\" fill=\"#E5E7EB\"/><rect x=\"146\" y=\"68\" width=\"68\" height=\"40\" rx=\"8\" fill=\"#fff\" stroke=\"#0F172A\"/><text x=\"180\" y=\"94\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"18\" font-weight=\"700\" fill=\"#DC2626\">COLA</text><circle cx=\"156\" cy=\"122\" r=\"5\" fill=\"#FECACA\"/><circle cx=\"180\" cy=\"128\" r=\"4\" fill=\"#FECACA\"/><circle cx=\"204\" cy=\"120\" r=\"5\" fill=\"#FECACA\"/></svg>";
+const SVG_KOPI = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 180\"><title>Kopi panas</title><rect width=\"360\" height=\"180\" rx=\"16\" fill=\"#F8FAFC\"/><rect x=\"90\" y=\"58\" width=\"140\" height=\"78\" rx=\"16\" fill=\"#fff\" stroke=\"#0F172A\" stroke-width=\"3\"/><ellipse cx=\"160\" cy=\"66\" rx=\"52\" ry=\"16\" fill=\"#44403C\" stroke=\"#0F172A\" stroke-width=\"2\"/><path d=\"M230 78 h24 a22 22 0 0 1 0 40 h-24\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"6\"/><path d=\"M130 40 q8 -16 0 -28\" fill=\"none\" stroke=\"#94A3B8\" stroke-width=\"3\"/><path d=\"M160 36 q8 -16 0 -28\" fill=\"none\" stroke=\"#94A3B8\" stroke-width=\"3\"/><ellipse cx=\"70\" cy=\"140\" rx=\"12\" ry=\"8\" fill=\"#92400E\"/><ellipse cx=\"96\" cy=\"150\" rx=\"12\" ry=\"8\" fill=\"#78350F\"/><ellipse cx=\"48\" cy=\"152\" rx=\"10\" ry=\"7\" fill=\"#A16207\"/></svg>";
+const SVG_JUS = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 180\"><title>Jus apel</title><rect width=\"360\" height=\"180\" rx=\"16\" fill=\"#F8FAFC\"/><path d=\"M150 40 h70 l12 20 v80 h-94 v-80 z\" fill=\"#FDE68A\" stroke=\"#0F172A\" stroke-width=\"3\"/><rect x=\"168\" y=\"78\" width=\"40\" height=\"52\" fill=\"#F59E0B\"/><line x1=\"214\" y1=\"36\" x2=\"236\" y2=\"96\" stroke=\"#0F172A\" stroke-width=\"4\"/><circle cx=\"292\" cy=\"100\" r=\"32\" fill=\"#EF4444\" stroke=\"#0F172A\" stroke-width=\"3\"/><path d=\"M292 68 q14 -16 22 -4 q-12 2 -22 4\" fill=\"#22C55E\" stroke=\"#166534\"/></svg>";
+const SVG_COKELAT = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 180\"><title>Cokelat panas</title><rect width=\"360\" height=\"180\" rx=\"16\" fill=\"#F8FAFC\"/><rect x=\"70\" y=\"70\" width=\"70\" height=\"56\" rx=\"6\" fill=\"#92400E\" stroke=\"#0F172A\" stroke-width=\"3\"/><line x1=\"105\" y1=\"70\" x2=\"105\" y2=\"126\" stroke=\"#FDE68A\" stroke-width=\"2\"/><line x1=\"70\" y1=\"98\" x2=\"140\" y2=\"98\" stroke=\"#FDE68A\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"88\" r=\"3\" fill=\"#0F172A\"/><circle cx=\"120\" cy=\"88\" r=\"3\" fill=\"#0F172A\"/><path d=\"M96 108 q9 8 18 0\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"2\"/><rect x=\"180\" y=\"64\" width=\"110\" height=\"72\" rx=\"18\" fill=\"#D6B48A\" stroke=\"#0F172A\" stroke-width=\"3\"/><ellipse cx=\"235\" cy=\"72\" rx=\"40\" ry=\"14\" fill=\"#78350F\"/><circle cx=\"235\" cy=\"66\" r=\"10\" fill=\"#fff\" stroke=\"#0F172A\"/><path d=\"M290 84 h22 a18 18 0 0 1 0 36 h-22\" fill=\"none\" stroke=\"#0F172A\" stroke-width=\"6\"/></svg>";
+
 const BAHASA_MANDARIN_SUBJECT = {
   id: "bahasa-mandarin",
   nama: "Bahasa Mandarin",
@@ -5528,6 +5534,61 @@ const BAHASA_MANDARIN_SUBJECT = {
           ]
         }
       ]
+    },
+    {
+      id: "minuman",
+      judul: "Minuman (饮料 yǐnliào)",
+      emoji: "🥤",
+      ringkasan: [
+        { gambar: SVG_SUSU, teks: "牛奶 (niúnǎi) = susu." },
+        { gambar: SVG_KOLA, teks: "可乐 (kělè) = cola." },
+        { gambar: SVG_KOPI, teks: "热咖啡 (rè kāfēi) = kopi panas." },
+        { gambar: SVG_COKELAT, teks: "热巧克力 (rè qiǎokèlì) = cokelat panas." },
+        { gambar: SVG_JUS, teks: "苹果汁 (píngguǒ zhī) = jus apel. 饮料 (yǐnliào) berarti minuman." }
+      ],
+      pilihanGandaSets: [
+        [
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_SUSU, pilihan: ["牛奶 (niúnǎi)", "可乐 (kělè)", "热咖啡 (rè kāfēi)"], jawaban: 0, penjelasan: "Karton susu dan gelas. 牛奶 (niúnǎi) berarti susu." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_KOLA, pilihan: ["可乐 (kělè)", "牛奶 (niúnǎi)", "苹果汁 (píngguǒ zhī)"], jawaban: 0, penjelasan: "Kaleng bertuliskan COLA. 可乐 (kělè) berarti cola." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_KOPI, pilihan: ["热咖啡 (rè kāfēi)", "热巧克力 (rè qiǎokèlì)", "可乐 (kělè)"], jawaban: 0, penjelasan: "Cangkir kopi dan biji kopi. 热咖啡 (rè kāfēi) berarti kopi panas." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_JUS, pilihan: ["苹果汁 (píngguǒ zhī)", "牛奶 (niúnǎi)", "热巧克力 (rè qiǎokèlì)"], jawaban: 0, penjelasan: "Gelas jus dan buah apel. 苹果汁 (píngguǒ zhī) berarti jus apel." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_COKELAT, pilihan: ["热巧克力 (rè qiǎokèlì)", "热咖啡 (rè kāfēi)", "可乐 (kělè)"], jawaban: 0, penjelasan: "Cokelat batangan dan cangkir cokelat panas. 热巧克力 (rè qiǎokèlì)." },
+          { soal: "牛奶 (niúnǎi) berarti ....", gambar: SVG_SUSU, pilihan: ["susu", "cola", "jus apel"], jawaban: 0, penjelasan: "牛奶 berarti susu." },
+          { soal: "可乐 (kělè) berarti ....", gambar: SVG_KOLA, pilihan: ["cola", "susu", "kopi panas"], jawaban: 0, penjelasan: "可乐 berarti cola." },
+          { soal: "热咖啡 (rè kāfēi) berarti ....", gambar: SVG_KOPI, pilihan: ["kopi panas", "cokelat panas", "jus apel"], jawaban: 0, penjelasan: "热 berarti panas. 咖啡 berarti kopi." },
+          { soal: "苹果汁 (píngguǒ zhī) berarti ....", gambar: SVG_JUS, pilihan: ["jus apel", "susu", "cola"], jawaban: 0, penjelasan: "苹果 berarti apel. 汁 berarti jus." },
+          { soal: "热巧克力 (rè qiǎokèlì) berarti ....", gambar: SVG_COKELAT, pilihan: ["cokelat panas", "kopi panas", "susu"], jawaban: 0, penjelasan: "热 berarti panas. 巧克力 berarti cokelat." }
+        ],
+        [
+          { soal: "Pinyin kělè ditulis ....", gambar: SVG_KOLA, pilihan: ["可乐", "牛奶", "苹果汁"], jawaban: 0, penjelasan: "可乐 dibaca kělè dan berarti cola." },
+          { soal: "Pinyin niúnǎi ditulis ....", gambar: SVG_SUSU, pilihan: ["牛奶", "可乐", "热咖啡"], jawaban: 0, penjelasan: "牛奶 dibaca niúnǎi dan berarti susu." },
+          { soal: "Pinyin rè kāfēi ditulis ....", gambar: SVG_KOPI, pilihan: ["热咖啡", "热巧克力", "可乐"], jawaban: 0, penjelasan: "热咖啡 dibaca rè kāfēi." },
+          { soal: "Pinyin rè qiǎokèlì ditulis ....", gambar: SVG_COKELAT, pilihan: ["热巧克力", "热咖啡", "牛奶"], jawaban: 0, penjelasan: "热巧克力 dibaca rè qiǎokèlì." },
+          { soal: "Pinyin píngguǒ zhī ditulis ....", gambar: SVG_JUS, pilihan: ["苹果汁", "可乐", "牛奶"], jawaban: 0, penjelasan: "苹果汁 dibaca píngguǒ zhī." },
+          { soal: "Susu dalam bahasa Mandarin adalah ....", gambar: SVG_SUSU, pilihan: ["牛奶 (niúnǎi)", "可乐 (kělè)", "苹果汁 (píngguǒ zhī)"], jawaban: 0, penjelasan: "Susu = 牛奶 (niúnǎi)." },
+          { soal: "Cola dalam bahasa Mandarin adalah ....", gambar: SVG_KOLA, pilihan: ["可乐 (kělè)", "牛奶 (niúnǎi)", "热咖啡 (rè kāfēi)"], jawaban: 0, penjelasan: "Cola = 可乐 (kělè)." },
+          { soal: "Kopi panas dalam bahasa Mandarin adalah ....", gambar: SVG_KOPI, pilihan: ["热咖啡 (rè kāfēi)", "热巧克力 (rè qiǎokèlì)", "苹果汁 (píngguǒ zhī)"], jawaban: 0, penjelasan: "Kopi panas = 热咖啡 (rè kāfēi)." },
+          { soal: "Jus apel dalam bahasa Mandarin adalah ....", gambar: SVG_JUS, pilihan: ["苹果汁 (píngguǒ zhī)", "可乐 (kělè)", "牛奶 (niúnǎi)"], jawaban: 0, penjelasan: "Jus apel = 苹果汁 (píngguǒ zhī)." },
+          { soal: "Cokelat panas dalam bahasa Mandarin adalah ....", gambar: SVG_COKELAT, pilihan: ["热巧克力 (rè qiǎokèlì)", "热咖啡 (rè kāfēi)", "可乐 (kělè)"], jawaban: 0, penjelasan: "Cokelat panas = 热巧克力 (rè qiǎokèlì)." }
+        ]
+      ],
+      esaiSets: [[
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_SUSU, contohJawaban: "牛奶" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_KOLA, contohJawaban: "可乐" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_KOPI, contohJawaban: "热咖啡" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_JUS, contohJawaban: "苹果汁" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_COKELAT, contohJawaban: "热巧克力" }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Lihat gambar minuman, lalu pasangkan dengan hanzi-nya!",
+        pasangan: [
+            { kiri: { gambar: SVG_SUSU, teks: "Susu" }, kanan: "牛奶 (niúnǎi)" },
+            { kiri: { gambar: SVG_KOLA, teks: "Cola" }, kanan: "可乐 (kělè)" },
+            { kiri: { gambar: SVG_KOPI, teks: "Kopi panas" }, kanan: "热咖啡 (rè kāfēi)" },
+            { kiri: { gambar: SVG_JUS, teks: "Jus apel" }, kanan: "苹果汁 (píngguǒ zhī)" },
+            { kiri: { gambar: SVG_COKELAT, teks: "Cokelat panas" }, kanan: "热巧克力 (rè qiǎokèlì)" }
+        ]
+      }]
     },
     {
       id: "salam-dan-perkenalan",
