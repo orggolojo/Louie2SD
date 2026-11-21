@@ -101,6 +101,81 @@ function acak(arr) {
   return a;
 }
 
+/* ---------- Modul ASAS (kumpulan soal akhir semester) ---------- */
+
+// Modul dengan properti "asas" diisi otomatis: soal wajib dari data,
+// lalu ditambah soal dari modul lain di mata pelajaran yang sama
+// (bergiliran antar-modul) sampai jumlahnya terpenuhi.
+// Urutan pilihannya selalu sama setiap kali dibuka (tidak acak).
+function acakTetap(arr, benih) {
+  let h = 2166136261;
+  for (const c of benih) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    h = Math.imul(h ^ (h >>> 15), 2246822507) ^ i;
+    const j = (h >>> 0) % (i + 1);
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Pindahkan jawaban benar ke posisi tertentu agar jawaban tersebar di A/B/C.
+// Pilihan yang saling merujuk huruf (misalnya "A dan B benar") dibiarkan.
+function geserJawaban(q, posisi) {
+  if (!Array.isArray(q.pilihan) || q.pilihan.some((p) => /\b[A-E] dan [A-E]\b|semua (jawaban )?(benar|salah)/i.test(p))) return q;
+  const pilihan = q.pilihan.slice();
+  const benar = pilihan.splice(q.jawaban, 1)[0];
+  const tujuan = posisi % q.pilihan.length;
+  pilihan.splice(tujuan, 0, benar);
+  return { ...q, pilihan, jawaban: tujuan };
+}
+
+// Soal yang sama dengan huruf besar/kecil atau spasi berbeda dianggap kembar.
+// Soal bergambar cukup dibandingkan teks + gambarnya; soal tanpa gambar
+// juga dibandingkan jawabannya (teks soal umum bisa dipakai berkali-kali).
+function kunciSoal(q) {
+  const rapi = (t) => String(t || "").toLowerCase().replace(/[\s.…]+/g, " ").trim();
+  if (typeof q.gambar === "string" && q.gambar) return rapi(q.soal) + "|" + q.gambar;
+  return rapi(q.soal) + "|" + rapi(q.pilihan ? q.pilihan[q.jawaban] : q.contohJawaban);
+}
+
+function kumpulkan(wajib, kolam, jumlah) {
+  const hasil = [];
+  const sudah = new Set();
+  const tambah = (q) => {
+    const k = kunciSoal(q);
+    if (hasil.length < jumlah && !sudah.has(k)) { sudah.add(k); hasil.push(q); }
+  };
+  wajib.forEach(tambah);
+  const maks = Math.max(0, ...kolam.map((k) => k.length));
+  for (let i = 0; i < maks && hasil.length < jumlah; i++) kolam.forEach((k) => { if (k[i]) tambah(k[i]); });
+  return hasil;
+}
+
+function bangunAsas(subject, topic) {
+  const cfg = topic.asas;
+  const sumber = subject.topik.filter((t) => t !== topic && !t.asas && t.id !== "asas");
+  const benih = subject.id + ":asas";
+
+  const pg = kumpulkan(
+    cfg.pilihanGanda || [],
+    sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "kuis").flat(), benih + i)),
+    cfg.jumlahPilihanGanda || 50
+  ).map(geserJawaban);
+  const jumlahSet = Math.max(1, Math.ceil(pg.length / 10));
+  topic.pilihanGandaSets = Array.from({ length: jumlahSet }, (_, s) => pg.filter((_, i) => i % jumlahSet === s));
+
+  topic.esaiSets = [kumpulkan(
+    cfg.esai || [],
+    sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "esai").flat(), benih + "e" + i)),
+    cfg.jumlahEsai || 10
+  )];
+}
+
+function siapkanAsas() {
+  SUBJECTS.forEach((s) => s.topik.forEach((t) => { if (t.asas) bangunAsas(s, t); }));
+}
+
 /* ============================================================
    HALAMAN 1 — Daftar mata pelajaran
    ============================================================ */
@@ -630,4 +705,5 @@ function tebarkanBintang(banyak = false) {
 
 /* ---------- Mulai ---------- */
 homeBtn.addEventListener("click", renderHome);
+siapkanAsas();
 renderHome();

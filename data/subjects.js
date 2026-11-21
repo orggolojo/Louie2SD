@@ -1724,6 +1724,31 @@ const BAHASA_INDONESIA_SUBJECT = {
           { kiri: { emoji: "🌟", teks: "Bangga" }, kanan: "Berhasil mencoba lagi" }
         ]
       }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {
+        // Lembar kerja: urutkan kalimat acak menjadi cerita yang runtut (wajib)
+        pilihanGanda: [
+          { soal: "Kegiatan Sebelum Sekolah. (1) Ibu menyiapkan sarapan untuk kami. (2) Selesai sarapan aku berangkat ke sekolah. (3) Aku bangun tidur dan berdoa. (4) Aku mandi dan memakai seragam. Urutan yang runtut adalah ....", pilihan: ["3 - 4 - 1 - 2", "1 - 2 - 3 - 4", "4 - 3 - 2 - 1"], jawaban: 0, penjelasan: "Bangun dan berdoa, mandi dan berseragam, sarapan disiapkan, lalu berangkat sekolah." },
+          { soal: "Menanam Bunga. (1) Tiga hari kemudian bunga mulai tumbuh. (2) Lia menyiram bibit bunga yang baru ditanam. (3) Lia memasukkan tanah ke dalam pot. (4) Lia menanam bibit bunga. Urutan yang runtut adalah ....", pilihan: ["1 - 2 - 3 - 4", "3 - 4 - 2 - 1", "4 - 3 - 1 - 2"], jawaban: 1, penjelasan: "Isi pot dengan tanah, tanam bibit, siram, lalu bunga tumbuh." },
+          { soal: "Membantu Ibu. (1) Ibu mengucapkan terima kasih pada Rina. (2) Rina membantu ibu menyapu lantai. (3) Rumah menjadi bersih. (4) Rina mengambil sapu. Urutan yang runtut adalah ....", pilihan: ["2 - 4 - 1 - 3", "1 - 3 - 4 - 2", "4 - 2 - 3 - 1"], jawaban: 2, penjelasan: "Ambil sapu, menyapu, rumah bersih, lalu ibu berterima kasih." },
+          { soal: "Pergi ke Sekolah. (1) Bel sekolah berbunyi. (2) Andi berpamitan kepada ayah. (3) Andi sampai di sekolah. (4) Andi memakai sepatu. Urutan yang runtut adalah ....", pilihan: ["4 - 2 - 3 - 1", "2 - 4 - 1 - 3", "1 - 2 - 3 - 4"], jawaban: 0, penjelasan: "Memakai sepatu, berpamitan, sampai di sekolah, lalu bel berbunyi." },
+          { soal: "Bermain Layang-Layang. (1) Andi bermain layang-layang bersama Bano. (2) Selesai bermain mereka pulang ke rumah. (3) Siang itu Andi membeli layang-layang. (4) Layang-layang Andi terbang tinggi. Urutan yang runtut adalah ....", pilihan: ["1 - 3 - 2 - 4", "3 - 1 - 4 - 2", "3 - 4 - 2 - 1"], jawaban: 1, penjelasan: "Membeli layang-layang, bermain, layang-layang terbang tinggi, lalu pulang." }
+        ],
+        esai: [
+          { soal: "Urutkan menjadi cerita yang runtut: (1) Ibu menyiapkan sarapan untuk kami. (2) Selesai sarapan aku berangkat ke sekolah. (3) Aku bangun tidur dan berdoa. (4) Aku mandi dan memakai seragam.", contohJawaban: "3 - 4 - 1 - 2. Aku bangun tidur dan berdoa. Aku mandi dan memakai seragam. Ibu menyiapkan sarapan untuk kami. Selesai sarapan aku berangkat ke sekolah." },
+          { soal: "Urutkan menjadi cerita yang runtut: (1) Andi bermain layang-layang bersama Bano. (2) Selesai bermain mereka pulang ke rumah. (3) Siang itu Andi membeli layang-layang. (4) Layang-layang Andi terbang tinggi.", contohJawaban: "3 - 1 - 4 - 2. Siang itu Andi membeli layang-layang. Andi bermain layang-layang bersama Bano. Layang-layang Andi terbang tinggi. Selesai bermain mereka pulang ke rumah." }
+        ]
+      }
     }
   ]
 };
@@ -2498,6 +2523,48 @@ const IPAS_SUBJECT = {
           { kiri: { emoji: "🌳", teks: "Pohon" }, kanan: "Buah dan udara segar" }
         ]
       }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {
+        // Lembar kerja: isilah titik-titik (wajib)
+        pilihanGanda: [
+          { soal: "Benda yang digunakan untuk menulis adalah ....", pilihan: ["Pensil", "Gelas", "Bantal"], jawaban: 0, penjelasan: "Kita menulis dengan pensil." },
+          { soal: "Air termasuk benda berwujud ....", pilihan: ["Padat", "Cair", "Gas"], jawaban: 1, penjelasan: "Air adalah benda cair." },
+          { soal: "Es batu yang dibiarkan di tempat terbuka lama-kelamaan akan ....", pilihan: ["Membeku", "Mengeras", "Mencair"], jawaban: 2, penjelasan: "Es batu terkena udara hangat lalu mencair menjadi air." },
+          { soal: "Benda padat seperti plastisin dapat berubah bentuk jika ....", pilihan: ["Ditekan atau dibentuk", "Didiamkan saja", "Dilihat"], jawaban: 0, penjelasan: "Plastisin berubah bentuk jika kita menekan atau membentuknya." },
+          { soal: "Antara kelereng, bola basket, dan bola pingpong, yang memiliki volume paling besar adalah ....", pilihan: ["Kelereng", "Bola basket", "Bola pingpong"], jawaban: 1, penjelasan: "Bola basket paling besar, jadi volumenya paling besar." },
+          { soal: "Manusia, hewan, dan tumbuhan termasuk ....", pilihan: ["Benda mati", "Benda cair", "Makhluk hidup"], jawaban: 2, penjelasan: "Manusia, hewan, dan tumbuhan bernapas, tumbuh, dan berkembang biak." },
+          { soal: "Tumbuhan yang hidup di air contohnya ....", pilihan: ["Teratai", "Kaktus", "Pohon mangga"], jawaban: 0, penjelasan: "Teratai dan eceng gondok hidup di air." },
+          { soal: "Hewan yang hidup di air dan bernapas menggunakan insang adalah ....", pilihan: ["Kucing", "Ikan", "Ayam"], jawaban: 1, penjelasan: "Ikan bernapas dengan insang." },
+          { soal: "Agar tumbuh subur, tanaman harus disiram secara ....", pilihan: ["Sekali setahun", "Sembarangan", "Teratur"], jawaban: 2, penjelasan: "Tanaman perlu disiram secara teratur." },
+          { soal: "Tempat tinggal suatu makhluk hidup disebut ....", pilihan: ["Habitat", "Cuaca", "Wujud"], jawaban: 0, penjelasan: "Habitat adalah tempat hidup makhluk hidup." },
+          { soal: "Matahari terbenam di arah ....", pilihan: ["Timur", "Barat", "Utara"], jawaban: 1, penjelasan: "Matahari terbit di timur dan terbenam di barat." },
+          { soal: "Matahari memberikan cahaya dan ... bagi bumi.", pilihan: ["Hujan", "Salju", "Panas"], jawaban: 2, penjelasan: "Matahari memberi cahaya dan panas." },
+          { soal: "Saat cuaca hujan, kita sebaiknya membawa ....", pilihan: ["Payung", "Kacamata hitam", "Kipas"], jawaban: 0, penjelasan: "Payung atau jas hujan menjaga tubuh tetap kering." },
+          { soal: "Awan berwarna gelap biasanya menjadi tanda akan turun ....", pilihan: ["Salju", "Hujan", "Pelangi"], jawaban: 1, penjelasan: "Awan gelap (mendung) biasanya membawa hujan." },
+          { soal: "Saat cuaca panas, tubuh kita mudah mengeluarkan ....", pilihan: ["Air mata", "Darah", "Keringat"], jawaban: 2, penjelasan: "Saat panas, tubuh berkeringat." }
+        ],
+        // Lembar kerja: kerjakan! (wajib)
+        esai: [
+          { soal: "Ibu menuangkan air dari gelas ke dalam botol, lalu ke dalam mangkuk. Termasuk jenis benda apakah air tersebut?", contohJawaban: "Benda cair." },
+          { soal: "Bagaimana bentuk air ketika berada di dalam botol?", contohJawaban: "Bentuk air mengikuti bentuk botol." },
+          { soal: "Gambarkan (ceritakan) bentuk air ketika berada di dalam mangkuk!", contohJawaban: "Bentuk air mengikuti bentuk mangkuk: bulat dan cekung seperti mangkuk. Air selalu mengikuti bentuk wadahnya." },
+          { soal: "Ayu akan pergi bermain. Tiba-tiba langit menjadi gelap dan terdengar suara petir. Cuaca apakah yang kemungkinan akan terjadi?", contohJawaban: "Hujan petir (hujan disertai petir)." },
+          { soal: "Apa yang sebaiknya dilakukan Ayu?", contohJawaban: "Ayu sebaiknya tetap di dalam rumah atau segera berteduh di tempat yang aman." },
+          { soal: "Mengapa Ayu tidak boleh bermain di luar saat terjadi petir?", contohJawaban: "Karena petir berbahaya dan bisa menyambar orang yang berada di tempat terbuka." },
+          { soal: "Mengapa kita perlu membawa payung atau jas hujan saat langit terlihat mendung?", contohJawaban: "Karena langit mendung biasanya akan turun hujan, jadi payung atau jas hujan menjaga tubuh tetap kering." },
+          { soal: "Tuliskan 2 contoh hewan ternak dan manfaat hewan tersebut bagi manusia!", contohJawaban: "Sapi: menghasilkan susu dan daging. Ayam: menghasilkan telur dan daging. (Bisa juga: kambing, bebek, domba.)" }
+        ]
+      }
     }
   ]
 };
@@ -4377,6 +4444,18 @@ const MATEMATIKA_SUBJECT = {
           { kiri: { emoji: "4️⃣", teks: "Paling banyak 4 jenis" }, kanan: "Empat kategori" }
         ]
       }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {}
     }
   ]
 };
@@ -5565,6 +5644,27 @@ const PLH_SUBJECT = {
           { kiri: { emoji: "🌱", teks: "Kompos" }, kanan: "Menyuburkan tanah" }
         ]
       }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {
+        pilihanGanda: [
+          { soal: "Kulit buah dan sisa sayuran dapat diolah menjadi ....", pilihan: ["Kompos", "Plastik", "Kaca"], jawaban: 0, penjelasan: "Sampah organik dapat diolah menjadi pupuk kompos." },
+          { soal: "Pupuk kompos berguna untuk ....", pilihan: ["Mengotori tanah", "Menyuburkan tanaman", "Membuat air keruh"], jawaban: 1, penjelasan: "Kompos membuat tanah subur sehingga tanaman tumbuh baik." },
+          { soal: "Tempat sampah berwarna hijau biasanya untuk sampah ....", pilihan: ["Anorganik", "Kaca", "Organik"], jawaban: 2, penjelasan: "Tempat sampah hijau untuk sampah organik, kuning untuk anorganik." },
+          { soal: "Memakai kembali kantong belanja kain termasuk ....", pilihan: ["Reuse", "Membuang", "Membakar"], jawaban: 0, penjelasan: "Reuse = menggunakan kembali." },
+          { soal: "Lingkungan rumah yang bersih membuat kita ....", pilihan: ["Mudah sakit", "Sehat dan nyaman", "Malas belajar"], jawaban: 1, penjelasan: "Lingkungan bersih membuat hidup sehat dan nyaman." },
+          { soal: "Contoh memelihara lingkungan di sekolah adalah ....", pilihan: ["Mencoret meja", "Memetik bunga taman", "Menyiram tanaman di kelas"], jawaban: 2, penjelasan: "Menyiram tanaman membuat lingkungan sekolah asri." }
+        ]
+      }
     }
   ]
 };
@@ -6066,6 +6166,34 @@ const BAHASA_MANDARIN_SUBJECT = {
           { kiri: { emoji: "🪑", teks: "Kursi" }, kanan: "椅子" }
         ]
       }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {
+        // Lembar kerja: lihat gambar, tulis hanzi minuman (wajib)
+        esai: [
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_SUSU, contohJawaban: "牛奶 (niúnǎi) = susu" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_KOLA, contohJawaban: "可乐 (kělè) = cola" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_KOPI, contohJawaban: "热咖啡 (rè kāfēi) = kopi panas" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_JUS, contohJawaban: "苹果汁 (píngguǒ zhī) = jus apel" },
+          { soal: "Lihat gambar. Tuliskan hanzi minuman ini.", gambar: SVG_COKELAT, contohJawaban: "热巧克力 (rè qiǎokèlì) = cokelat panas" }
+        ],
+        pilihanGanda: [
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_SUSU, pilihan: ["可乐 (kělè)", "牛奶 (niúnǎi)", "热咖啡 (rè kāfēi)"], jawaban: 1, penjelasan: "Susu = 牛奶 (niúnǎi)." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_KOLA, pilihan: ["可乐 (kělè)", "牛奶 (niúnǎi)", "苹果汁 (píngguǒ zhī)"], jawaban: 0, penjelasan: "Cola = 可乐 (kělè)." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_KOPI, pilihan: ["热巧克力 (rè qiǎokèlì)", "可乐 (kělè)", "热咖啡 (rè kāfēi)"], jawaban: 2, penjelasan: "Kopi panas = 热咖啡 (rè kāfēi)." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_JUS, pilihan: ["苹果汁 (píngguǒ zhī)", "牛奶 (niúnǎi)", "热巧克力 (rè qiǎokèlì)"], jawaban: 0, penjelasan: "Jus apel = 苹果汁 (píngguǒ zhī)." },
+          { soal: "Lihat gambar. Hanzi minuman ini adalah ....", gambar: SVG_COKELAT, pilihan: ["热咖啡 (rè kāfēi)", "热巧克力 (rè qiǎokèlì)", "可乐 (kělè)"], jawaban: 1, penjelasan: "Cokelat panas = 热巧克力 (rè qiǎokèlì)." }
+        ]
+      }
     }
   ]
 };
@@ -6447,6 +6575,18 @@ const SBDP_SUBJECT = {
           { kiri: { emoji: "🖼️", teks: "Beberapa foto digabung" }, kanan: "Karya montase" }
         ]
       }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {}
     }
   ]
 };
@@ -6510,6 +6650,72 @@ const BAHASA_INGGRIS_SUBJECT = {
           { kiri: { emoji: "✅", teks: "Ya, dia sedang" }, kanan: "Yes, he is" }
         ]
       }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {
+        // Lembar kerja: susun kata dan isi am/is/are (wajib)
+        pilihanGanda: [
+          { soal: "Arrange the words: Are – these – books – five. The correct sentence is ....", pilihan: ["Are these five books?", "These are books five?", "Five books these are?"], jawaban: 0, penjelasan: "Kalimat tanya diawali Are: Are these five books?" },
+          { soal: "Arrange the words: Is – this – bird – a. The correct sentence is ....", pilihan: ["This a bird is?", "Is this a bird?", "A bird this is?"], jawaban: 1, penjelasan: "Kalimat tanya diawali Is: Is this a bird?" },
+          { soal: "Arrange the words: Andy – swimming – is. The correct sentence is ....", pilihan: ["Swimming is Andy.", "Is swimming Andy.", "Andy is swimming."], jawaban: 2, penjelasan: "Subjek + is + Ving: Andy is swimming." },
+          { soal: "Arrange the words: They – play – tennis – can. The correct sentence is ....", pilihan: ["They can play tennis.", "They play can tennis.", "Can tennis they play."], jawaban: 0, penjelasan: "Subjek + can + kata kerja: They can play tennis." },
+          { soal: "Arrange the words: Is – my sister – sweeping – the floor. The correct sentence is ....", pilihan: ["My sister sweeping is the floor?", "Is my sister sweeping the floor?", "The floor is sweeping my sister?"], jawaban: 1, penjelasan: "Kalimat tanya: Is + subjek + Ving: Is my sister sweeping the floor?" },
+          { soal: "Sekar ... painting a picture.", pilihan: ["am", "are", "is"], jawaban: 2, penjelasan: "Satu orang (she) memakai is." },
+          { soal: "I ... speaking English.", pilihan: ["am", "is", "are"], jawaban: 0, penjelasan: "I selalu memakai am." },
+          { soal: "Andy and Andrew ... watching a film.", pilihan: ["is", "are", "am"], jawaban: 1, penjelasan: "Dua orang (they) memakai are." },
+          { soal: "Sansan ... studying math.", pilihan: ["is", "are", "am"], jawaban: 0, penjelasan: "Satu orang memakai is." },
+          { soal: "Levin ... singing a song.", pilihan: ["am", "are", "is"], jawaban: 2, penjelasan: "Satu orang memakai is." },
+
+          // Tambahan latihan
+          { soal: "She ... reading a book.", pilihan: ["is", "am", "are"], jawaban: 0, penjelasan: "She memakai is." },
+          { soal: "We ... playing football.", pilihan: ["is", "are", "am"], jawaban: 1, penjelasan: "We memakai are." },
+          { soal: "The cat ... sleeping on the sofa.", pilihan: ["are", "am", "is"], jawaban: 2, penjelasan: "Satu kucing (it) memakai is." },
+          { soal: "You ... drawing a picture.", pilihan: ["are", "is", "am"], jawaban: 0, penjelasan: "You memakai are." },
+          { soal: "My mother ... cooking in the kitchen.", pilihan: ["are", "is", "am"], jawaban: 1, penjelasan: "My mother = she, jadi is." },
+          { soal: "The birds ... flying in the sky.", pilihan: ["is", "am", "are"], jawaban: 2, penjelasan: "Banyak burung (they) memakai are." },
+          { soal: "Kata kerja swim + ing menjadi ....", pilihan: ["swimming", "swiming", "swimeing"], jawaban: 0, penjelasan: "swim → swimming (huruf m digandakan)." },
+          { soal: "Kata kerja run + ing menjadi ....", pilihan: ["runing", "running", "runeing"], jawaban: 1, penjelasan: "run → running (huruf n digandakan)." },
+          { soal: "Kata kerja write + ing menjadi ....", pilihan: ["writeing", "writting", "writing"], jawaban: 2, penjelasan: "write → writing (huruf e dihapus)." },
+          { soal: "Kata kerja dance + ing menjadi ....", pilihan: ["dancing", "danceing", "dancging"], jawaban: 0, penjelasan: "dance → dancing (huruf e dihapus)." },
+          { soal: "Kata kerja sweep + ing menjadi ....", pilihan: ["sweping", "sweeping", "sweepping"], jawaban: 1, penjelasan: "sweep → sweeping." },
+          { soal: "\"Saya sedang makan\" dalam bahasa Inggris adalah ....", pilihan: ["I is eating", "I are eating", "I am eating"], jawaban: 2, penjelasan: "I am eating." },
+          { soal: "\"Mereka sedang bermain\" dalam bahasa Inggris adalah ....", pilihan: ["They are playing", "They is playing", "They am playing"], jawaban: 0, penjelasan: "They are playing." },
+          { soal: "\"Dia (perempuan) sedang menari\" dalam bahasa Inggris adalah ....", pilihan: ["She are dancing", "She is dancing", "She am dancing"], jawaban: 1, penjelasan: "She is dancing." },
+          { soal: "Andi ... not sleeping. He is studying.", pilihan: ["are", "am", "is"], jawaban: 2, penjelasan: "Andi memakai is: Andi is not sleeping." },
+          { soal: "... they watching TV? – Yes, they are.", pilihan: ["Are", "Is", "Am"], jawaban: 0, penjelasan: "They memakai are: Are they watching TV?" },
+          { soal: "Is Sekar painting? – Yes, ....", pilihan: ["she are", "she is", "he am"], jawaban: 1, penjelasan: "Sekar = she: Yes, she is." },
+          { soal: "Are you reading? – No, ....", pilihan: ["I is not", "I are not", "I am not"], jawaban: 2, penjelasan: "Untuk I: No, I am not." },
+          { soal: "Kata \"these\" dipakai untuk benda yang ....", pilihan: ["banyak dan dekat", "satu dan jauh", "satu dan dekat"], jawaban: 0, penjelasan: "These = ini (banyak benda yang dekat)." },
+          { soal: "Kata \"this\" dipakai untuk benda yang ....", pilihan: ["banyak dan jauh", "satu dan dekat", "banyak dan dekat"], jawaban: 1, penjelasan: "This = ini (satu benda yang dekat)." },
+          { soal: "\"This is a ....\" Pilihan yang benar adalah ....", pilihan: ["books", "pencils", "bird"], jawaban: 2, penjelasan: "This is a + satu benda: This is a bird." },
+          { soal: "\"These are five ....\" Pilihan yang benar adalah ....", pilihan: ["books", "book", "a book"], jawaban: 0, penjelasan: "These are + banyak benda: five books." },
+          { soal: "\"They can play tennis\" artinya ....", pilihan: ["Mereka sedang tenis", "Mereka bisa bermain tenis", "Mereka tidak suka tenis"], jawaban: 1, penjelasan: "Can = bisa." },
+          { soal: "\"I can swim\" artinya ....", pilihan: ["Saya tidak bisa berenang", "Saya sedang berenang", "Saya bisa berenang"], jawaban: 2, penjelasan: "Can = bisa." },
+          { soal: "Kalimat yang benar adalah ....", pilihan: ["He can ride a bike.", "He can rides a bike.", "He cans ride a bike."], jawaban: 0, penjelasan: "Setelah can, kata kerja tetap bentuk dasar: can ride." },
+          { soal: "\"Sweeping the floor\" artinya ....", pilihan: ["Mengepel jendela", "Menyapu lantai", "Mencuci piring"], jawaban: 1, penjelasan: "Sweep = menyapu, floor = lantai." },
+          { soal: "\"Painting a picture\" artinya ....", pilihan: ["Membaca buku", "Menulis surat", "Melukis gambar"], jawaban: 2, penjelasan: "Paint = melukis, picture = gambar." },
+          { soal: "\"Watching a film\" artinya ....", pilihan: ["Menonton film", "Membuat film", "Membeli film"], jawaban: 0, penjelasan: "Watch = menonton." },
+          { soal: "Gambar 🏊 menunjukkan kegiatan ....", pilihan: ["running", "swimming", "singing"], jawaban: 1, penjelasan: "🏊 = swimming (berenang)." },
+          { soal: "Gambar 🎤 menunjukkan kegiatan ....", pilihan: ["sleeping", "cooking", "singing"], jawaban: 2, penjelasan: "🎤 = singing (bernyanyi)." }
+        ],
+        esai: [
+          { soal: "Arrange the words into a good sentence: Are – these – books – five.", contohJawaban: "Are these five books?" },
+          { soal: "Arrange the words into a good sentence: They – play – tennis – can.", contohJawaban: "They can play tennis." },
+          { soal: "Arrange the words into a good sentence: Is – my sister – sweeping – the floor.", contohJawaban: "Is my sister sweeping the floor?" },
+          { soal: "Fill the blanks with am, is, or are: (1) Sekar ... painting a picture. (2) I ... speaking English. (3) Andy and Andrew ... watching a film.", contohJawaban: "(1) is (2) am (3) are" },
+          { soal: "Fill the blanks with am, is, or are: (1) Sansan ... studying math. (2) Levin ... singing a song.", contohJawaban: "(1) is (2) is" },
+          { soal: "Tuliskan dalam bahasa Inggris: Saya sedang membaca buku.", contohJawaban: "I am reading a book." }
+        ]
+      }
     }
   ]
 };
@@ -7241,7 +7447,35 @@ const SUBJECTS = [
             { kiri: { emoji: "🏫", teks: "Sekolah" }, kanan: "Bagian wilayah Indonesia" }
           ]
         }]
+      },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {
+        // Lembar kerja Jumat, 20-11-2026 (wajib)
+        esai: [
+          { soal: "Tuliskan 2 contoh penerapan sila pertama Pancasila di lingkungan rumah!", contohJawaban: "Berdoa sebelum makan dan tidur, serta beribadah bersama keluarga. (Bisa juga: menghormati anggota keluarga yang sedang berdoa.)" },
+          { soal: "Mengapa kita harus bersikap sopan dan saling membantu kepada semua anggota keluarga di rumah? Sikap tersebut sesuai dengan sila ke berapa?", contohJawaban: "Agar keluarga rukun, saling menyayangi, dan pekerjaan rumah terasa ringan. Sikap ini sesuai dengan sila kedua: Kemanusiaan yang adil dan beradab." },
+          { soal: "Di sekolah, kelasmu akan mengadakan kegiatan kerja bakti. Bagaimana cara menerapkan nilai sila ketiga Pancasila dalam kegiatan tersebut?", contohJawaban: "Bekerja sama dan bergotong royong membersihkan kelas, tidak memilih-milih teman, dan menjaga kerukunan." },
+          { soal: "Ibu meminta pendapat seluruh anggota keluarga untuk menentukan tempat liburan akhir pekan. Nilai Pancasila sila ke berapa yang sedang diterapkan? Jelaskan!", contohJawaban: "Sila keempat. Keluarga bermusyawarah: setiap anggota boleh berpendapat, lalu memilih keputusan bersama." },
+          { soal: "Berikan 2 contoh sikap adil kepada teman di sekolah yang mencerminkan sila kelima Pancasila!", contohJawaban: "Bergantian memakai alat atau mainan, dan membagi tugas piket sama rata. (Bisa juga: tidak membeda-bedakan teman.)" }
+        ],
+        pilihanGanda: [
+          { soal: "Berdoa sebelum makan bersama keluarga adalah penerapan sila ke ....", pilihan: ["Pertama", "Ketiga", "Kelima"], jawaban: 0, penjelasan: "Sila pertama: Ketuhanan Yang Maha Esa." },
+          { soal: "Membantu adik yang kesulitan dengan sopan sesuai dengan sila ke ....", pilihan: ["Kedua", "Pertama", "Keempat"], jawaban: 0, penjelasan: "Sila kedua: Kemanusiaan yang adil dan beradab." },
+          { soal: "Bergotong royong saat kerja bakti di sekolah sesuai dengan sila ke ....", pilihan: ["Kelima", "Ketiga", "Pertama"], jawaban: 1, penjelasan: "Sila ketiga: Persatuan Indonesia." },
+          { soal: "Keluarga bermusyawarah memilih tempat liburan. Ini penerapan sila ke ....", pilihan: ["Kedua", "Ketiga", "Keempat"], jawaban: 2, penjelasan: "Sila keempat: musyawarah untuk mufakat." },
+          { soal: "Bergantian memakai ayunan dengan teman adalah sikap adil sesuai sila ke ....", pilihan: ["Kelima", "Kedua", "Pertama"], jawaban: 0, penjelasan: "Sila kelima: Keadilan sosial bagi seluruh rakyat Indonesia." }
+        ]
       }
+    }
     ]
   },
 
@@ -7900,7 +8134,19 @@ const SUBJECTS = [
             ]
           }
         ]
-      }
+      },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {}
+    }
     ]
   },
 
@@ -9163,7 +9409,77 @@ const SUBJECTS = [
             { kiri: { emoji: "🚫", teks: "Mengejek" }, kanan: "Bukan kasih" }
           ]
         }]
+      },
+    /* ========================================================
+     *  MODUL — ESAU DAN YAKUB (catatan dari sekolah)
+     * ====================================================== */
+    {
+      id: "esau-dan-yakub",
+      judul: "Esau dan Yakub",
+      emoji: "👬",
+      ringkasan: [
+        { emoji: "👨‍👩‍👦‍👦", teks: "Ishak dan Ribka memiliki anak bernama Esau dan Yakub." },
+        { emoji: "1️⃣", teks: "Esau adalah anak sulung, sementara Yakub anak kedua." },
+        { emoji: "🧔", teks: "Kulit Esau berwarna merah dan berbulu." },
+        { emoji: "🙂", teks: "Badan Yakub halus. Yakub tenang dan pintar." },
+        { emoji: "🏹", teks: "Esau mempunyai bakat berburu di hutan dan tidak suka pekerjaan yang membutuhkan pemikiran panjang." },
+        { emoji: "🦶", teks: "Yakub memegang tumit Esau pada waktu lahir." },
+        { emoji: "🏠", teks: "Yakub suka tinggal di rumah. Ribka lebih sayang kepada Yakub." },
+        { emoji: "🥣", teks: "Esau menjual hak kesulungan kepada Yakub dengan semangkok kacang merah." },
+        { emoji: "⚠️", teks: "Esau menganggap remeh hak kesulungan, sehingga ia kehilangan berkat dari Allah." },
+        { emoji: "💡", teks: "Belajar dari Esau: jangan mudah meremehkan segala sesuatu yang istimewa dalam hidup kita." },
+        { emoji: "🎯", teks: "Belajar dari Yakub: selalu cerdik dan berusaha meraih apa yang dicita-citakan atau diimpikan." },
+        { emoji: "🚀", teks: "Cita-cita dapat menjadi motivasi dan semangat kita untuk belajar. Raihlah cita-cita setinggi langit!" }
+      ],
+      pilihanGandaSets: [[
+        { soal: "Orang tua Esau dan Yakub adalah ....", pilihan: ["Abraham dan Sara", "Ishak dan Ribka", "Adam dan Hawa"], jawaban: 1, penjelasan: "Esau dan Yakub adalah anak Ishak dan Ribka." },
+        { soal: "Anak sulung Ishak dan Ribka adalah ....", pilihan: ["Esau", "Yakub", "Yusuf"], jawaban: 0, penjelasan: "Esau anak sulung, Yakub anak kedua." },
+        { soal: "Kulit Esau berwarna ... dan berbulu.", pilihan: ["Putih", "Hitam", "Merah"], jawaban: 2, penjelasan: "Kulit Esau merah dan berbulu." },
+        { soal: "Yakub digambarkan sebagai anak yang ....", pilihan: ["Halus, tenang, dan pintar", "Kasar dan pemarah", "Suka berburu di hutan"], jawaban: 0, penjelasan: "Badan Yakub halus; ia tenang dan pintar." },
+        { soal: "Esau mempunyai bakat ....", pilihan: ["Bernyanyi", "Berburu di hutan", "Memasak"], jawaban: 1, penjelasan: "Esau pandai berburu di hutan." },
+        { soal: "Saat lahir, Yakub memegang ... Esau.", pilihan: ["Tangan", "Rambut", "Tumit"], jawaban: 2, penjelasan: "Yakub memegang tumit Esau saat lahir." },
+        { soal: "Yakub lebih suka ....", pilihan: ["Tinggal di rumah", "Berburu di hutan", "Berlayar ke laut"], jawaban: 0, penjelasan: "Yakub suka tinggal di rumah." },
+        { soal: "Ribka lebih sayang kepada ....", pilihan: ["Esau", "Yakub", "Ishak"], jawaban: 1, penjelasan: "Ribka lebih sayang kepada Yakub." },
+        { soal: "Karena meremehkan hak kesulungan, Esau kehilangan ....", pilihan: ["Rumahnya", "Busur panahnya", "Berkat dari Allah"], jawaban: 2, penjelasan: "Esau kehilangan berkat dari Allah." },
+        { soal: "Cita-cita dapat menjadi ... untuk belajar.", pilihan: ["Motivasi dan semangat", "Alasan malas", "Hukuman"], jawaban: 0, penjelasan: "Cita-cita membuat kita semangat belajar." }
+      ]],
+      esaiSets: [[
+        { soal: "Siapa nama anak-anak Ishak dan Ribka? Siapa yang sulung?", contohJawaban: "Esau dan Yakub. Esau adalah anak sulung." },
+        { soal: "Dengan apa Esau menjual hak kesulungannya kepada Yakub?", contohJawaban: "Dengan semangkok kacang merah." },
+        { soal: "Apa akibatnya karena Esau menganggap remeh hak kesulungan?", contohJawaban: "Esau kehilangan berkat dari Allah." },
+        { soal: "Apa cita-citamu? Bagaimana cara meraihnya?", contohJawaban: "Contoh: Aku ingin menjadi dokter. Caranya rajin belajar, berdoa, dan tidak mudah menyerah. (Jawaban bisa berbeda-beda.)" }
+      ]],
+      cocokkanSets: [{
+        instruksi: "Pasangkan tokoh dengan ciri-cirinya!",
+        pasangan: [
+          { kiri: { emoji: "🏹", teks: "Esau" }, kanan: "Pandai berburu di hutan" },
+          { kiri: { emoji: "🏠", teks: "Yakub" }, kanan: "Tenang dan suka di rumah" },
+          { kiri: { emoji: "👩", teks: "Ribka" }, kanan: "Lebih sayang kepada Yakub" },
+          { kiri: { emoji: "👴", teks: "Ishak" }, kanan: "Ayah Esau dan Yakub" },
+          { kiri: { emoji: "🥣", teks: "Kacang merah" }, kanan: "Ditukar dengan hak kesulungan" }
+        ]
+      }]
+    },
+    /* ========================================================
+     *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
+     *  50 soal pilihan ganda + 10 soal esai. Soal wajib di bawah
+     *  selalu masuk; sisanya diambil otomatis dari modul lain di
+     *  mata pelajaran ini (lihat bangunAsas di app.js).
+     * ====================================================== */
+    {
+      id: "asas",
+      judul: "ASAS (Asesmen Sumatif Akhir Semester)",
+      emoji: "📝",
+      asas: {
+        pilihanGanda: [
+          { soal: "Ishak dan Ribka memiliki dua anak bernama ....", pilihan: ["Kain dan Habel", "Esau dan Yakub", "Musa dan Harun"], jawaban: 1, penjelasan: "Anak Ishak dan Ribka adalah Esau dan Yakub." },
+          { soal: "Esau menjual hak kesulungannya kepada Yakub dengan ....", pilihan: ["Semangkok kacang merah", "Sepotong roti", "Seekor domba"], jawaban: 0, penjelasan: "Esau menukar hak kesulungan dengan semangkok kacang merah." }
+        ],
+        esai: [
+          { soal: "Apa yang dapat kita pelajari dari Esau dan dari Yakub?", contohJawaban: "Dari Esau: jangan meremehkan hal istimewa dalam hidup kita. Dari Yakub: selalu cerdik dan berusaha meraih cita-cita." }
+        ]
       }
+    }
     ]
   }
 
