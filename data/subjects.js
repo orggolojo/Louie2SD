@@ -5035,7 +5035,7 @@ const INFORMATIKA_SUBJECT = {
     /* ========================================================
      *  MODUL — ASAS (Asesmen Sumatif Akhir Semester)
      *  Sumber: soal ASAS Informatika kelas 2 dan kisi-kisi
-     *  2026-2027. 50 soal pilihan ganda (5 set x 10) dan
+     *  2026-2027. 50 soal pilihan ganda (satu set) dan
      *  10 soal esai.
      * ====================================================== */
     ,{
@@ -5062,10 +5062,9 @@ const INFORMATIKA_SUBJECT = {
       ],
 
       /* ===== 5 SET x 10 SOAL PILIHAN GANDA (total 50) ===== */
-      pilihanGandaSets: [
-
-        // ---------- SET 1 : Soal ASAS no. 1–10 ----------
-        [
+      // 50 soal pilihan ganda + 10 esai, dikerjakan dalam satu set.
+      asas: {
+        pilihanGanda: [
           { soal: "Alat yang digunakan untuk mengetik adalah ....", pilihan: ["Keyboard", "Monitor", "Mouse"], jawaban: 0, penjelasan: "Keyboard (papan ketik) dipakai untuk mengetik." },
           { soal: "Contoh gawai yang digunakan untuk mengetik dokumen dan membuat presentasi adalah ....", pilihan: ["Kamera", "Laptop", "Blender"], jawaban: 1, penjelasan: "Laptop bisa dipakai untuk mengetik dan membuat presentasi." },
           { gambar: "img/tik/asas/sinyal-4g.svg", soal: "Lihat sinyal telepon seluler pada gambar. Gambar tersebut menandakan bahwa ....", pilihan: ["Gawai tidak terhubung dengan internet", "Baterai gawai sudah penuh", "Gawai terhubung dengan internet"], jawaban: 2, penjelasan: "Tanda 4G+ dan batang sinyal penuh berarti gawai terhubung ke internet." },
@@ -5075,11 +5074,7 @@ const INFORMATIKA_SUBJECT = {
           { soal: "Perhatikan pola bilangan berikut: 1, 3, 5, 7. Bilangan berikutnya adalah ....", pilihan: ["9", "8", "11"], jawaban: 0, penjelasan: "Setiap bilangan bertambah 2, jadi 7 + 2 = 9." },
           { soal: "Dalam pengiriman data, alat Wi-Fi dan telepon seluler menggunakan gelombang ....", pilihan: ["Suara", "Radio", "Panas"], jawaban: 1, penjelasan: "Wi-Fi dan telepon seluler memakai gelombang radio." },
           { soal: "Contoh dari gawai, KECUALI ....", pilihan: ["Smartphone", "Laptop", "Sepeda"], jawaban: 2, penjelasan: "Sepeda bukan alat elektronik, jadi bukan gawai." },
-          { soal: "Menggambar garis lingkaran dalam program Paint dapat menggunakan ....", pilihan: ["Oval", "Line", "Select"], jawaban: 0, penjelasan: "Tool Oval dipakai untuk menggambar lingkaran." }
-        ],
-
-        // ---------- SET 2 : Soal ASAS no. 12–21 ----------
-        [
+          { soal: "Menggambar garis lingkaran dalam program Paint dapat menggunakan ....", pilihan: ["Oval", "Line", "Select"], jawaban: 0, penjelasan: "Tool Oval dipakai untuk menggambar lingkaran." },
           { soal: "Teknologi Informasi dan Komunikasi (TIK) digunakan untuk mempermudah ....", pilihan: ["Memasak", "Berkomunikasi", "Menyiram tanaman"], jawaban: 1, penjelasan: "TIK mempermudah kita berkomunikasi." },
           { soal: "Dalam pemrograman, membagi masalah menjadi bagian kecil untuk memudahkan penyelesaian dikenal sebagai ....", pilihan: ["Menambah pekerjaan", "Pengulangan", "Dekomposisi"], jawaban: 2, penjelasan: "Dekomposisi = membagi masalah besar menjadi bagian kecil." },
           { gambar: "img/tik/asas/ikon-word.svg", soal: "Lihat gambar ikon berikut! Nama aplikasi tersebut adalah ....", pilihan: ["Microsoft Word", "Paint", "Google Chrome"], jawaban: 0, penjelasan: "Ikon biru dengan huruf W adalah Microsoft Word." },
@@ -5089,11 +5084,7 @@ const INFORMATIKA_SUBJECT = {
           { soal: "Mengurai tugas adalah ....", pilihan: ["Menambah tugas baru", "Membagi pekerjaan besar menjadi bagian kecil", "Membuat pekerjaan lebih sulit"], jawaban: 1, penjelasan: "Mengurai tugas = dekomposisi." },
           { soal: "Untuk membuat gambar sederhana di komputer, kita dapat menggunakan program ....", pilihan: ["Microsoft Word", "Internet Explorer", "Paint"], jawaban: 2, penjelasan: "Paint adalah program untuk menggambar." },
           { soal: "Perangkat yang dapat digunakan untuk menonton video secara langsung di internet adalah ....", pilihan: ["Smart TV", "Setrika", "Kompor"], jawaban: 0, penjelasan: "Smart TV bisa terhubung ke internet." },
-          { gambar: "img/tik/telepon-kabel.svg", soal: "Lihat gambar berikut! Nama alat tersebut adalah ....", pilihan: ["Printer", "Telepon", "Laptop"], jawaban: 1, penjelasan: "Itu telepon, alat untuk berbicara jarak jauh." }
-        ],
-
-        // ---------- SET 3 : Soal ASAS no. 22–31 ----------
-        [
+          { gambar: "img/tik/telepon-kabel.svg", soal: "Lihat gambar berikut! Nama alat tersebut adalah ....", pilihan: ["Printer", "Telepon", "Laptop"], jawaban: 1, penjelasan: "Itu telepon, alat untuk berbicara jarak jauh." },
           { soal: "Algoritma dapat kita gunakan untuk menyelesaikan ....", pilihan: ["Membuat gambar", "Memperbaiki perangkat keras", "Tugas secara urut"], jawaban: 2, penjelasan: "Algoritma membantu menyelesaikan tugas langkah demi langkah." },
           { soal: "Perhatikan pola bilangan berikut: 2, 4, 6, 8. Bilangan berikutnya adalah ....", pilihan: ["10", "9", "12"], jawaban: 0, penjelasan: "Setiap bilangan bertambah 2, jadi 8 + 2 = 10." },
           { gambar: "img/tik/asas/router.svg", soal: "Alat pemancar Wi-Fi disebut ....", pilihan: ["Remot TV", "Router", "Buku"], jawaban: 1, penjelasan: "Router memancarkan sinyal Wi-Fi." },
@@ -5103,11 +5094,7 @@ const INFORMATIKA_SUBJECT = {
           { soal: "Paint adalah program yang digunakan untuk ....", pilihan: ["Mengetik dokumen/surat", "Memutar video", "Membuat gambar sederhana"], jawaban: 2, penjelasan: "Paint adalah program pengolah gambar." },
           { gambar: "img/tik/asas/sikat-gigi.svg", soal: "Algoritma menyikat gigi: 1. ambil sikat gigi, 2. oleskan pasta gigi, 3. mulai menyikat, 4. ____, 5. simpan sikat gigi. Langkah nomor 4 adalah ....", pilihan: ["Bilas mulut", "Oleskan sabun", "Bilas kaki dan kepala"], jawaban: 0, penjelasan: "Setelah menyikat, kita membilas mulut." },
           { soal: "Komputer dapat digunakan untuk mengolah ....", pilihan: ["Makanan", "Data", "Air"], jawaban: 1, penjelasan: "Komputer mengolah data: angka, tulisan, gambar, suara, video." },
-          { soal: "Menemukan kesamaan atau pola dari beberapa kejadian disebut ....", pilihan: ["Teknologi", "Internet", "Pengenalan pola"], jawaban: 2, penjelasan: "Pengenalan pola = menemukan kesamaan yang berulang." }
-        ],
-
-        // ---------- SET 4 : Soal ASAS no. 32–35 + kisi-kisi ----------
-        [
+          { soal: "Menemukan kesamaan atau pola dari beberapa kejadian disebut ....", pilihan: ["Teknologi", "Internet", "Pengenalan pola"], jawaban: 2, penjelasan: "Pengenalan pola = menemukan kesamaan yang berulang." },
           { soal: "Fill with Color digunakan dalam program Paint untuk memberi ....", pilihan: ["Warna", "Garis lurus", "Garis melengkung"], jawaban: 0, penjelasan: "Fill with Color (ember cat) untuk mewarnai bidang." },
           { gambar: "img/tik/asas/wordart.svg", soal: "Tulisan indah seperti gambar dapat dibuat di Microsoft Word dengan menggunakan ....", pilihan: ["Google Chrome", "WordArt", "Internet Explorer"], jawaban: 1, penjelasan: "WordArt membuat teks dekoratif. Caranya: Insert → WordArt." },
           { gambar: "img/tik/jam-pintar.svg", soal: "Perangkat elektronik yang dapat mengukur detak jantung dan waktu disebut ....", pilihan: ["Laptop", "Kipas angin", "Smartwatch"], jawaban: 2, penjelasan: "Smartwatch (jam pintar) bisa mengukur detak jantung." },
@@ -5117,11 +5104,7 @@ const INFORMATIKA_SUBJECT = {
           { soal: "Kegunaan smartphone dalam kehidupan sehari-hari adalah ....", pilihan: ["Menelepon dan mengirim pesan", "Mencuci piring", "Menyapu lantai"], jawaban: 0, penjelasan: "Smartphone dipakai untuk menelepon, mengirim pesan, dan mencari informasi." },
           { gambar: "img/tik/televisi.svg", soal: "Perangkat elektronik untuk menonton berita dan film di rumah adalah ....", pilihan: ["Radio", "Televisi", "Kalkulator"], jawaban: 1, penjelasan: "Televisi menampilkan gambar dan suara." },
           { soal: "Contoh penggunaan komputer yang tepat adalah ....", pilihan: ["Menjemur pakaian", "Menyiram bunga", "Mengetik tugas sekolah"], jawaban: 2, penjelasan: "Komputer bisa dipakai untuk mengetik tugas sekolah." },
-          { soal: "Kegiatan menggunakan internet disebut ....", pilihan: ["Online", "Offline", "Tidur"], jawaban: 0, penjelasan: "Online = sedang terhubung dan memakai internet." }
-        ],
-
-        // ---------- SET 5 : Kisi-kisi (pola, sinyal, Word & Paint) ----------
-        [
+          { soal: "Kegiatan menggunakan internet disebut ....", pilihan: ["Online", "Offline", "Tidur"], jawaban: 0, penjelasan: "Online = sedang terhubung dan memakai internet." },
           { gambar: "img/tik/asas/wifi-mati.svg", soal: "Simbol Wi-Fi yang dicoret seperti gambar menunjukkan ....", pilihan: ["Sinyal Wi-Fi sangat kuat", "Tidak ada sinyal Wi-Fi", "Baterai penuh"], jawaban: 1, penjelasan: "Simbol Wi-Fi dicoret = tidak terhubung ke Wi-Fi." },
           { gambar: "img/tik/asas/sinyal-lemah.svg", soal: "Hanya satu batang sinyal yang menyala. Artinya sinyal telepon seluler ....", pilihan: ["Sangat kuat", "Penuh", "Lemah"], jawaban: 2, penjelasan: "Semakin sedikit batang yang menyala, semakin lemah sinyalnya." },
           { soal: "Lengkapi pola gambar berikut: 🔴 🔵 🔴 🔵 🔴 ❓", pilihan: ["🔵", "🔴", "🟢"], jawaban: 0, penjelasan: "Polanya merah, biru, merah, biru ... jadi berikutnya biru." },
@@ -5132,12 +5115,8 @@ const INFORMATIKA_SUBJECT = {
           { soal: "Budi ingin menggambar rumah dan mewarnainya di komputer. Program yang tepat adalah ....", pilihan: ["Microsoft Word", "WhatsApp", "Paint"], jawaban: 2, penjelasan: "Paint adalah program pengolah gambar." },
           { soal: "Membersihkan kamar dibagi menjadi: merapikan kasur, menyusun mainan, menyapu lantai. Cara ini disebut ....", pilihan: ["Dekomposisi", "Pengenalan pola", "Online"], jawaban: 0, penjelasan: "Membagi pekerjaan besar menjadi tugas kecil = dekomposisi." },
           { soal: "Cara merawat laptop yang benar adalah ....", pilihan: ["Menyiramnya dengan air", "Membersihkan layar dengan kain kering", "Makan di atas keyboard"], jawaban: 1, penjelasan: "Bersihkan dengan kain lembut yang kering dan jauhkan dari air." }
-        ]
-      ],
-
-      /* ===== 10 SOAL ESAI ===== */
-      esaiSets: [
-        [
+        ],
+        esai: [
           { soal: "Rina mengetik surat untuk Nenek di komputer. Apa nama program pengolah kata yang ia gunakan? Apa kegunaannya?", contohJawaban: "Microsoft Word. Kegunaannya untuk mengetik dan mengedit dokumen, seperti surat dan cerita." },
           { soal: "Budi menggambar pemandangan lalu mewarnainya di komputer. Apa nama program pengolah gambar yang ia gunakan? Apa kegunaannya?", contohJawaban: "Paint. Kegunaannya untuk menggambar dan mewarnai gambar sederhana." },
           { soal: "Sebutkan 3 cara merawat perangkat TIK!", contohJawaban: "Membersihkan dengan kain lembut yang kering, menjauhkan dari air, tidak makan/minum di dekatnya, dan mematikannya dengan benar (Shut Down)." },
@@ -5149,7 +5128,7 @@ const INFORMATIKA_SUBJECT = {
           { soal: "Apa itu internet? Sebutkan 2 kegunaannya!", contohJawaban: "Internet adalah jaringan yang menghubungkan komputer di seluruh dunia. Kegunaannya: mencari informasi, mengirim pesan/e-mail, dan menonton video." },
           { soal: "Orang yang membuat dan menulis perintah komputer disebut apa? Apa itu program?", contohJawaban: "Programmer. Program adalah serangkaian perintah yang diberikan kepada komputer." }
         ]
-      ]
+      }
     }
   ]
 };

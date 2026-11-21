@@ -162,8 +162,8 @@ function bangunAsas(subject, topic) {
     sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "kuis").flat(), benih + i)),
     cfg.jumlahPilihanGanda || 50
   ).map(geserJawaban);
-  const jumlahSet = Math.max(1, Math.ceil(pg.length / 10));
-  topic.pilihanGandaSets = Array.from({ length: jumlahSet }, (_, s) => pg.filter((_, i) => i % jumlahSet === s));
+  // Semua soal ASAS dikerjakan sekaligus dalam satu set (seperti ujian).
+  topic.pilihanGandaSets = [pg];
 
   topic.esaiSets = [kumpulkan(
     cfg.esai || [],
@@ -442,7 +442,7 @@ function renderKuis(root, subject, topic) {
       el("div", { class: "result-score", text: benar + " / " + total + " benar" }),
       el("div", { class: "result-msg", text: pesan }),
       el("div", { class: "btn-row" }, [
-        el("button", { class: "btn big", text: "Coba Set Lain 🔄", on: { click: () => { muatSet(); tampilkanSoal(); } } }),
+        el("button", { class: "btn big", text: semuaSet.length > 1 ? "Coba Set Lain 🔄" : "Coba Lagi 🔄", on: { click: () => { muatSet(); tampilkanSoal(); } } }),
         el("button", { class: "btn secondary", text: "Kembali ke Modul", on: { click: () => renderSubject(subject.id) } })
       ])
     ]);
