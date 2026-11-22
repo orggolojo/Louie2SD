@@ -244,6 +244,12 @@ h1, h2, h3, .brand-text, .btn, .tab {
   font-size: 1.1rem;
   animation: pop 0.4s ease both;
 }
+/* Judul modul di dalam ringkasan ASAS */
+.summary-item.judul-modul {
+  background: var(--biru-muda);
+  font-weight: 800;
+  margin-top: 10px;
+}
 .summary-item .s-img {
   width: 56px;
   height: 56px;
@@ -620,3 +626,10 @@ h1, h2, h3, .brand-text, .btn, .tab {
   padding: 12px 16px;
 }
 .verse-makna strong { color: var(--hijau); }
+
+/* Tautan unduh versi cetak ASAS */
+.btn.unduh-cetak {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 12px;
+}

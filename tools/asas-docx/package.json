@@ -1,0 +1,6 @@
+{
+  "name": "asas-docx",
+  "private": true,
+  "description": "Membuat file cetak ASAS (.docx) dari data Belajar Yuk!",
+  "dependencies": { "docx": "^9.16.0" }
+}

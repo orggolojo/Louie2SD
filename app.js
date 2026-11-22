@@ -165,6 +165,20 @@ function bangunAsas(subject, topic) {
   // Semua soal ASAS dikerjakan sekaligus dalam satu set (seperti ujian).
   topic.pilihanGandaSets = [pg];
 
+  // Ringkasan: jika modul ASAS belum punya, ambil beberapa poin pertama dari
+  // setiap modul (urut sesuai modul), diawali judul modulnya.
+  if (!Array.isArray(topic.ringkasan) || !topic.ringkasan.length) {
+    const perModul = Math.max(2, Math.ceil((cfg.jumlahRingkasan || 36) / Math.max(1, sumber.length)));
+    const sudah = new Set();
+    topic.ringkasan = [...(cfg.ringkasan || [])];
+    sumber.forEach((t) => {
+      const poin = (t.ringkasan || []).filter((r) => r.teks && !sudah.has(r.teks)).slice(0, perModul);
+      if (!poin.length) return;
+      topic.ringkasan.push({ emoji: t.emoji || "📘", teks: t.judul, judulModul: true });
+      poin.forEach((r) => { sudah.add(r.teks); topic.ringkasan.push(r); });
+    });
+  }
+
   topic.esaiSets = [kumpulkan(
     cfg.esai || [],
     sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "esai").flat(), benih + "e" + i)),
@@ -260,6 +274,14 @@ function renderTopic(subjectId, topicId, activeTab = "ringkasan") {
   app.appendChild(backLink("Kembali", () => renderSubject(subjectId)));
   app.appendChild(el("h1", { class: "page-title", text: (topic.emoji || "📘") + " " + topic.judul }));
 
+  // Modul ASAS: tautan unduh versi cetak (.docx) dari folder cetak/
+  if (topic.id === "asas") {
+    const unduh = el("a", { class: "btn unduh-cetak", text: "🖨️ Unduh versi cetak (.docx)" });
+    unduh.href = "cetak/asas-" + subject.id + ".docx";
+    unduh.setAttribute("download", "ASAS " + subject.nama + " Kelas 2.docx");
+    app.appendChild(el("div", { class: "btn-row" }, [unduh]));
+  }
+
   // Tab
   const tabs = el("div", { class: "tabs" });
   const tabDefs = [
@@ -320,7 +342,7 @@ function renderRingkasan(root, topic) {
   root.appendChild(el("h2", { class: "section-title", text: "Yuk, Baca Ringkasannya! 📖" }));
   const list = el("div", { class: "summary-list" });
   topic.ringkasan.forEach((item, i) => {
-    const row = el("div", { class: "summary-item" }, [
+    const row = el("div", { class: "summary-item" + (item.judulModul ? " judul-modul" : "") }, [
       item.gambar
         ? gambar(item.gambar, "s-img", item.teks)
         : el("span", { class: "s-emoji", text: item.emoji || "⭐" }),
