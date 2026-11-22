@@ -23,3 +23,11 @@ dari folder ini.
 ## Online
 
 Situs ini dihosting dengan GitHub Pages.
+
+## ASAS (3 latihan)
+
+Setiap mata pelajaran punya modul ASAS dengan Latihan 1, 2, dan 3 (masing-masing
+50 pilihan ganda + 10 esai, tanpa soal yang berulang antar-latihan). Soal tambahan
+untuk Latihan 2 dan 3 ada di `data/asas-latihan.js`. File cetak `.docx` ada di
+`cetak/` (`asas-<mapel>.docx`, `asas-<mapel>-2.docx`, `asas-<mapel>-3.docx`);
+buat ulang dengan `sh tools/asas-docx/buat.sh` setelah soal berubah.

@@ -116,7 +116,7 @@ function dokumen(s) {
   }));
   isi.push(new Paragraph({
     alignment: AlignmentType.CENTER, spacing: { after: 200 },
-    children: [new TextRun({ text: `${s.nama} — Kelas 2`, bold: true, size: 28 })],
+    children: [new TextRun({ text: `${s.nama} — Kelas 2 — Latihan ${s.latihan}`, bold: true, size: 28 })],
   }));
   ["Nama", "Kelas", "Tanggal"].forEach((label) => isi.push(new Paragraph({
     spacing: { after: 80 },
@@ -160,7 +160,7 @@ function dokumen(s) {
 
   return new Document({
     creator: "Belajar Yuk!",
-    title: `ASAS ${s.nama} Kelas 2`,
+    title: `ASAS ${s.nama} Kelas 2 - Latihan ${s.latihan}`,
     styles: { default: { document: { run: { font: FONT, size: 24 } } } },
     numbering: {
       config: [{
@@ -174,7 +174,7 @@ function dokumen(s) {
         default: new Footer({
           children: [new Paragraph({
             alignment: AlignmentType.CENTER,
-            children: [new TextRun({ text: `ASAS ${s.nama} — halaman `, size: 18, color: "64748B" }), new TextRun({ children: [PageNumber.CURRENT], size: 18, color: "64748B" })],
+            children: [new TextRun({ text: `ASAS ${s.nama} (Latihan ${s.latihan}) — halaman `, size: 18, color: "64748B" }), new TextRun({ children: [PageNumber.CURRENT], size: 18, color: "64748B" })],
           })],
         }),
       },
@@ -186,7 +186,7 @@ function dokumen(s) {
 (async () => {
   for (const s of data) {
     const buf = await Packer.toBuffer(dokumen(s));
-    const f = path.join(outDir, `asas-${s.id}.docx`);
+    const f = path.join(outDir, `${s.file}.docx`);
     fs.writeFileSync(f, buf);
     console.log(path.basename(f), Math.round(buf.length / 1024) + " KB");
   }

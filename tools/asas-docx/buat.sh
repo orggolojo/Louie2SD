@@ -3,6 +3,7 @@
 # Jalankan dari folder repo:  sh tools/asas-docx/buat.sh
 # Butuh: macOS (qlmanage, sips), Node.js, dan Python 3.
 set -e
+PATH="$HOME/.local/node/bin:$PATH"
 REPO=$(cd "$(dirname "$0")/../.." && pwd)
 ALAT="$REPO/tools/asas-docx"
 KERJA=$(mktemp -d)

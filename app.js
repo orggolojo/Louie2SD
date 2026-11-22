@@ -139,9 +139,9 @@ function kunciSoal(q) {
   return rapi(q.soal) + "|" + rapi(q.pilihan ? q.pilihan[q.jawaban] : q.contohJawaban);
 }
 
-function kumpulkan(wajib, kolam, jumlah) {
+// "sudah" bisa dipakai bersama antar-latihan agar soal tidak terulang.
+function kumpulkan(wajib, kolam, jumlah, sudah = new Set()) {
   const hasil = [];
-  const sudah = new Set();
   const tambah = (q) => {
     const k = kunciSoal(q);
     if (hasil.length < jumlah && !sudah.has(k)) { sudah.add(k); hasil.push(q); }
@@ -157,13 +157,22 @@ function bangunAsas(subject, topic) {
   const sumber = subject.topik.filter((t) => t !== topic && !t.asas && t.id !== "asas");
   const benih = subject.id + ":asas";
 
-  const pg = kumpulkan(
-    cfg.pilihanGanda || [],
-    sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "kuis").flat(), benih + i)),
-    cfg.jumlahPilihanGanda || 50
-  ).map(geserJawaban);
-  // Semua soal ASAS dikerjakan sekaligus dalam satu set (seperti ujian).
-  topic.pilihanGandaSets = [pg];
+  const jPg = cfg.jumlahPilihanGanda || 50, jEsai = cfg.jumlahEsai || 10;
+  const tambahan = (typeof ASAS_LATIHAN !== "undefined" && ASAS_LATIHAN[subject.id]) || {};
+  const kolamPg = sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "kuis").flat(), benih + i));
+  const kolamEsai = sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "esai").flat(), benih + "e" + i));
+  // Soal tambahan (data/asas-latihan.js) ikut bergiliran seperti satu modul.
+  const kolamPg2 = kolamPg.concat([acakTetap(tambahan.pilihanGanda || [], benih + "t")]);
+  const kolamEsai2 = kolamEsai.concat([acakTetap(tambahan.esai || [], benih + "te")]);
+  const sudahPg = new Set(), sudahEsai = new Set();
+
+  // Latihan 1 = ASAS asli; Latihan 2 dan 3 memakai soal yang belum keluar.
+  // Semua soal satu latihan dikerjakan sekaligus dalam satu set (seperti ujian).
+  topic.latihan = [1, 2, 3].map((n) => ({
+    pg: kumpulkan(n === 1 ? cfg.pilihanGanda || [] : [], n === 1 ? kolamPg : kolamPg2, jPg, sudahPg).map(geserJawaban),
+    esai: kumpulkan(n === 1 ? cfg.esai || [] : [], n === 1 ? kolamEsai : kolamEsai2, jEsai, sudahEsai),
+  })).filter((l) => l.pg.length);
+  pakaiLatihan(topic, 0);
 
   // Ringkasan: jika modul ASAS belum punya, ambil beberapa poin pertama dari
   // setiap modul (urut sesuai modul), diawali judul modulnya.
@@ -179,11 +188,14 @@ function bangunAsas(subject, topic) {
     });
   }
 
-  topic.esaiSets = [kumpulkan(
-    cfg.esai || [],
-    sumber.map((t, i) => acakTetap(ambilSemuaSet(t, "esai").flat(), benih + "e" + i)),
-    cfg.jumlahEsai || 10
-  )];
+}
+
+// Tampilkan satu latihan ASAS di tab Pilihan Ganda dan Esai.
+function pakaiLatihan(topic, idx) {
+  const l = topic.latihan[idx] || topic.latihan[0];
+  topic.latihanAktif = topic.latihan.indexOf(l);
+  topic.pilihanGandaSets = [l.pg];
+  topic.esaiSets = [l.esai];
 }
 
 function siapkanAsas() {
@@ -275,10 +287,19 @@ function renderTopic(subjectId, topicId, activeTab = "ringkasan") {
   app.appendChild(el("h1", { class: "page-title", text: (topic.emoji || "📘") + " " + topic.judul }));
 
   // Modul ASAS: tautan unduh versi cetak (.docx) dari folder cetak/
-  if (topic.id === "asas") {
-    const unduh = el("a", { class: "btn unduh-cetak", text: "🖨️ Unduh versi cetak (.docx)" });
-    unduh.href = "cetak/asas-" + subject.id + ".docx";
-    unduh.setAttribute("download", "ASAS " + subject.nama + " Kelas 2.docx");
+  // Ada 3 latihan; Latihan 1 memakai nama file lama agar tautannya tetap.
+  if (topic.id === "asas" && topic.latihan) {
+    const pilih = el("div", { class: "btn-row pilih-latihan" });
+    topic.latihan.forEach((_, i) => pilih.appendChild(el("button", {
+      class: "btn" + (i === topic.latihanAktif ? " aktif" : ""),
+      text: "📝 Latihan " + (i + 1),
+      on: { click: () => { pakaiLatihan(topic, i); renderTopic(subjectId, topicId, activeTab); } }
+    })));
+    app.appendChild(pilih);
+    const n = topic.latihanAktif + 1;
+    const unduh = el("a", { class: "btn unduh-cetak", text: "🖨️ Unduh Latihan " + n + " (.docx)" });
+    unduh.href = "cetak/asas-" + subject.id + (n > 1 ? "-" + n : "") + ".docx";
+    unduh.setAttribute("download", "ASAS " + subject.nama + " Kelas 2 - Latihan " + n + ".docx");
     app.appendChild(el("div", { class: "btn-row" }, [unduh]));
   }
 

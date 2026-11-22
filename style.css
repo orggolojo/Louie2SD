@@ -633,3 +633,6 @@ h1, h2, h3, .brand-text, .btn, .tab {
   text-decoration: none;
   margin-bottom: 12px;
 }
+
+/* Pilihan Latihan 1/2/3 di modul ASAS */
+.pilih-latihan .btn:not(.aktif) { background: #fff; color: var(--biru); border: 3px solid var(--biru); box-shadow: none; }
